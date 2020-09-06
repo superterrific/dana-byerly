@@ -1,8 +1,5 @@
-<span class="visually-hidden" id="tags-desc">A list of tags for this post.</span>
-  <ul class="tag-list tag-list-summary" id="tags-desc">
     {% for tag in tags %}
       <li>
         <a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a>
       </li>
     {% endfor %}
-  </ul>
