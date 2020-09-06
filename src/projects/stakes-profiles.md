@@ -21,7 +21,6 @@ Stakes Profiles are data visualization posts that show trends for a particular [
   </figcaption>
 {% endfigure %}
 
-
 I got the [first glimmer for the idea a few years earlier](https://twitter.com/superterrific/status/964523437019549696) when I was working on [Cheat Sheets for televised Breeders' Cup races](https://web.archive.org/web/20150831075810/https://challenge.breederscup.com/travers-cheat-sheet), as a hook I’d lead with how favorites had performed over the last ten years. It was disheartening how much work was required to answer what seemed like a basic question.
 
 Always in search of a new project, I started thinking about what kinds of questions should be easy to answer and working on how to visualize the data. Initially I thought that of course it would all be “actionable” and useful for wagering. Ultimately I don’t think it turned out that way.

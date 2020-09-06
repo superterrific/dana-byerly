@@ -12,9 +12,7 @@ displayOrder: 5
 platform: ['Glitch']
 role: ['Code', 'Design']
 tags: ['Randomization']
-imgLanding: '2020-derby8-fpo.png'
 ---
-
 I started this project [in 2018]({{ allUrls.in2018 }}) based on [a tutorial by Kelly Lougheed](https://medium.com/@kellylougheed/javascript-magic-8-ball-with-basic-dom-manipulation-1636b83c3c26) by remixing her [Glitch Project](https://glitch.com/~8ball-starter) (thank you!). At this point my Javascript skills were both minimal and very rusty, so this was a good opportunity to learn and do something fun. The biggest accomplishment of the inaugural version, aside from completing it, was modifying it to exclude having to ask the question, albeit what I came up with wasn't very elegant, to put it politely.
 
 [In 2019]({{ allUrls.in2019 }}) I made some refinements to the Javascript, which felt like an accomplishment as I had a better understanding of what was happening rather than just poking at it with no real clue like I had done in the first version. [This year]({{ allUrls.in2020 }}) I made a few more JS refinements as well as some CSS and accessibility improvements.
