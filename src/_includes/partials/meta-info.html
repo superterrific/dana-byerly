@@ -8,7 +8,7 @@
   {%- set siteTitle = site.name -%}
   {%- set siteDescription = summary -%}
   {%- set currentUrl = site.url + page.url -%}
-  {%- set socialImage = site.url + 'site.socialImage' -%}
+  {%- set socialImage = site.url + site.socialImage -%}
 
   {# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch
     them into the mix. #}
@@ -28,8 +28,8 @@
   <meta name="twitter:card" content="summary" />
   <meta property="og:image" content="{{ socialImage }}" />
   <meta name="twitter:image" content="{{ socialImage }}" />
-  <meta property="og:image:alt" content="Page image for {{ site.siteName }}" />
-  <meta name="twitter:image:alt" content="Page image for {{ site.siteName }}" />
+  <meta property="og:image:alt" content="Decorative image for {{ site.siteName }}" />
+  <meta name="twitter:image:alt" content="Decorative image for {{ site.siteName }}" />
   {%- if siteDescription -%}
   <meta name="description" content="{{ siteDescription }}" />
   <meta name="twitter:description" content="{{ siteDescription }}" />
