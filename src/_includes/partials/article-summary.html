@@ -1,0 +1,24 @@
+    <article class="flow-100">
+      <div>
+        <h2><a href="{{ item.url }}">{{ item.data.title | safe }}</a></h2>
+        <p>{{ item.data.summary | safe }}</p>
+      </div>
+      <div class="flow-0">
+        <div class="meta">
+          {% if '/tag/' in page.url %}
+            {% include 'partials/filed-in.html' %}
+          {% endif %}
+          {% if page.url === '/' %}
+            {% include 'partials/filed-in.html' %}
+          {% endif %}
+          <p>Published on <time datetime="{{ item.data.page.date | w3DateFilter }}">{{ item.data.page.date | dateFilter }}</time></p>
+        </div>
+        <div>
+          <ul class="tag-list tag-list-summary">
+            {% for tag in item.data.tags %}
+             <li><a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </article>

@@ -1,0 +1,20 @@
+      {% if projects.additional %}
+      <div class="flow-200">
+        <div class="promo-section">
+          <h2>Additional Projects</h2>
+          <p>A few more (somewhat) worthy of mention.</p>
+        </div>
+        <div class="grid-container-sm">
+          {% for item in projects.additional %}
+          <article>
+            <h2>{{ item.title | safe }}</h2>
+            <div class="flow-100">
+              <p>{{ item.summary | safe }}</p>
+              <p>Launched: {{ item.launched }}</p>
+              <a href="{{ item.projectUrl }}">View this project</a>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}

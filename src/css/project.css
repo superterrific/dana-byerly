@@ -1,0 +1,51 @@
+.project-hero {
+  background: var(--color-primary, #00365d);
+  color: var(--color-primary-tint, #f6f9fc);
+  padding: 2rem 1rem 2.5rem;
+}
+
+.project-hero-label {
+  color: var(--color-primary-highlight);
+  font-weight: 600;
+  font-family: 'Bitter', var(--body-font, sans-serif);
+}
+
+.project-hero-label::after {
+  content: '\A';
+  white-space: pre;
+}
+
+.project-hero a {
+  color: var(--color-white);
+}
+
+.project-hero-blurb {
+  background: var(--color-primary-tint);
+  padding: 1rem .5rem;
+}
+
+.project-meta-list {
+  justify-self: end;
+}
+
+.project-meta li {
+  display: inline-block;
+}
+
+.project-meta li::after {
+  content: ', '
+}
+
+.project-meta li:last-child::after {
+  content: '';
+}
+
+@media screen and (max-width: 800px) {
+  .project-hero {
+    padding: 2.5rem 2rem;
+  }
+
+  .project-meta-list {
+    justify-self: start;
+  }
+}

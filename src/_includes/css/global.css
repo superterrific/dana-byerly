@@ -1,0 +1,657 @@
+:root {
+  --color-primary: #00365d;
+  --color-secondary: #c07;
+  --color-primary-highlight: #7cc7de;
+  --color-secondary-highlight: #f2d1f5;
+  --color-primary-banding: #dceaF9;
+  --color-primary-tint: #f6f9fc;
+  --color-secondary-tint: #f9e9fa;
+  --color-dark: #374047;
+  --color-dark-highlight: #7f8a93;
+  --color-dark-tint: #efefef;
+  --color-lightest: #fff;
+  --color-darkest: #000;
+  --color-highlight-orange: #d45c28;
+  --color-highlight-green: #31d428;
+  --color-highlight-red: #d42832;
+  --color-highlight-blue: #2877d4;
+  --flow-space: 1rem;
+  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --body-color: var(--color-darkest);
+  --body-background: var(--color-lightest);
+}
+
+/* Resets based on Andy Bell's Modern Reset
+https://github.com/hankchizljaw/modern-css-reset/blob/master/dist/reset.css  */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Global ------------------------------------------------------ */
+body {
+  font-family: var(--body-font, sans-serif);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--body-color);
+  background: var(--body-background);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  background: var(--color-secondary);
+  color: var(--color-lightest);
+  text-decoration: none;
+}
+
+header a:focus {
+  outline: 1px solid var(--color-primary);
+}
+
+main a:focus {
+  outline: 1px solid var(--color-secondary);
+}
+
+footer a:focus {
+  outline: 1px solid var(--color-lightest);
+}
+
+blockquote {
+  background-color: var(--color-primary-tint);
+  border-inline-start: .5rem solid var(--color-secondary);
+  padding: 1.5rem 2rem;
+  font-family: 'Bitter', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+.fig-container {
+  border: 1px solid var(--color-dark-highlight);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.fig-container img {
+  padding: 1.5rem 1.5rem .5rem;
+}
+
+figcaption {
+  font-size: .95rem;
+  padding: 1rem 1.5rem;
+  line-height: 1.6;
+}
+
+code {
+  background: var(--color-dark-tint);
+  border: 1px solid var(--color-primary);
+  border-radius: .25rem;
+  padding: .15rem .25rem .125rem;
+  font-size: 1.1rem;
+}
+
+p::selection {
+  background: var(--color-secondary-highlight);
+  color: var(--color-darkest);
+}
+
+.reading ul li {
+  margin-bottom: .5rem;
+}
+
+.reading ul {
+  margin-top: .5rem;
+  font-size: 1.1rem;
+}
+
+main:focus {
+  outline: 0;
+}
+
+
+/* Layout ------------------------------------------------------ */
+header {
+  padding: 1rem .5rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  padding: 2rem .5rem;
+  background-color: var(--color-primary);
+  color: var(--color-dark-tint);
+}
+
+footer a {
+  color: var(--color-primary-highlight);
+}
+
+footer p::selection {
+  background: var(--color-secondary);
+  color: var(--color-primary-tint);
+}
+
+.pad-hero {
+  padding: 1rem .5rem 4rem;
+}
+
+.pad-content {
+  padding: 2rem .5rem 4rem;
+}
+
+.splitter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Wrappers ----- */
+.wrapper {
+  max-width: 65rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper-content {
+  max-width: 45rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Grid containers --------------------------------------------- */
+.grid-container-project-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: var(--flow-space);
+}
+
+.grid-container-project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.grid-container-sm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: calc(var(--flow-space) * 3) calc(var(--flow-space) * 2);
+}
+
+.grid-container-lg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: calc(var(--flow-space) * 2) calc(var(--flow-space) * 5);
+}
+
+
+/* Navigation & Site Header ------------------------------------ */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-title a:hover {
+  background-color: var(--color-secondary);
+  background-image: linear-gradient(0deg, rgba(0,54,93,1) 0%, rgba(255,70,178,1) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.site-nav {
+  align-self: center;
+  margin-left: -.5rem;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.site-nav li {
+  list-style: none;
+  padding-inline-end: .5rem;
+  font-size: 1.2rem;
+}
+
+.site-nav ul li:last-child {
+  padding-inline-end: 0;
+}
+
+.site-title {
+  align-self: center;
+  font-size: 2.6rem;
+  font-family: "Shrikhand", sans-serif;
+  line-height: 1.1;
+}
+
+.wrapper-site-title {
+  margin: 0;
+}
+
+header a {
+  padding: .4rem .5rem;
+}
+
+[aria-current="page"],
+[data-state="active"] {
+  background: var(--color-secondary);
+  color: var(--color-lightest);
+  padding: .4rem .5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#nav-home [aria-current="page"] {
+  background: inherit;
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/* Type -------------------------------------------------------- */
+h1 {
+  font-size: 2.1rem;
+  font-family: "Bitter", sans-serif;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+h2 {
+  font-family:"Bitter", sans-serif;
+  line-height: 1.35;
+}
+
+h3 {
+  font-family:"Bitter", sans-serif;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.reading h2 {
+  font-size: 1.45rem;
+  color: var(--color-secondary);
+  margin-top: calc(var(--flow-space) * 2.5);
+}
+
+.reading h3 {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.reading h2 + p {
+  margin-top: .5rem;
+}
+
+
+.reading h3 + p {
+  margin-top: .25rem;
+}
+
+.caveat-wrapper h2 {
+  font-size: 1.4rem;
+  color: var(--color-darkest);
+  margin-top: 0;
+}
+
+.caveat-wrapper h2 + p {
+  margin-top: 0;
+}
+
+.promo-section h2 {
+  font-size: 1.8rem;
+}
+
+.promo-section p,
+.landing-summary {
+  font-family: 'Bitter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: .25rem;
+}
+
+.reading p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.meta {
+  font-size: .9rem;
+}
+
+/* Pagination and Tags -----------------------------------------*/
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.tag-list > * {
+  padding-inline-end: .75rem;
+}
+
+.tag-list-summary a {
+  background: var(--color-dark-tint);
+  text-decoration: none;
+  padding: .15rem .25rem;
+}
+
+.tag-list-summary a:hover {
+  background: var(--color-primary);
+}
+
+.tag-cap {
+  text-transform: capitalize;
+}
+
+[dir="rtl"] .pagination-arrow {
+  display: none;
+}
+
+.post-nav-item {
+  margin-bottom: .5rem;
+}
+
+
+/* Buttons ----------------------------------------------------- */
+.button {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  padding: .75rem 1rem;
+  text-decoration: none;
+}
+
+.button-dark {
+  background: var(--color-dark);
+  color: var(--color-dark-tint);
+  border: 1px solid var(--color-dark);
+}
+
+.button-dark:hover {
+  border: 1px solid var(--color-dark);
+}
+
+.button-light-outline {
+  color: var(--color-primary-highlight);
+  border: 1px solid var(--color-primary-highlight);
+}
+
+/* Icons ------------------------------------------------------- */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+}
+
+.icon-1-25x {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: -.25em;
+}
+
+.icon-2x {
+  width: 2em;
+  height: 2em;
+  vertical-align: -.5em;
+}
+
+.icon-3x {
+  width: 3em;
+  height: 3em;
+  vertical-align: -.5em;
+}
+
+/* Components -------------------------------------------------- */
+
+.archive-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #efefef;
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: .15rem;
+}
+
+.archive-banner a {
+  color: #49ecf6;
+  font-size: .9rem;
+}
+
+.caveat {
+  background-color: var(--color-primary-highlight);
+  color: var(--color-darkest);
+  padding: 1.5rem;
+  border-top: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.caveat-wrapper {
+  display: flex;
+}
+
+.caveat-wrapper p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.caveat-icon {
+  margin-right: .5rem;
+}
+
+.caveat-text {
+  margin-top: .1rem;
+}
+
+/* Video player ------------------------------------------------ */
+.video-player {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-player iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Utilities --------------------------------------------------- */
+.flow-0 > * + * {
+  margin-top: .5rem;
+}
+
+.flow-100 > * + * {
+  margin-top: 1rem;
+}
+
+.flow-150 > * + * {
+  margin-top: 1.5rem;
+}
+
+.flow-200 > * + * {
+  margin-top: 2rem;
+}
+
+.flow-300 > * + * {
+  margin-top: 3rem;
+}
+
+.flow-400 > * + * {
+  margin-top: 4rem;
+}
+
+.flow-500 > * + * {
+  margin-top: 5rem;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.fill {
+  flex: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* A11y -------------------------------------------------------- */
+a.skip-link {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-link:focus,
+a.skip-link:active {
+    color: var(--color-lightest);
+    background-color: var(--color-secondary);
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 1rem 35%;
+    padding: 1rem;
+    border: 4px solid var(--color-darkest);
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 999;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Media Queries ---------------------------------------------- */
+@media screen and (max-width: 800px) {
+  .title-wrap {
+    margin-bottom: 1.2rem;
+  }
+
+  nav li {
+    font-size: 1.1rem;
+    margin-bottom: .45rem;
+  }
+
+  .reading p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .pad-content {
+    padding: .5rem 1rem 2rem;
+  }
+
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% include "partials/meta-info.html" %}
+  {% set css %}
+    {% include "css/archive-01.css" %}
+  {% endset %}
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main-content">Skip to main site content</a>
+  {% include 'partials/archive-banner.html' %}
+
+  <main class="container bg-grey-100">
+
+    <section>
+      <div class="header-wrapper">
+        <div class="header-image">
+          <img src="/img/archive-01/d-l-bw-200.jpg" alt="Dana Byerly and a cat." />
+        </div>
+
+        <div id="header-info" class="title-section">
+          <h1 class="fluid-type">Hi, I'm Dana Byerly</h1>
+          <p class="fluid-type">Welcome to my placeholder site!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="main-content" tabindex="-1">
+      <article>
+        <p class="featured">
+          <mark>TL;DR</mark> <span class="visually-hidden">&mdash;</span> I'm a UI and interaction designer, and I'm going to be making this site better with progressive enhancements and improved organization. I like horse racing, photograhy and other lifelong learning opportunites, including trying to keep my skills up to date.
+        </p>
+
+        <hr>
+
+        <p><mark>Slightly expanded version:</mark> <span class="visually-hidden">&mdash;</span> I'm a UI and interaction designer who can code enough to build my own projects and communicate/collaborate well with engineers. I've been employed doing some variety of web-based design since 1996. I've worked in a wide variety of industries including television, network news, finance and healthcare. See <a href="https://www.linkedin.com/in/danabyerly/" rel="nofollow noopener" target="_blank">my LinkedIn profile</a> for more information.</p>
+
+        <p>The beginning of my career was primarily editorial and content design. For the last 15 years I've been working in the enterprise space, which is great for hard interaction design problems, and not so great for keeping one's front-end dev skills up to date as a matter of course.</p>
+
+        <p>Until I figure out how to best put together a decent representation of my work, I've listed of some of my side projects and other fun(?) things I've done in the recent past. I've been slowly leveling up my front-end skills, especially with the more recent projects, which has been very enjoyable (and a never-ending source of "Oh wow, I have to go fix that now").</p>
+
+        <p>At some point I might add a <a href="https://weeknot.es/what-on-earth-are-weeknotes-a81874c5cef9" rel="nofollow noopener" target="_blank">Week(ish) Notes</a> feature to track some of things I'm working on. Once I have a more robust version of this site built out, perhaps using <a href="https://sergey.cool/" rel="nofollow noopener" target="_blank">Sergey</a>, I will go into more detail on the bigger projects. Spoiler alert: I'm really into horse racing.</p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section id="side-projects">
+      <h2 class="section-title"><span class="bg-fuschia-200">A Few Side Projects</span></h2>
+
+      <article>
+        <h3 class="article-title"><a href="http://replaygenerator.com" rel="nofollow noopener" target="_blank">Random Replay Generator</a></h3>
+        <p>My most recent and ambitious project! I came up with this idea about four years ago but didn't have the chops to build it. Enter Airtable and enough Vue skills cobbled together via search engine and the <a href="http://replaygenerator.com" rel="nofollow noopener" target="_blank">Random Replay Generator</a> was finally born. If you're looking for an easy way to binge-watch Thoroughbred racing replays, you might like this site. In <time datetime="2020-02">February 2020</time> I gave this site a little update, moving away from Bootstrap and coding the CSS myself. Other improvements include a dark mode for thos who have their OS set to dark mode, and an explicit non-javascript experience. <a href="https://twitter.com/superterrific/status/1223416466965508098"  rel="nofollow noopener" target="_blank">Details in this thread</a>.</p>
+
+        <p class="text-sm">Launched: <time datetime="2018-12">December 2018</time></p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="http://horseracingdatasets.com" rel="nofollow noopener" target="_blank">Horse Racing Datasets</a></h3>
+        <p>Usable data is bizarrely hard to come by in American Thoroughred horse racing, so I created a way to share datasets that people had put together. This site started as a flat site that I later migrated to <a href="https://aritable.com/" rel="nofollow noopener" target="_blank">Airtable</a>/<a href="https://vuejs.org/" rel="nofollow noopener" target="_blank">Vue</a>. On July 9, 2019 I launched a redesiged version. The main upgrade was adding the ability to view datasets by category or type, whereas initially it was all one big page. I'll talk more about the process and implementation when I expand this site beyond one big page, but the quickie version is: Designed in browser from the get using <a href="https://tailwindcss.com/" rel="nofollow noopener" target="_blank">Tailwind CSS</a> and uses a combo of <a href="https://vuejs.org/" rel="nofollow noopener" target="_blank">Vue</a> and <a href="https://sergey.cool/" rel="nofollow noopener" target="_blank">Sergey SSG</a>. Originally I thought I would use Vue routing, but I couldn't get it to work how I envisioned, and using a simple static site generator did exactly what I wanted with very low overhead. More on all this later!</p>
+
+        <p class="text-sm">Launched: <time datetime="2015-01">January 2015</time></p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="http://helloracefans.com" rel="nofollow noopener" target="_blank">Hello Race Fans!</a></h3>
+        <p>When friend and fellow horseplayer <a href="http://twitter.com/AdamWiener" rel="nofollow noopener" target="_blank">Adam Wiener</a> and I started this project in 2008, there was not an easy way to learn about Thoroughbred horse racing online. My role was everything on the creative and implementation side from concept to execution. This included design, dev (don't look at the code, unless you'd like to get a good picutre of my pre-leveling up period hackish CSS chops), Wordpress admin and editorial (both as an editor and writer). Basically I'm everything from Creative and Editorial Director to production assistant.</p>
+
+
+        <p class="text-sm">Launched: <time datetime="2010-03">March 2010</time></p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="http://raceday360.com" rel="nofollow noopener" target="_blank">Raceday 360</a></h3>
+        <p>Not long after launching Hello Race Fans we purchased this site from talented friend and collaborator <a href="http://jessicachapel.com/" rel="nofollow noopener" target="_blank">Jessica Chapel</a>. Chapel launched it as an aggregrator and original content site in 2007. I've managed not to screw it up, and have built on the success of <a href="http://www.raceday360.com/the-wire/" rel="nofollow noopener" target="_blank">The Wire</a> by adding <a href="http://www.raceday360.com/tout-wire/" rel="nofollow noopener" target="_blank">Tout Wire</a> for aggregrated racing picks and tips.</p>
+
+        <p class="text-sm">Acquired: <time datetime="2010-08">August 2010</time></p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="http://exactamundo.org" rel="nofollow noopener" target="_blank">Exacta-Mundo</a></h3>
+        <p>I used to write about horse racing. OK, sometimes I still do, but not often or well.</p>
+
+        <p class="text-sm">Launched: <time datetime="2013-01">January 2013</time></p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section id="glitch-projects">
+      <h2 class="section-title"><span class="bg-fuschia-200">Fun Stuff at Glitch</span></h2>
+
+      <article>
+        <h3 class="article-title"><a href="https://2019-derby-8ball.glitch.me/" rel="nofollow noopener" target="_blank">2019 Kentuck Derby Magic 8Ball</a></h3>
+        <p>In the time since the inaugural 2018 version I got a bit more serious about improving my vanilla JS skills and was able to do some refactoring. It's definitely more streamlined, and I'd love to hear any feedback or suggestions about making the approach better!</p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="https://2018-derby-8ball.glitch.me/" rel="nofollow noopener" target="_blank">2018 Kentuck Derby Magic 8Ball</a></h3>
+        <p>This project started when I remixed <a href="https://glitch.com/~8ball-starter" rel="nofollow noopener" target="_blank">this Glitch</a> as part of a <a href="https://medium.com/@kellylougheed/javascript-magic-8-ball-with-basic-dom-manipulation-1636b83c3c26" rel="nofollow noopener" target="_blank">DOM manipuation tutorial</a>. After poking it with a pooly formed javascript stick, it definitely works, albeit probably not optimally.</p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="https://horse-racing-password-generator.glitch.me/" rel="nofollow noopener" target="_blank">Horse Racing Password Generator</a></h3>
+        <p>Secure? No. Easy to remember for horseplayers? Yes.</p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section id="dataviz-projects">
+      <h2 class="section-title"><span class="bg-fuschia-200">Data Visualization Stuff</span></h2>
+
+      <article>
+        <h3 class="article-title"><a href="http://helloracefans.com/races/kentucky-derby/paths-to-the-kentucky-derby-since-1990/" rel="nofollow noopener" target="_blank">Paths to the Kentucky Derby Since 1990</a></h3>
+        <p>I'm not good at data visualizations, but that didn't stop me from creating a few! I think this is the most most effective one I've created. I used a <a href="https://en.wikipedia.org/wiki/Sankey_diagram" rel="nofollow noopener" target="_blank">sankey diagram</a> to illustrate the <a href="https://en.wikipedia.org/wiki/Graded_stakes_race" rel="nofollow noopener" target="_blank">graded stakes</a> prep race path of Kentucky Derby winners in their 3-year-old year. Since many winners also prepped in a mix of graded and non-graded races, I also created illustrations of each winner's full path. </p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="http://helloracefans.com/stakes-profiles/" rel="nofollow noopener" target="_blank">Stakes Profiles</a></h3>
+        <p>These are pretty vanilla as far as data visualizations go, but I wanted to see if there was a way to make it easier to answer simple questions about what has produced winners of an indivdual race over the last almost 30 years (the time period for which there is usable data). I think the is "For the most part, yes".</p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section id="shout-outs">
+      <h2 class="section-title"><span class="bg-fuschia-200">Shout Outs</span></h2>
+
+      <article>
+        <h3 class="article-title"><a href="http://piccalil.li/" rel="nofollow noopener" target="_blank">Andy Bell's Piccalilli Newsletter</a></h3>
+        <p>An overall super fab resource, especially if you find yourself wanting to brush up your CSS skills. <a href="https://andy-bell.design/wrote/relative-sizing-with-em-units/" rel="nofollow noopener" target="_blank">This post</a> from <a href="http://piccalil.li/issues/5" rel="nofollow noopener" target="_blank">Issue 5</a> inspired my profile pic approach, even though I ended up implementing it a little differently. But I did integrate his <a href="https://andy-bell.design/wrote/custom-property-controlled-fluid-type-sizing/" rel="nofollow noopener" target="_blank">fluid type utility</a> from <a href="http://piccalil.li/issues/1" rel="nofollow noopener" target="_blank">Issue 1</a> on my h1 & h2s! </p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="https://9elements.github.io/fancy-border-radius/" rel="nofollow noopener" target="_blank">Fancy Border Radius</a></h3>
+        <p>Used this to generate the border radius for my header picture. Discovered this from Andy Bell's above mentioned CSS newsletter Piccalilli <a href="http://piccalil.li/" rel="nofollow noopener" target="_blank">that you should subscribe to right now</a>. Here's the <a href="https://9elements.com/io/css-border-radius/" rel="nofollow noopener" target="_blank">how-to explainer on border radius</a>. </p>
+      </article>
+
+
+      <article>
+        <h3 class="article-title"><a href="https://www.heropatterns.com/" rel="nofollow noopener" target="_blank">Hero Patterns</a></h3>
+        <p>Grabbed my snazzy background pattern here. A nice, easy to customize collection of reating SVG background patterns from Steve Schoger of <a href="https://refactoringui.com/" rel="nofollow noopener" target="_blank">Refactoring UI</a>. If you want to take it a step further and make your own, Schoger has a nice video tutorial on <a href="http://www.steveschoger.com/2017/04/19/how-to-make-a-seamless-pattern-in-sketch/" rel="nofollow noopener" target="_blank">how to create one in Sketch</a>.</p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="https://palx.jxnblk.com/" rel="nofollow noopener" target="_blank">PALX Automatic UI Color Palette Generator</a></h3>
+        <p>Honestly I just used the default palette here, but I've used this to generate palettes for other projects and it's very handy. Close readers of this page will have noticed by now that I'm incredibly fond of generators.</p>
+      </article>
+
+      <article>
+        <h3 class="article-title"><a href="http://svgicons.sparkk.fr/" rel="nofollow noopener" target="_blank">Sparkk SVG Icons</a></h3>
+        <p>If you're looking for inline SVG code to copy and paste, then this decent sized collection might be of use, it was to me! <a href="https://twitter.com/BaptisteBriel" rel="nofollow noopener" target="_blank">Babtiste Briel</a> converted several free icon sets available at Dribbble to be used inline. There's also a link to each set if you'd like to download them. </p>
+      </article>
+
+      <article>
+        <h3 class="article-title">Also...</h3>
+          <p>In addition to those listed above, following <a href="https://twitter.com/SaraSoueidan" rel="nofollow noopener" target="_blank">Sara Soueidan</a>, <a href="https://twitter.com/sonniesedge" rel="nofollow noopener" target="_blank">Charlie Owen</a>, <a href="https://twitter.com/TatianaTMac" rel="nofollow noopener" target="_blank">Tatiana Mac</a>, <a href="https://adamsilver.io/" rel="nofollow noopener" target="_blank">Adam Silver</a> and <a href="https://twitter.com/heydonworks" rel="nofollow noopener" target="_blank">Heydon Pickering</a> have been extremely useful, especially with regard to learning more about accessibilty. More shout outs to come as I build out this site! 🎉</p>
+      </article>
+    </section>
+
+    <p class="back-to-top text-sm"><a href="#top">Back to top</a></p>
+
+  </main>
+
+  <footer class="container footer-wrapper">
+
+      <section id="collophon"  class="text-sm">
+        <p>Last updated <time datetime="2020-02-16">February 16, 2020</time> - currently <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fdanabyerly.com%2F" rel="nofollow noopener" target="_blank">25k!</a></p>
+        <p>Questions, comments? <a href="mailto:hello@danabyerly.com">Get in touch!</a></p>
+      </section>
+
+      <div class="text-lg">
+        <a class="icon-link" href="https://twitter.com/superterrific" aria-label="Visit my Twitter account" rel="nofollow noopener" target="_blank">
+          <svg class="icon" viewBox="0 0 20 20" role="img" focusable="false">
+            <title>Visit my Twitter account</title>
+  					<path d="M18.258,3.266c-0.693,0.405-1.46,0.698-2.277,0.857c-0.653-0.686-1.586-1.115-2.618-1.115c-1.98,0-3.586,1.581-3.586,3.53c0,0.276,0.031,0.545,0.092,0.805C6.888,7.195,4.245,5.79,2.476,3.654C2.167,4.176,1.99,4.781,1.99,5.429c0,1.224,0.633,2.305,1.596,2.938C2.999,8.349,2.445,8.19,1.961,7.925C1.96,7.94,1.96,7.954,1.96,7.97c0,1.71,1.237,3.138,2.877,3.462c-0.301,0.08-0.617,0.123-0.945,0.123c-0.23,0-0.456-0.021-0.674-0.062c0.456,1.402,1.781,2.422,3.35,2.451c-1.228,0.947-2.773,1.512-4.454,1.512c-0.291,0-0.575-0.016-0.855-0.049c1.588,1,3.473,1.586,5.498,1.586c6.598,0,10.205-5.379,10.205-10.045c0-0.153-0.003-0.305-0.01-0.456c0.7-0.499,1.308-1.12,1.789-1.827c-0.644,0.28-1.334,0.469-2.06,0.555C17.422,4.782,17.99,4.091,18.258,3.266"></path>
+        </svg></a>
+
+        <a class="icon-link" href="https://instagram.com/superterrific" aria-label="Visit my Instagram account" rel="nofollow noopener" target="_blank">
+          <svg class="icon" viewBox="0 0 20 20" role="img" focusable="false">
+            <title>Visit my Instagram account</title>
+  					<path d="M14.52,2.469H5.482c-1.664,0-3.013,1.349-3.013,3.013v9.038c0,1.662,1.349,3.012,3.013,3.012h9.038c1.662,0,3.012-1.35,3.012-3.012V5.482C17.531,3.818,16.182,2.469,14.52,2.469 M13.012,4.729h2.26v2.259h-2.26V4.729z M10,6.988c1.664,0,3.012,1.349,3.012,3.012c0,1.664-1.348,3.013-3.012,3.013c-1.664,0-3.012-1.349-3.012-3.013C6.988,8.336,8.336,6.988,10,6.988 M16.025,14.52c0,0.831-0.676,1.506-1.506,1.506H5.482c-0.831,0-1.507-0.675-1.507-1.506V9.247h1.583C5.516,9.494,5.482,9.743,5.482,10c0,2.497,2.023,4.52,4.518,4.52c2.494,0,4.52-2.022,4.52-4.52c0-0.257-0.035-0.506-0.076-0.753h1.582V14.52z"></path>
+			  </svg></a>
+
+        <a class="icon-link" href="https://flickr.com/danabyerly" aria-label="Visit my Flickr account" rel="nofollow noopener" target="_blank">
+          <svg class="icon" viewBox="0 0 54 54" role="img" focusable="false">
+            <title>Visit my Flickr account</title>
+            <path d="M40,4.8c2.2,0,4.1,0.8,5.7,2.4c1.6,1.6,2.4,3.5,2.4,5.7v26.8c0,2.2-0.8,4.1-2.4,5.7c-1.6,1.6-3.5,2.4-5.7,2.4H13.3
+          		c-2.2,0-4.1-0.8-5.7-2.4c-1.6-1.6-2.4-3.5-2.4-5.7V12.9c0-2.2,0.8-4.1,2.4-5.7c1.6-1.6,3.5-2.4,5.7-2.4H40z M23,30.4
+          		c1.2-1.2,1.7-2.5,1.7-4.2s-0.6-3-1.7-4.2c-1.2-1.2-2.5-1.7-4.2-1.7s-3,0.6-4.2,1.7c-1.2,1.2-1.7,2.5-1.7,4.2s0.6,3,1.7,4.2
+          		s2.5,1.7,4.2,1.7S21.8,31.6,23,30.4z M38.7,30.4c1.2-1.2,1.7-2.5,1.7-4.2s-0.6-3-1.7-4.2c-1.2-1.2-2.5-1.7-4.2-1.7
+          		c-1.6,0-3,0.6-4.2,1.7c-1.2,1.2-1.7,2.5-1.7,4.2s0.6,3,1.7,4.2c1.2,1.2,2.5,1.7,4.2,1.7C36.1,32.2,37.5,31.6,38.7,30.4z"/>
+          </svg></a>
+
+
+        <a class="icon-link" href="https://github.com/superterrific" aria-label="Visit my GitHub account" rel="nofollow noopener" target="_blank">
+          <svg class="icon" viewBox="0 0 26 26" role="img" focusable="false">
+            <title>Visit my GitHub account</title>
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+        </svg></a>
+
+        <a class="icon-link" href="https://codepen.io/superterrific" aria-label="Visit my CodePen account" rel="nofollow noopener" target="_blank">
+          <svg class="icon" viewBox="0 0 30 30" role="img" focusable="false">
+            <title>Visit my CodePen account</title>
+            <path d="M 16 2.84375 L 15.4375 3.21875 L 3.4375 11.25 L 3 11.53125 L 3 20.46875 L 3.4375 20.75 L 15.4375 28.78125 L 16 29.15625 L 16.5625 28.78125 L 28.5625 20.75 L 29 20.46875 L 29 11.53125 L 28.5625 11.25 L 16.5625 3.21875 Z M 15 5.90625 L 15 11.34375 L 9.84375 14.8125 L 5.8125 12.09375 Z M 17 5.90625 L 26.1875 12.09375 L 22.15625 14.8125 L 17 11.34375 Z M 16 13.09375 L 20.34375 16 L 16 18.90625 L 11.65625 16 Z M 5 13.9375 L 8.0625 16 L 5 18.0625 Z M 27 13.9375 L 27 18.0625 L 23.9375 16 Z M 9.875 17.1875 L 15 20.65625 L 15 26.09375 L 5.8125 19.90625 Z M 22.125 17.1875 L 26.1875 19.90625 L 17 26.09375 L 17 20.65625 Z"></path>
+        </svg></a>
+
+
+      </div>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+  <article class="flow-150">
+    <div>
+      <h2>{{ recentArticles.title }}</h2>
+      <p>{{ recentArticles.summary }}</p>
+    </div>
+    {%- for item in collections.featuredWriting | limit(2) -%}
+    {%- include "partials/article-summary.html" -%}
+    {%- endfor -%}
+  </article>

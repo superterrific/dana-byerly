@@ -1,0 +1,9 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set previousPost = collections.articles | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.articles | getNextCollectionItem(page) %}
+
+    {% block content %}
+    {% include "partials/post-content.html" %}
+    {% endblock %}

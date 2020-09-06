@@ -1,0 +1,42 @@
+  {%- set pageTitle = title + ' - ' + site.name -%}
+
+  {# We don't want any duplication. This is likely for the home page. #}
+  {%- if site.name === title -%}
+  {%- set pageTitle = site.homepageTitle -%}
+  {%- endif -%}
+
+  {%- set siteTitle = site.name -%}
+  {%- set siteDescription = summary -%}
+  {%- set currentUrl = site.url + page.url -%}
+
+  {# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch
+    them into the mix. #}
+  {%- if metaTitle -%}
+  {%- set pageTitle = metaTitle -%}
+  {%- endif -%}
+
+  {%- if not metaDesc -%}
+  {%- set metaDesc = summary -%}
+  {%- endif -%}
+  <title>{{ pageTitle }}</title>
+  <link rel="canonical" href="{{ currentUrl }}" />
+  <meta property="og:site_name" content="{{ siteTitle }}" />
+  <meta property="og:title" content="{{ pageTitle }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ currentUrl }}" />
+  {% if not socialImage %}
+  {% set socialImage = site.url + '/img/twitter-summary.svg' %}
+  {% endif %}
+  {%- if socialImage -%}
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="{{ socialImage }}" />
+  <meta name="twitter:image" content="{{ socialImage }}" />
+  <meta property="og:image:alt" content="Page image for {{ site.siteName }}" />
+  <meta name="twitter:image:alt" content="Page image for {{ site.siteName }}" />
+  {%- endif -%}
+  {%- if siteDescription -%}
+  <meta name="description" content="{{ siteDescription }}" />
+  <meta name="twitter:description" content="{{ siteDescription }}" />
+  <meta property="og:description" content="{{ siteDescription }}" />
+  {%- endif -%}
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />

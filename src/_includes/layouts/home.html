@@ -1,0 +1,39 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = titleHP %}
+
+  {% block content %}
+    <div class="pad-hero">
+      <div class="full-bleed hp-hero">
+        <div class="wrapper-intro">
+          <div class="intro-image">
+            <div class="intro-image-inner">
+              <div class="intro-image-highlight">
+                 <img src="/img/d-f-bw-250.jpg" class="cover" alt="Dana Byerly and her dog." />
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-content intro flow-100">
+            {% include "partials/page-header-post.html" %}
+            <p>{{ author.intro | safe }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="flow-400">
+        <div class="wrapper">
+          {% include "partials/articles-recent.html" %}
+        </div>
+        <div class="wrapper flow-200">
+          <div class="promo-section">
+            <h2>{{ featuredProjects.title | safe }}</h2>
+            <p>{{ featuredProjects.summary | safe }}</p>
+          </div>
+          <div class="flow-300">
+            {% for item in projects.featured %}
+            {% include "partials/project-summary.html" %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}

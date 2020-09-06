@@ -1,0 +1,31 @@
+{# Only renders this section if there are links to render #}
+{% if pagination.href.next or pagination.href.previous %}
+  <nav class="splitter" aria-label="Pagination links">
+    <p class="post-nav-item">
+      {% if pagination.href.previous %}
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" aria-hidden="true" focusable="false" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z"/>
+        <line x1="5" y1="12" x2="19" y2="12" />
+        <line x1="5" y1="12" x2="9" y2="16" />
+        <line x1="5" y1="12" x2="9" y2="8" />
+      </svg>
+        <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
+          <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+        </a>
+      {% endif %}
+      </p>
+      <p class="post-nav-item">
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
+          <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+        </a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path stroke="none" d="M0 0h24v24H0z"/>
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <line x1="15" y1="16" x2="19" y2="12" />
+          <line x1="15" y1="8" x2="19" y2="12" />
+          </svg>
+      {% endif %}
+    </p>
+  </nav>
+{% endif %}

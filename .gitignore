@@ -1,0 +1,14 @@
+# misc
+*.log
+npm-debug.*
+*.scssc
+*.swp
+.DS_Store
+Thumbs.db
+.env
+.cache
+
+# dependencies
+node_modules
+public
+src/ignore

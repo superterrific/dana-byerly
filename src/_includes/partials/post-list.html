@@ -1,0 +1,7 @@
+      {% if postListHeadline %}
+      <h2>{{ postListHeadline | safe }}</h2>
+      {%-endif %}
+
+      {% for item in postListItems | reverse %}
+      {% include 'partials/article-summary.html' %}
+      {% endfor %}

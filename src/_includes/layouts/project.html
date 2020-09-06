@@ -1,0 +1,135 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set previousPost = collections.projects | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.projects | getNextCollectionItem(page) %}
+
+      {% block content %}
+      <div class="pad-hero flow-400">
+        <article class="flow-300">
+          <div class="full-bleed project-hero">
+            <div class="wrapper-content flow-100">
+              <h1>{{ pageHeaderTitle | safe }}</h1>
+              <div class="grid-container-project-hero">
+
+                <div class="post-header flow-100">
+                  {% if launched %}
+                  <p>
+                    <span class="project-hero-label">Launched</span>
+                    {{ launched | safe }}
+                  </p>
+                  {% endif %}
+
+                  {% if acquired %}
+                  <p>
+                    <span class="project-hero-label">Acquired</span>
+                    {{ acquired | safe }}
+                  </p>
+                  {% endif %}
+
+                  {% if tags %}
+                  <div>
+                    <span class="project-hero-label">Filed Under</span>
+                    <ul class="tag-list">
+                      {% for tag in tags %}
+                        <li>
+                          <a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  {% endif %}
+                </div>
+
+                <div class="project-meta-list flow-100">
+                  <section>
+                    {% if role %}
+                    <span class="project-hero-label">Role</span>
+                    <ul class="project-meta">
+                      {% for role in role %}
+                      <li>{{ role }}</li>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                  </section>
+                  <section>
+                    {% if platform %}
+                    <span class="project-hero-label">Platform</span>
+                    <ul class="project-meta">
+                      {% for platform in platform %}
+                      <li>{{ platform }}</li>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                  </section>
+                  <section>
+                    {% if stack %}
+                    <span class="project-hero-label">Stack</span>
+                    <ul class="project-meta">
+                      {% for stack in stack %}
+                      <li>{{ stack }}</li>
+                      {% endfor %}
+                      </ul>
+                      {% endif %}
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper-content flow-150">
+            {% if projectImg %}
+            <figure>
+              <img src="/img/projects/{{ projectImg.img }}"
+                    sizes="(min-width: 720px) 1380px, 100vw"
+                    srcset="{{ projectImg.srcset }}"
+                    alt="{{ projectImg.alt }}" loading="lazy" />
+                    {% if projectImg.blurb %}
+                    <figcaption class="project-hero-blurb">
+                      {{ projectImg.blurb }}
+                    </figcaption>
+                    {% endif %}
+            </figure>
+            {% endif %}
+
+            <div class="reading flow-150">
+              {{ content | safe }}
+            </div>
+          </div>
+        </article>
+
+        <div class="text-center">
+          <span class="visually-hidden">Link opens in a new tab or window</span>
+          <a href="{{ projectUrl }}" rel="nofollow noopener" target="_blank" class="button button-dark">View Project
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path stroke="none" d="M0 0h24v24H0z"/>
+              <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+              <line x1="10" y1="14" x2="20" y2="4" />
+              <polyline points="15 4 20 4 20 9" />
+            </svg>
+          </a>
+        </div>
+
+        <nav class="wrapper-content splitter" aria-label="Pagination links">
+          <div class="post-nav-item">{% if previousPost %}
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" >
+              <path stroke="none" d="M0 0h24v24H0z"/>
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="5" y1="12" x2="9" y2="16" />
+              <line x1="5" y1="12" x2="9" y2="8" />
+              </svg>
+            <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+          </div>
+          {% if nextPost %}
+          <div class="post-nav-item">
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path stroke="none" d="M0 0h24v24H0z"/>
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="15" y1="16" x2="19" y2="12" />
+              <line x1="15" y1="8" x2="19" y2="12" />
+            </svg>
+          </div>{% endif %}
+        </nav>
+      </div>
+      {% endblock %}

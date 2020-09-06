@@ -1,0 +1,16 @@
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <div class="wrapper site-header">
+      <div class="title-wrap">
+        <div class="site-title"><a href="/">{{ site.name }}</a></div>
+        <span>{{ author.primaryTitle }} and {{ author.secondaryTitle }}</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigaton">
+        <ul>
+         {% for item in navigation.items %}
+         <li id="{{ item.id }}"><a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+         {% endfor %}
+         </ul>
+      </nav>
+    </div>
+  </header>

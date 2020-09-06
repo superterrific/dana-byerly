@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/",
+      "id": "nav-home"
+    },
+    {
+      "text": "About",
+      "url": "/about/",
+      "id": "nav-about"
+    },
+    {
+      "text": "Articles",
+      "url": "/articles/",
+      "id": "nav-articles"
+    },
+    {
+      "text": "Notes",
+      "url": "/notes/",
+      "id": "nav-notes"
+    },
+    {
+      "text": "Projects",
+      "url": "/projects/",
+      "id": "nav-projects"
+    }
+  ]
+}

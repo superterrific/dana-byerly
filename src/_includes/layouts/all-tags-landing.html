@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+    {% block content %}
+    <article class="wrapper-content pad-content flow-150">
+      {% include "partials/page-header-landing.html" %}
+      {{ content | safe }}
+      <div>
+        <span class="visually-hidden" id="tags-desc">A list of tags for the contents of this site.</span>
+        <ul class="flow-0" aria-describedby="tags-desc">
+        {% for tag, posts in collections | dictsort %}
+        {% set tagUrl %}/tag/{{ tag | replace(' ', '-') }}/{% endset %}
+          <li><a href="{{ tagUrl }}" class="tag-cap">{{ tag }}</a> ({{ posts | length }})</li>
+        {% endfor %}
+        </ul>
+      </div>
+    </article>
+    {% endblock %}

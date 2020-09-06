@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+    {% block content %}
+    <div class="wrapper pad-content flow-150">
+      {% include "partials/page-header-landing.html" %}
+        {{ content | safe }}
+
+      <div class="flow-500">
+        <div class="flow-300">
+          {% for item in projects.featured %}
+           {% include "partials/project-summary.html"%}
+          {% endfor %}
+
+          {% for item in projects.primary %}
+           {% include "partials/project-summary.html"%}
+          {% endfor %}
+        </div>
+        {% include "partials/project-summary-additional.html" %}
+      </div>
+    </div>
+    {% endblock %}

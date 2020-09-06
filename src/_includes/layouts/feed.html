@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+{% set postListItems = pagination.items %}
+
+{# If this is a tag, grab those items instead as one large collection #}
+{% if tag %}
+  {% set postListItems = collections[tag] %}
+  {% set pageHeaderTitle = 'Filed under "'+ tag + '"' %}
+{% endif %}
+
+      {% block content %}
+      <div class="wrapper-content pad-content flow-200">
+        <div>
+          <h1>{{ pageHeaderTitle }}</h1>
+          {% if pageHeaderSummary %}
+          {{ pageHeaderSummary | safe }}
+          {% endif %}
+        </div>
+        <div class="flow-300">
+          {% include "partials/post-list.html" %}
+        </div>
+          {# Revisit this if/when I have enough tagged content for pagination #}
+          {% if not tag %}
+            {% include "partials/pagination.html" %}
+          {% endif %}
+      </div>
+      {% endblock %}

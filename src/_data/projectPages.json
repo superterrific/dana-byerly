@@ -1,0 +1,10 @@
+{
+  "hrf": "/projects/hello-race-fans/",
+  "hrds": "/projects/horse-racing-datasets/",
+  "derby8": "/projects/kentucky-derby-magic-8-ball/",
+  "paths": "/projects/paths-to-the-kentucky-derby-since-1990/",
+  "pile": "/projects/pile-of-hrefs/",
+  "r360": "/projects/raceday-360/",
+  "rrg": "/projects/random-replay-generator/",
+  "stakesProfiles": "/projects/stakes-profiles/"
+}

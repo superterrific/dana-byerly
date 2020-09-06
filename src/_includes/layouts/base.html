@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  {%- include "partials/meta-info.html" -%}
+  {%- set css -%}
+    {%- include "css/global.css" -%}
+    {%- include "css/dracula.css" -%}
+  {%- endset -%}
+  <style>{{ css | cssmin | safe }}</style>
+  {% if page.url === '/' %}
+  <link rel="stylesheet" media="print" href="/css/home.css" onload="this.media='all'" />
+  <link rel="stylesheet" media="print" href="/css/projects-landing.css" onload="this.media='all'" />
+  {% endif %}
+  {% if '/projects/' in page.url %}
+  <link rel="stylesheet" media="print" href="/css/project.css" onload="this.media='all'" />
+  {% endif %}
+  {% if page.url === '/projects/' %}
+  <link rel="stylesheet" media="print" href="/css/projects-landing.css" onload="this.media='all'" />
+  {% endif %}
+  <link rel="stylesheet" media="print" href="/fonts/fonts.css" onload="this.media='all'" />
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+</head>
+<body id="top">
+  {% include "partials/site-navigation.html" %}
+  <main id="main-content" tabindex="-1">
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <div class="wrapper-content splitter flow-150">
+      {% include "partials/footer.html" %}
+    </div>
+  </footer>
+</body>
+</html>
