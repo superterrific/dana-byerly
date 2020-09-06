@@ -590,6 +590,10 @@ h3 {
   object-fit: cover;
 }
 
+.img-fill {
+  width: 100%;
+}
+
 .fill {
   flex: 1;
 }

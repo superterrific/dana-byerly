@@ -28,7 +28,7 @@ I originally thought I'd make this more of a traditional portfolio site, but I r
 When I'm not fiddling with side projects I enjoy photography, I also studied it. My style is somewhat [new topographics](https://www.artsy.net/gene/new-topographics).
 
 {% figure %}
-  <img src="/img/flickr-hello.jpg" width="100%" alt="A cheeky new topographics photo from my current Flickr account" loading="lazy" />
+  <img src="/img/flickr-hello.jpg" class="img-fill" alt="A typical photo from my current Flickr account" loading="lazy" />
   {% figcaption %}
     An example of what you can find at <a href="https://www.flickr.com/photos/danabyerly">my current Flickr account</a>.
   {% endfigcaption %}

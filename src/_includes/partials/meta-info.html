@@ -8,8 +8,8 @@
   {%- set siteTitle = site.name -%}
   {%- set siteDescription = summary -%}
   {%- set currentUrl = site.url + page.url -%}
-  {%- set socialImage = site.url + '/img/twitter-summary.svg' -%}
-  
+  {%- set socialImage = site.url + 'site.socialImage' -%}
+
   {# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch
     them into the mix. #}
   {%- if metaTitle -%}
