@@ -9,12 +9,12 @@
           <div class="intro-image">
             <div class="intro-image-inner">
               <div class="intro-image-highlight">
-                 <img src="/img/d-f-bw-250.jpg" class="cover" alt="Dana Byerly and her dog." />
+                 <img src="/img/d-f-bw-250.jpg" class="cover" width="250" alt="Dana Byerly and her dog." />
               </div>
             </div>
           </div>
           <div class="wrapper-content intro flow-100">
-            {% include "partials/page-header-post.html" %}
+            <h1>{{ pageHeaderTitle | safe }}</h1>
             <p>{{ author.intro | safe }}</p>
           </div>
         </div>
