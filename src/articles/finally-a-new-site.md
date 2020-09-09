@@ -41,17 +41,16 @@ One thing to note about the approach I took is that collections show up in this 
 Here's what I used, which [resulted in this](/tags-all/).
 
 ```html
-<span class="visually-hidden" id="tags-desc">
-  A list of tags for the contents of this site.
-</span>
-
-<ul class="flow-0" aria-describedby="tags-desc">
+<ul class="flow-0">
 {% raw %}{% for tag, posts in collections | dictsort %}
 {% set tagUrl %}/tag/{{ tag | replace(' ', '-') }}/{% endset %}
   <li><a href="{{ tagUrl }}" class="tag-cap">{{ tag }}</a> ({{ posts | length }})</li>
 {% endfor %}{% endraw %}
 </ul>
 ```
+{% caption %}
+<strong>Note:</strong> <a href="/changelog/">I updated this example</a> to remove the <code>aria-labeledby</code> as it was overly verbose given that there is similar text on the page.
+{% endcaption %}
 
 I also [noticed this article](http://dirtystylus.com/2020/09/01/eleventy-tag-list-sorting-and-post-count/) earlier in the week with a similar approach to the Base Blog.
 

@@ -21,6 +21,7 @@
   --body-background: var(--color-lightest);
 }
 
+
 /* Resets based on Andy Bell's Modern Reset
 https://github.com/hankchizljaw/modern-css-reset/blob/master/dist/reset.css  */
 
@@ -169,6 +170,16 @@ code {
   border-radius: .25rem;
   padding: .15rem .25rem .125rem;
   font-size: 1.1rem;
+}
+
+[class*='language'] code {
+  border: 0;
+}
+
+.caption  {
+  font-size: 1rem;
+  background: var(--color-primary-tint);
+  padding: .5rem;
 }
 
 p::selection {
@@ -656,6 +667,10 @@ a.skip-link:active {
 
   .pad-content {
     padding: .5rem 1rem 2rem;
+  }
+
+  footer div:nth-child(2) {
+    margin-bottom: 1.5rem;
   }
 
 }

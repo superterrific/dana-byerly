@@ -27,6 +27,11 @@ module.exports = config => {
     return `<blockquote>${content}</blockquote>`
   });
 
+  config.addPairedShortcode('caption', function(content) {
+    return `<div class="caption">${content}</div>`
+  });
+
+
   config.addPairedShortcode('figure', function(content) {
     return `<figure class="fig-container">${content}</figure>`
   });
