@@ -82,6 +82,10 @@ module.exports = config => {
     return [...collection.getFilteredByGlob('./src/notes/*.md')];
   });
 
+  config.addCollection('changelog', collection => {
+    return [...collection.getFilteredByGlob('./src/changelog/*.md')];
+  });
+
     return {
       markdownTemplateEngine: 'njk',
       dataTemplateEngine: 'njk',

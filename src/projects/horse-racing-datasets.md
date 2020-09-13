@@ -6,12 +6,7 @@ category: 'Projects'
 launched: 'January 2015'
 displayOrder: 3
 projectImg:
- img: 'hrds_hsvofa_c_scale,w_1380.png'
- srcset: '/img/projects/hrds_hsvofa_c_scale,w_480.png 480w,
-          /img/projects/hrds_hsvofa_c_scale,w_729.png 729w,
-          /img/projects/hrds_hsvofa_c_scale,w_935.png 935w,
-          /img/projects/hrds_hsvofa_c_scale,w_1123.png 1123w,
-          /img/projects/hrds_hsvofa_c_scale,w_1380.png 1380w'
+ img: 'hrds'
  alt: 'Kentucky Derby datasets available at Horse Racing Datasets'
 stack: ['Airtable', 'Sergey SSG', 'Vue']
 role: ['Code', 'Curation', 'Design']
@@ -27,11 +22,16 @@ The main upgrade was adding the ability to browse datasets by category or data t
 When I set out to do the current design I thought I'd use Vue routing, but I couldn't get it to work how I envisioned. So I gave [Sergey]({{ tools.sergey }}), a simple static site generator, a try and it did exactly what I wanted with very low overhead. If/when redo the CSS I might also move it to [Eleventy]({{ tools.11ty }}) and see if I can improve some of the data handling.
 
 {% figure %}
-  <img src="/img/HRDS-static.png" alt="Static listing page at Horse Racing Datasets" loading="lazy" />
+  <picture>
+    <source srcset="/img/HRDS-static.avif" type="image/avif">
+    <source srcset="/img/HRDS-static.webp" type="image/webp">
+    <img src="/img/HRDS-static.png" alt="Static listing page at Horse Racing Datasets" loading="lazy" />
+  </picture>
   {% figcaption %}
     When a visitor doesn't have Javascript enabled, or if Javascript doesn't load, they get a static version of the site.
   {% endfigcaption %}
 {% endfigure %}
+
 
 Another feature of the current design is the addition of a [static listing page](http://horseracingdatasets.com/static/) in the event that Javascript doesn't work or is turned off. It's really not that much more work to maintain and it provides a nice alternative experience when ye olde JS doesn't work or when a visitor would prefer a zippier low-bandwidth experience.
 

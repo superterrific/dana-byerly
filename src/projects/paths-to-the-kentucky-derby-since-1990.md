@@ -21,7 +21,11 @@ Not any horse can run in the Kentucky Derby. They must be a specific age and [ea
 I used a [sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram) to illustrate the [graded stakes](https://en.wikipedia.org/wiki/Graded_stakes_race) prep race path of Kentucky Derby winners in their 3-year-old year. There are points races for 2-year-olds but the Derby trail doesn't really heat up until February (the Derby is run in May [unless it's 2020!](https://www.kentuckyderby.com/horses/news/churchill-downs-incorporated-announces-the-rescheduling-of-the-146th-kentucky-derby-from-may-2-2020-to-september-5-2020)).
 
 {% figure %}
-  <img src="/img/derby-paths-sankey.png" alt="A sankey diagram how many Kentucky Derby winners passed through specific prep races." loading="lazy" />
+  <picture>
+    <source srcset="/img/derby-paths-sankey.avif" type="image/avif">
+    <source srcset="/img/derby-paths-sankey.webp" type="image/webp">
+    <img src="/img/derby-paths-sankey.png" alt="A sankey diagram how many Kentucky Derby winners passed through specific prep races." loading="lazy" />
+  </picture>
   {% figcaption %}
     The sankey diagram illustrates the path and volume of Derby winners through the prep races. Hovering or touching each path shows information about the flow from the race to race, including the number of winners and each winner's name and the year they won. The additional information is also useful in instances where the paths cross, making it harder to see the size.
   {% endfigcaption %}
@@ -31,9 +35,13 @@ I used a [sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram) to illus
 Many winners also prepped in a mix of graded and non-graded races, but this would've been too hard to illustrate in the sankey diagram, so I created illustrations of each winner's full path.
 
 {% figure %}
-  <img src="/img/derby-paths-individuals.svg" alt="Four visualizations showing how Kentucky Derby contenders training has changed through the decades trending towards fewer starts in prep races" loading="lazy" />
+  <picture>
+    <source srcset="/img/derby-paths-individuals.avif" type="image/avif">
+    <source srcset="/img/derby-paths-individuals.webp" type="image/webp">
+    <img src="/img/derby-paths-individuals.png" alt="Four visualizations showing how Kentucky Derby contenders training has changed through the decades trending towards fewer starts in prep races." loading="lazy" />
+  </picture>
   {% figcaption %}
-    Looking at each winner’s path over time is an easy way to see how training methods have changed in the time span. From 2015 to 2006 seven of the 10 winners made only two starts, whereas every winner from 2005 to 1990 made at least three starts. And in that same time span half of the winners made at least four starts.
+      Looking at each winner’s path over time is an easy way to see how training methods have changed in the time span. From 2015 to 2006 seven of the 10 winners made only two starts, whereas every winner from 2005 to 1990 made at least three starts. And in that same time span half of the winners made at least four starts.
   {% endfigcaption %}
 {% endfigure %}
 

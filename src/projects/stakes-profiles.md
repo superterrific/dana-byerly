@@ -1,6 +1,6 @@
 ---
 title: 'Stakes Profiles'
-summary: 'Data visualizations of trends for specific Thoroughbred stakes races since 1991.'
+summary: 'Data visualizations of trends for specific Thoroughbred stakes races since 1991'
 projectUrl: 'http://helloracefans.com/stakes-profiles/'
 category: 'Projects'
 launched: 'Feburary 2018'
@@ -15,10 +15,14 @@ This project, like [Paths to the Kentucky Derby since 1990]({{ projectPages.path
 Stakes Profiles are data visualization posts that show trends for a particular [stakes race](https://en.wikipedia.org/wiki/Graded_stakes_race) since 1991. I created them to answer simple questions like “how have favorites performed in this race historically?” and “what kind of running styles have performed well, or not?” using garden variety bar and line charts.
 
 {% figure %}
-  <img src="/img/stakes-profiles-running-style-bar.png" alt="Bar graph showing types of running styles that have won the Florida Derby since 1991" loading="lazy">
-  <figcaption>
+  <picture>
+    <source srcset="/img/stakes-profiles-running-style-bar.avif" type="image/avif">
+    <source srcset="/img/stakes-profiles-running-style-bar.webp" type="image/webp">
+    <img src="/img/stakes-profiles-running-style-bar.png" alt="Bar graph showing types of running styles that have won the Florida Derby since 1991" loading="lazy" />
+  </picture>
+  {% figcaption %}
     A stacked bar chart illustrating how the various running styles have performed in the Florida Derby. The key defines each running style by the location of the winner relative to the leader at the half mile point of the race. For example, 37.9% of the winners were within three lengths of the leader at the half mile mark.
-  </figcaption>
+  {% endfigcaption %}
 {% endfigure %}
 
 I got the [first glimmer for the idea a few years earlier](https://twitter.com/superterrific/status/964523437019549696) when I was working on [Cheat Sheets for televised Breeders' Cup races](https://web.archive.org/web/20150831075810/https://challenge.breederscup.com/travers-cheat-sheet), as a hook I’d lead with how favorites had performed over the last ten years. It was disheartening how much work was required to answer what seemed like a basic question.

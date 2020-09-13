@@ -30,8 +30,8 @@
                   {% if tags %}
                   <div>
                     <span class="project-hero-label">Filed Under</span>
-                    <span class="visually-hidden" id="tags-desc">A list of tags for this post.</span>
-                    <ul id="tags-desc" class="tag-list">
+                    <span class="visually-hidden">A list of tags for this post.</span>
+                    <ul class="tag-list">
                       {% for tag in tags %}
                         <li>
                           <a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a>
@@ -81,15 +81,16 @@
           <div class="wrapper-content flow-150">
             {% if projectImg %}
             <figure>
-              <img src="/img/projects/{{ projectImg.img }}"
-                    sizes="(min-width: 720px) 1380px, 100vw"
-                    srcset="{{ projectImg.srcset }}"
-                    alt="{{ projectImg.alt }}" loading="lazy" />
-                    {% if projectImg.blurb %}
-                    <figcaption class="project-hero-blurb">
-                      {{ projectImg.blurb }}
-                    </figcaption>
-                    {% endif %}
+              <picture>
+                <source srcset="/img/projects/{{ projectImg.img }}.avif" type="image/avif">
+                <source srcset="/img/projects/{{ projectImg.img }}.webp" type="image/webp">
+                <img src="/img/projects/{{ projectImg.img }}.png" alt="{{ projectImg.alt }}" loading="lazy">
+              </picture>
+              {% if projectImg.blurb %}
+              <figcaption class="project-hero-blurb">
+                {{ projectImg.blurb }}
+              </figcaption>
+              {% endif %}
             </figure>
             {% endif %}
 

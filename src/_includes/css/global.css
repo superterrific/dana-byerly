@@ -187,11 +187,13 @@ p::selection {
   color: var(--color-darkest);
 }
 
-.reading ul li {
+.reading ul li,
+.reading ol li {
   margin-bottom: .5rem;
 }
 
-.reading ul {
+.reading ul,
+.reading ol  {
   margin-top: .5rem;
   font-size: 1.1rem;
 }
@@ -670,7 +672,7 @@ a.skip-link:active {
   }
 
   footer div:nth-child(2) {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--flow-space);
   }
 
 }
