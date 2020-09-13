@@ -35,10 +35,10 @@ Updated code using <code>picture</code> and next-generation formats...
 I don't have that many images on the site so it was a relatively easy update, but even with the laziest approach possible of using the defaults at [Squoosh]({{ tools.squoosh }}) the difference in file size was impressive.
 
 According to Lighthouse the image size totals for the [Projects landing page](/projects/) were...
-* **1,721 k** total using a set of images sized for breakpoints
-* **523.4 k** total using next-generation formats
+* **1,721k** total using a set of images sized for breakpoints
+* **523.4k** total using next-generation formats
 
-That's almost 70% smaller just using the Squoosh default settings. With a little more fine-tuning I was able to get it down to 300.9 k, or 83% smaller. Of course Lighthouse is using AVIF for those totals, so the percentage would be a bit less with WebP. Still it's very much a nice performance bump as well as a progressive enhancement, otherwise known as a win-win!
+That's almost 70% smaller just using the Squoosh default settings. With a little more fine-tuning I was able to get it down to 300.9k, or 83% smaller. Of course Lighthouse is using AVIF for those totals, so the percentage would be a bit less with WebP. Still it's very much a nice performance bump as well as a progressive enhancement, otherwise known as a win-win!
 
 {% figure %}
   <picture>
@@ -51,6 +51,10 @@ That's almost 70% smaller just using the Squoosh default settings. With a little
   {% endfigcaption %}
 {% endfigure %}
 
+{% caption %}
+<strong>Note:</strong> The 300.9k came from localhost, and it was consistent over several checks. Now that the update is live the numbers have ranged from about 285k to 380k, still a much better size than 1,721! But wanted to note the discrepancy, and that network and performance issues are a bit out of my league!
+{% endcaption %}
+
 The [article by Jake Archibald](https://jakearchibald.com/2020/avif-has-landed/) that set me on this little journey has a lot of detailed techinical information and comparisons. Some of it was just beyond my technical comprehension, but if you're looking for more technical information on AVIF, this is a good place to find it. The article mentions one of the downsides of the format, which is also a [downside of WebP](https://developers.google.com/speed/webp/faq#does_webp_support_progressive_or_interlaced_display), no progressive display. Although the article on WebP does point to an [advance decoding API](https://developers.google.com/speed/webp/docs/api#advanced_decoding_api).
 
-For my little site that no one reads I'm OK with the tradeoff, especially considering that file sizes are relatively small for both formats and I'm using lazy loading, your mileage may vary.
+For my little site that no one reads I'm OK with the tradeoff of progressive display, especially considering that the file sizes are relatively small for both formats and I'm using lazy loading, your mileage may vary.
