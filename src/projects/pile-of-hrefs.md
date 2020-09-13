@@ -6,11 +6,7 @@ category: 'Projects'
 launched: 'April 2020'
 displayOrder: 1
 projectImg:
- img: 'pile_axxcyn_c_scale,w_1380.png'
- srcset: '/img/projects/pile_axxcyn_c_scale,w_480.png 480w,
-          /img/projects/pile_axxcyn_c_scale,w_768.png 768w,
-          /img/projects/pile_axxcyn_c_scale,w_1019.png 1019w,
-          /img/projects/pile_axxcyn_c_scale,w_1380.png 1380w'
+ img: 'pile'
  alt: 'Pile of hrefs CSS section'
 stack: ['Airtable', 'Sergey SSG', 'Vue']
 role: ['code', 'curation', 'design']

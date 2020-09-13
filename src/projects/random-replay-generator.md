@@ -5,13 +5,9 @@ projectUrl: 'http://replaygenerator.com'
 category: 'Projects'
 launched: 'December 2018'
 displayOrder: 2
+img: 'RRG-hero'
 projectImg:
- img: '/img/projects/RRG-hero_kp6ozu_c_scale,w_1380.png.png'
- srcset: '/img/projects/RRG-hero_kp6ozu_c_scale,w_480.png 480w,
-          /img/projects/RRG-hero_kp6ozu_c_scale,w_713.png 713w,
-          /img/projects/RRG-hero_kp6ozu_c_scale,w_909.png 909w,
-          /img/projects/RRG-hero_kp6ozu_c_scale,w_1088.png 1088w,
-          /img/projects/RRG-hero_kp6ozu_c_scale,w_1380.png 1380w'
+ img: 'RRG-hero'
  alt: 'Airtable base that powers the Random Replay Generator'
  blurb: 'Part of the extensive Airtable base that powers the Random Replay Generator.'
 stack: ['Airtable', 'Vue']
@@ -25,7 +21,11 @@ The [initial version](http://replaygenerator.com/archive/01/) was built with [Bo
 The most of fun of this site for me is curating, it also happens to be the most work. I launched the site with 250 replays and am current at 725. I'll come back and add some stats about the content, or maybe I'll make it a separate article, but one item worth noting is that there are 56 renditions of the Kentucky Derby in the Generator. The earliest is from 1934, won by Cavalcade. Triple Crown winners Omaha (1935) and Whirlaway (1941) are included as well as every rendition from 1970 to the most recently run.
 
 {% figure %}
-  <img src="/img/RRG-omaha.png" alt="Replay of the 1935 Kentucky Derby, won by Omaha, the third Triple Crown winner" loading="lazy" />
+  <picture>
+    <source srcset="/img/RRG-omaha.avif" type="image/avif">
+    <source srcset="/img/RRG-omaha.webp" type="image/webp">
+    <img src="/img/RRG-omaha.png" alt="Replay of the 1935 Kentucky Derby, won by Omaha, the third Triple Crown winner" loading="lazy" />
+  </picture>
   {% figcaption %}
     Replay of the 1935 Kentucky Derby, won by <a href="https://en.wikipedia.org/wiki/Omaha_(horse)">Omaha</a>, the third Triple Crown winner.
   {% endfigcaption %}

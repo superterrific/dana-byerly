@@ -1,3 +1,9 @@
 [build]
   command = "npm run production"
   publish = "public"
+
+[[headers]]
+  for = "*.avif"
+  [headers.values]
+    Content-Type = "image/avif"
+    Content-Disposition = "inline"

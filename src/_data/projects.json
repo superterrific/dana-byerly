@@ -6,8 +6,7 @@
       "summary": "A hastily thrown together personal bookmarking site that so far has proven useful.",
       "launched": "April 2020",
       "projectPage": "/projects/pile-of-hrefs",
-      "imgLanding": "pile_axxcyn_c_scale,w_1380.png",
-      "imgSrcset": "/img/projects/pile_axxcyn_c_scale,w_480.png 480w, /img/projects/pile_axxcyn_c_scale,w_768.png 768w, /img/projects/pile_axxcyn_c_scale,w_1019.png 1019w, /img/projects/pile_axxcyn_c_scale,w_1380.png 1380w",
+      "img": "pile",
       "alt": "Pile of hrefs site"
     },
     {
@@ -16,8 +15,7 @@
       "summary": "Making it easy to binge-watch Thoroughbred horse racing replays.",
       "launched": "Decemeber 2018",
       "projectPage": "/projects/random-replay-generator",
-      "imgLanding": "RRG_2_vqljjy_c_scale,w_1380.png",
-      "imgSrcset": "/img/projects/RRG_2_vqljjy_c_scale,w_480 480w, /img/projects/RRG_2_vqljjy_c_scale,w_1380.png 1380w",
+      "img": "RRG",
       "alt": "Random Replay Generator site"
     },
     {
@@ -26,8 +24,7 @@
       "summary": "An extensive collection of datasets about Thoroughbred horse racing built with Vue, Sergey SSG and backed with Airtable.",
       "launched": "January 2015",
       "projectPage": "/projects/horse-racing-datasets",
-      "imgLanding": "hrds_hsvofa_c_scale,w_1380.png",
-      "imgSrcset": "/img/projects/hrds_hsvofa_c_scale,w_480.png 480w, /img/projects/hrds_hsvofa_c_scale,w_729.png 729w, /img/projects/hrds_hsvofa_c_scale,w_935.png 935w, /img/projects/hrds_hsvofa_c_scale,w_1123.png 1123w, /img/projects/hrds_hsvofa_c_scale,w_1380.png 1380w",
+      "img": "hrds",
       "alt": "Horse Racing Datasets site"
     }
     ],
@@ -38,8 +35,7 @@
       "summary": "Viewing prep race paths of Kentucky Derby winners over the years via sankey diagram in a Wordpress site.",
       "launched": "Feburary 2016",
       "projectPage": "/projects/paths-to-the-kentucky-derby-since-1990",
-      "imgLanding": "paths_tn43s6_c_scale,w_1380.png",
-      "imgSrcset": "/img/projects/paths_tn43s6_c_scale,w_480.png 480w, /img/projects/paths_tn43s6_c_scale,w_727.png 727w, /img/projects/paths_tn43s6_c_scale,w_936.png 936w, /img/projects/paths_tn43s6_c_scale,w_1126.png 1126w, /img/projects/paths_tn43s6_c_scale,w_1380.png 1380w",
+      "img": "paths",
       "alt": "Paths to the Kentucky Derby Data Visualization"
     },
     {
@@ -48,8 +44,7 @@
       "summary": "Fun with randomization.",
       "launched": "2018",
       "projectPage": "/projects/kentucky-derby-magic-8-ball",
-      "imgLanding": "derby-magic_mf5qqw_c_scale,w_1264.png",
-      "imgSrcset": "/img/projects/derby-magic_mf5qqw_c_scale,w_480.png 480w, /img/projects/derby-magic_mf5qqw_c_scale,w_1264.png 1264w",
+      "img": "derby-magic",
       "alt": "Kentucky Derby Magic 8 Ball at Glitch"
     },
     {
@@ -58,8 +53,7 @@
       "summary": "Data visualizations of trends for specific Thoroughbred stakes races since 1991 using Google Charts in a Wordpress site.",
       "launched": "Feburary 2018",
       "projectPage": "/projects/stakes-profiles",
-      "imgLanding": "stakes-profiles_xcbcyy_c_scale,w_1380.png",
-      "imgSrcset": "/img/projects/stakes-profiles_xcbcyy_c_scale,w_480.png 480w, /img/projects/stakes-profiles_xcbcyy_c_scale,w_809.png 809w, /img/projects/stakes-profiles_xcbcyy_c_scale,w_1083.png 1083w, /img/projects/stakes-profiles_xcbcyy_c_scale,w_1380.png 1380w",
+      "img": "stakes-profiles",
       "alt": "Stakes Profile Data Visualization of Florida Derby Running Styles"
     },
     {
@@ -68,8 +62,7 @@
       "summary": "A sprawling content site for learning about Thoroughbred horse racing, built with Wordpress and co-founded with a friend.",
       "launched": "March 2010",
       "projectPage": "/projects/hello-race-fans",
-      "imgLanding": "HRF_ff8ey9_c_scale,w_1380.png",
-      "imgSrcset": "/img/projects/HRF_ff8ey9_c_scale,w_480.png 480w, /img/projects/HRF_ff8ey9_c_scale,w_767.png 767w, /img/projects/HRF_ff8ey9_c_scale,w_1000.png 1000w, /img/projects/HRF_ff8ey9_c_scale,w_1197.png 1197w, /img/projects/HRF_ff8ey9_c_scale,w_1380.png 1380w",
+      "img": "HRF",
       "alt": "Hello Race Fans site"
     },
     {
@@ -77,8 +70,7 @@
       "projectUrl": "http://raceday360.com",
       "summary": "Horse racing aggregrator and original content site.",
       "projectPage": "/projects/raceday-360",
-      "imgLanding": "R360_bxytyk_c_scale,w_1380.png",
-      "imgSrcset": "/img/projects/R360_bxytyk_c_scale,w_480.png 480w, /img/projects/R360_bxytyk_c_scale,w_709.png 709w, /img/projects/R360_bxytyk_c_scale,w_904.png 904w, /img/projects/R360_bxytyk_c_scale,w_1082.png 1082w, /img/projects/R360_bxytyk_c_scale,w_1380.png 1380w",
+      "img": "R360",
       "alt": "Tout Wire at Raceday 360 site"
     }
   ],
