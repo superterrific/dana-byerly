@@ -58,3 +58,7 @@ That's almost 70% smaller just using the Squoosh default settings. With a little
 The [article by Jake Archibald](https://jakearchibald.com/2020/avif-has-landed/) that set me on this little journey has a lot of detailed techinical information and comparisons. Some of it was just beyond my technical comprehension, but if you're looking for more technical information on AVIF, this is a good place to find it. The article mentions one of the downsides of the format, which is also a [downside of WebP](https://developers.google.com/speed/webp/faq#does_webp_support_progressive_or_interlaced_display), no progressive display. Although the article on WebP does point to an [advance decoding API](https://developers.google.com/speed/webp/docs/api#advanced_decoding_api).
 
 For my little site that no one reads I'm OK with the tradeoff of progressive display, especially considering that the file sizes are relatively small for both formats and I'm using lazy loading, your mileage may vary.
+
+{% caption %}
+<strong>Update:</strong> Matthias Ott has a <a href="https://matthiasott.com/notes/avif-a-new-image-format">good post on AVIF</a> that includes a list of encoders. Manual conversion was fine for my little site, but there are options for bigger scale conversions! 
+{% endcaption %}  
