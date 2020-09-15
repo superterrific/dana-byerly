@@ -20,7 +20,7 @@
   {% if page.url === '/projects/' %}
   <link rel="stylesheet" media="print" href="/css/projects-landing.css" onload="this.media='all'" />
   {% endif %}
-  <link rel="stylesheet" media="print" href="/fonts/fonts.css" onload="this.media='all'" />
+  <link rel="preload" href="/fonts/fonts.css" />
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
 </head>
 <body id="top">

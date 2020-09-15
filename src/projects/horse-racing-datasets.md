@@ -23,7 +23,6 @@ When I set out to do the current design I thought I'd use Vue routing, but I cou
 
 {% figure %}
   <picture>
-    <source srcset="/img/HRDS-static.avif" type="image/avif">
     <source srcset="/img/HRDS-static.webp" type="image/webp">
     <img src="/img/HRDS-static.png" alt="Static listing page at Horse Racing Datasets" loading="lazy" />
   </picture>
