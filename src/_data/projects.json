@@ -17,7 +17,10 @@
       "projectPage": "/projects/random-replay-generator",
       "img": "RRG-1904",
       "alt": "Random Replay Generator site"
-    },
+    }
+
+    ],
+  "primary": [
     {
       "title": "Horse Racing Datasets",
       "projectUrl": "http://horseracingdatasets.com",
@@ -26,9 +29,7 @@
       "projectPage": "/projects/horse-racing-datasets",
       "img": "hrds",
       "alt": "Horse Racing Datasets site"
-    }
-    ],
-  "primary": [
+    },
     {
       "title": "Paths to the Kentucky Derby Since 1990",
       "projectUrl": "http://helloracefans.com/races/kentucky-derby/paths-to-the-kentucky-derby-since-1990/",
