@@ -8,18 +8,15 @@
   {%- set css -%}
     {%- include "css/global.css" -%}
     {%- include "css/dracula.css" -%}
+    {% if page.url === '/' %}
+    {%- include "css/home.css" -%}
+    {%- include "css/projects-landing.css" -%}
+    {% endif %}
   {%- endset -%}
   <style>{{ css | cssmin | safe }}</style>
-  {% if page.url === '/' %}
-  <link rel="stylesheet" media="print" href="/css/home.css" onload="this.media='all'" />
-  <link rel="stylesheet" media="print" href="/css/projects-landing.css" onload="this.media='all'" />
-  {% endif %}
   {% if '/projects/' in page.url %}
   <link rel="preload" href="/fonts/Bitter-600-latin10.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" media="print" href="/css/project.css" onload="this.media='all'" />
-  {% endif %}
-  {% if page.url === '/projects/' %}
-  <link rel="stylesheet" media="print" href="/css/projects-landing.css" onload="this.media='all'" />
+  <link rel="stylesheet" media="print" href="/css/projects.css" onload="this.media='all'" />
   {% endif %}
   <link rel="preload" href="/fonts/Bitter-400-latin5.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/Bitter-700-latin15.woff2" as="font" type="font/woff2" crossorigin>
