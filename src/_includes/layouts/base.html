@@ -15,13 +15,14 @@
   <link rel="stylesheet" media="print" href="/css/projects-landing.css" onload="this.media='all'" />
   {% endif %}
   {% if '/projects/' in page.url %}
+  <link rel="preload" href="/fonts/Bitter-600-latin10.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" media="print" href="/css/project.css" onload="this.media='all'" />
   {% endif %}
   {% if page.url === '/projects/' %}
   <link rel="stylesheet" media="print" href="/css/projects-landing.css" onload="this.media='all'" />
   {% endif %}
   <link rel="preload" href="/fonts/Bitter-400-latin5.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/Bitter-700-latin20.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Bitter-700-latin15.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" media="print" href="/fonts/fonts.css" onload="this.media='all'" />
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
 </head>

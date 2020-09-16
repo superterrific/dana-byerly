@@ -166,7 +166,7 @@ figcaption {
 
 code {
   background: var(--color-dark-tint);
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-dark-highlight);
   border-radius: .25rem;
   padding: .15rem .25rem .125rem;
   font-size: 1.1rem;
