@@ -1,6 +1,6 @@
 ---
 title: 'Fun with image optimization'
-summary: 'A little effort goes a long way with image optimization.'
+summary: 'Over the weekend I updated the site to use next-gen image formats, and it was kind of fun.'
 category: 'Notes'
 date: '2020-09-13'
 tags: ['Performance', 'The Site']
@@ -60,5 +60,5 @@ The [article by Jake Archibald](https://jakearchibald.com/2020/avif-has-landed/)
 For my little site that no one reads I'm OK with the tradeoff of progressive display, especially considering that the file sizes are relatively small for both formats and I'm using lazy loading, your mileage may vary.
 
 {% caption %}
-<strong>Update:</strong> Matthias Ott has a <a href="https://matthiasott.com/notes/avif-a-new-image-format">good post on AVIF</a> that includes a list of encoders. Manual conversion was fine for my little site, but there are options for bigger scale conversions! 
+<strong>Update:</strong> Matthias Ott has a <a href="https://matthiasott.com/notes/avif-a-new-image-format">good post on AVIF</a> that includes a list of encoders. Manual conversion was fine for my little site, but there are options for bigger scale conversions!
 {% endcaption %}  
