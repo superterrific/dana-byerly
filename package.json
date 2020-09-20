@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx eleventy --serve",
-    "production": "NODE_ENV=production NODE_ENV=production eleventy"
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production eleventy"
   },
   "keywords": [],
   "author": "",
