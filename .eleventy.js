@@ -63,7 +63,6 @@ module.exports = config => {
   // Set directories to pass through to the public folder
   config.addPassthroughCopy('./src/img/');
   config.addPassthroughCopy('./src/css/');
-  config.addPassthroughCopy('./src/fonts/');
 
  // Collections
   config.addCollection('projects', collection => {
