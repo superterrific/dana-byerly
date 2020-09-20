@@ -31,7 +31,6 @@ module.exports = config => {
     return `<div class="caption">${content}</div>`
   });
 
-
   config.addPairedShortcode('figure', function(content) {
     return `<figure class="fig-container">${content}</figure>`
   });
@@ -64,6 +63,7 @@ module.exports = config => {
   // Set directories to pass through to the public folder
   config.addPassthroughCopy('./src/img/');
   config.addPassthroughCopy('./src/css/');
+  config.addPassthroughCopy('./src/fonts/');
 
  // Collections
   config.addCollection('projects', collection => {
@@ -75,15 +75,15 @@ module.exports = config => {
   });
 
   config.addCollection('articles', collection => {
-    return [...collection.getFilteredByGlob('./src/articles/*.md')];
+    return [...collection.getFilteredByGlob('./src/articles/*.md')].reverse();
   });
 
   config.addCollection('notes', collection => {
-    return [...collection.getFilteredByGlob('./src/notes/*.md')];
+    return [...collection.getFilteredByGlob('./src/notes/*.md')].reverse();
   });
 
   config.addCollection('changelog', collection => {
-    return [...collection.getFilteredByGlob('./src/changelog/*.md')];
+    return [...collection.getFilteredByGlob('./src/changelog/*.md')].reverse();
   });
 
     return {

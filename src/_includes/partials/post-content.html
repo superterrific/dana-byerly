@@ -13,26 +13,27 @@
           {% if nextPost or previousPost %}
           <nav class="splitter"  aria-label="Pagination links">
             <p class="post-nav-item">
-              {% if nextPost %}
+              {% if previousPost %}
               <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x pagination-arrow" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" aria-hidden="true" focusable="false" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <line x1="5" y1="12" x2="9" y2="16" />
                 <line x1="5" y1="12" x2="9" y2="8" />
               </svg>
-              <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-            {% endif %}
+
+              <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+              {% endif %}
             </p>
             <p class="post-nav-item">
-              {% if previousPost %}
-              <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+              {% if nextPost %}
+              <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
               <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x pagination-arrow" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
                 <path stroke="none" d="M0 0h24v24H0z"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <line x1="15" y1="16" x2="19" y2="12" />
                 <line x1="15" y1="8" x2="19" y2="12" />
                 </svg>
-              {% endif %}
+            {% endif %}
             </p>
           </nav>
           {% endif %}

@@ -1,0 +1,128 @@
+blockquote {
+  background-color: var(--color-primary-tint);
+  border-inline-start: .5rem solid var(--color-secondary);
+  padding: 1.5rem 2rem;
+  font-family: 'Bitter', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+.fig-container {
+  border: 1px solid var(--color-dark-highlight);
+  box-shadow: var(--shadow);
+}
+
+.fig-container img {
+  padding: 1.5rem 1.5rem .5rem;
+}
+
+figcaption {
+  font-size: .95rem;
+  padding: 1rem 1.5rem;
+  line-height: 1.6;
+}
+
+code {
+  background: var(--color-dark-tint);
+  border: 1px solid var(--color-dark-highlight);
+  border-radius: .25rem;
+  padding: .15rem .25rem .125rem;
+  font-size: 1.1rem;
+}
+
+[class*='language'] code {
+  border: 0;
+}
+
+.caption  {
+  font-size: 1rem;
+  background: var(--color-primary-tint);
+  padding: .5rem;
+}
+
+.reading ul li,
+.reading ol li {
+  margin-bottom: .5rem;
+}
+
+.reading ul,
+.reading ol  {
+  margin-top: .5rem;
+  font-size: 1.1rem;
+}
+
+/* Type -------------------------------------------------------- */
+.reading h2 {
+  font-size: 1.45rem;
+  color: var(--color-secondary);
+  margin-top: calc(var(--flow-space) * 2.5);
+}
+
+.reading h3 {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.reading h2 + p {
+  margin-top: .5rem;
+}
+
+
+.reading h3 + p {
+  margin-top: .25rem;
+}
+
+.caveat-wrapper h2 {
+  font-size: 1.4rem;
+  color: var(--color-darkest);
+  margin-top: 0;
+}
+
+.caveat-wrapper h2 + p {
+  margin-top: 0;
+}
+
+/* Components -------------------------------------------------- */
+
+.caveat {
+  background-color: var(--color-primary-highlight);
+  color: var(--color-darkest);
+  padding: 1.5rem;
+  border-top: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.caveat-wrapper {
+  display: flex;
+}
+
+.caveat-wrapper p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.caveat-icon {
+  margin-right: .5rem;
+}
+
+.caveat-text {
+  margin-top: .1rem;
+}
+
+/* Video player ------------------------------------------------ */
+.video-player {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-player iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
