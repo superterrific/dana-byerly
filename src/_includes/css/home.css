@@ -1,12 +1,12 @@
 .hp-hero {
   display: grid;
-  place-items: center;
-  background-color: var(--color-secondary, #c07);
+  justify-content: center;
+  background-color: var(--color-secondary);
   padding: 4rem 1rem;
-  color: var(--color-primary-tint, #f6f9fc);
+  color: var(--color-primary-tint);
   font-size: 1.4rem;
   line-height: 1.65;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
   margin-bottom: 3rem;
 }
 
@@ -31,20 +31,38 @@
   flex-wrap: wrap;
 }
 
+/* used for flex wrapper */
+.intro-image {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro {
+  margin-left: 2rem;
+}
+
+
 @supports (display: grid) {
 	.wrapper-intro {
 		display: grid;
 		grid-template-columns: repeat(1, 270px) 1fr;
-		gap: .5rem;
+		gap: 2rem;
 		place-items: center;
 	}
+
+  .intro-image,
+  .intro {
+    margin: 0;
+  }
 
 	@media screen and (max-width: 900px) {
 		.wrapper-intro {
 			display: grid;
 			grid-template-columns: auto;
 			justify-content: center;
+      gap: 1em;
 		}
+  }
 }
 
 .wrapper-intro * img {
@@ -63,18 +81,14 @@
   border: 2px solid var(--color-highlight-green);
 }
 
-.intro-image {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.intro {
-  margin-left: 2rem;
-}
-
 .intro p {
   margin-top: 1rem;
 }
+
+.wrapper div:nth-child(3) {
+  margin-top: 4rem;
+}
+
 
 @media screen and (max-width: 900px) {
 
@@ -84,7 +98,4 @@
     margin-bottom: 2rem;
   }
 
-  .intro {
-    margin: 0;
-  }
 }

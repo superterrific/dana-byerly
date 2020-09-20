@@ -12,12 +12,13 @@
 
       {% block content %}
       <div class="wrapper-content pad-content flow-200">
-        <div>
-          <h1>{{ pageHeaderTitle }}</h1>
-          {% if pageHeaderSummary %}
-          {{ pageHeaderSummary | safe }}
-          {% endif %}
-        </div>
+
+        <h1>{{ pageHeaderTitle }}</h1>
+        {# commenting this out for the time being, see changeblog 2020-09-20 for details #}
+        {# {% if pageHeaderSummary %}
+        {{ pageHeaderSummary | safe }}
+        {% endif %} #}
+
         <div class="flow-300">
           {% include "partials/post-list.html" %}
         </div>

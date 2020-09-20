@@ -1,18 +1,9 @@
 {% extends "layouts/base.html" %}
 
-{% block content %}
-<div class="wrapper-content pad-content flow-200">
+{% set pageHeaderTitle = title %}
+{% set previousPost = collections.changelog | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.changelog | getNextCollectionItem(page) %}
 
-  <h1>{{ title }}</h1>
-  <div class="flow-500 reading">
-    {% for item in collections.changelog | reverse %}
-    <article class="flow-200">
-      <h2>{{ item.data.title | safe }}</h2>
-      {{ item.data.summary | safe }}
-      {{ item.data.content | safe }}
-    </article>
-    {% endfor %}
-    {% include 'partials/pagination.html' %}
-  </div>
-</div>
-{% endblock %}
+    {% block content %}
+    {% include "partials/post-content.html" %}
+    {% endblock %}
