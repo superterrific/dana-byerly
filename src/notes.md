@@ -8,6 +8,5 @@ pagination:
 permalink: 'notes{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
 paginationPrevText: 'Newer posts'
 paginationNextText: 'Older posts'
-paginationAnchor: '#post-list'
 eleventyExcludeFromCollections: true
 ---

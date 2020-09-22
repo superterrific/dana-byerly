@@ -11,7 +11,7 @@ const fonts = async () => {
 
   // Grabs fonts and CSS from google and puts in the public folder
   const result = await instance.download(
-    'https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Shrikhand&display=fallback'
+    'https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Shrikhand&display=swap'
   );
 
   return result;

@@ -8,6 +8,5 @@ pagination:
 permalink: '/tag/{{ tag | slug }}/'
 paginationPrevText: 'Newer posts'
 paginationNextText: 'Older posts'
-paginationAnchor: '#post-list'
 eleventyExcludeFromCollections: true
 ---
