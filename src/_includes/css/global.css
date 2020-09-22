@@ -193,17 +193,6 @@ footer p::selection {
 }
 
 /* Grid containers --------------------------------------------- */
-.grid-container-project-hero {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: var(--flow-space);
-}
-
-.grid-container-project {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
-
 .grid-container-sm {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -263,10 +252,6 @@ footer p::selection {
   font-size: 2.6rem;
   font-family: "Shrikhand", sans-serif;
   line-height: 1.1;
-}
-
-.wrapper-site-title {
-  margin: 0;
 }
 
 header a {

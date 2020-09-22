@@ -1,3 +1,8 @@
+.grid-container-project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
 .project-card {
   background: var(--color-primary, #00365d);
   color: var(--color-primary-tint, #f6f9fc);

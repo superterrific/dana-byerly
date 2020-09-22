@@ -1,3 +1,9 @@
+.grid-container-project-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: var(--flow-space);
+}
+
 .project-hero {
   background: var(--color-primary, #00365d);
   color: var(--color-primary-tint, #f6f9fc);
