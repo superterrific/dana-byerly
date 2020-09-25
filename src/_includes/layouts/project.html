@@ -3,6 +3,12 @@
 {% set pageHeaderTitle = title %}
 {% set previousPost = collections.projects | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.projects | getNextCollectionItem(page) %}
+{% set css %}
+  {% include "css/global.css" %}
+  {% include "css/projects.css" %}
+  {% include "css/content.css" %}
+  {% include "css/dracula.css" %}
+{% endset %}
 
       {% block content %}
       <div class="pad-hero flow-400">

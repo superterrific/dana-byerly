@@ -154,6 +154,7 @@ footer {
   padding: 2rem .5rem;
   background-color: var(--color-primary);
   color: var(--color-dark-tint);
+  content-visibility: auto;
 }
 
 footer a {
@@ -355,7 +356,6 @@ ul.tag-list-summary {
 .post-nav-item {
   margin-bottom: .5rem;
 }
-
 
 /* Buttons ----------------------------------------------------- */
 .button {

@@ -3,6 +3,11 @@
 {% set pageHeaderTitle = title %}
 {% set previousPost = collections.notes | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.notes | getNextCollectionItem(page) %}
+{% set css %}
+  {% include "css/global.css" %}
+  {% include "css/content.css" %}
+  {% include "css/dracula.css" %}
+{% endset %}
 
     {% block content %}
     {% include "partials/post-content.html" %}

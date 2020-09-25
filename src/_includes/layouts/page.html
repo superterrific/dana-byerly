@@ -1,6 +1,9 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
+{% set css %}
+  {% include "css/global.css" %}
+{% endset %}
 
     {% block content %}
     {% include "partials/post-content.html" %}

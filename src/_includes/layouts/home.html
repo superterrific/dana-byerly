@@ -1,6 +1,11 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = titleHP %}
+{% set css %}
+  {% include "css/global.css" %}
+  {% include "css/home.css" %}
+  {% include "css/projects-landing.css" %}
+{% endset %}
 
   {% block content %}
     <div class="pad-hero">

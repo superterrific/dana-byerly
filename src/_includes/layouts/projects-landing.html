@@ -1,6 +1,12 @@
 {% extends "layouts/base.html" %}
 
 {% set pageHeaderTitle = title %}
+{% set css %}
+  {% include "css/global.css" %}
+  {% include "css/projects.css" %}
+  {% include "css/projects-landing.css" %}
+  {% include "css/content.css" %}
+{% endset %}
 
     {% block content %}
     <div class="wrapper pad-content flow-150">
