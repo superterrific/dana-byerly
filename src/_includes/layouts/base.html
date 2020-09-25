@@ -4,32 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  {% include "partials/meta-info.html" %}
-  {% set css %}
-    {% include "css/global.css" %}
-    {% if page.url === '/' %}
-      {% include "css/home.css" %}
-      {% include "css/projects-landing.css" %}
-    {% endif %}
-    {% if '/projects/' in page.url %}
-      {% include "css/projects.css" %}
-      {% include "css/projects-landing.css" %}
-      {% include "css/content.css" %}
-      {% include "css/dracula.css" %}
-    {% endif %}
-    {% if '/notes/' in page.url %}
-      {% include "css/content.css" %}
-      {% include "css/dracula.css" %}
-    {% endif %}
-    {% if '/articles/' in page.url %}
-      {% include "css/content.css" %}
-      {% include "css/dracula.css" %}
-    {% endif %}
-    {% if '/changelog/' in page.url %}
-      {% include "css/content.css" %}
-      {% include "css/dracula.css" %}
-    {% endif %}
-  {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   <link rel="preload" href="/fonts/Shrikhand-400-latin18.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/Bitter-400-latin5.woff2" as="font" type="font/woff2" crossorigin>

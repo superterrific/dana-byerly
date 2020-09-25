@@ -3,6 +3,10 @@
 {% set pageHeaderTitle = title %}
 {% set pageHeaderSummary = content %}
 {% set postListItems = pagination.items %}
+{% set css %}
+  {% include "css/global.css" %}
+  {% include "css/content.css" %}
+{% endset %}
 
 {# If this is a tag, grab those items instead as one large collection #}
 {% if tag %}
