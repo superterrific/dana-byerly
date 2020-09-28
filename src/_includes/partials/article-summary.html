@@ -5,11 +5,13 @@
       </div>
 
       <div class="meta">
-        {% if '/tag/' in page.url %}
-          {% include 'partials/filed-in.html' %}
-        {% endif %}
-        {% if page.url === '/' %}
-          {% include 'partials/filed-in.html' %}
+        {% if item.data.category %}
+          {% if '/tag/' in page.url %}
+            {% include 'partials/filed-in.html' %}
+          {% endif %}
+          {% if page.url === '/' %}
+            {% include 'partials/filed-in.html' %}
+          {% endif %}
         {% endif %}
         <p>Published on <time datetime="{{ item.data.page.date | w3DateFilter }}">{{ item.data.page.date | dateFilter }}</time></p>
       </div>

@@ -56,7 +56,7 @@ code {
 .reading h2 {
   font-size: 1.45rem;
   color: var(--color-secondary);
-  margin-top: calc(var(--flow-space) * 2.5);
+  margin-top: calc(var(--flow-space) * 3.5);
 }
 
 .reading h3 {

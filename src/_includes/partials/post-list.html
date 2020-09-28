@@ -1,6 +1,6 @@
       {% if postListHeadline %}
       <h2>{{ postListHeadline | safe }}</h2>
-      {%-endif %}
+      {% endif %}
 
       {% for item in postListItems %}
       {% include 'partials/article-summary.html' %}
