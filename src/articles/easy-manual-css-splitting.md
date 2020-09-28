@@ -13,7 +13,6 @@ Before we get started, this seems like a great time to provide some context abou
 {% include 'partials/dev-caveat.html' %}
 
 ## Quick set up
-
 You should check the [check the instructions at Eleventy](https://www.11ty.dev/docs/quicktips/inline-css/), but the gist is that once clean-css is installed and a filter is added to your eleventy.js file, there's a bit of code to add within the <code>head</code> tag to include the CSS file and then minify it. This code replaces the link to your CSS file.
 
 I've made a directory named 'css' in '_includes' and am calling the global CSS file...
@@ -31,7 +30,6 @@ In an ongoing effort to both improve upon and learn about performance, I started
 As I bumbled around figuring out how best to do this, I tried two methods. Either could work well depending on your setup.
 
 ## Using if statements
-
 My first foray was separating out the code for the homepage and the Projects listings used on the homepage by using a [Nunjucks if statement](https://mozilla.github.io/nunjucks/templating.html#if). Building on the example above it looked like this...
 
 ```html {% raw %}
@@ -217,7 +215,7 @@ Here's an example from the default state of the homepage, the styles with blue i
 
 
 ## Summary
-More than anything else, this was a good learning exercise. While I didn't have earth shattering gains, I did shave of about 1.2k in file size and drop overall loading time over 100ms.
+More than anything else, this was a good learning exercise. While I didn't have earth shattering gains, I did shave off about 1.2k in file size and drop overall loading time over 100ms.
 
 {% figure %}
   <picture>
@@ -235,4 +233,4 @@ More than anything else, this was a good learning exercise. While I didn't have 
   {% endfigcaption %}
 {% endfigure %}
 
-Perhaps more important than my modest improvements is that I learned something about performance that will help me moving forward. As a bonus I also discovered yet another thing that Eleventy makes easy, so if you want to do some CSS code-splitting without using Webpack or the like, Eleventy gives you a couple of options.
+Perhaps more important than my modest improvements is that I learned something about performance that will be helpful moving forward. As a bonus I also discovered yet another thing that Eleventy makes easy, so if you want to do some CSS code-splitting without using Webpack or the like, Eleventy gives you a couple of options.
