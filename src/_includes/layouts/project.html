@@ -18,7 +18,7 @@
               <h1>{{ pageHeaderTitle | safe }}</h1>
               <div class="grid-container-project-hero">
 
-                <div class="post-header flow-100">
+                <div class="flow-100">
                   {% if launched %}
                   <p>
                     <span class="project-hero-label">Launched</span>
@@ -120,23 +120,23 @@
 
         <nav class="wrapper-content splitter" aria-label="Pagination links">
           <div class="post-nav-item">{% if previousPost %}
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" >
+            <a href="{{ previousPost.url }}"><svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" >
               <path stroke="none" d="M0 0h24v24H0z"/>
               <line x1="5" y1="12" x2="19" y2="12" />
               <line x1="5" y1="12" x2="9" y2="16" />
               <line x1="5" y1="12" x2="9" y2="8" />
               </svg>
-            <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+            {{ previousPost.data.title }}</a>{% endif %}
           </div>
           {% if nextPost %}
           <div class="post-nav-item">
-            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}
             <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
               <path stroke="none" d="M0 0h24v24H0z"/>
               <line x1="5" y1="12" x2="19" y2="12" />
               <line x1="15" y1="16" x2="19" y2="12" />
               <line x1="15" y1="8" x2="19" y2="12" />
-            </svg>
+            </svg></a>
           </div>{% endif %}
         </nav>
       </div>

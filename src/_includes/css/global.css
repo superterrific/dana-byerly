@@ -22,7 +22,6 @@
   --body-background: var(--color-lightest);
 }
 
-
 /* Resets based on Andy Bell's Modern Reset
 https://github.com/hankchizljaw/modern-css-reset/blob/master/dist/reset.css  */
 
@@ -119,22 +118,23 @@ a:hover {
 }
 
 header a:focus {
-  outline: 1px solid var(--color-primary);
+  outline: 2px solid var(--color-primary);
 }
 
 main a:focus {
-  outline: 1px solid var(--color-secondary);
+  outline: 2px solid var(--color-secondary);
+  outline-offset: .1rem;
 }
 
 footer a:focus {
-  outline: 1px solid var(--color-lightest);
+  outline: 2px solid var(--color-lightest);
+  outline-offset: .1rem;
 }
 
 p::selection {
   background: var(--color-secondary-highlight);
   color: var(--color-darkest);
 }
-
 
 main:focus {
   outline: 0;
@@ -170,17 +170,18 @@ footer p::selection {
   padding: 1rem .5rem 4rem;
 }
 
-.pad-content {
-  padding: 2rem .5rem 4rem;
-}
-
 .splitter {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-/* Wrappers ----- */
+.promo-section {
+  margin-bottom: calc(var(--flow-space) * 1.5);
+}
+
+
+/* Wrappers ---------------------------------------------------- */
 .wrapper {
   max-width: 65rem;
   position: relative;
@@ -205,7 +206,6 @@ footer p::selection {
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: calc(var(--flow-space) * 2) calc(var(--flow-space) * 5);
 }
-
 
 /* Navigation & Site Header ------------------------------------ */
 .site-header {
@@ -238,10 +238,11 @@ footer p::selection {
   margin: 0;
   padding: 0;
 }
+
 .site-nav li {
   list-style: none;
-  padding-inline-end: .5rem;
-  font-size: 1.2rem;
+  padding-inline-end: 1rem;
+  font-size: clamp(1.15rem, 2.5vw, 1.25rem);
 }
 
 .site-nav ul li:last-child {
@@ -256,7 +257,7 @@ footer p::selection {
 }
 
 header a {
-  padding: .4rem .5rem;
+  padding: .4rem .2rem;
 }
 
 [aria-current="page"],
@@ -273,7 +274,9 @@ header a {
   color: var(--color-primary);
   text-decoration: underline;
   font-weight: 400;
+  padding: 0 .2rem;
 }
+
 
 /* Type -------------------------------------------------------- */
 h1 {
@@ -294,10 +297,6 @@ h3 {
   font-weight: 600;
 }
 
-.promo-section {
-  margin-bottom: calc(var(--flow-space) * 1.5);
-}
-
 .promo-section h2 {
   font-size: 1.8rem;
 }
@@ -310,17 +309,11 @@ h3 {
   padding-top: .25rem;
 }
 
-.reading p,
-.reading {
-  font-size: 1.25rem;
-  line-height: 1.7;
-}
-
 .meta {
   font-size: .9rem;
 }
 
-/* Pagination and Tags -----------------------------------------*/
+/* Tags -----------------------------------------*/
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -345,18 +338,6 @@ ul.tag-list-summary {
   background: var(--color-primary);
 }
 
-.tag-cap {
-  text-transform: capitalize;
-}
-
-[dir="rtl"] .pagination-arrow {
-  display: none;
-}
-
-.post-nav-item {
-  margin-bottom: .5rem;
-}
-
 /* Buttons ----------------------------------------------------- */
 .button {
   display: inline-block;
@@ -364,16 +345,6 @@ ul.tag-list-summary {
   line-height: 1;
   padding: .75rem 1rem;
   text-decoration: none;
-}
-
-.button-dark {
-  background: var(--color-dark);
-  color: var(--color-dark-tint);
-  border: 1px solid var(--color-dark);
-}
-
-.button-dark:hover {
-  border: 1px solid var(--color-dark);
 }
 
 .button-light-outline {
@@ -391,6 +362,12 @@ ul.tag-list-summary {
 .icon-1-25x {
   width: 1.25em;
   height: 1.25em;
+  vertical-align: -.25em;
+}
+
+.icon-1-5x {
+  width: 1.5em;
+  height: 1.5em;
   vertical-align: -.25em;
 }
 
@@ -496,22 +473,25 @@ a.skip-link:active {
 /* Media Queries ---------------------------------------------- */
 @media screen and (max-width: 800px) {
   .title-wrap {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .site-nav ul {
+    margin-left: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  .site-nav li {
+    padding-inline-end: .5rem;
   }
 
   nav li {
-    font-size: 1.1rem;
     margin-bottom: .45rem;
   }
 
-  .reading p,
-  .reading {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-
-  .pad-content {
-    padding: .5rem 1rem 2rem;
+  .pad-hero {
+    padding-top: 0;
   }
 
   footer div:nth-child(2) {
