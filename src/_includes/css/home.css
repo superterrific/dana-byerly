@@ -84,11 +84,6 @@
   margin-top: 1rem;
 }
 
-.wrapper div:nth-child(3) {
-  margin-top: 4rem;
-}
-
-
 @media screen and (max-width: 900px) {
 
   .hp-hero {
