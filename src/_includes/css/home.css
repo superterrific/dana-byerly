@@ -11,8 +11,8 @@
 }
 
 .hp-hero a {
-  background: var(--color-primary, #00365d);
-  color: var(--color-white, #fff);
+  background: var(--color-primary);
+  color: var(--color-lightest);
   text-decoration: none;
   padding: .15rem .5rem;
 }
@@ -23,7 +23,7 @@
 }
 
 .hp-hero a:focus {
-  outline: 1px dashed #fff;
+  outline: 3px dashed var(--color-highlight-green);
 }
 
 .wrapper-intro {
@@ -31,7 +31,7 @@
   flex-wrap: wrap;
 }
 
-/* used for flex wrapper */
+/* used for flex wrapper to center image */
 .intro-image {
   margin-right: auto;
   margin-left: auto;
@@ -40,7 +40,6 @@
 .intro {
   margin-left: 2rem;
 }
-
 
 @supports (display: grid) {
 	.wrapper-intro {

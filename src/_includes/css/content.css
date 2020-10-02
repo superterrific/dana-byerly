@@ -1,3 +1,7 @@
+.pad-content {
+  padding: 2rem .5rem 4rem;
+}
+
 blockquote {
   background-color: var(--color-primary-tint);
   border-inline-start: .5rem solid var(--color-secondary);
@@ -52,11 +56,40 @@ code {
   font-size: 1.1rem;
 }
 
+.tag-cap {
+  text-transform: capitalize;
+}
+
+/* Pagination -------------------------------------------------- */
+[dir="rtl"] .pagination-arrow {
+  display: none;
+}
+
+.post-nav-item {
+  max-width: 45%;
+  margin-bottom: .5rem;
+}
+
+.post-nav-item a:hover {
+  background-color: var(--color-primary-banding);
+  color: var(--color-darkest);
+}
+
 /* Type -------------------------------------------------------- */
+.reading p,
+.reading {
+  font-size: clamp(1.18rem, 2.5vw, 1.25rem);
+  line-height: 1.7;
+}
+
 .reading h2 {
   font-size: 1.45rem;
   color: var(--color-secondary);
   margin-top: calc(var(--flow-space) * 3.5);
+}
+
+.reading h2:first-child {
+  margin-top: 0;
 }
 
 .reading h3 {
@@ -69,23 +102,22 @@ code {
   margin-top: .5rem;
 }
 
-
 .reading h3 + p {
   margin-top: .25rem;
 }
 
-.caveat-wrapper h2 {
-  font-size: 1.4rem;
-  color: var(--color-darkest);
-  margin-top: 0;
+/* Buttons ----------------------------------------------------- */
+.button-dark {
+  background: var(--color-dark);
+  color: var(--color-dark-tint);
+  border: 1px solid var(--color-dark);
 }
 
-.caveat-wrapper h2 + p {
-  margin-top: 0;
+.button-dark:hover {
+  border: 1px solid var(--color-dark);
 }
 
 /* Components -------------------------------------------------- */
-
 .caveat {
   background-color: var(--color-primary-highlight);
   color: var(--color-darkest);
@@ -112,17 +144,42 @@ code {
   margin-top: .1rem;
 }
 
+.caveat-wrapper h2 {
+  font-size: 1.4rem;
+  color: var(--color-darkest);
+  margin-top: 0;
+}
+
+.caveat-wrapper h2 + p {
+  margin-top: 0;
+}
+
+
 /* Video player ------------------------------------------------ */
 .video-player {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 .video-player iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Media Queries ---------------------------------------------- */
+@media screen and (max-width: 800px) {
+
+  .reading p,
+  .reading {
+    line-height: 1.6;
+  }
+
+  .pad-content {
+    padding: .5rem 1rem 2rem;
+  }
+
 }

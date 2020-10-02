@@ -1,7 +1,7 @@
 ---
 title: 'Dana Byerly'
 layout: 'layouts/home.html'
-summary: 'Personal site of Dana Byerly, an Interaction Designer and Side-Project Haver'
+summary: 'Personal site of Dana Byerly, an Interaction Designer and Side Project-Haver'
 titleHP: 'Hi there'
 featuredProjects:
  title: 'Featured Projects'
