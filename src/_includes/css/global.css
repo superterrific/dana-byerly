@@ -176,7 +176,7 @@ footer p::selection {
   justify-content: space-between;
 }
 
-.promo-section {
+.promo-summary {
   margin-bottom: calc(var(--flow-space) * 1.5);
 }
 
@@ -297,11 +297,11 @@ h3 {
   font-weight: 600;
 }
 
-.promo-section h2 {
+.promo-summary h2 {
   font-size: 1.8rem;
 }
 
-.promo-section p,
+.promo-summary p,
 .landing-summary {
   font-family: 'Bitter', sans-serif;
   font-size: 1rem;

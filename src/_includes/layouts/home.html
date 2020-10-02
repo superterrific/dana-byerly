@@ -28,17 +28,20 @@
           </div>
         </div>
       </div>
-
-      <div class="wrapper">
-        {% include "partials/articles-recent.html" %}
-        <div class="promo-section">
-          <h2>{{ featuredProjects.title | safe }}</h2>
-          <p>{{ featuredProjects.summary | safe }}</p>
+      <div class="wrapper flow-400">
+        <div>
+          {% include "partials/articles-recent.html" %}
         </div>
-        <div class="flow-300">
-          {% for item in projects.featured %}
-          {% include "partials/project-summary.html" %}
-          {% endfor %}
+        <div>
+          <div class="promo-summary">
+            <h2>{{ featuredProjects.title | safe }}</h2>
+            <p>{{ featuredProjects.summary | safe }}</p>
+          </div>
+          <div class="flow-300">
+            {% for item in projects.featured %}
+            {% include "partials/project-summary.html" %}
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
