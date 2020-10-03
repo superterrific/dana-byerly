@@ -12,7 +12,8 @@
   flex: 1;
 }
 
-.project-card h2 a {
+.project-card h2 a,
+.project-card h3 a {
   background: var(--color-secondary, #c07);
   color: var(--color-primary-tint, #f6f9fc);
   text-decoration: none;

@@ -286,9 +286,15 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
+h2,
+.promo-article-title {
   font-family:"Bitter", sans-serif;
+  font-size: 1.5rem;
   line-height: 1.35;
+}
+
+.promo-article-title {
+  font-weight: 700;
 }
 
 h3 {

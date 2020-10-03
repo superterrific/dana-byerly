@@ -7,7 +7,7 @@
         <div class="grid-container-sm">
           {% for item in projects.additional %}
           <article>
-            <h2>{{ item.title | safe }}</h2>
+            <h3 class="promo-article-title">{{ item.title | safe }}</h3>
             <div class="flow-100">
               <p>{{ item.summary | safe }}</p>
               <p>Launched: {{ item.launched }}</p>

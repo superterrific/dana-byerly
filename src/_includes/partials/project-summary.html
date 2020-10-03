@@ -6,7 +6,7 @@
       </picture>
 
       <div class="project-card flow-100">
-        <h2><a href="{{ item.projectPage }}">{{ item.title | safe }}</a></h2>
+        <{{headingLevel if headingLevel else 'h3'}} class="promo-article-title"><a href="{{ item.projectPage }}">{{ item.title | safe }}</a></{{headingLevel if headingLevel else 'h3'}}>
         <p class="project-summary fill">{{ item.summary | safe }}</p>
 
         <div class="flow-0">

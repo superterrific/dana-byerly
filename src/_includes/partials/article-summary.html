@@ -1,6 +1,6 @@
     <article class="flow-100">
       <div class="flow-0">
-        <h2><a href="{{ item.url }}">{{ item.data.title | safe }}</a></h2>
+        <{{headingLevel if headingLevel else 'h3'}} class="promo-article-title"><a href="{{ item.url }}">{{ item.data.title | safe }}</a></{{headingLevel if headingLevel else 'h3'}}>
         <p>{{ item.data.summary | safe }}</p>
       </div>
 
