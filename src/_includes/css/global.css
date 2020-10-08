@@ -199,14 +199,12 @@ footer p::selection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: calc(var(--flow-space) * 3) calc(var(--flow-space) * 2);
-  content-visibility: auto;
 }
 
 .grid-container-lg {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: calc(var(--flow-space) * 2) calc(var(--flow-space) * 5);
-  content-visibility: auto;
 }
 
 /* Navigation & Site Header ------------------------------------ */
