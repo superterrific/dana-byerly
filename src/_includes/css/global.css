@@ -440,6 +440,10 @@ ul.tag-list-summary {
   text-align: center;
 }
 
+.img-center {
+  margin: 0 auto;
+}
+
 /* A11y -------------------------------------------------------- */
 a.skip-link {
     left: -999px;

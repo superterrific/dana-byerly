@@ -57,6 +57,15 @@
       "alt": "Stakes Profile Data Visualization of Florida Derby Running Styles"
     },
     {
+      "title": "Omnisurface Stars Archive",
+      "projectUrl": "https://omnisurface-stars.com/",
+      "summary": "An archive and upgrade of an old project.",
+      "launched": "2020",
+      "projectPage": "/projects/omnisurface-stars-archive",
+      "img": "oss-860",
+      "alt": "Omnisurface Stars site"
+    },
+    {
       "title": "Hello Race Fans",
       "projectUrl": "http://helloracefans.com",
       "summary": "A sprawling content site for learning about Thoroughbred horse racing, built with Wordpress and co-founded with a friend.",

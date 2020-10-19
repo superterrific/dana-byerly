@@ -4,7 +4,7 @@ summary: 'A sprawling content site for learning about Thoroughbred horse racing.
 projectUrl: 'http://helloracefans.com/'
 category: 'Projects'
 launched: 'March 2010'
-displayOrder: 7
+displayOrder: 8
 platform: ['Wordpress']
 role: ['Co-founder', 'Content', 'Design', 'Editorial']
 ---
