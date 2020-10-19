@@ -17,7 +17,6 @@
             <div class="wrapper-content flow-100">
               <h1>{{ pageHeaderTitle | safe }}</h1>
               <div class="grid-container-project-hero">
-
                 <div class="flow-100">
                   {% if launched %}
                   <p>
@@ -86,14 +85,14 @@
 
           <div class="wrapper-content flow-150">
             {% if projectImg %}
-            <figure>
+            <figure class="fig-container">
               <picture>
                 <source srcset="/img/projects/{{ projectImg.img }}.avif" type="image/avif">
                 <source srcset="/img/projects/{{ projectImg.img }}.webp" type="image/webp">
                 <img src="/img/projects/{{ projectImg.img }}.png" alt="{{ projectImg.alt }}" loading="lazy">
               </picture>
               {% if projectImg.blurb %}
-              <figcaption class="project-hero-blurb">
+              <figcaption>
                 {{ projectImg.blurb }}
               </figcaption>
               {% endif %}

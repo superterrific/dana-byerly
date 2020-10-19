@@ -26,11 +26,6 @@
   color: var(--color-white);
 }
 
-.project-hero-blurb {
-  background: var(--color-primary-tint);
-  padding: 1rem .5rem;
-}
-
 .project-meta-list {
   justify-self: end;
 }

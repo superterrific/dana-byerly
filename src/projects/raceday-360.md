@@ -4,7 +4,7 @@ summary: 'Horse racing aggregrator and original content site.'
 projectUrl: 'http://raceday360.com/'
 category: 'Projects'
 acquired: '2010'
-displayOrder: 8
+displayOrder: 9
 platform: ['Wordpress']
 role: ['Content', 'Curation', 'Design', 'Editorial']
 tags: ['Curation']
