@@ -1,7 +1,7 @@
 ---
 title: 'Omnisurface Stars Archive'
 projectUrl: 'https://omnisurface-stars.com'
-summary: 'A hastily thrown together project, prompted by a moment of thinking "Maybe I would use Pinboard more if it was responsive?"'
+summary: 'An archive and upgrade of an old project.'
 category: 'Projects'
 launched: 'October 2020'
 displayOrder: 7
