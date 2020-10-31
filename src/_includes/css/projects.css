@@ -26,11 +26,11 @@ h2.project-hero-label {
 }
 
 .project-meta li {
-  display: inline-block;
+  display: inline;
 }
 
 .project-meta li::after {
-  content: ',\A'
+  content: ', '
 }
 
 .project-meta li:last-child::after {
