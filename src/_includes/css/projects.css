@@ -1,6 +1,6 @@
 .grid-container-project-hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: var(--flow-space);
 }
 
@@ -11,15 +11,10 @@
   box-shadow: var(--shadow);
 }
 
-.project-hero-label {
+h2.project-hero-label {
   color: var(--color-primary-highlight);
   font-weight: 600;
-  font-family: 'Bitter', var(--body-font, sans-serif);
-}
-
-.project-hero-label::after {
-  content: '\A';
-  white-space: pre;
+  font-size: 1rem;
 }
 
 .project-hero a {
@@ -35,7 +30,7 @@
 }
 
 .project-meta li::after {
-  content: ', '
+  content: ',\A'
 }
 
 .project-meta li:last-child::after {

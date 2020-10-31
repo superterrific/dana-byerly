@@ -15,7 +15,7 @@
         {% endif %}
         <p>Published on <time datetime="{{ item.data.page.date | w3DateFilter }}">{{ item.data.page.date | dateFilter }}</time></p>
       </div>
-
+      <span class="visually-hidden">A list of tags for this post.</span>
       <ul class="tag-list tag-list-summary">
         {% for tag in item.data.tags %}
          <li><a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a></li>

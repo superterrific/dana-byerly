@@ -49,15 +49,23 @@ code {
   padding: .5rem;
 }
 
-.reading ul li,
-.reading ol li {
-  margin-bottom: .5rem;
+.reading ul li {
+  line-height: 1.35;
+}
+
+.reading ol li,
+.reading ul li {
+  margin-bottom: 1rem;
 }
 
 .reading ul,
 .reading ol  {
-  margin-top: .5rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
+}
+
+.reading ol li p {
+  line-height: 1.3;
 }
 
 .tag-cap {

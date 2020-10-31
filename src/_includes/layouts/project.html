@@ -19,22 +19,22 @@
               <div class="grid-container-project-hero">
                 <div class="flow-100">
                   {% if launched %}
-                  <p>
-                    <span class="project-hero-label">Launched</span>
+                  <section>
+                    <h2 class="project-hero-label">Launched</h2>
                     {{ launched | safe }}
-                  </p>
+                  </section>
                   {% endif %}
 
                   {% if acquired %}
-                  <p>
-                    <span class="project-hero-label">Acquired</span>
+                  <section>
+                    <h2 class="project-hero-label">Acquired</h2>
                     {{ acquired | safe }}
-                  </p>
+                  </section>
                   {% endif %}
 
                   {% if tags %}
-                  <div>
-                    <span class="project-hero-label">Filed Under</span>
+                  <section>
+                    <h2 class="project-hero-label">Filed Under</h2>
                     <span class="visually-hidden">A list of tags for this post.</span>
                     <ul class="tag-list">
                       {% for tag in tags %}
@@ -43,14 +43,14 @@
                         </li>
                       {% endfor %}
                     </ul>
-                  </div>
+                  </section>
                   {% endif %}
                 </div>
 
                 <div class="project-meta-list flow-100">
                   <section>
                     {% if role %}
-                    <span class="project-hero-label">Role</span>
+                    <h2 class="project-hero-label">Role</h2>
                     <ul class="project-meta">
                       {% for role in role %}
                       <li>{{ role }}</li>
@@ -60,7 +60,7 @@
                   </section>
                   <section>
                     {% if platform %}
-                    <span class="project-hero-label">Platform</span>
+                    <h2 class="project-hero-label">Platform</h2>
                     <ul class="project-meta">
                       {% for platform in platform %}
                       <li>{{ platform }}</li>
@@ -70,7 +70,7 @@
                   </section>
                   <section>
                     {% if stack %}
-                    <span class="project-hero-label">Stack</span>
+                    <h2 class="project-hero-label">Stack</h2>
                     <ul class="project-meta">
                       {% for stack in stack %}
                       <li>{{ stack }}</li>
