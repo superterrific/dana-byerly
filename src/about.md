@@ -12,7 +12,7 @@ The beginning of my career was primarily editorial and content design, and I was
 
 I started back in the good old [Web Dark Ages](https://pavellaptev.github.io/web-dark-ages/). In addition to be the era of garish, clunky animated gifs, it was also the era of "code your own designs". Of course it was much easier to learn then, but I'm thankful to have learned the basics early.
 
-I love making web sites and have always had little side projects. By 2010 most of them used Wordpress and my coding efforts were limited to poking at existing Wordpress themes. This was also when I started to drift away from keeping my front-end skills up to date. The kludgy era of floats, positioning and clears proved too much to hold my interest, and I turned my attention elsewhere.
+I love making websites and have always had little side projects. By 2010 most of them used Wordpress and my coding efforts were limited to poking at existing Wordpress themes. This was also when I started to drift away from keeping my front-end skills up to date. The kludgy era of floats, positioning and clears proved too much to hold my interest, and I turned my attention elsewhere.
 
 A few years ago I started to notice flexbox and then grid. Building web sites suddenly felt fun again and I've been skilling up  ever since.
 

@@ -36,9 +36,13 @@ Given my new found love of [Eleventy]({{ tools.11ty }}), and in particular its d
 Moving the JSON locally into the project was a nice performance boost. It also meant that I could use data tables instead of embedded Google Sheets, which provided more flexibility for responsiveness and accessibility.
 
 {% figure %}
- <img src="/img/oss-mobile.gif" class="img-center" alt="Responsive data tables" loading="lazy" />
+  <picture>
+    <source srcset="/img/oss-mobile.avif" type="image/avif">
+    <source srcset="/img/oss-mobile.webp" type="image/webp">
+    <img src="/img/oss-mobile.png" class="img-center" alt="Responsive layout on small sized screens" loading="lazy" />
+  </picture>
   {% figcaption %}
-    Moving the data into JSON files made it easy to make the data tables responsive.
+    Moving the data into JSON files made it easy to make the data tables responsive. Screenshot from <a href="{{ tools.sizzy }}">Sizzy App</a>
   {% endfigcaption %}
 {% endfigure %}
 
