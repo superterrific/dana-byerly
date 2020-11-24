@@ -3,7 +3,7 @@ title: 'Responsive and Accessible Data Tables'
 summary: 'Giving an old project a new home provided an opportunity for an upgrade.'
 category: 'Articles'
 date: '2020-10-30'
-tags: ['Accessibility', 'Data', 'The Site']
+tags: ['Accessibility', 'Data', 'Side Projects', 'The Site']
 ---
 Recently I converted an old project from WordPress to [Eleventy]({{ tools.11ty }}). It was a fun excuse to build something with Eleventy, and ultimately meant I could improve a few things while giving a labor of love project a sustainable home.
 

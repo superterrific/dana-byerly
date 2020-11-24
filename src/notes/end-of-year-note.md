@@ -1,9 +1,9 @@
 ---
-title: 'End of the year to do list'
+title: 'End of the year to-do list'
 summary: 'A quick note to keep myself honest about some work I&apos;d like to get done by the end of the year.'
 category: 'Notes'
 date: '2020-11-16'
-tags: ['The Site']
+tags: ['Side Projects', 'The Site']
 ---
 
 A quick note to keep myself honest about some upcoming work....
@@ -28,4 +28,4 @@ Nothing drastic here, just going to give [the Generator](http://replaygenerator.
 I did a little Eleventy proof for this site too, but unlike Horse Racing Datasets this Airtable instance does function as a database, so I'll have to up my Javascript game and work a little harder to figure out how to make this one work. I have a lot of notes and pretty much know where I need to improve my skills. It'll be a matter of making time for it and not get distracted by the siren song of a new project (feels like tempting fate even typing that lol).
 
 ## Around these parts
-My to do list for this site has a few things that are just a matter of knocking them out. The one most likely to get done by the end of the year is an article on using dynamic header levels with Eleventy and Nunjucks. I'd also like to update the footer and add a dark mode, but don't think I'll get to those by the end of the year. We'll see!
+My to-do list for this site has a few things that are just a matter of knocking them out. The one most likely to get done by the end of the year is an article on using dynamic header levels with Eleventy and Nunjucks. I'd also like to update the footer and add a dark mode, but don't think I'll get to those by the end of the year. We'll see!

@@ -31,7 +31,7 @@ There were a handful of posts at the old site, but they were mostly about noting
   {% endfigcaption %}
 {% endfigure %}
 
-Given my new found love of [Eleventy]({{ tools.11ty }}), and in particular its data cascade, it was an easy choice and implementation. I manually converted the Google Sheet data to JSON given that my current skill level does not include writing scripts for such things. It wasn't too terrible. I'm going to write up the process in the near future in hopes of helping anyone who might need to do the same.
+Given my new found love of [Eleventy]({{ tools.11ty }}), and in particular its data cascade, it was an easy choice and implementation. I manually converted the Google Sheet data to JSON given that my current skill level does not include writing scripts for such things. It wasn't too terrible. I [detailed the process here](/articles/responsive-and-accessible-data-tables/) for anyone interested in the doing the same.
 
 Moving the JSON locally into the project was a nice performance boost. It also meant that I could use data tables instead of embedded Google Sheets, which provided more flexibility for responsiveness and accessibility.
 
@@ -46,4 +46,4 @@ Moving the JSON locally into the project was a nice performance boost. It also m
   {% endfigcaption %}
 {% endfigure %}
 
-I'll talk more about the data table implementation and decisions in the above mentioned write up, but for now it's nice to have a sustainable home for this project.
+It's nice to have a sustainable home for this project. I did a full write-up including decisions and implementation detail in the [Responsive and Accessible Data Tables](/articles/responsive-and-accessible-data-tables/) article.

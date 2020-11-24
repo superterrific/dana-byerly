@@ -5,6 +5,10 @@
   {%- set pageTitle = site.homepageTitle -%}
   {%- endif -%}
 
+  {%- if '/tag/' in page.url -%}
+  {% set pageTitle = 'Tagged "'+ tag + '"' + ' - ' + site.name %}
+  {%- endif -%}
+
   {%- set siteTitle = site.name -%}
   {%- set siteDescription = summary -%}
   {%- set currentUrl = site.url + page.url -%}

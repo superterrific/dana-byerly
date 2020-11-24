@@ -14,7 +14,7 @@
         <ul class="flow-0">
         {% for tag, posts in collections | dictsort %}
         {% set tagUrl %}/tag/{{ tag | replace(' ', '-') }}/{% endset %}
-          <li><a href="{{ tagUrl }}" class="tag-cap">{{ tag }}</a> ({{ posts | length }})</li>
+          <li><a href="/tag/{{ tag | slug }}" class="tag-cap">{{ tag }}</a> ({{ posts | length }})</li>
         {% endfor %}
         </ul>
       </div>
