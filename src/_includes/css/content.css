@@ -98,6 +98,7 @@ code {
   font-size: 1.45rem;
   color: var(--color-secondary);
   margin-top: calc(var(--flow-space) * 3.5);
+  scroll-margin-top: 1ex;
 }
 
 .reading h2:first-child {
