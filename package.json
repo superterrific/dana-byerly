@@ -19,6 +19,7 @@
     "get-google-fonts": "^1.2.2",
     "gulp": "^4.0.2",
     "html-minifier": "^4.0.0",
+    "markdown-it-anchor": "^6.0.1",
     "moment": "^2.27.0"
   }
 }
