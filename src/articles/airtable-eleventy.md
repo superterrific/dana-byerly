@@ -3,7 +3,7 @@ title: 'Using Airtable with Eleventy'
 summary: 'A long-winded look at getting Airtable data into Eleventy.'
 category: 'Articles'
 date: '2020-12-11'
-tags: ['Data', 'Eleventy', 'Side Projects']
+tags: ['Airtable', 'Data', 'Eleventy', 'Side Projects']
 ---
 While planning out an update to an existing project I figured out how to use [Airtable]({{ tools.airtable }}) with [Eleventy]({{ tools.11ty }}). Naturally this was after [a couple of weeks of working on a proof concept](/notes/end-of-the-year-to-do-list/) to migrate from Airtable to markdown.
 
