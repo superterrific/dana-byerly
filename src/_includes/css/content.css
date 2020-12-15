@@ -119,6 +119,12 @@ code {
   margin-top: .25rem;
 }
 
+.anchor-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
 /* Buttons ----------------------------------------------------- */
 .button-dark {
   background: var(--color-dark);

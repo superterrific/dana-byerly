@@ -4,8 +4,8 @@ const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const CleanCSS = require('clean-css');
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
+const markdownIt = require('markdown-it');
+const markdownAnchor = require('./src/utils/markdown-anchor');
 
 // Transforms
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
@@ -86,26 +86,15 @@ module.exports = config => {
     return [...collection.getFilteredByGlob('./src/changelog/*.md')].reverse();
   });
 
-  /* Add heading anchor - need to figure out how to make permalink accessible before enabling */
-  let markdownLibrary = markdownIt({
+// Markdown and anchor options
+  const markdownOptions = {
     html: true,
+    breaks: false,
     linkify: true,
     typographer: true,
-  }).use(markdownItAnchor, {
-    permalink: false,
-    permalinkClass: "heading-anchor",
-    permalinkSymbol: "🔗",
-    permalinkSpace: true,
-    permalinkBefore: false,
-    level: [1, 2],
-    slugify: (s) =>
-      s
-        .trim()
-        .toLowerCase()
-        .replace(/[\s+~\/]/g, "-")
-        .replace(/[().`,%·'"!?¿:@*]/g, ""),
-  });
-  config.setLibrary("md", markdownLibrary);
+  };
+  
+  config.setLibrary('md', markdownIt(markdownOptions).use(markdownAnchor));
 
     return {
       markdownTemplateEngine: 'njk',
