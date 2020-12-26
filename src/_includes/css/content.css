@@ -12,10 +12,6 @@ blockquote {
   font-weight: 400;
 }
 
-figure {
-  content-visibility: auto;
-}
-
 .fig-container {
   border: 1px solid var(--color-dark-highlight);
   box-shadow: var(--shadow);
