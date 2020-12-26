@@ -98,6 +98,11 @@ img:not([alt]) {
 }
 
 /* Global ------------------------------------------------------ */
+
+html {
+  scroll-padding-top: 1rem;
+}
+
 body {
   font-family: var(--body-font, sans-serif);
   font-size: 1rem;
@@ -332,6 +337,11 @@ h3 {
 
 ul.tag-list-summary {
   margin-top: .5rem;
+  margin-bottom: -.5rem;
+}
+
+.tag-list-summary li {
+  margin-bottom: .5rem;
 }
 
 .tag-list-summary a {
