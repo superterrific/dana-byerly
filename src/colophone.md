@@ -12,4 +12,4 @@ Icons used are [Tabler Icons](https://tablericons.com/).
 
 Handwritten CSS.
 
-Other resources that helped me figure out something used on this site can be found in the inaugural and unimaginatively named [Finally, a new site](/articles//finally-a-new-site/) article.
+Other resources that helped me figure out something used on this site can be found in the inaugural and unimaginatively named [Finally, a new site](/articles/finally-a-new-site/#thank-you-one-and-all) article.

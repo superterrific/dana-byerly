@@ -5,12 +5,12 @@ category: 'Articles'
 date: '2020-09-06'
 tags: ['Eleventy', 'The Site']
 ---
-It's been awhile since I've had a personal site beyond my side-projects, and I've been wanting to change that for awhile.
+It's been awhile since I've had a personal site beyond my side-projects, and I've been wanting to change that for a while.
 
 ## Slowly in the beginning
-I started to think about it last year and quickly put together a little one-page placeholder site that's [archived here](/archive/01/). Once I got the placeholder site out there I started trying to approach it as a "real" project rather than something I was just fiddling with. I made a ton of notes, and did a ton of research. I made a problem statement. I made a [Notion]({{ tools.notion }}) board and filled it up with tasks, and then ignored it. I usually use [Trello]({{ tools.trello }}) for boards, so I made a Trello board and filled it up with tasks, and then ignored it too.
+I started to think about it last year and quickly put together a little one-page placeholder site that's [archived here](/archive/01/). Once I got the placeholder site out there I started trying to approach it as a "real" project rather than something I was just fiddling with. I made a ton of notes, and did a ton of research. I made a problem statement. I made a [Notion]({{ tools.notion }}) board and filled it up with tasks, and then ignored it. I usually use [Trello]({{ tools.trello }}) for boards, so I made a Trello board and filled it up with tasks, and then ignored that too.
 
-After doing so much thinking, researching and attempting to plan I just let it sit there for awhile, knowing I would eventually come back to it. In the meantime I [reworked a side-project](https://twitter.com/superterrific/status/1223416466965508098), threw together [another new project]({{ projectPages.pile }}) and then [fiddled around with some design concepts](https://twitter.com/superterrific/status/1233926346402881541) (that I mostly tossed with a few exceptions).
+After doing so much thinking, researching and attempting to plan I just let it sit there for a while, knowing I would eventually come back to it. In the meantime I [reworked a side-project](https://twitter.com/superterrific/status/1223416466965508098), threw together [another new project]({{ projectPages.pile }}) and then [fiddled around with some design concepts](https://twitter.com/superterrific/status/1233926346402881541) (that I mostly tossed with a few exceptions).
 
 I knew I wanted to use [Eleventy]({{ tools.11ty }}), and tried playing around with it on my own, [but I didn't get very far](https://twitter.com/superterrific/status/1173747434880733186). I already knew how to use partials and templates, and I understood static site generators in general, but my front-end skills are very front of the front-end and light on Javascript, so I just couldn't get that far on my own.
 
@@ -21,7 +21,7 @@ Andy's teaching and writing style work well for me, his how-to articles in the e
 ## Finally, progress
 A little over a month ago I finished the course then [started the site again](https://twitter.com/superterrific/status/1285215442940944384), this time knowing I could do it. It took longer that it normally would have, not only because I was ramping up on Eleventy, but because I was designing as I went. Normally I would've made a static HTML/CSS version and then integrated it, but it wasn't too terrible doing it this way.
 
-At first I was focused on taking what I learned in the course and seeing what I could do with it. Pretty quickly I was able to do all sorts of things, like install plugins and change things around to be more to my liking. Soon I was out there reading posts and lengthy discussions of issues at Github as well as looking at starter projects or repos on Github, and for the most part I understood what was going on! This was really a great feeling.
+At first I was focused on taking what I learned in the course and seeing what I could do with it. Pretty quickly I was able to do all sorts of things, like install plugins and change things around to be more to my liking. Soon I was out there reading posts and lengthy discussions of issues at Github, as well as looking at starter projects or repos, and for the most part I understood what was going on! This was really a great feeling.
 
 Eventually I started focusing more on the design, which of course would lead to more investigation and poking around to find answers... you know, the fun stuff. I used some things from [initial rough design](https://twitter.com/superterrific/status/1233926346402881541), like the limited [color palette](https://codepen.io/superterrific/pen/wvBwLKL) from the placeholder site but let the site and design unfold as I worked on.  
 

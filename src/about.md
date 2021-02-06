@@ -14,7 +14,7 @@ I started back in the good old [Web Dark Ages](https://pavellaptev.github.io/web
 
 I love making websites and have always had little side projects. By 2010 most of them used Wordpress and my coding efforts were limited to poking at existing Wordpress themes. This was also when I started to drift away from keeping my front-end skills up to date. The kludgy era of floats, positioning and clears proved too much to hold my interest, and I turned my attention elsewhere.
 
-A few years ago I started to notice flexbox and then grid. Building web sites suddenly felt fun again and I've been skilling up  ever since.
+A few years ago I started to notice flexbox and then grid. Building web sites suddenly felt fun again, and I've been skilling up  ever since.
 
 ## Skills and approach
 I'd categorize myself as generalist. My strongest skill is interaction design but I'm also strong in general UI design and information architecture. I'm relatively OK at research, and I enjoy it. I skew towards not great at typography, and I'm definitely not good at illustration, animation or graphic design. My dev skills are heavy on front of the front-end, with strong HTML and CSS and not-so-strong anything beyond simple DOM manipulation in Javascript.
