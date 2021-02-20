@@ -1,5 +1,5 @@
 ---
-title: 'Random Replay Generator Spiff Up'
+title: 'Random Replay Generator spiff up'
 summary: 'Wrapping up the end of the year list by knocking off one final to-do.'
 category: 'Notes'
 date: '2020-12-31'
