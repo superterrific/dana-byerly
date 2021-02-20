@@ -50,6 +50,6 @@ Instead of prattling on about my new crush I'll just note a few things I like so
 * It's easy to customize using CSS snippets or full on [themes](https://publish.obsidian.md/help/Customization/Appearance). There are several community themes or you can create your own.
 * An active [user community](https://forum.obsidian.md/) (also at [Discord](https://discord.com/invite/veuWUTm), which I haven't checked out yet).
 
-I've written this entire post in Obsidian and only did minor clean-up once I got it in Atom, and that's a welcome change. I also made vault of some design inspiration for my Horse Racing Datasets homepage concept along the lines of using [Are.na](https://www.are.na/).
+I've written this entire post in Obsidian and only did minor clean-up once I got it in Atom, and that's a welcome change. I also made vault of some design inspiration for my [Horse Racing Datasets homepage concept](https://twitter.com/superterrific/status/1353047440664915969) along the lines of using [Are.na](https://www.are.na/).
 
 I'm sure I can come up with some other ideas too. Until then, I'll continue to ugh along.
