@@ -29,7 +29,7 @@ In the [Airtable article](/articles/using-airtable-with-eleventy/) I mentioned h
 ## Dogs of Dev
 My sweet little doggy is now a [Dog of Dev](https://dogsof.dev/dogs/frieda/). I ran a [Twitter poll](https://twitter.com/superterrific/status/1361087100515409921) to help decide which cute picture to use. I was going to go with the [couch shot](https://twitter.com/superterrific/status/1361087069209186306) but understand the appeal of the [park portrait](https://twitter.com/superterrific/status/1361087073688711169).
 
-Be sure to check out all the [Dogs of Dev](https://dogsof.dev/), a fun project by [Mike Aparicio]. It looks like [someone is going to make a Cats of Dev](https://twitter.com/peruvianidol/status/1361348257964830723/retweets/with_comments), I have a [a couple](https://twitter.com/superterrific/status/1336474131437662209/photo/1) of [those too](https://twitter.com/superterrific/status/1360692852586643460/photo/1).
+Be sure to check out all the [Dogs of Dev](https://dogsof.dev/), a fun project by [Mike Aparicio](https://twitter.com/peruvianidol). It looks like [someone is going to make a Cats of Dev](https://twitter.com/peruvianidol/status/1361348257964830723/retweets/with_comments), I have a [a couple](https://twitter.com/superterrific/status/1336474131437662209/photo/1) of [those too](https://twitter.com/superterrific/status/1360692852586643460/photo/1).
 
 ## A11y Websites
 I haven't posted since the beginning of the year, but I kicked off 2021 on a nice note with a [review from A11y Websites](https://twitter.com/superterrific/status/1345403075935277057). Individual reviews don't have direct links, but it's a nice project by [Callum Ryan](https://twitter.com/calum_ryan) in which he gives submitted sites a proper accessibility review. Be sure to check out [this useful resource](https://www.a11ywebsites.com/).
@@ -39,7 +39,7 @@ If you use [Notion]({{ tools.notion }}) you were probably aware of their [DNS sn
 
 Thanks to [this thread](https://twitter.com/piccalilli_/status/1361043178430861315) I found [Obsidian]({{ tools.obsidian }}) and was able to set up a local version of Notion using this [handy script](https://github.com/connertennery/Notion-to-Obsidian-Converter). But what about moving forward?
 
-I've been using [iA Writer](https://ia.net/writer) to draft posts but don't love it. It's a nice clean, distraction-free app but I usually only rough out a structure and quickly move to my editor ([Atom](https://atom.io/)) to complete them there, mostly because iA Writer doesn't auto pair brackets and quotes. This is big flow killer for me, especially since I do so much linking.
+I've been using [iA Writer](https://ia.net/writer) to draft posts but don't love it. It's a nice clean, distraction-free app but I usually only rough out a structure and quickly move to my editor ([Atom](https://atom.io/)) to complete them there, mostly because iA Writer doesn't support auto pair brackets and quotes. This is a big flow killer for me, especially since I do so much linking.
 
 Once I got the Notion backup taken care of, I started tinkering with Obsidian to see if it was a better fit for me than iA Writer moving forward. It didn't take long to realize the answer was a big, emphatic "Yes!".
 
