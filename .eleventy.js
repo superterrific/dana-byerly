@@ -38,7 +38,7 @@ module.exports = config => {
   });
 
   config.addPairedShortcode('figcaption', function(content) {
-    return `<figcaption>${content}</figure>`
+    return `<figcaption>${content}</figcaption>`
   });
 
   config.addPairedShortcode('fullbleed', function(content) {
@@ -93,7 +93,7 @@ module.exports = config => {
     linkify: true,
     typographer: true,
   };
-  
+
   config.setLibrary('md', markdownIt(markdownOptions).use(markdownAnchor));
 
     return {

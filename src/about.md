@@ -5,14 +5,14 @@ summary: 'Here is a bit about me...'
 eleventyExcludeFromCollections: true
 ---
 ## TL;DR
-I'm a UI and interaction designer who can code enough to build my own projects and communicate/collaborate well with developers. I've been employed doing some form of web-based design since 1996. I've worked in a wide variety of industries including television, broadcast news, finance and currently healthcare. You can view [my LinkedIn profile](https://www.linkedin.com/in/danabyerly/) for all the gory details.
+I'm a UI and interaction designer who can code enough to build my own projects and communicate/collaborate well with developers. I've been employed doing some form of web-based design since 1996. I've worked in a wide variety of industries including television, broadcast news and finance for brands such as CBS News, MTV Interactive and Citibank. I currently work in healthcare. You can view [my LinkedIn profile](https://www.linkedin.com/in/danabyerly/) for all the gory details.
 
 ## From the beginning
-The beginning of my career was primarily editorial and content design, and I was lucky enough to see the primordial formation of content management systems happen in real time. For the last 16 years I've been working in the enterprise space, which is great for hard interaction design problems, and not always great for keeping one's front-end skills up to date.
+The beginning of my career was primarily editorial and content design, and I was lucky enough to see the primordial formation of content management systems happen in real time. For the last 17 years I've been working in the enterprise space, which is great for hard interaction design problems, and not always great for keeping one's front-end skills up to date.
 
 I started back in the good old [Web Dark Ages](https://pavellaptev.github.io/web-dark-ages/). In addition to be the era of garish, clunky animated gifs, it was also the era of "code your own designs". Of course it was much easier to learn then, but I'm thankful to have learned the basics early.
 
-I love making websites and have always had little side projects. By 2010 most of them used Wordpress and my coding efforts were limited to poking at existing Wordpress themes. This was also when I started to drift away from keeping my front-end skills up to date. The kludgy era of floats, positioning and clears proved too much to hold my interest, and I turned my attention elsewhere.
+I love making websites and have always had little side projects. By 2010 most of them used WordPress and my coding efforts were limited to poking at existing WordPress themes. This was also when I started to drift away from keeping my front-end skills up to date. The kludgy era of floats, positioning and clears proved too much to hold my interest, and I turned my attention elsewhere.
 
 A few years ago I started to notice flexbox and then grid. Building web sites suddenly felt fun again, and I've been skilling up  ever since.
 
