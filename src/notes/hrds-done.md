@@ -140,7 +140,7 @@ Performance improvements are no surprise when going from a site that did an API 
     <img src="/img/hrds-lighthouse.png" alt="Before and after Lighthouse scores. Before: Performance 89, Accessibility 100, Best Practices 93, SEO 88. After 100 for each category." loading="lazy" />
   </picture>
   {% figcaption %}
-    From just OK to perfect scores. Friendly reminder, <a href="https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/">perfect Lighthouse don't mean perfect sites!</a>
+    From just OK to perfect scores. Friendly reminder, <a href="https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/">perfect Lighthouse scores don't mean perfect sites!</a>
   {% endfigcaption %}
 {% endfigure %}
 
@@ -156,7 +156,7 @@ The performance metrics show the details of the improvements...
 | Total Blocking Time | 160ms | 0 |
 | Cumulative Layout Shift | 0.113 | 0.01 |
 
-Another area of performance improvement was moving from Tailwind CSS to handwritten CSS. Tailwind isn't inherently a performance issue, but I used it as is with no optimization, mostly because I didn't (and arguably still don't!) know how to use build tools.
+Another area of performance improvement was moving from Tailwind CSS to handwritten CSS. Tailwind isn't necessarily a performance issue, but I used it as is with no optimization, mostly because I didn't (and arguably still don't!) know how to use build tools.
 
 Here's a comparison using [CSS Stats](https://cssstats.com/)
 
