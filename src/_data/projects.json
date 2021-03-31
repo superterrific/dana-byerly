@@ -2,13 +2,24 @@
   "featured": [
     {
       "title": "Random Replay Generator",
-      "projectUrl": "http://replaygenerator.com",
+      "projectUrl": "https://replaygenerator.com",
       "summary": "Making it easy to binge-watch Thoroughbred horse racing replays.",
       "launched": "Decemeber 2018",
       "projectPage": "/projects/random-replay-generator",
       "img": "RRG-1904",
       "alt": "Random Replay Generator site"
     },
+    {
+      "title": "Horse Racing Datasets",
+      "projectUrl": "https://horseracingdatasets.com",
+      "summary": "An extensive collection of datasets about Thoroughbred horse racing built with Airtable and Eleventy.",
+      "launched": "January 2015",
+      "projectPage": "/projects/horse-racing-datasets",
+      "img": "hrds-v4-hp",
+      "alt": "Horse Racing Datasets site"
+    }
+    ],
+  "primary": [
     {
       "title": "Pile of hrefs",
       "projectUrl": "https://pile-of-hrefs.com",
@@ -17,17 +28,6 @@
       "projectPage": "/projects/pile-of-hrefs",
       "img": "pile",
       "alt": "Pile of hrefs site"
-    }
-    ],
-  "primary": [
-    {
-      "title": "Horse Racing Datasets",
-      "projectUrl": "http://horseracingdatasets.com",
-      "summary": "An extensive collection of datasets about Thoroughbred horse racing built with Vue, Sergey SSG and backed with Airtable.",
-      "launched": "January 2015",
-      "projectPage": "/projects/horse-racing-datasets",
-      "img": "hrds",
-      "alt": "Horse Racing Datasets site"
     },
     {
       "title": "Paths to the Kentucky Derby Since 1990",
