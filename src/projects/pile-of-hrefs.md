@@ -4,7 +4,7 @@ projectUrl: 'https://pile-of-hrefs.com'
 summary: 'A hastily thrown together project, prompted by a moment of thinking "Maybe I would use Pinboard more if it was responsive?"'
 category: 'Projects'
 launched: 'April 2020'
-displayOrder: 2
+displayOrder: 3
 projectImg:
  img: 'pile'
  alt: 'Pile of hrefs CSS section'

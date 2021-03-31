@@ -1,7 +1,7 @@
 ---
 title: 'Random Replay Generator'
 summary: 'Making it easy to binge-watch Thoroughbred horse racing replays.'
-projectUrl: 'http://replaygenerator.com'
+projectUrl: 'https://replaygenerator.com'
 category: 'Projects'
 launched: 'December 2018'
 displayOrder: 1
