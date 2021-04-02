@@ -5,6 +5,10 @@ category: 'Articles'
 date: '2020-12-11'
 tags: ['Airtable', 'Data', 'Eleventy', 'Side Projects']
 ---
+{% caption %}
+<strong>Update April 2, 2021</strong>: Since writing this article I figured out how to filter on a single API call and have updated the <a href="#isting-by-tag">Listing by tag or category</a> and <a href="#recently-added">Listing by recently added</a> sections to reflect those approaches. The project has since been completed and I've written a <a href="/notes/horse-racing-datasets-redesigned/">wrap up with more detail</a>.
+{% endcaption %}
+
 While planning out an update to an existing project I figured out how to use [Airtable]({{ tools.airtable }}) with [Eleventy]({{ tools.11ty }}). Naturally this was after [a couple of weeks of working on a proof concept](/notes/end-of-the-year-to-do-list/) to migrate from Airtable to markdown.
 
 On the bright side this gives me an apples to apples comparison of using remote data via JavaScript data files and markdown, and I'll outline those differences as I go. But before we started...
@@ -114,7 +118,6 @@ This code lives in a file named <code>all.js</code> in the _data directory and i
 This example creates a listing of all the records retrieved in the API call and displays the title and description for each.
 
 ## Pagination
-
 Fortunately handling [pagination for data files](https://www.11ty.dev/docs/pagination/#paginate-a-global-or-local-data-file) is similar to collections. In my project I've created a markdown page to list all the datasets. The pagination is set in front matter...
 
 ```html
@@ -142,7 +145,7 @@ In the template there's a [Nunjucks variable using set](https://mozilla.github.i
         <h1>{{ title }}</h1>
         {{ content | safe }}
 
-        {%- for dataset in datasetList -%}
+        {%- for datakey in datasetList -%}
         {% include "partials/listing-items.html" %}
         {%- endfor -%}
 
@@ -155,9 +158,9 @@ This grabs the paginated data and creates pages based on how many items are spec
 ## Listing by Tag
 Tag is a bit misleading here, because it's not in reference to tags in collections, but it's what I've called the data element in my Airtable base. The requirement is to be able to view a listing of datasets by tag, for example [all datasets for the Kentucky Derby](http://horseracingdatasets.com/kentucky-derby/).
 
-This is one area where being more skilled in JavaScript is probably an advantage. When the data is available from collections it's simple to create a single page to [handle tag listing pages for individual tags](https://www.11ty.dev/docs/quicktips/tag-pages/) that doesn't require any maintenance when adding or removing tags. Without collections I created individual tag pages and passed the tag name into the template in order to render only items with the tag for the page.
+This is one area where being more skilled in JavaScript is probably an advantage. When the data is available from collections it's simple to create a single page to [handle tag listing pages for individual tags](https://www.11ty.dev/docs/quicktips/tag-pages/) that doesn't require any maintenance when adding or removing tags. Without collections I created individual tag pages and passed the tag name into the template in order to render only items with the tag on the page.
 
-The tags for this project are fairly fixed, so the maintenance part of needing to manually add, edit or delete a page isn't a big drawback. But perhaps someone with more skill could've done it another way.
+The tags for this project are fairly fixed, so the maintenance part of needing to manually add, edit or delete a page isn't a big drawback, but it would be if tags needed to be created more frequently.
 
 In the individual tag pages there's a variable called "filter" that has the name of tag as it's referenced in Airtable.
 
@@ -196,15 +199,15 @@ Then in the layout for tags, there's a [Nunjucks variable using set](https://moz
     <h1>{{ title }}</h1>
     <p>{{ content | safe }}</p>
 
-    {% for dataset in all %}
-    {% if datasetCategory in dataset.tags %}
+    {% for datakey in all | sortByTitle %}
+    {% if datasetCategory in datakey.tags %}
       {% include "partials/listing-items.html" %}
     {% endif %}
     {% endfor %}
   {% endblock %}{% endraw %}
 ```
 
-Within the for loop that calls records from <code>all.js</code> I'm using an if statement to pass the tag name that the Nunjucks variable is picking up from the individual tag page front matter. Continuing the example of the Kentucky Derby tag page, the if statement is saying "if the value of 'Kentucky Derby' is found in the 'tags' field, then display the record". This creates a listing of items tagged with 'Kentucky Derby'.
+Within the for loop that calls records from <code>all.js</code> I'm using an if statement to pass the tag name that the Nunjucks variable is picking up from the individual tag page front matter. Continuing the example of the Kentucky Derby tag page, the if statement is saying "if the value of 'Kentucky Derby' is found in the 'tags' field, then display the record". This creates a listing of items tagged with 'Kentucky Derby'. I'll explain the "sortByTitle" filter in a bit.
 
 Here's an illustration of the data flow, starting at Airtable and ending in a tag page. I've only included some of the fields to illustrate the records.
 
@@ -222,23 +225,30 @@ Here's an illustration of the data flow, starting at Airtable and ending in a ta
 
 I tried a few other things before I got this to work. One of the best things was [this article by Bryan Robinson](https://bryanlrobinson.com/blog/using-eleventys-javascript-data-files/) on using JavaScript data files in Eleventy. He uses the Meetup API as an example and provides a helpful video and repository of the code.
 
-He has an example where he creates a filter to limit the data to a specific location. I got the same <code>endblock</code> error as he did, but my filter was saved. Even when I was just calling the array without doing any filtering I got the error. One reason I couldn't get it to work, aside from not being very good at JavaScript, could be that he's using Liquid and I'm using Nunjucks.
+Back to the "sortByTitle" filter. The [All Datasets](https://horseracingdatasets.com/all/) page displays alphabetically and the sort order is set at Airtable. But on the tag pages the default listing is to display by most recently added. With some search engine luck [I found this approach](https://stackoverflow.com/questions/65471629/dot-notation-in-nunjucks-sorting-isnt-working/65481434#65481434) and was able to create a filter to sort by title to keep the same approach used on the All Datasets listing.
 
-Regardless of my inability to get his approach to work, I [highly recommend the article](https://bryanlrobinson.com/blog/using-eleventys-javascript-data-files/), and especially appreciated the video and repository.
+The filter gets added in <code>eleventy.js</code>...
+
+```js
+config.addFilter("sortByTitle", arr => {
+  arr.sort((a, b) => (a.title) > (b.title) ? 1 : -1);
+  return arr;
+ });
+```
+
+And then used in the for loop in the template...
+
+```js
+{% raw %}{% for datakey in all | sortByTitle %}
+  ...
+{% endfor %}{% endraw %}
+```
 
 
 ## Recently added
-In the current site there's a [page that lists new datasets](http://horseracingdatasets.com/new/), and this is something I'll keeping in the revamped version.
+In the current site there's a [page that lists new datasets](http://horseracingdatasets.com/new/), and this is something I'll keeping in the revamped version. The
 
-This is another one where having a better command of JavaScript would've been helpful. In the initial API call in <code>all.js</code> the data comes back sorted alphabetically by title and then by date added. I tried to to create a filter to sort by the date added field with no luck, but I think someone with more skill could make this work.
 
-I ended up creating a new view in Airtable named 'New' that sorts the data by date entered and limits the amount of rows to those added in the last 365 days. This gives me a good time period to work with and doesn't return every dataset.
-
-I created another data file named <code>new.js</code> that calls that specific view. The only difference between the API call in <code>new.js</code> and <code>all.js</code> is the <code>.select</code> calls the view for 'New'.
-
-```js
-.select({ view: 'New' }) // original call has view: 'All'
-```
 The markdown page is simple as I'm not using pagination.
 
 ```html
@@ -257,15 +267,15 @@ I'm using the same template that's being used for the "All Datasets" page but I'
 
 {% set datasetList = pagination.items %}
 
-{% if '/new/' in page.url %}
-{% set datasetList = new | limit(4) %}
+{% if '/recently-added/' in page.url %}
+{% set datasetList = all | sortByNewest | limit(5) %}
 {% endif %}
 
       {% block content %}
         <h1>{{ title }}</h1>
         {{ content | safe }}
 
-        {% for dataset in datasetList %}
+        {% for datakey in datasetList %}
         {% include "partials/listing-items.html" %}
         {% endfor %}
 
@@ -277,9 +287,20 @@ I'm using the same template that's being used for the "All Datasets" page but I'
       {% endblock %}{% endraw %}
 ```
 
-Since pagination isn't being used I had to create a way to pass in the data source for the 'New' page. The first if statement looks at the url, if it's the 'New' page  it sets the same variable of <code>datasetList</code> to pass in the file name that makes the API call (<code>new.js</code>) and limits the amount of items displayed to four. The [handy limit filter is from 11ty Rocks](https://11ty.rocks/eleventyjs/data-arrays/#limit-filter). I'm also using it here at this site on the homepage!
+Since pagination isn't being used I had to create a way to pass in the name of the data source and limit the number of items displayed. I also needed to filter the results by date to get the most recently added items first. The first if statement looks at the url, if it's the 'Recently Added' page  it sets the same variable of <code>datasetList</code> to pass in the file name that makes the API call (<code>all.js</code>), filters that data (sortByNewest) and limits the amount of items displayed to five.
 
-The second if statement checks to see if the data source, set in <code>datasetList</code>, is empty. If it is empty then it displays the conditional text. I'll think more about that text when I start designing. It's fine for the scenario where there are no recently added datasets, but since this template is used for both 'All Datasets' and 'New' there's a chance the conditional text could display on the 'All Datasets' page if call fails. And if that were the case the text would be misleading.
+Similar to the approach for filtering the tag display order, the filter gets added in <code>eleventy.js</code>...
+
+``` js
+config.addFilter("sortByNewest", arr => {
+  arr.sort((b, a) => (a.date) > (b.date) ? 1 : -1);
+  return arr;
+});
+```
+
+The [handy limit filter is from 11ty Rocks](https://11ty.rocks/eleventyjs/data-arrays/#limit-filter). I'm also using it here at this site on the homepage!
+
+The second if statement checks to see if the data source, set in <code>datasetList</code>, is empty. If it is empty then it displays the conditional text. I'll think more about that text when I start designing. It's fine for the scenario where there are no recently added datasets, but since this template is used for both 'All Datasets' and 'Recently Added' there's a chance the conditional text could display on the 'All Datasets' page if call fails. And if that were the case the text would be misleading.
 
 That handy <code>isEmpty</code> filter is from [Mike Riethmuller's Eleventy Plugin for Array Filters](https://github.com/jamshop/eleventy-plugin-array-filters). He's creating a [bunch of Eleventy plugins](https://github.com/jamshop/) this month as an [Eleventy Advent thing](https://twitter.com/MikeRiethmuller/status/1334014095486373891), so be sure to keep an eye on the [Jamshop GitHub account](https://github.com/jamshop/).
 
@@ -323,7 +344,7 @@ Here's a quick comparison between the two approaches.
 
 | Feature | Collection | Remote Data |
 |--|--|--|
-| **Tags** | Native part of Eleventy collections, easy to set-up a [zero maintenance tag page](https://www.11ty.dev/docs/quicktips/tag-pages/) to handle individual tag pages. | Have to create a markdown file for each individual tag page and filter for each tag in the template. |
+| **Tags** | Native part of Eleventy collections, easy to set-up a [zero maintenance tag page](https://www.11ty.dev/docs/quicktips/tag-pages/) to handle individual tag pages. | Have to create a markdown file for each individual tag page and filter for each tag in the template. Unless you're good at JavaScript and can figure out a better approach! |
 | **Pagination** | Create a pagination object for your collection and use it in a template. | Create a pagination object for your data and use it in a template. The only difference in the code is the source of data in the pagination keys. |
 | **Creating filters** | Plenty of easy to follow examples between the documentation, starter projects and in articles. | Helpful to have some solid JavaScript skills to transfer collection examples to arrays and data. |
 | **Maintenance** | File based - create new file or edit existing file and then deploy. Can probably automate deploys with webhooks or do it manually depending how frequently you add or update entries. | Enter data in Airtable (or your remote data source) and set up a daily deploy at Netlify or your host. |
