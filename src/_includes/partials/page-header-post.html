@@ -1,7 +1,7 @@
       <div class="flow-100">
         <h1>{{ pageHeaderTitle | safe }}</h1>
         {% if date %}
-        <time datetime="{{ page.date | w3DateFilter }}">{{ page.date | dateFilter }}</time>
+        <time datetime="{{ page.date | w3Date }}">{{ page.date | longDate }}</time>
         {% endif %}
 
         {% if tags %}

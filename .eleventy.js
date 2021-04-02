@@ -1,7 +1,6 @@
-const dateFilter = require('./src/filters/date-filter.js');
-const w3DateFilter = require('./src/filters/w3-date-filter.js');
+const { DateTime } = require('luxon');
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const CleanCSS = require('clean-css');
 const markdownIt = require('markdown-it');
@@ -15,9 +14,18 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = config => {
 
-  // Filters
-  config.addFilter('dateFilter', dateFilter);
-  config.addFilter('w3DateFilter', w3DateFilter);
+  // Date filters
+  config.addFilter('longDate', dateObj => {
+  return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('LLLL dd, yyyy');
+  });
+
+  config.addFilter('isoDate', dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
+  config.addFilter('w3Date', dateObj => {
+  return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toISO();
+  });
 
   // Limit amount of posts displayed
   config.addFilter('limit', function (arr, limit) {

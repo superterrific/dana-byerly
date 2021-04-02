@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "clean-css": "^4.2.3",
@@ -19,6 +19,7 @@
     "get-google-fonts": "^1.2.2",
     "gulp": "^4.0.2",
     "html-minifier": "^4.0.0",
+    "luxon": "^1.24.1",
     "markdown-it-anchor": "^6.0.1",
     "moment": "^2.27.0"
   }
