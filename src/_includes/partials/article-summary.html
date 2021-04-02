@@ -13,7 +13,7 @@
             {% include 'partials/filed-in.html' %}
           {% endif %}
         {% endif %}
-        <p>Published on <time datetime="{{ item.data.page.date | w3DateFilter }}">{{ item.data.page.date | dateFilter }}</time></p>
+        <p>Published on <time datetime="{{ item.data.page.date | w3Date }}">{{ item.data.page.date | longDate }}</time></p>
       </div>
       <span class="visually-hidden">A list of tags for this post.</span>
       <ul class="tag-list tag-list-summary">

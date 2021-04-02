@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
 	<subtitle>{{ summary }}</subtitle>
 	<link href="{{ site.url }}{{ permalink }}" rel="self"/>
 	<link href="{{ site.url }}/"/>
-	<updated>{{ collections.writing | rssLastUpdatedDate }}</updated>
+	<updated>{{ collections.writing | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>{{ site.url }}</id>
 	<author>
     <name>{{ author.name }}</name>
@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
     <entry>
       <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
-      <updated>{{ post.date | rssDate }}</updated>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
       <content type="html"><![CDATA[
         {{ post.templateContent | safe }}
