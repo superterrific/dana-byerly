@@ -16,14 +16,14 @@ I was reading one of the articles included in this week's edition, [WCAG: Access
 
 I missed it because button to surface contrast, or in my case tag-styled-like-button to surface contrast isn't tested in the usual tools such [Wave](https://wave.webaim.org/), Lighthouse or [DevTools](https://www.smashingmagazine.com/2020/08/accessibility-chrome-devtools/). This is no excuse of course, but a good reminder to not to skip manual testing. In fact I did manually check all the text and styled-like-buttons elements against the colors in the background images, but forgot the tags!
 
-As usual, the ever-prolific Eleventy educator extraordinaire [Stephanie Eckles](https://twitter.com/5t3ph/) has created something useful for checking background colors against surface. [ButtonBuddy](https://buttonbuddy.dev/) lets you plug in your button colors to check all the various contrast scenarios, very useful!
+As usual, the ever-prolific Eleventy educator extraordinaire [Stephanie Eckles](https://twitter.com/5t3ph/) has created something useful for checking background colors against surface. [ButtonBuddy](https://buttonbuddy.dev/) lets you plug in your button colors to check all the various contrast scenarios, it's very useful!
 
 ## The test
 Also this week I did a [little housekeeping](/changelog/2021-04-01) after slogging through the [Horse Racing Datasets redesign recap](/notes/horse-racing-datasets-redesigned/) and [project page update](/projects/horse-racing-datasets/). One of housekeeping items was updating to the latest version of [Eleventy RSS plugin](https://www.11ty.dev/docs/plugins/rss/).
 
 I recently noticed that my RSS posts were dated a day behind, and in trying to figure it out I discovered there was a newer version of the plugin. Being a relative newbie at all things Jamstack I was a little proud of myself for figuring out how to do it. In retrospect was very easy, although I still had to figure it out.
 
-Here are the steps to update the Eleventy RSS plugin in case you find yourself not quite sure what to do. This assumes you're already using the plugin.
+Here are the steps to update the Eleventy RSS plugin in case you find yourself not quite sure what to do. This assumes you're already using the plugin and that you're using Nunjucks. If you're using Liquid there's a [separate plugin](https://www.npmjs.com/package/eleventy-xml-plugin).
 
 In the command line in your project folder run the following:
 
@@ -61,4 +61,6 @@ To this:
 
 Since you're already using the plugin you don't have to change anything in <code>eleventy.js</code>.
 
-This has been a very long winded way to say "I updated my RSS plugin and am going to publish something to see if it works". That aside, you should still check out the [Web Design Update email digest](https://www.d.umn.edu/itss/training/online/webdesign/webdev_listserv.html) and [ButtonBuddy](https://buttonbuddy.dev/)!
+This has been a very long winded way to say "I updated my RSS plugin and am going to publish something to see if it works". It works locally! But the date is still a day off, so back to the drawing board on that front.
+
+All of that aside, you should still check out the [Web Design Update email digest](https://www.d.umn.edu/itss/training/online/webdesign/webdev_listserv.html) and [ButtonBuddy](https://buttonbuddy.dev/)!
