@@ -360,3 +360,7 @@ Here are some resources I found helpful. I'm currently not caching the data requ
 * [Eleventy Docs - Cache data requests](https://www.11ty.dev/docs/quicktips/cache-api-requests/)
 * [Jamshop - Eleventy Plugin - Array Filters](https://github.com/jamshop/eleventy-plugin-array-filters)
 * [Stack Overflow - How to fetch more than 100 Airtable records](https://stackoverflow.com/questions/55094884/how-to-fetch-all-records-more-than-100-from-the-airtable-using-axios)
+
+{% caption %}
+<strong>Update April 2, 2021</strong>: This project is complete, you can view  <a href="https://github.com/superterrific/horse-racing-datasets">source code at GitHub</a> to see how the implementation turned out! There's also a <a href="/notes/horse-racing-datasets-redesigned/">wrap up post</a> and the <a href="/projects/horse-racing-datasets/">project page</a>.
+{% endcaption %}
