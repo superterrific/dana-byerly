@@ -45,8 +45,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
 figure,
 blockquote,
 dl,
@@ -57,19 +55,14 @@ dd {
 /* Set core root defaults */
 html {
   overflow-x: hidden;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  scroll-padding-top: 1rem;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
 ol[class] {
   list-style: none;
+  margin: 0;
 }
 
 /* A elements that don't have a class get default styles */
@@ -98,10 +91,6 @@ img:not([alt]) {
 
 /* Global ------------------------------------------------------ */
 
-html {
-  scroll-padding-top: 1rem;
-}
-
 body {
   font-family: var(--body-font, sans-serif);
   font-size: 1rem;
@@ -109,6 +98,9 @@ body {
   flex-direction: column;
   color: var(--body-color);
   background: var(--body-background);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 a {
@@ -248,7 +240,7 @@ footer p::selection {
   font-size: clamp(1.15rem, 2.5vw, 1.25rem);
 }
 
-.site-nav ul li:last-child {
+.site-nav li:last-child {
   padding-inline-end: 0;
 }
 
