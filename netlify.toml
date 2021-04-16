@@ -7,3 +7,8 @@
   [headers.values]
     Content-Type = "image/avif"
     Content-Disposition = "inline"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"
