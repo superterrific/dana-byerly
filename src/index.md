@@ -1,7 +1,7 @@
 ---
 title: 'Dana Byerly'
 layout: 'layouts/home.html'
-summary: 'Personal site of Dana Byerly, an Interaction Designer and Side Project-Haver'
+summary: 'Personal site of Dana Byerly, an Interaction Designer who codes'
 titleHP: 'Hi there'
 featuredProjects:
  title: 'Featured Projects'
@@ -11,4 +11,3 @@ recentArticles:
  summary: 'The latest in blather.'
 eleventyExcludeFromCollections: true
 ---
-[Learn more about CSS Naked Day](https://laurakalbag.com/css-naked-day-2020/).
