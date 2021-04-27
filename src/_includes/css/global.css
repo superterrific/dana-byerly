@@ -17,7 +17,8 @@
   --color-highlight-blue: #2877d4;
   --flow-space: 1rem;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --body-font: Bitter, sans-serif;
+  --body-meta: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --body-color: var(--color-darkest);
   --body-background: var(--color-lightest);
 }
@@ -105,6 +106,7 @@ body {
 
 a {
   color: var(--color-primary);
+  text-underline-offset: .2rem;
 }
 
 a:hover {
@@ -237,6 +239,7 @@ footer p::selection {
 .site-nav li {
   list-style: none;
   padding-inline-end: 1rem;
+  font-size: 1.2rem;
   font-size: clamp(1.15rem, 2.5vw, 1.25rem);
 }
 
@@ -299,7 +302,7 @@ h3 {
 }
 
 .promo-summary h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .promo-summary p,
@@ -312,6 +315,7 @@ h3 {
 
 .meta {
   font-size: .9rem;
+  font-family: var(--body-meta);
 }
 
 /* Tags -----------------------------------------*/
@@ -319,6 +323,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  font-family: var(--body-meta);
 }
 
 .tag-list > * {

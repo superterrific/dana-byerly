@@ -11,6 +11,7 @@
   box-shadow: var(--shadow);
 }
 
+
 h2.project-hero-label {
   color: var(--color-primary-highlight);
   font-weight: 600;
@@ -25,6 +26,10 @@ h2.project-hero-label {
   justify-self: end;
 }
 
+.project-meta {
+  font-family: var(--body-meta);
+}
+
 .project-meta li {
   display: inline;
 }
@@ -37,12 +42,22 @@ h2.project-hero-label {
   content: '';
 }
 
+.pad-project {
+  padding: 2rem 0 3rem;
+}
+
+
 @media screen and (max-width: 800px) {
   .project-hero {
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
 
   .project-meta-list {
     justify-self: start;
   }
+
+  .pad-project {
+    padding: 2rem 1rem 3rem;
+  }
+
 }

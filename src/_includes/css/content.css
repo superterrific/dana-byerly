@@ -1,9 +1,9 @@
 .pad-content {
-  padding: 2rem .5rem 4rem;
+  padding: 2rem 1rem 4rem;
 }
 
 blockquote {
-  background-color: var(--color-primary-tint);
+  background-color: var(--color-primary-banding);
   border-inline-start: .5rem solid var(--color-secondary);
   padding: 1.5rem 2rem;
   font-family: 'Bitter', sans-serif;
@@ -32,6 +32,7 @@ code {
   border-radius: .25rem;
   padding: .15rem .25rem .125rem;
   font-size: 1.1rem;
+  font-family: var(--body-meta);
 }
 
 [class*='language'] code {
@@ -86,6 +87,7 @@ code {
 /* Type -------------------------------------------------------- */
 .reading p,
 .reading {
+  font-size: 1.2rem;
   font-size: clamp(1.18rem, 2.5vw, 1.25rem);
   line-height: 1.7;
 }
@@ -188,13 +190,9 @@ code {
 /* Media Queries ---------------------------------------------- */
 @media screen and (max-width: 800px) {
 
-  .reading p,
-  .reading {
-    line-height: 1.6;
-  }
 
   .pad-content {
-    padding: .5rem 1rem 2rem;
+    padding-top: .5rem;
   }
 
 }

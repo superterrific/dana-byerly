@@ -10,22 +10,6 @@
   margin-bottom: 3rem;
 }
 
-.hp-hero a {
-  background: var(--color-primary);
-  color: var(--color-lightest);
-  text-decoration: none;
-  padding: .15rem .5rem;
-}
-
-.hp-hero a:hover {
-  background-color: var(--color-primary-highlight);
-  color: var(--color-primary);
-}
-
-.hp-hero a:focus {
-  outline: 3px dashed var(--color-highlight-green);
-}
-
 .wrapper-intro {
   display: flex;
   flex-wrap: wrap;
