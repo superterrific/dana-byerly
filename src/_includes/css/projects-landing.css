@@ -35,7 +35,8 @@
 }
 
 .project-summary {
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
 }
 
 .landing-card {
