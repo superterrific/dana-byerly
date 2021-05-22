@@ -14,6 +14,8 @@ This site has been built using [W3C standards](https://www.w3.org/standards/) fo
 * Zoom up to 400% without having to scroll horizontally to view any content.
 * Navigate most of this site using speech recognition software.
 * Navigate most of this site using a screen reader.
+* Navigate all of this site if CSS fails to load.
+* Navigate all of this site if JavaScript is disabled or fails to load.
 
 In addition to being tested on modern browsers, this site has been checked for screen reader ease of use using Voice Over. It has also been audited using [WAVE](https://wave.webaim.org/) and [Arc Toolkit](https://www.tpgi.com/arc-platform/arc-toolkit/) as well as manually checked by myself and [A11y Websites](https://twitter.com/superterrific/status/1345403075935277057).
 
