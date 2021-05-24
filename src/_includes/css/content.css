@@ -105,12 +105,22 @@ code {
   font-weight: 700;
 }
 
+.reading h4 {
+  font-size: inherit;
+  font-weight: 600;
+}
+
 .reading h2 + p {
   margin-top: .5rem;
 }
 
-.reading h3 + p {
+.reading h3 + p,
+.reading h4 + ul {
   margin-top: .25rem;
+}
+
+.reading h4 + p {
+  margin-top: 0;
 }
 
 .anchor-link {

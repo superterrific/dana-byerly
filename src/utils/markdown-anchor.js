@@ -18,7 +18,7 @@ const anchor = (md, options) => {
     const contentToken = tokens[index + 1];
     const slug = slugify(contentToken.content);
 
-    if (tokens[index].tag === 'h2') {
+    if (tokens[index].tag === 'h2' || 'h3') {
       return `<${
         tokens[index].tag
       } id="${slug}">`;
@@ -30,7 +30,7 @@ const anchor = (md, options) => {
     const contentToken = tokens[index - 1];
     const slug = slugify(contentToken.content);
 
-    if (tokens[index].tag === 'h2') {
+    if (tokens[index].tag === 'h2' || 'h3') {
       return ` <a class="${
         options.anchorClass
       }" href="#${slug}">
