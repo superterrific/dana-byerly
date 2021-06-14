@@ -36,7 +36,7 @@ When I'm not fiddling with side projects I enjoy photography, I also studied it.
 
 For years I posted to [Instagram]({{ author.instagramUrl }}), and still do on occasion. Prior to that I had a [Fotolog account](https://en.wikipedia.org/wiki/Fotolog)  and then a Flickr account. I also made a photoblog using [Moveable Type](https://movabletype.org/) that I posted to from 2006-2008 [that's still up today](http://lookist.org/), although it's so out of date that [I can't log in](https://twitter.com/superterrific/status/1191515208042328065).
 
- In the beginning of 2020 I thought I'd give [Flickr another shot]({{ author.flickrUrl }}). I also started a [Pixelfed account](https://pixfed.com/superterrific). I stopped posting as the pandemic picked up, but might start up again. Ultimately I'd like go full-on Indie Web and starting posting here, [maybe using this](https://github.com/maxvoltar/photo-stream). We'll see!
+ In the beginning of 2020 I thought I'd give [Flickr another shot]({{ author.flickrUrl }}). I also started a [Pixelfed account](https://pixfed.com/superterrific). I stopped posting as the pandemic picked up, but might start up again. Ultimately I'd like go full-on Indie Web and starting posting here, [maybe using this](https://github.com/tannerdolby/eleventy-photo-gallery). We'll see!
 
 ## Now what?
 The people I follow and find inspirational skew heavily towards craft over hustle, and like to share their process or what they've learned as a way to help others. It's a little reminiscent of the good old [Web Dark Ages](https://pavellaptev.github.io/web-dark-ages/) when everyone was trying to figure things out, and it's a pocket of the web I'm happy to have found.

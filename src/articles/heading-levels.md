@@ -11,7 +11,7 @@ One of my favorite ways to learn is to look around repositories to see different
 After reading this [article by Tomas Pustelto on optimizing CSS](https://pustelto.com/blog/optimizing-css-for-faster-page-loads/) I was looking around the repository for his site to take a closer look at how he structured his CSS, and noticed he was dynamically assigning heading levels based on the layout. I made a note to take a closer look after [optimizing my CSS](/articles/manually-splitting-css-files-in-eleventy/), and now that I've implemented dynamic headings I wanted to share the approach since I haven't found any how-to articles already out there.
 
 ## What are heading levels and why are they important?
-Heading levels refer to the [HTML heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) of <code>h1</code> - <code>h6</code>. Heading elements are important because they describe the structure of the content, and [using them in the correct order has several benefits](https://usability.yale.edu/web-accessibility/articles/headings#benefits). In addition to helping sighted users find what they're looking for more quickly, assistive technology users can also easily navigate between or skip headings.
+Heading levels refer to the [HTML heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) of ```h1``` - ```h6```. Heading levels are important because they describe the structure of the content, and [using them in the correct order has several benefits](https://usability.yale.edu/web-accessibility/articles/headings#benefits). In addition to helping sighted users find what they're looking for more quickly, assistive technology users can also easily navigate between or skip headings.
 
 
 ## Why am I using dynamic header levels?
@@ -28,7 +28,7 @@ There are several places throughout the site where I list posts. I have a single
   {% endfigcaption %}
 {% endfigure %}
 
-On all of these pages except the homepage the heading should be a <code>h2</code>. On the homepage the listing is within a section that has a <code>h2</code>, so those headings should be <code>h3</code>.
+On all of these pages except the homepage the heading should be a ```h2```. On the homepage the listing is within a section that has a ```h2```, so those headings should be ```h3```.
 
 {% figure %}
   <picture>
@@ -37,7 +37,7 @@ On all of these pages except the homepage the heading should be a <code>h2</code
     <img src="/img/document-outline.png" alt="The document outline of the homepage and the articles listing page" loading="lazy" />
   </picture>
   {% figcaption %}
-    The document outline of the homepage and the Articles listing page. On the homepage the Articles listing is within a "Recent Writing" section that has a <code>h2</code>. Outlines via <a href="https://validator.w3.org/">W3C Validator</a>
+    The document outline of the homepage and the Articles listing page. On the homepage the Articles listing is within a "Recent Writing" section that has a ```h2```. Outlines via <a href="https://validator.w3.org/">W3C Validator</a>
   {% endfigcaption %}
 {% endfigure %}
 
@@ -53,11 +53,11 @@ Here's a diagram showing the relationship of the partial and layouts...
     <img src="/img/dynamic-headers-template-structure.png" alt="A diagram showing how the partial and layouts work together." loading="lazy" />
   </picture>
   {% figcaption %}
-    The partial is passed into two layouts, one for the homepage and one for the listing pages. If the variable is set in the layout then the conditional header uses the variable, if not it renders a <code>h2</code>. Created using <a href="https://excalidraw.com/">Excalidraw</a>.
+    The partial is passed into two layouts, one for the homepage and one for the listing pages. If the variable is set in the layout then the conditional header uses the variable, if not it renders a ```h2```. Created using <a href="https://excalidraw.com/">Excalidraw</a>.
   {% endfigcaption %}
 {% endfigure %}
 
-As the diagram above shows, the partial for the article summary contains a conditional header that sets the value, in this case the heading tag, to a variable titled <code>headingLevel</code>. If <code>headingLevel</code> is not present, then <code>h2</code> is used. This makes the default heading a <code>h2</code> but allows for variation where needed.
+As the diagram above shows, the partial for the article summary contains a conditional header that sets the value, in this case the heading tag, to a variable titled ```headingLevel```. If ```headingLevel``` is not present, then ```h2``` is used. This makes the default heading a ```h2``` but allows for variation where needed.
 
 ```html
 <!-- article-summary.html -->
@@ -74,7 +74,7 @@ On the Articles, Changelog, Notes and tag listing pages the conditional heading 
 </h2>
 ```
 
-In the homepage layout <code>headingLevel</code> is set to <code>h3</code>...
+In the homepage layout ```headingLevel``` is set to ```h3```...
 
 ```html
 <!-- home.html -->

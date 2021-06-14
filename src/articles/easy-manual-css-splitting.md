@@ -13,7 +13,7 @@ Before we get started, this seems like a great time to provide some context abou
 {% include 'partials/dev-caveat.html' %}
 
 ## Quick set up
-You should check the [check the instructions at Eleventy](https://www.11ty.dev/docs/quicktips/inline-css/), but the gist is that once clean-css is installed and a filter is added to your eleventy.js file, there's a bit of code to add within the <code>head</code> tag to include the CSS file and then minify it. This code replaces the link to your CSS file.
+You should check the [check the instructions at Eleventy](https://www.11ty.dev/docs/quicktips/inline-css/), but the gist is that once clean-css is installed and a filter is added to your eleventy.js file, there's a bit of code to add within the ```head``` tag to include the CSS file and then minify it. This code replaces the link to your CSS file.
 
 I've made a directory named 'css' in '_includes' and am calling the global CSS file...
 

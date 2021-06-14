@@ -2,7 +2,7 @@
       <picture>
         <source srcset="/img/projects/{{ item.img }}.avif" type="image/avif">
         <source srcset="/img/projects/{{ item.img }}.webp" type="image/webp">
-        <img src="/img/projects/{{ item.img }}.png" alt="{{ item.alt }}" loading="lazy">
+        <img src="/img/projects/{{ item.img }}.png" width="{{ item.imgWidth }}" height="{{ item.imgHeight }}" alt="{{ item.alt }}" loading="lazy">
       </picture>
 
       <div class="project-card flow-100">

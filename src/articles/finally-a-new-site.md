@@ -49,7 +49,7 @@ Here's what I used, which [resulted in this](/tags-all/).
 </ul>
 ```
 {% caption %}
-<strong>Note:</strong> <a href="/changelog/">I updated this example</a> to remove the <code>aria-labeledby</code> as it was overly verbose given that there is similar text on the page.
+<strong>Note:</strong> <a href="/changelog/">I updated this example</a> to remove the ```aria-labeledby``` as it was overly verbose given that there is similar text on the page.
 {% endcaption %}
 
 I also [noticed this article](http://dirtystylus.com/2020/09/01/eleventy-tag-list-sorting-and-post-count/) earlier in the week with a similar approach to the Base Blog.
@@ -72,7 +72,7 @@ I dipped my toes in the srcset waters and [this easy to understand explainer fro
 ### Limiting number of posts displayed on a page
 This is another one that can be accomplished in multiple ways. I ended up using the filter that [Style Stage](https://stylestage.dev/) by Stephanie Eckles  is using (hoping to contribute there eventually!). When I was trying to think of examples I remembered that Style Stage shows three featured contributions and sure enough that solution was the most direct and easy to understand of all the ones I found, which was no surprise [considering Stephanie's writing](https://moderncss.dev/)!
 
-In the <code>module.exports</code> section of your .eleventy.js file add...
+In the ```module.exports``` section of your .eleventy.js file add...
 ```js
 eleventyConfig.addFilter('limit', function (arr, limit) {
   return arr.slice(0, limit);
@@ -100,7 +100,7 @@ Here's one that just popped up this week, [billed as "The intro guide I wished I
 ## What's Next?
 Here are a few of the things I'm plan on working on around here...
 
-* Adding a dark mode for the <code>prefers-color-scheme: dark</code> among you
+* Adding a dark mode for the ```prefers-color-scheme: dark``` among you
 * Adding ability to toggle between dark and light mode
 * Tightening up the CSS
 * Improving accessibility

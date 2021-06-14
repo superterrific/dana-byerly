@@ -112,11 +112,11 @@ Let's start with the table itself...
 </div>{% endraw %}
 ```
 
-Structurally this is a pretty straightforward table. The classes set the column header color and the <code>span</code> responsively sets line breaks [using this approach](https://twitter.com/a_sandrina_p/status/1318217958955601922). The <code>caption</code> provides extra context for screen readers. I've applied a [visually hidden class](https://piccalil.li/quick-tip/visually-hide-an-element-with-css/), otherwise the caption text would display. In this case with the paragraph text above the table the caption felt unnecessary for sited visitors.
+Structurally this is a pretty straightforward table. The classes set the column header color and the ```span``` responsively sets line breaks [using this approach](https://twitter.com/a_sandrina_p/status/1318217958955601922). The ```caption``` provides extra context for screen readers. I've applied a [visually hidden class](https://piccalil.li/quick-tip/visually-hide-an-element-with-css/), otherwise the caption text would display. In this case with the paragraph text above the table the caption felt unnecessary for sited visitors.
 
-Adrian Roselli's [A Responsive Accessible Table](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html) is full of useful information and examples, such as adding <code>role</code>, <code>aria-labelledby</code> and <code>tabindex</code> to the scrolling container to ensure that the table is navigable by keyboard. Check the [Keyboard-Friendly Scroll](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html#ResponsiveScrollingKeyboard) section for more details.
+Adrian Roselli's [A Responsive Accessible Table](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html) is full of useful information and examples, such as adding ```role```, ```aria-labelledby``` and ```tabindex``` to the scrolling container to ensure that the table is navigable by keyboard. Check the [Keyboard-Friendly Scroll](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html#ResponsiveScrollingKeyboard) section for more details.
 
-It's also worth pointing out what's not used. Another Roselli post on [Fixed Table Headers](https://adrianroselli.com/2020/01/fixed-table-headers.html) notes that <code>scope</code> is not needed for column headers, and the example in Léonie Watson's helpful [How Screen Readers Navigate Data Tables](https://tink.uk/how-screen-readers-navigate-data-tables/) post there's an example of NVDA reading a table does not include it.
+It's also worth pointing out what's not used. Another Roselli post on [Fixed Table Headers](https://adrianroselli.com/2020/01/fixed-table-headers.html) notes that ```scope``` is not needed for column headers, and the example in Léonie Watson's helpful [How Screen Readers Navigate Data Tables](https://tink.uk/how-screen-readers-navigate-data-tables/) post there's an example of NVDA reading a table does not include it.
 
 ### Decisions, decisions
 
@@ -136,7 +136,7 @@ I've used the approach of hiding columns at smaller sizes before, but that appro
 
 I decided to split the difference between the two other options and account for three viewing scenarios: Big maximized screens, medium screens or browsers sized down on big screens and small screens. I have a big screen and frequently have my browser sized down to be the equivalent of around 1300-1400 pixels. At those sizes the table was causing browser-level horizontal scrolling.
 
-I created a container class that sets the width & height and scrolls if necessary at 1300px and below. Setting the height to <code>height: 90vh;</code> ensures that the scrolling container takes up most of the viewable area once you scroll down to the table. This covered the medium screen scenario pretty well.
+I created a container class that sets the width & height and scrolls if necessary at 1300px and below. Setting the height to ```height: 90vh;``` ensures that the scrolling container takes up most of the viewable area once you scroll down to the table. This covered the medium screen scenario pretty well.
 
 ```css
 @media screen and (max-width: 1300px) {
@@ -255,9 +255,9 @@ The small table has zero top and bottom margin, so the individual tables appear 
 ```
 At the larger sizes .table-small is hidden. At smaller sizes .table-sm is displayed and .table-lg is hidden. Since the small table doesn't need the scrolling region I also hid .table-responsive (which sets the scrolling region). I could've specified a range in the media query for the medium screens, but it always feels futzy to me to get the range correct when there are multiple queries, your mileage may vary!
 
-A note on <code>display: table</code>, I wasn't aware of the display properties for tables. According to CSS Tricks the primary use seems to be giving [semantic meaning to non-table elements](https://css-tricks.com/almanac/properties/d/display/#table-values), gross indeed! But, when I used <code>display: block</code> to display the hidden table, none of the styles on table elements worked, as it turns out <code>display: table</code> was useful for an actual table.
+A note on ```display: table```, I wasn't aware of the display properties for tables. According to CSS Tricks the primary use seems to be giving [semantic meaning to non-table elements](https://css-tricks.com/almanac/properties/d/display/#table-values), gross indeed! But, when I used ```display: block``` to display the hidden table, none of the styles on table elements worked, as it turns out ```display: table``` was useful for an actual table.
 
-Since each row from the larger table is its own table in the smallest layout, there was variation in the <code>td</code> width between the tables based on the data in the second cell. To ensure uniform cell width between the tables I set the width of the first <code>td</code>. This makes it easy to scan and simulates a single, uniform table experience.
+Since each row from the larger table is its own table in the smallest layout, there was variation in the ```td``` width between the tables based on the data in the second cell. To ensure uniform cell width between the tables I set the width of the first ```td```. This makes it easy to scan and simulates a single, uniform table experience.
 
 ### Sticky headers
 Regardless of the layout, sticky headers were high on my list to ensure the context of the data while scrolling through the table. [CSS Tricks](https://css-tricks.com/position-sticky-and-table-headers/) and the [Adrian Roselli post](https://adrianroselli.com/2020/01/fixed-table-headers.html) mentioned before each have useful information.
@@ -276,7 +276,7 @@ th {
 ```
 At every size the header row sticks. In the large and smallest sizes the header sticks to the top of the browser. At the medium size the header sticks to the scrolling container.
 
-Another small note in the above <code>th</code> styles, I set a defaults for the background and text color, which are used by default in the [Pedigree table](https://omnisurface-stars.com/pedigree) and then apply different colors for the other two tables on the individual cells allowing for surface specific background colors.
+Another small note in the above ```th``` styles, I set a defaults for the background and text color, which are used by default in the [Pedigree table](https://omnisurface-stars.com/pedigree) and then apply different colors for the other two tables on the individual cells allowing for surface specific background colors.
 
 ### What about screen readers?
 I used [VoiceOver on Mac](https://help.apple.com/voiceover/mac/10.15/) to test the site, and I only tested on my desktop. Without a Windows machine I can't currently test on NVDA or JAWS.
@@ -304,7 +304,7 @@ For "Won on All Three" and "Won on Two" I added an aria-label to clarify potenti
 ```
 Visually you can discern between "Won" and "One" but hearing it read was confusing, now it announces as "Won on all three surfaces" and "Won on two of three surfaces".
 
-Finally <code>thead</code>, <code>tbody</code>, <code>tfoot</code> don't provide semantic meaning and therefore [don't provide any accessibility benefit](https://webaim.org/techniques/tables/data). They are useful for printing as they ensure the <code>thead</code> and <code>tfoot</code> print out with every page. And speaking of printing, I didn't create any print styles (Yet? Anyone who knows hardcore racing nerds also knows they love to print things out).
+Finally ```thead```, ```tbody```, ```tfoot``` don't provide semantic meaning and therefore [don't provide any accessibility benefit](https://webaim.org/techniques/tables/data). They are useful for printing as they ensure the ```thead``` and ```tfoot``` print out with every page. And speaking of printing, I didn't create any print styles (Yet? Anyone who knows hardcore racing nerds also knows they love to print things out).
 
 ### Wrapping up
 I wrote this article mostly for myself as a way to remember decisions and absorb what I've learned along the way, but I'm always hoping to help out anyone who might be trying to solve similar problems. You can view the code [at the repository](https://github.com/superterrific/omnisurface-stars), and the [table specific CSS is here](https://github.com/superterrific/omnisurface-stars/blob/main/src/_includes/css/table.css).

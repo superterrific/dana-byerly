@@ -104,7 +104,7 @@ If you're not using an .env file to hide your key you could use a second Airtabl
 
 To modify this for your project, add your base and key information in the second line. I've commented the two other places where your Airtable information will need to be swapped in. You'll probably also want to change the variable name to something more relevant to your project (e.g., I'm using allDatasets). The variable is used in three places.
 
-This code lives in a file named <code>all.js</code> in the _data directory and is a [JavaScript data file](https://www.11ty.dev/docs/data-js/). The data is fetched at build time and available to templates in the same way that data in [global data files](https://www.11ty.dev/docs/data-global/) is available.  
+This code lives in a file named ```all.js``` in the _data directory and is a [JavaScript data file](https://www.11ty.dev/docs/data-js/). The data is fetched at build time and available to templates in the same way that data in [global data files](https://www.11ty.dev/docs/data-global/) is available.  
 
 ```html
 {% raw %}{% for item in all %}
@@ -131,9 +131,9 @@ pagination:
 ---
 ```
 
-In the data field is the name of the data file, in this case <code>all.js</code>, Size specifies how many items to list per page. If you were using collections you'd specify your collection in the data field, for example <code>collections.posts</code>.
+In the data field is the name of the data file, in this case ```all.js```, Size specifies how many items to list per page. If you were using collections you'd specify your collection in the data field, for example ```collections.posts```.
 
-In the template there's a [Nunjucks variable using set](https://mozilla.github.io/nunjucks/templating.html#set) that picks up the pagination data from the markdown file using <code>pagination.items</code>.
+In the template there's a [Nunjucks variable using set](https://mozilla.github.io/nunjucks/templating.html#set) that picks up the pagination data from the markdown file using ```pagination.items```.
 
 ```html
 <!-- feed.html -->
@@ -153,7 +153,7 @@ In the template there's a [Nunjucks variable using set](https://mozilla.github.i
       {% endblock %}{% endraw %}
 ```
 
-This grabs the paginated data and creates pages based on how many items are specified to be listed on each page. There's a handy section that explains how this works in detail in the [Learn Eleventy from Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/) course. The include for <code>pagination.html</code> includes the 'Next' and 'Previous' links.
+This grabs the paginated data and creates pages based on how many items are specified to be listed on each page. There's a handy section that explains how this works in detail in the [Learn Eleventy from Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/) course. The include for ```pagination.html``` includes the 'Next' and 'Previous' links.
 
 ## Listing by Tag
 Tag is a bit misleading here, because it's not in reference to tags in collections, but it's what I've called the data element in my Airtable base. The requirement is to be able to view a listing of datasets by tag, for example [all datasets for the Kentucky Derby](http://horseracingdatasets.com/kentucky-derby/).
@@ -207,7 +207,7 @@ Then in the layout for tags, there's a [Nunjucks variable using set](https://moz
   {% endblock %}{% endraw %}
 ```
 
-Within the for loop that calls records from <code>all.js</code> I'm using an if statement to pass the tag name that the Nunjucks variable is picking up from the individual tag page front matter. Continuing the example of the Kentucky Derby tag page, the if statement is saying "if the value of 'Kentucky Derby' is found in the 'tags' field, then display the record". This creates a listing of items tagged with 'Kentucky Derby'. I'll explain the "sortByTitle" filter in a bit.
+Within the for loop that calls records from ```all.js``` I'm using an if statement to pass the tag name that the Nunjucks variable is picking up from the individual tag page front matter. Continuing the example of the Kentucky Derby tag page, the if statement is saying "if the value of 'Kentucky Derby' is found in the 'tags' field, then display the record". This creates a listing of items tagged with 'Kentucky Derby'. I'll explain the "sortByTitle" filter in a bit.
 
 Here's an illustration of the data flow, starting at Airtable and ending in a tag page. I've only included some of the fields to illustrate the records.
 
@@ -227,7 +227,7 @@ I tried a few other things before I got this to work. One of the best things was
 
 Back to the "sortByTitle" filter. The [All Datasets](https://horseracingdatasets.com/all/) page displays alphabetically and the sort order is set at Airtable. But on the tag pages the default listing is to display by most recently added. With some search engine luck [I found this approach](https://stackoverflow.com/questions/65471629/dot-notation-in-nunjucks-sorting-isnt-working/65481434#65481434) and was able to create a filter to sort by title to keep the same approach used on the All Datasets listing.
 
-The filter gets added in <code>eleventy.js</code>...
+The filter gets added in ```eleventy.js```...
 
 ```js
 config.addFilter("sortByTitle", arr => {
@@ -287,9 +287,9 @@ I'm using the same template that's being used for the "All Datasets" page but I'
       {% endblock %}{% endraw %}
 ```
 
-Since pagination isn't being used I had to create a way to pass in the name of the data source and limit the number of items displayed. I also needed to filter the results by date to get the most recently added items first. The first if statement looks at the url, if it's the 'Recently Added' page  it sets the same variable of <code>datasetList</code> to pass in the file name that makes the API call (<code>all.js</code>), filters that data (sortByNewest) and limits the amount of items displayed to five.
+Since pagination isn't being used I had to create a way to pass in the name of the data source and limit the number of items displayed. I also needed to filter the results by date to get the most recently added items first. The first if statement looks at the url, if it's the 'Recently Added' page  it sets the same variable of ```datasetList``` to pass in the file name that makes the API call (```all.js```), filters that data (sortByNewest) and limits the amount of items displayed to five.
 
-Similar to the approach for filtering the tag display order, the filter gets added in <code>eleventy.js</code>...
+Similar to the approach for filtering the tag display order, the filter gets added in ```eleventy.js```...
 
 ``` js
 config.addFilter("sortByNewest", arr => {
@@ -300,11 +300,11 @@ config.addFilter("sortByNewest", arr => {
 
 The [handy limit filter is from 11ty Rocks](https://11ty.rocks/eleventyjs/data-arrays/#limit-filter). I'm also using it here at this site on the homepage!
 
-The second if statement checks to see if the data source, set in <code>datasetList</code>, is empty. If it is empty then it displays the conditional text. I'll think more about that text when I start designing. It's fine for the scenario where there are no recently added datasets, but since this template is used for both 'All Datasets' and 'Recently Added' there's a chance the conditional text could display on the 'All Datasets' page if call fails. And if that were the case the text would be misleading.
+The second if statement checks to see if the data source, set in ```datasetList```, is empty. If it is empty then it displays the conditional text. I'll think more about that text when I start designing. It's fine for the scenario where there are no recently added datasets, but since this template is used for both 'All Datasets' and 'Recently Added' there's a chance the conditional text could display on the 'All Datasets' page if call fails. And if that were the case the text would be misleading.
 
-That handy <code>isEmpty</code> filter is from [Mike Riethmuller's Eleventy Plugin for Array Filters](https://github.com/jamshop/eleventy-plugin-array-filters). He's creating a [bunch of Eleventy plugins](https://github.com/jamshop/) this month as an [Eleventy Advent thing](https://twitter.com/MikeRiethmuller/status/1334014095486373891), so be sure to keep an eye on the [Jamshop GitHub account](https://github.com/jamshop/).
+That handy ```isEmpty``` filter is from [Mike Riethmuller's Eleventy Plugin for Array Filters](https://github.com/jamshop/eleventy-plugin-array-filters). He's creating a [bunch of Eleventy plugins](https://github.com/jamshop/) this month as an [Eleventy Advent thing](https://twitter.com/MikeRiethmuller/status/1334014095486373891), so be sure to keep an eye on the [Jamshop GitHub account](https://github.com/jamshop/).
 
-Admittedly I couldn't get the array plugin to work, but I looked the code for the <code>isEmpty</code> filter and added it directly as a filter in the <code>eleventy.js</code> config file and it worked.
+Admittedly I couldn't get the array plugin to work, but I looked the code for the ```isEmpty``` filter and added it directly as a filter in the ```eleventy.js``` config file and it worked.
 
 ```js
 // eleventy.js
@@ -316,7 +316,7 @@ config.addFilter('isEmpty', (value) => {
 ## Displaying a random dataset
 This will be a new addition to the site. [Currently on the homepage](http://horseracingdatasets.com) I have some featured datasets listed. What's nice about that is that I can swap out datasets relevant to the racing calendar, but it's also a bit of work for such a low traffic site. For the new site I'm going to replace the featured datasets with a 'Random Dataset of the Day'.
 
-I was able to use the data from the initial API call in <code>all.js</code> and another [handy filter from 11ty Rocks](https://11ty.rocks/eleventyjs/data-arrays/#randomitem-filter) that grabs a random item out the array at build time.
+I was able to use the data from the initial API call in ```all.js``` and another [handy filter from 11ty Rocks](https://11ty.rocks/eleventyjs/data-arrays/#randomitem-filter) that grabs a random item out the array at build time.
 
 ```html
 {% raw %}{% for dataset in all | randomItem  %}

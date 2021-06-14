@@ -7,7 +7,9 @@
       "launched": "Decemeber 2018",
       "projectPage": "/projects/random-replay-generator",
       "img": "RRG-1904",
-      "alt": "Random Replay Generator site"
+      "alt": "Random Replay Generator site",
+      "imgWidth": "914",
+      "imgHeight": "756"
     },
     {
       "title": "Horse Racing Datasets",
@@ -16,7 +18,9 @@
       "launched": "January 2015",
       "projectPage": "/projects/horse-racing-datasets",
       "img": "hrds-v4-hp",
-      "alt": "Horse Racing Datasets site"
+      "alt": "Horse Racing Datasets site",
+      "imgWidth": "800",
+      "imgHeight": "456"
     }
     ],
   "primary": [
@@ -27,7 +31,9 @@
       "launched": "April 2020",
       "projectPage": "/projects/pile-of-hrefs",
       "img": "pile",
-      "alt": "Pile of hrefs site"
+      "alt": "Pile of hrefs site",
+      "imgWidth": "788",
+      "imgHeight": "493"
     },
     {
       "title": "Paths to the Kentucky Derby Since 1990",
@@ -36,7 +42,9 @@
       "launched": "Feburary 2016",
       "projectPage": "/projects/paths-to-the-kentucky-derby-since-1990",
       "img": "paths",
-      "alt": "Paths to the Kentucky Derby Data Visualization"
+      "alt": "Paths to the Kentucky Derby Data Visualization",
+      "imgWidth": "727",
+      "imgHeight": "859"
     },
     {
       "title": "Kentucky Derby Magic 8 Ball",
@@ -45,7 +53,9 @@
       "launched": "2018",
       "projectPage": "/projects/kentucky-derby-magic-8-ball",
       "img": "derby-magic",
-      "alt": "Kentucky Derby Magic 8 Ball at Glitch"
+      "alt": "Kentucky Derby Magic 8 Ball at Glitch",
+      "imgWidth": "700",
+      "imgHeight": "582"
     },
     {
       "title": "Stakes Profiles",
@@ -54,7 +64,9 @@
       "launched": "Feburary 2018",
       "projectPage": "/projects/stakes-profiles",
       "img": "stakes-profiles",
-      "alt": "Stakes Profile Data Visualization of Florida Derby Running Styles"
+      "alt": "Stakes Profile Data Visualization of Florida Derby Running Styles",
+      "imgWidth": "809",
+      "imgHeight": "613"
     },
     {
       "title": "Omnisurface Stars Archive",
@@ -63,7 +75,9 @@
       "launched": "2020",
       "projectPage": "/projects/omnisurface-stars-archive",
       "img": "oss-860",
-      "alt": "Omnisurface Stars site"
+      "alt": "Omnisurface Stars site",
+      "imgWidth": "860",
+      "imgHeight": "625"
     },
     {
       "title": "Hello Race Fans",
@@ -72,7 +86,9 @@
       "launched": "March 2010",
       "projectPage": "/projects/hello-race-fans",
       "img": "HRF",
-      "alt": "Hello Race Fans site"
+      "alt": "Hello Race Fans site",
+      "imgWidth": "767",
+      "imgHeight": "564"
     },
     {
       "title": "Raceday 360",
@@ -80,7 +96,9 @@
       "summary": "Horse racing aggregrator and original content site.",
       "projectPage": "/projects/raceday-360",
       "img": "R360",
-      "alt": "Tout Wire at Raceday 360 site"
+      "alt": "Tout Wire at Raceday 360 site",
+      "imgWidth": "1380",
+      "imgHeight": "929"
     }
   ],
   "additional": [

@@ -21,7 +21,7 @@ I used the [randItem filter from 11ty Rocks](https://11ty.rocks/eleventyjs/data-
 
 The [All Datasets](https://horseracingdatasets.com/all/) page displays alphabetically and the sort order is set at Airtable. But on the [category pages](/articles/using-airtable-with-eleventy/#listing-by-tag) the default listing is to display by most recently added. With some search engine luck [I found this approach](https://stackoverflow.com/questions/65471629/dot-notation-in-nunjucks-sorting-isnt-working/65481434#65481434) and was able to create a filter to sort by title to keep the same approach used on the All Datasets listing.
 
-The filter gets added in <code>eleventy.js</code>...
+The filter gets added in ```eleventy.js```...
 
 ```js
 config.addFilter("sortByTitle", arr => {
@@ -39,7 +39,7 @@ And then used in the for loop in the template...
 ```
 
 
-The set-up is similar for the [Recently Added](https://horseracingdatasets.com/recently-added/) page. The filter gets added in <code>eleventy.js</code>...
+The set-up is similar for the [Recently Added](https://horseracingdatasets.com/recently-added/) page. The filter gets added in ```eleventy.js```...
 
 ``` js
 config.addFilter("sortByNewest", arr => {
@@ -116,7 +116,7 @@ Filed under "know thy audience", when doing any horse racing related project I m
   {% endfigcaption %}
 {% endfigure %}
 
-I also took a quick look with Edge on my work machine and was surprised to discover that it was an older version (44). I discovered this because the spacing was off in several areas and I realized that [clamp() was not supported](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()#browser_compatibility) in that version. I should've thought of this level of progressive enhancement before, but it lead me to figure out that defaults can be set in combination with <code>clamp()</code>, which allows unsupported browsers to pick-up the non-clamp property.
+I also took a quick look with Edge on my work machine and was surprised to discover that it was an older version (44). I discovered this because the spacing was off in several areas and I realized that [clamp() was not supported](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()#browser_compatibility) in that version. I should've thought of this level of progressive enhancement before, but it lead me to figure out that defaults can be set in combination with ```clamp()```, which allows unsupported browsers to pick-up the non-clamp property.
 
 ``` css
 .dataset-container {
@@ -128,7 +128,7 @@ I also took a quick look with Edge on my work machine and was surprised to disco
 }
 ```
 
-In the above example browsers that don't support <code>clamp()</code> use padding: 1rem while the others use <code>clamp()</code>.
+In the above example browsers that don't support ```clamp()``` use padding: 1rem while the others use ```clamp()```.
 
 ## Performance improvements
 Performance improvements are no surprise when going from a site that did an API call on every page to a static site. But it did surprise me that the previous version's performance scores weren't worse, not that they're good, but I imagined much worse.
@@ -178,7 +178,7 @@ No surprises that there were drastic reductions, you can also view the [full sta
 ## Housekeeping
 As mentioned in the [Filtering section](#filtering), I set up daily build at [Netlify using Zapier](https://zapier.com/apps/netlify/integrations/schedule/29330/start-deploys-of-netlify-sites-on-a-daily-schedule). API calls are only made at build time, so this ensures that there will be a new Random Dataset of Day [on the homepage](https://horseracingdatasets.com) and that any datasets I've added to Airtable will picked up daily.
 
-I changed a couple of urls from the previous version so I set up redirects for those changes. Netlify offers a couple of different approaches to [handle redirects](https://docs.netlify.com/routing/redirects/). I went with the redirects file. To make sure it ends up in the directory that's deployed I added this to my <code>eleventy.js</code> file...
+I changed a couple of urls from the previous version so I set up redirects for those changes. Netlify offers a couple of different approaches to [handle redirects](https://docs.netlify.com/routing/redirects/). I went with the redirects file. To make sure it ends up in the directory that's deployed I added this to my ```eleventy.js``` file...
 
 ```js
 config.addPassthroughCopy('./src/_redirects');

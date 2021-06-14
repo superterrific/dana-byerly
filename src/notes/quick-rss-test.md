@@ -59,7 +59,7 @@ To this:
 <updated>{% raw %}{{ post.date | dateToRfc3339 }}{% endraw %}</updated>
 ```
 
-Since you're already using the plugin you don't have to change anything in <code>eleventy.js</code>.
+Since you're already using the plugin you don't have to change anything in ```eleventy.js```.
 
 This has been a very long winded way to say "I updated my RSS plugin and am going to publish something to see if it works". It works locally! But the date is still a day off, so back to the drawing board on that front.
 

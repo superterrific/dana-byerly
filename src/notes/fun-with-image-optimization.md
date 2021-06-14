@@ -23,7 +23,7 @@ Here's the original code using srcset and responsively sized images (with an exa
           srcset="/img/projects/pile_axxcyn_c_scale,w_480.png 480w, /img/projects/pile_axxcyn_c_scale,w_768.png 768w, /img/projects/pile_axxcyn_c_scale,w_1019.png 1019w, /img/projects/pile_axxcyn_c_scale,w_1380.png 1380w"
           alt="Pile of hrefs site" loading="lazy" />
 ```
-Updated code using <code>picture</code> and next-generation formats...
+Updated code using ```picture``` and next-generation formats...
 ``` html
 <picture>
   <source srcset="/img/projects/pile.avif" type="image/avif">
