@@ -7,7 +7,7 @@
   font-size: 1.4rem;
   line-height: 1.65;
   box-shadow: var(--shadow);
-  margin-bottom: 3rem;
+  margin: 0 -.5rem 3rem;
 }
 
 .wrapper-intro {
