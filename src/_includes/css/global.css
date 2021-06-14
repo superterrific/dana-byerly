@@ -166,6 +166,7 @@ footer p::selection {
 
 .pad-hero {
   padding: 1rem .5rem 4rem;
+  min-height: 36rem;   
 }
 
 .splitter {
