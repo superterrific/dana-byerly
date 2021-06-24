@@ -497,7 +497,7 @@ Overall the site has good contrast and focus indication but a few frustratingly 
 Platform: WordPress  
 Reviews Passed: 1 of 10
 
-Several of the review criteria was a mix of pass and fails, such as a single missing alt tag and one form with correct label usage and one without. Most of the other candidates sites were mostly usable with JavaScript, only missing a few elements, but Adams' site barely loaded and had layout issues. One positive example was the "Candidate fully invested" section had good color contrast against an image background.
+Several of the review criteria was a mix of pass and fails, such as a single missing alt tag and one form with correct label usage and one without. The other candidates sites were mostly usable with JavaScript, only missing a few elements, but Adams' site barely loaded and had layout issues. One positive example was the "Candidate fully invested" section had good color contrast against an image background.
 
 {% figure %}
 	<picture>
@@ -506,7 +506,7 @@ Several of the review criteria was a mix of pass and fails, such as a single mis
 		<img src="/img/adams.png" alt="An example of improper site loading with no JavaScript and poor color contrast from Eric Adams' site." loading="lazy" />
 	</picture>
 	{% figcaption %}
-		From Eric Adams' site: If JavaScript is turned off or fails to load Adams' site is unusable in that much of the content doesn't load. The image on the left shows bunched up content stacked on top of each other. On the right the form shows insufficient contrast with white text against a light blue background. The content ratio is 2.03:1 and the minimum required for the inputs and larger text above the inputs is 3:1 and the minimum required for the smaller text is 4.5:1. The form is also using placeholders instead of labels. Both the button text and the button background color against the page background have good contrast.
+		From Eric Adams' site: Adam's site is unusable if JavaScript is turned off or fails to load. The image on the left shows bunched up content stacked on top of each other when JavaScript is disabled. On the right the form shows insufficient contrast with white text against a light blue background. The contrast ratio is 2.03:1. A ratio of at least 3:1 is required for the inputs and larger text and a ratio of at least 4.5:1 for the smaller text (placeholders and help text underneath). Another issue with the form is that it's using placeholders instead of labels. Both the button text and the button background color against the page background have good contrast.
 	{% endfigcaption %}
 {% endfigure %}
 
