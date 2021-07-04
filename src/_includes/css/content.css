@@ -95,8 +95,8 @@ code {
 
 /* Type -------------------------------------------------------- */
 .reading {
-  font-size: 1rem;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: 1.2rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.7;
 }
 

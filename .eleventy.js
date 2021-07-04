@@ -94,6 +94,11 @@ module.exports = config => {
     return [...collection.getFilteredByGlob('./src/changelog/*.md')].reverse();
   });
 
+  // Open the browser on launch
+  config.setBrowserSyncConfig({
+    open: true,
+  });
+
 // Markdown and anchor options
   const markdownOptions = {
     html: true,
