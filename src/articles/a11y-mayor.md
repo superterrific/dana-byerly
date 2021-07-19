@@ -121,7 +121,7 @@ Candidates passed: 4 out of 9
 ### Visible focus indication
 Visible focus indication goes hand in hand with keyboard and [switch](https://axesslab.com/switches/) usage. Tabbing through a site with a keyboard navigates the page by sequentially moving through each element that can receive input. When the element is selected it is said to have "focus".
 
-Links, form fields and buttons are examples of elements that can receive input, also referred to as [focusable elements](https://developers.google.com/web/fundamentals/accessibility/focus/). It's crucial to visibly indicate that an element has focus to allow visitors to quickly orient their location on the page.
+Links, form fields and buttons are examples of elements that can receive input, also referred to as [focusable elements](https://developers.google.com/web/fundamentals/accessibility/focus/). It's crucial to visibly indicate that an element has focus to allow sighted visitors to quickly orient their location on the page.
 
  [Web Content Accessibility Guidelines (WCAG) AA standards](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum.html) requires focused elements to have a 3:1 color contrast ratio between the element and its background.
 

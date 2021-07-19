@@ -19,6 +19,4 @@ One morning as I scanned my various Monday morning newsletters looking for artic
 
 It took me approximately a week to build the original version of the site, and initially it was easy to maintain. Eventually I found that I wasn't keeping up with adding articles because the process was a bit too manual. I knew I wanted to address that but needed time to figure out how to handle it.
 
-Just over a year later (July 2021) I migrated the site from Vue to [Eleventy]({{ tools.11ty }}) leaving the original design mostly intact. I'm still using [Airtable]({{ tools.airtable }}) but have starting using [Pocket](https://getpocket.com/) as a way to streamline saving urls. I don't love reading in Pocket but it's very easy to add articles with a single click and there's an API.
-
-I'll write up how I set it up and what I learned in the very near future.
+Just over a year later (July 2021) I migrated the site from Vue to [Eleventy]({{ tools.11ty }}), leaving the original design mostly intact. I'm still using [Airtable]({{ tools.airtable }}) but have starting using [Pocket](https://getpocket.com/) as a way to streamline saving urls. I've added more [details about the process here](/notes/migrating-the-pile).
