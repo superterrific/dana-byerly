@@ -30,7 +30,7 @@ Moving the data to Airtable was big step forward that made maintaining the site 
 Prior to redesigning the current version I said the following on this page...
 
 {% quote %}
-I might come back and add more detail about the implementation, or I might just redo the whole thing and then talk about that! — Dana Byerly
+I might come back and add more detail about the implementation, or I might just redo the whole thing and then talk about that! — {% cite %}Dana Byerly{% endcite %}
 {% endquote %}
 
 Since I went the "redo the whole thing" route I feel obligated to fulfill the "then talk about that" part. But instead of repeating myself, I'll direct you to a few of the places I have already talked about it!
@@ -60,6 +60,6 @@ Since you might not feel like clicking a bunch of links, here's a quick recap of
 * There is a light and dark mode that respects the visitor's system level preference. I have plans to add a toggle to allow for more flexibility.
 * Color contrast in both light and dark modes meets WCAG AA standards.
 * There are no screen reflow issues up to 500% zoom.
-* The site is fully functional if JavaScript disabled or fails to load.
+* The site is fully functional if JavaScript is disabled or fails to load.
 
 In addition to adding a user controlled light and dark toggle, I'm going to investigate adding search to the site.

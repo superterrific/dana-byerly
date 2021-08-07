@@ -36,7 +36,7 @@
                   <section>
                     <h2 class="project-hero-label">Filed Under</h2>
                     <span class="visually-hidden">A list of tags for this post.</span>
-                    <ul class="tag-list">
+                    <ul class="tag-list" role="list">
                       {% for tag in tags %}
                         <li>
                           <a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a>
@@ -51,7 +51,7 @@
                   <section>
                     {% if role %}
                     <h2 class="project-hero-label">Role</h2>
-                    <ul class="project-meta">
+                    <ul class="project-meta" role="list">
                       {% for role in role %}
                       <li>{{ role }}</li>
                       {% endfor %}
@@ -61,7 +61,7 @@
                   <section>
                     {% if platform %}
                     <h2 class="project-hero-label">Platform</h2>
-                    <ul class="project-meta">
+                    <ul class="project-meta" role="list">
                       {% for platform in platform %}
                       <li>{{ platform }}</li>
                       {% endfor %}
@@ -71,7 +71,7 @@
                   <section>
                     {% if stack %}
                     <h2 class="project-hero-label">Stack</h2>
-                    <ul class="project-meta">
+                    <ul class="project-meta" role="list">
                       {% for stack in stack %}
                       <li>{{ stack }}</li>
                       {% endfor %}
