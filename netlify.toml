@@ -16,7 +16,7 @@
 [[headers]]
   for = "/fonts/*"
     [headers.values]
-    cache-control = '''
+    Cache-Control = '''
       max-age=2592000,
       public
       immutable'''
