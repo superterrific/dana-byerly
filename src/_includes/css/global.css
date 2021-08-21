@@ -377,21 +377,9 @@ ul.tag-list-summary {
   vertical-align: -.25em;
 }
 
-.icon-1-5x {
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: -.25em;
-}
-
 .icon-2x {
   width: 2em;
   height: 2em;
-  vertical-align: -.5em;
-}
-
-.icon-3x {
-  width: 3em;
-  height: 3em;
   vertical-align: -.5em;
 }
 
@@ -416,38 +404,12 @@ ul.tag-list-summary {
   margin-top: 3rem;
 }
 
-.flow-400 > * + * {
-  margin-top: 4rem;
-}
-
 .flow-500 > * + * {
   margin-top: 5rem;
 }
 
-.full-bleed {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
-.cover {
-  object-fit: cover;
-}
-
-.img-fill {
-  width: 100%;
-}
-
 .fill {
   flex: 1;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.img-center {
-  margin: 0 auto;
 }
 
 /* A11y -------------------------------------------------------- */
@@ -495,11 +457,11 @@ a.skip-link:active {
   .site-nav ul {
     margin-left: .5rem;
     margin-top: .5rem;
-    margin-bottom: .5rem;
   }
 
   .site-nav li {
     padding-inline-end: .5rem;
+    font-size: 1.15rem;
   }
 
   nav li {

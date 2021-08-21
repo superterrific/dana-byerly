@@ -82,6 +82,14 @@ code {
   border-top: 1px solid var(--color-dark-highlight);
 }
 
+.img-center {
+  margin: 0 auto;
+}
+
+.img-fill {
+  width: 100%;
+}
+
 /* Pagination -------------------------------------------------- */
 [dir="rtl"] .pagination-arrow {
   display: none;
@@ -193,6 +201,13 @@ code {
 .caveat-wrapper h2 + p {
   margin-top: 0;
 }
+
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /* Video player ------------------------------------------------ */
 .video-player {
