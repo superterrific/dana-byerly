@@ -46,6 +46,10 @@ h2.project-hero-label {
   padding: 2rem 0 3rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 
 @media screen and (max-width: 800px) {
   .project-hero {
