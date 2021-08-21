@@ -412,6 +412,10 @@ ul.tag-list-summary {
   flex: 1;
 }
 
+.cover {
+  object-fit: cover;
+}
+
 /* A11y -------------------------------------------------------- */
 a.skip-link {
     left: -999px;
@@ -461,7 +465,6 @@ a.skip-link:active {
 
   .site-nav li {
     padding-inline-end: .5rem;
-    font-size: 1.15rem;
   }
 
   nav li {
