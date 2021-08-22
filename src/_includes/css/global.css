@@ -92,7 +92,6 @@ img:not([alt]) {
 }
 
 /* Global ------------------------------------------------------ */
-
 body {
   font-family: var(--body-font, sans-serif);
   font-size: 1rem;
@@ -139,7 +138,6 @@ main:focus {
   outline: 0;
 }
 
-
 /* Layout ------------------------------------------------------ */
 header {
   padding: 1rem .5rem;
@@ -150,7 +148,7 @@ main {
 }
 
 footer {
-  padding: 2rem .5rem;
+  padding: 2rem .5rem 3rem;
   background-color: var(--color-primary);
   color: var(--color-dark-tint);
 }
@@ -178,7 +176,6 @@ footer p::selection {
 .promo-summary {
   margin-bottom: calc(var(--flow-space) * 1.5);
 }
-
 
 /* Wrappers ---------------------------------------------------- */
 .wrapper {
@@ -317,6 +314,15 @@ h3 {
 .meta {
   font-size: .9rem;
   font-family: var(--body-meta);
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+footer p {
+  line-height: 1.8;
 }
 
 /* Tags -----------------------------------------*/
@@ -475,8 +481,8 @@ a.skip-link:active {
     padding-top: 0;
   }
 
-  footer div:nth-child(2) {
-    margin-bottom: var(--flow-space);
+  .footer-links {
+    margin-bottom: 2rem;
   }
 
 }
