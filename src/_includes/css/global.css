@@ -180,13 +180,11 @@ footer p::selection {
 /* Wrappers ---------------------------------------------------- */
 .wrapper {
   max-width: 65rem;
-  position: relative;
   margin: 0 auto;
 }
 
 .wrapper-content {
   max-width: 45rem;
-  position: relative;
   margin: 0 auto;
 }
 
@@ -483,6 +481,10 @@ a.skip-link:active {
 
   .footer-links {
     margin-bottom: 2rem;
+  }
+
+  .wrapper-footer {
+    flex-direction: column;
   }
 
 }
