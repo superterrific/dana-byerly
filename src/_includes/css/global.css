@@ -129,6 +129,10 @@ footer a:focus {
   outline-offset: .1rem;
 }
 
+.footer-links a {
+  text-decoration: none;
+}
+
 p::selection {
   background: var(--color-secondary-highlight);
   color: var(--color-darkest);
