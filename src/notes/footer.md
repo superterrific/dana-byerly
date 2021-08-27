@@ -17,18 +17,17 @@ When I launched the current version of the site last year I rushed a couple of t
   <picture>
     <source srcset="/img/footer-orig-lg.avif" type="image/avif">
     <source srcset="/img/footer-orig-lg.webp" type="image/webp">
-    <img src="/img/footer-orig-lg.png" alt="Previous version of the footer on a larger screen showing a two column layout of links with "Back to top" at the top of the right column." loading="lazy" />
+    <img src="/img/footer-orig-lg.png" alt="Previous version of the footer on a larger screen showing a two column layout of links with Back to top at the top of the right column." loading="lazy" />
   </picture>
   <picture>
     <source srcset="/img/footer-orig-sm.avif" type="image/avif">
     <source srcset="/img/footer-orig-sm.webp" type="image/webp">
-    <img src="/img/footer-orig-sm.png" alt="Previous version of the footer on a smaller screen showing a single column layout with "Back to top" between two groups of links instead of on top of the list of links." class="img-center" loading="lazy" />
+    <img src="/img/footer-orig-sm.png" alt="Previous version of the footer on a smaller screen showing a single column layout with Back to top between two groups of links instead of on top of the list of links." class="img-center" loading="lazy" />
   </picture>
   {% figcaption %}
     The previous version of the footer was OK on larger screen, but on smaller screens the "Back to top" didn't make sense between the blocks of links.
   {% endfigcaption %}
 {% endfigure %}
-
 
 After using [Personal Sites](https://personalsit.es/) to quickly look at a bunch of different sites I was inspired to knock out a more simplified version.
 
