@@ -41,7 +41,7 @@ After using [Personal Sites](https://personalsit.es/) to quickly look at a bunch
   <picture>
     <source srcset="/img/footer-new-sm.avif" type="image/avif">
     <source srcset="/img/footer-new-sm.webp" type="image/webp">
-    <img src="/img/footer-new-sm.jpg" alt="The current version of the footer on a smaller screen showing a single column layout." class="img-center" loading="lazy" />
+    <img src="/img/footer-new-sm.png" alt="The current version of the footer on a smaller screen showing a single column layout." class="img-center" loading="lazy" />
   </picture>
   {% figcaption %}
     The current version of the footer lays out a little a nicer.
