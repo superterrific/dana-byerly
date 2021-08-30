@@ -1,7 +1,3 @@
-.pad-content {
-  padding: 2rem 1rem 4rem;
-}
-
 blockquote {
   background-color: var(--color-primary-banding);
   border-inline-start: .5rem solid var(--color-secondary);
@@ -72,6 +68,13 @@ code {
   list-style-type: square;
 }
 
+.landing-summary {
+  font-family: 'Bitter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: .25rem;
+}
+
 .tag-cap {
   text-transform: capitalize;
 }
@@ -84,10 +87,6 @@ code {
 
 .img-center {
   margin: 0 auto;
-}
-
-.img-fill {
-  width: 100%;
 }
 
 /* Pagination -------------------------------------------------- */
@@ -222,11 +221,4 @@ code {
     height: 100%;
     width: 100%;
     position: absolute;
-}
-
-/* Media Queries ---------------------------------------------- */
-@media screen and (max-width: 800px) {
-  .pad-content {
-    padding-top: .5rem;
-  }
 }
