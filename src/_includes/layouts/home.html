@@ -5,11 +5,10 @@
 {% set css %}
   {% include "css/global.css" %}
   {% include "css/home.css" %}
-  {% include "css/projects-landing.css" %}
 {% endset %}
 
   {% block content %}
-    <div class="pad-hero">
+    <div class="pad-hero home-flow">
       <div class="hp-hero">
         <div class="wrapper-intro">
           <div class="intro-image">
@@ -29,18 +28,17 @@
           </div>
         </div>
       </div>
-      <div class="wrapper flow-300">
+      <div class="wrapper home-flow">
         <div>
           {% include "partials/articles-recent.html" %}
         </div>
         <div>
           <div class="promo-summary">
             <h2>{{ featuredProjects.title | safe }}</h2>
-            <p>{{ featuredProjects.summary | safe }}</p>
           </div>
-          <div class="flow-300">
+          <div class="wrapper-projects-home">
             {% for item in projects.featured %}
-            {% include "partials/project-summary.html" %}
+            {% include "partials/project-summary-home.html" %}
             {% endfor %}
           </div>
         </div>

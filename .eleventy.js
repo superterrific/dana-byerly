@@ -102,6 +102,7 @@ module.exports = config => {
   // Open the browser on launch
   config.setBrowserSyncConfig({
     open: true,
+    ghostMode: false
   });
 
 // Markdown and anchor options

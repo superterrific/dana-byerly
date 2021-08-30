@@ -171,6 +171,10 @@ footer p::selection {
   min-height: 36rem;
 }
 
+.pad-content {
+  padding: 2rem 1rem 4rem;
+}
+
 .splitter {
   display: flex;
   flex-wrap: wrap;
@@ -301,18 +305,6 @@ h3 {
   font-weight: 600;
 }
 
-.promo-summary h2 {
-  font-size: 2rem;
-}
-
-.promo-summary p,
-.landing-summary {
-  font-family: 'Bitter', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  padding-top: .25rem;
-}
-
 .meta {
   font-size: .9rem;
   font-family: var(--body-meta);
@@ -424,6 +416,10 @@ ul.tag-list-summary {
   object-fit: cover;
 }
 
+.img-fill {
+  width: 100%;
+}
+
 /* A11y -------------------------------------------------------- */
 a.skip-link {
     left: -999px;
@@ -489,6 +485,10 @@ a.skip-link:active {
 
   .wrapper-footer {
     flex-direction: column;
+  }
+
+  .pad-content {
+    padding-top: .5rem;
   }
 
 }

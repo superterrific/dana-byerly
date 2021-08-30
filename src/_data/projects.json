@@ -9,7 +9,8 @@
       "img": "RRG-1904",
       "alt": "Random Replay Generator site",
       "imgWidth": "914",
-      "imgHeight": "756"
+      "imgHeight": "756",
+      "hpImg": "RRG-hp-600"
     },
     {
       "title": "Horse Racing Datasets",
@@ -20,7 +21,8 @@
       "img": "hrds-v4-hp",
       "alt": "Horse Racing Datasets site",
       "imgWidth": "800",
-      "imgHeight": "456"
+      "imgHeight": "456",
+      "hpImg": "HRDS-hp-600"
     }
     ],
   "primary": [
