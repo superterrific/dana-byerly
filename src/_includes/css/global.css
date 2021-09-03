@@ -199,8 +199,8 @@ footer p::selection {
 /* Grid containers --------------------------------------------- */
 .grid-container-sm {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: calc(var(--flow-space) * 3) calc(var(--flow-space) * 2);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: calc(var(--flow-space) * 3) calc(var(--flow-space) * 3);
 }
 
 .grid-container-lg {
