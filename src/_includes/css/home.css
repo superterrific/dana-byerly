@@ -77,8 +77,8 @@
   margin-top: 6rem;
 }
 
-.wrapper-projects-home:last-child {
-  margin-bottom: 3rem;
+.home-flow:last-child {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -96,18 +96,12 @@
     margin-top: 5rem;
   }
 
-  .wrapper-projects-home:last-child {
-    margin-bottom: unset;
+  .home-flow:last-child {
+    margin-bottom: 1rem;
   }
 }
 
 /* Featured projects section */
-.wrapper-projects-home {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  grid-gap: 3rem;
-}
-
 .projects-hp-card {
   background: var(--color-primary-tint, #f6f9fc);
   border: 1px solid var(--color-primary, #00365d);

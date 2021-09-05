@@ -30,9 +30,9 @@ A few small updates made a big difference...
 
 {% figure %}
   <picture>
-    <source srcset="/img/HP-new-2021-09-01.avif" type="image/avif">
-    <source srcset="/img/HP-new-2021-09-01.webp" type="image/webp">
-    <img src="/img/HP-new-2021-09-01.jpg" alt="The current version of the homepage showing improved spacing." loading="lazy" />
+    <source srcset="/img/HP-new.avif" type="image/avif">
+    <source srcset="/img/HP-new.webp" type="image/webp">
+    <img src="/img/HP-new.jpg" alt="The current version of the homepage showing improved spacing." loading="lazy" />
   </picture>
   {% figcaption %}
     Better spacing and rhythm with less clutter.
