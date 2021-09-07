@@ -5,7 +5,7 @@ date: 2021-09-07
 category: 'Notes'
 tags: ['The Site']
 ---
-I'm happy to report that It's been a year [with this version of the site](https://twitter.com/superterrific/status/1303032995784339458) 🎉.
+I'm happy to report that it's been a year [with this version of the site](https://twitter.com/superterrific/status/1303032995784339458) 🎉.
 
 ## A look back
 Initially I set out to create a place where I could share and talk about my side projects as well as whatever I was learning at the time. Over the past year that's mostly been centered around [Eleventy]({{ tools.11ty }}), the static site generator used to create this site.
