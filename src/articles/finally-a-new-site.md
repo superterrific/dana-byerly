@@ -55,7 +55,7 @@ Here's what I used, which [resulted in this](/tags-all/).
 I also [noticed this article](http://dirtystylus.com/2020/09/01/eleventy-tag-list-sorting-and-post-count/) earlier in the week with a similar approach to the Base Blog.
 
 ### Applying an "active" style to current nav item
-In [Learn Eleventy from Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/) there's a nice approach to navigation that uses a [global data file](https://www.11ty.dev/docs/data-global/) and a little bit of Javascript to apply an "active" style to the current page or pages within a section, such as posts within the Articles section.
+In [Learn Eleventy from Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/) there's a [nice approach](https://piccalil.li/course/learn-eleventy-from-scratch/lesson/7/) to navigation that uses a [global data file](https://www.11ty.dev/docs/data-global/) and a little bit of Javascript to apply an "active" style to the current page or pages within a section, such as posts within the Articles section.
 
 Initially I was going to have only one collection for writing and I was not going to use tags in project posts. Using this approach all the tags would've been for things in the Writing section, and I wanted to apply the "active" style to the Writing nav item when viewing a tag listing page. For example on the listing page for [all the posts tagged "Eleventy"](/tag/eleventy/) the Writing navigation item would have the "active" style.
 
