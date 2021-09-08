@@ -17,7 +17,7 @@ Without knowing what anyone else found helpful, here are a few posts that I foun
 * [Dynamic heading levels in Eleventy](/articles/dynamic-heading-levels-in-eleventy/)
 * [Testing Forestry CMS with Eleventy](/notes/testing-forestry-cms-with-eleventy/)
 
-In addition to Eleventy I've also been learning more accessibility, and I've written about as well. Some highlights include creating [accessible and responsive tables](/articles/responsive-and-accessible-data-tables/) for an Eleventy project and taking a look at the level of accessibility of [NYC mayoral candidates campaign sites](/articles/do-new-york-city-mayoral-candidates-have-accessible-campaign-sites/). I've also created an [Accessibility Statement](/accessibility-statement/) for the site.
+In addition to Eleventy I've also been learning more accessibility, and I've written about that as well. Some highlights include creating [accessible and responsive tables](/articles/responsive-and-accessible-data-tables/) for an Eleventy project and taking a look at the level of accessibility of [NYC mayoral candidates campaign sites](/articles/do-new-york-city-mayoral-candidates-have-accessible-campaign-sites/). I've also created an [Accessibility Statement](/accessibility-statement/) for the site.
 
 The other major topic has been my projects, and in the past year I've given four of them major updates and have one that gets updated each year.
 
