@@ -3,5 +3,9 @@
 {% set pageHeaderTitle = title %}
 
     {% block content %}
+    {% if page.url === '/archive/' %}
+    {% include "partials/post-content-single.html" %}
+    {% else %}
     {% include "partials/post-content.html" %}
+    {% endif %}
     {% endblock %}

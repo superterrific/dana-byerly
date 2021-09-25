@@ -45,7 +45,7 @@ Here's some example text with ```h4```.
 ## Block elements
 
 ### Blockquote
-> Here's an example of a blockquote that includes a cite. — {% cite %}Dana Byerly{% endcite %}
+> Here's an example of a blockquote. &mdash; Dana Byerly
 
 ### Images
 All images use [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) and [picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) elements.

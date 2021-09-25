@@ -35,4 +35,9 @@
             {% endif %}
           </nav>
           {% endif %}
+          
+          {% if '/changelog' not in page.url %}
+          <p><a href="#top">Back to top</a></p>
+          {% endif %}
+
         </div>

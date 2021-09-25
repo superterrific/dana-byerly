@@ -1,7 +1,7 @@
 ---
 title: 'Kentucky Derby Magic 8 Ball'
 summary: 'Fun with randomization.'
-projectUrl: 'https://2020-derby-8ball.glitch.me/'
+projectUrl: 'https://2021-derby-8ball.glitch.me/'
 allUrls:
   in2018: 'https://2018-derby-8ball.glitch.me/'
   in2019: 'https://2019-derby-8ball.glitch.me/'

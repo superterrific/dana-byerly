@@ -16,7 +16,7 @@ module.exports = config => {
 
   // Date filters
   config.addFilter('longDate', dateObj => {
-  return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('LLLL dd, yyyy');
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('LLLL dd, yyyy');
   });
 
   config.addFilter('isoDate', dateObj => {
@@ -24,7 +24,7 @@ module.exports = config => {
   });
 
   config.addFilter('w3Date', dateObj => {
-  return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toISO();
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toISO();
   });
 
   // Limit amount of posts displayed
@@ -33,14 +33,6 @@ module.exports = config => {
   });
 
   // Shortcodes
-  config.addPairedShortcode('quote', function(content) {
-    return `<blockquote>${content}</blockquote>`
-  });
-
-  config.addPairedShortcode('cite', function(content) {
-    return `<cite>${content}</cite>`
-  });
-
   config.addPairedShortcode('caption', function(content) {
     return `<div class="caption">${content}</div>`
   });
