@@ -3,6 +3,7 @@ title: 'Paths to the Kentucky Derby Since 1990'
 summary: 'Viewing prep race paths of Kentucky Derby winners over the years.'
 projectUrl: 'http://helloracefans.com/races/kentucky-derby/paths-to-the-kentucky-derby-since-1990/'
 category: 'Projects'
+date: 2020-09-07
 launched: 'February 2016'
 displayOrder: 4
 platform: ['Wordpress']

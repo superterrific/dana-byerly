@@ -3,6 +3,7 @@ title: 'Raceday 360'
 summary: 'Horse racing aggregrator and original content site.'
 projectUrl: 'http://raceday360.com/'
 category: 'Projects'
+date: 2020-09-07
 acquired: '2010'
 displayOrder: 9
 platform: ['Wordpress']

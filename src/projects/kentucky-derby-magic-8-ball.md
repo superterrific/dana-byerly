@@ -8,6 +8,7 @@ allUrls:
   in2020: 'https://2020-derby-8ball.glitch.me/'
   in2021: 'https://2021-derby-8ball.glitch.me/'
 category: 'Projects'
+date: 2020-09-07
 launched: '2018'
 displayOrder: 5
 platform: ['Glitch']

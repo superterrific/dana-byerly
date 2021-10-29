@@ -3,6 +3,7 @@ title: 'Omnisurface Stars Archive'
 projectUrl: 'https://omnisurface-stars.com'
 summary: 'An archive and upgrade of an old project.'
 category: 'Projects'
+date: 2020-10-30
 launched: 'October 2020'
 displayOrder: 7
 projectImg:

@@ -3,7 +3,7 @@ title: "The accidental project"
 summary: 'When an existing project suddenly needs a new home.'
 date: 2021-10-29
 category: 'Notes'
-tags: ['Eleventy', 'Dataviz', 'Side Projects']
+tags: ['Data', 'Dataviz', 'Eleventy', 'Side Projects']
 ---
 
 There I was, minding my own business working on another project when I noticed that the layout at [Stakes Profiles](/projects/stakes-profiles/) had taken a turn for the worse.

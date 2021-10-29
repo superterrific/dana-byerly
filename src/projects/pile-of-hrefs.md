@@ -3,6 +3,7 @@ title: 'Pile of hrefs'
 projectUrl: 'https://pile-of-hrefs.com'
 summary: 'A hastily thrown together project, prompted by a moment of thinking "Maybe I would use Pinboard more if it was responsive?"'
 category: 'Projects'
+date: 2020-09-07
 launched: 'April 2020'
 displayOrder: 3
 projectImg:

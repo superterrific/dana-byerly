@@ -3,6 +3,7 @@ title: 'Hello Race Fans'
 summary: 'A sprawling content site for learning about Thoroughbred horse racing.'
 projectUrl: 'http://helloracefans.com/'
 category: 'Projects'
+date: 2020-09-07
 launched: 'March 2010'
 displayOrder: 8
 platform: ['Wordpress']

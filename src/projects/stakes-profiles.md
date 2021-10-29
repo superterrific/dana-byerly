@@ -3,11 +3,12 @@ title: 'Stakes Profiles'
 summary: 'Data visualizations of trends for specific Thoroughbred stakes races since 1991'
 projectUrl: 'https://stakes-profiles.com/'
 category: 'Projects'
+date: 2020-09-07
 launched: 'Feburary 2018'
 displayOrder: 6
 stack: ['Eleventy', 'Google Charts']
 role: ['Code', 'Content', 'Dataviz', 'Design']
-tags: ['Dataviz']
+tags: ['Dataviz', 'Eleventy']
 ---
 This project originally was a section within in the [Hello Race Fans](/projects/hello-race-fans) site. It was also a ticking time bomb of a bad implementation, mixing markup within the content of a WordPress site. When the layout started to do all sorts of unfortunate things I created a standalone site for the project using [Eleventy]({{ tools.11ty }}). There is [more about that process here](/notes/the-accidental-project/).
 
