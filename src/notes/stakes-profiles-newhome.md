@@ -12,7 +12,7 @@ There I was, minding my own business working on another project when I noticed t
   <picture>
     <source srcset="/img/sp-whoops.avif" type="image/avif">
     <source srcset="/img/sp-whoops.webp" type="image/webp">
-    <img src="/img/sp-whoops.jpg" alt="A section with two charts overlapping each other." loading="lazy" />
+    <img src="/img/sp-whoops.jpg" alt="A section with two charts overlapping each other." />
   </picture>
   {% figcaption %}
   Yeah, it's not supposed to look like that.
