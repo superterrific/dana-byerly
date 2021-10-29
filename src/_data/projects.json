@@ -61,14 +61,14 @@
     },
     {
       "title": "Stakes Profiles",
-      "projectUrl": "http://helloracefans.com/stakes-profiles/",
-      "summary": "Data visualizations of trends for specific Thoroughbred stakes races since 1991 using Google Charts in a Wordpress site.",
+      "projectUrl": "https://stakes-profiles.com/",
+      "summary": "Data visualizations of trends for specific Thoroughbred stakes races since 1991 using Google Charts and Eleventy.",
       "launched": "Feburary 2018",
       "projectPage": "/projects/stakes-profiles",
       "img": "stakes-profiles",
       "alt": "Stakes Profile Data Visualization of Florida Derby Running Styles",
-      "imgWidth": "809",
-      "imgHeight": "613"
+      "imgWidth": "1000",
+      "imgHeight": "614"
     },
     {
       "title": "Omnisurface Stars Archive",
