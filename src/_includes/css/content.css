@@ -158,9 +158,25 @@ code {
   margin-top: 0;
 }
 
+.heading-wrapper :is(h1, h2, h3, h4, h5, h6) {
+  display: inline;
+}
+
 .anchor-link {
   text-decoration: none;
   font-weight: 500;
+}
+
+.anchor-icon {
+  vertical-align: -.125em;
+}
+
+a.anchor-link:hover {
+  background: unset;
+}
+
+a.anchor-link:hover svg {
+  stroke: var(--color-secondary);
 }
 
 /* Buttons ----------------------------------------------------- */

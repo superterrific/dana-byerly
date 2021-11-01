@@ -1,3 +1,5 @@
+const linkIcon = require('./link');
+
 const slugify = (s) =>
   encodeURIComponent(
     String(s)
@@ -8,6 +10,7 @@ const slugify = (s) =>
   );
 
 const defaultOptions = {
+  divClass: 'heading-wrapper',
   anchorClass: 'anchor-link',
 };
 
@@ -19,9 +22,9 @@ const anchor = (md, options) => {
     const slug = slugify(contentToken.content);
 
     if (tokens[index].tag === 'h2' || 'h3') {
-      return `<${
-        tokens[index].tag
-      } id="${slug}">`;
+      return `
+      <div class="${options.divClass}">
+        <${tokens[index].tag} id="${slug}">`;
     }
     return `<${tokens[index].tag}>`;
   };
@@ -31,12 +34,13 @@ const anchor = (md, options) => {
     const slug = slugify(contentToken.content);
 
     if (tokens[index].tag === 'h2' || 'h3') {
-      return ` <a class="${
-        options.anchorClass
-      }" href="#${slug}">
-      <span class="visually-hidden">permalink</span>
-      <span aria-hidden="true">#</span>
-      </a></${tokens[index].tag}>`;
+      return `
+      </${tokens[index].tag}>
+        <a class="${options.anchorClass}" href="#${slug}">
+          <span aria-hidden="true">${linkIcon}</span>
+          <span class="visually-hidden">(permalink)</span>
+        </a>
+      </div>`;
     }
     return `</${tokens[index].tag}>`;
   };
