@@ -733,6 +733,6 @@ Donovan's site has a Skip Link and proper alt tags, but there were plenty of con
 ---
 
 ## Summary
-Does a candidate's lack of an accessible campaign site mean they won't be a good Mayor for disabled New Yorkers? Of course not, but it also doesn't inspire confidence. Alternatively, the candidate whose campaign site was the most accessible (by these high-level overview at any rate) isn't guaranteed to be the best candidate for an accessible, equitable and inclusive New York City.
+Does a candidate's lack of an accessible campaign site mean they won't be a good Mayor for disabled New Yorkers? Of course not, but it also doesn't inspire confidence. Alternatively, the candidate whose campaign site was the most accessible (by this high-level overview at any rate) isn't guaranteed to be the best candidate for an accessible, equitable and inclusive New York City.
 
 I hope that by highlighting the relative inaccessibility of these sites that it brings more awareness to the importance of ensuring that all experiences work for everyone. Please [contact me via email](mailto:{{ author.email }}) or [on Twitter]({{ author.twitterUrl }}) if you have any feedback or suggestions regarding this post.

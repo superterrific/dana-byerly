@@ -1,7 +1,7 @@
 ---
 title: "The accidental project"
 summary: 'When an existing project suddenly needs a new home.'
-date: 2021-10-29
+date: 2021-10-29T18:00:00Z
 category: 'Notes'
 tags: ['Data', 'Dataviz', 'Eleventy', 'Side Projects']
 ---
