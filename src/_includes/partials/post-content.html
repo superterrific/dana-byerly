@@ -4,12 +4,12 @@
             <div class="reading flow-200 e-content ">
               {{ content | safe }}
             </div>
+            <div hidden>
+              <a href="{{ site.url}}{{ page.url }}" class="u-url">{{ title }}</a>
+              <p class="h-card p-author">Dana Byerly</p>
+              <img src="/img/d-f-bw-250.jpg" class="u-photo" alt="A very cute black and tan Chihuahua mix and Dana Byerly.">
+            </div>
           </article>
-          <div hidden>
-            <a href="{{ site.url}}{{ page.url }}" class="u-url">{{ title }}</a>
-            <p class="h-card p-author">Dana Byerly</p>
-            <img src="/img/d-f-bw-250.jpg" class="u-photo" alt="A very cute black and tan Chihuahua mix and Dana Byerly.">
-          </div>
 
           {% if tags %}
           <div>{% include "partials/tags.html" %}</div>
