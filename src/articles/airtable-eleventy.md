@@ -351,7 +351,7 @@ Here's a quick comparison between the two approaches.
 | **Creating individual pages** | Individual pages are automatically created when you create a markdown file and you can use the power of collections. | You can [create individual pages from data files](https://www.11ty.dev/docs/pages-from-data/) but it doesn't use collections. |
 
 
-## Useful Resources
+## Useful resources
 Here are some resources I found helpful. I'm currently not caching the data requests but have that bookmarked for future reference. Also, Airtable has a 100 record per call limit, I currently have less than 100 records but have also bookmarked the Stack Overflow link for future reference.
 
 * [Bryan Robinson - Using Eleventy Javascript Data Files](https://bryanlrobinson.com/blog/using-eleventys-javascript-data-files/)

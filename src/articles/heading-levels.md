@@ -96,7 +96,7 @@ Which turns the conditional heading code in the partial to this...
 That's it! A straightforward way to efficiently use partials and ensure you're creating proper document outlines.
 
 
-## Useful Resources
+## Useful resources
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
 * [WebAIM](https://webaim.org/techniques/semanticstructure/#headings)
 * [W3C Accessibility Initiative](https://www.w3.org/WAI/tutorials/page-structure/headings/)

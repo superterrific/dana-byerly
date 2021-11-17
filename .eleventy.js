@@ -53,6 +53,10 @@ module.exports = config => {
     return `<div class="video-player"><iframe src="https://www.youtube-nocookie.com/embed/${content}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
   });
 
+  config.addPairedShortcode('nowrap', function(content) {
+    return `<span class="no-wrap">${content}</span>`
+  });
+
   // Minify
   config.addFilter('cssmin', function(code) {
     return new CleanCSS({}).minify(code).styles;

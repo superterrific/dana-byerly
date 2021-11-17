@@ -1,14 +1,14 @@
         <div class="wrapper-content pad-content flow-300">
           <article class="flow-150 h-entry">
             {% include "partials/page-header-post.html" %}
-            <div class="reading flow-200 e-content ">
+            <div class="reading flow-200 e-content">
               {{ content | safe }}
             </div>
             <div hidden>
               <a href="{{ site.url }}{{ page.url }}" class="u-url">{{ title }}</a>
               <p class="h-card p-author">
                 <a href="{{ site.url }}" class="p-name u-url" rel="author">{{ site.name }}</a>
-                <img src="{{ site.url}}/img/d-f-bw-250.jpg" class="u-photo">
+                <img src="{{ site.url}}/img/d-f-bw-250.jpg" class="u-photo" alt="Dana Byerly">
               </p>
             </div>
           </article>

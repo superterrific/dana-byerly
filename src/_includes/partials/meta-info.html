@@ -9,6 +9,10 @@
   {% set pageTitle = 'Tagged "'+ tag + '"' + ' - ' + site.name %}
   {%- endif -%}
 
+  {%- if '/changelog/2' in page.url -%}
+  {% set pageTitle = 'Changelog '+ title + ' - ' + site.name %}
+  {%- endif -%}
+
   {%- set siteTitle = site.name -%}
   {%- set siteDescription = summary -%}
   {%- set currentUrl = site.url + page.url -%}
