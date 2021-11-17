@@ -118,7 +118,7 @@ Search engines are the most ubiquitous use case. You want people to be able to f
 From the Bing Webmaster tools help & how-to...
 
 > **Use HTML5 semantic elements** as they have am intrinsic meaning to browser, developer and search engine, especially use the following HTML5 Semantic Elements:
-&lt;article&gt;, ```<aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>```. {% nowrap %}&mdash; [Bing Webmaster Tools](https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a){% endnowrap %}
+&lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, &lt;ection&gt;, &lt;summary&gt;, &lt;time&gt;. {% nowrap %}&mdash; [Bing Webmaster Tools](https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a){% endnowrap %}
 
 
 ### IndieWeb
@@ -172,4 +172,4 @@ The ```<time>``` tag is a great addition to your site even if you don't particip
 * [Sia Karamelegos - An in-depth tutorial on Webmentions and Eleventy](https://sia.codes/posts/webmentions-eleventy-in-depth/)
 * [Amber Wilson - Grow the IndieWeb with Webmentions](https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/)
 * [Evan Sheehan - Webmentions: Joining the IndieWeb](https://darthmall.net/weblog/webmentions/)
-* [Ben Myers - On the dl](https://benmyers.dev/blog/on-the-dl/) - A look another useful semantic HTML element
+* [Ben Myers - On the dl](https://benmyers.dev/blog/on-the-dl/) - A look at another useful semantic HTML element
