@@ -46,7 +46,7 @@ I've included a candidate scorecard in each review section as well as a section 
 
 Explanations in the review criteria are not inclusive of all the ways in which visitors may use the sites, and are meant to give some examples to illustrate the importance of the standards.
 
-> As a general rule, keep in mind that you can’t predict all the ways your visitors choose to browse the web. &mdash; [Hidde DeVries](https://hiddedevries.nl/en/blog/2019-06-06-indicating-focus-to-improve-accessibility)
+> As a general rule, keep in mind that you can’t predict all the ways your visitors choose to browse the web. {% nowrap %}&mdash; [Hidde DeVries](https://hiddedevries.nl/en/blog/2019-06-06-indicating-focus-to-improve-accessibility){% endnowrap %}
 
 
 ### Is there a "Skip Link"?

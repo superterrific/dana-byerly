@@ -31,7 +31,7 @@ Moving the data to Airtable was big step forward that made maintaining the site 
 Prior to redesigning the current version I said the following on this page...
 
 
-> I might come back and add more detail about the implementation, or I might just redo the whole thing and then talk about that! — Dana Byerly
+> I might come back and add more detail about the implementation, or I might just redo the whole thing and then talk about that! {% nowrap %}&mdash; Dana Byerly{% endnowrap %}
 
 
 Since I went the "redo the whole thing" route I feel obligated to fulfill the "then talk about that" part. But instead of repeating myself, I'll direct you to a few of the places I have already talked about it!

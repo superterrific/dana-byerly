@@ -2,7 +2,7 @@
 title: 'Time is on your side'
 summary: 'The HTML time element is both useful and easy to use.'
 date: 2021-11-16T23:00:00Z
-category: 'Article'
+category: 'Articles'
 tags: ['Eleventy', 'HTML', 'IndieWeb']
 ---
 
@@ -30,7 +30,7 @@ I use ```<time>``` on this site for publish dates. If you inspect any of the "Pu
 
 There are a [variety of formats that can be used](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#valid_datetime_values) for ```datetime```. I'm using ISO date (2021-09-07) and global time (T00:00:00.000Z), which in this example is midnight UTC. More on that in a bit.
 
-There are a number of ways to add a date to your posts. Per the [Eleventy Content Dates page](https://www.11ty.dev/docs/dates/) you can add a ```date``` key to your post's Front Matter.
+There are several of ways to add a date to your posts. Per the [Eleventy Content Dates page](https://www.11ty.dev/docs/dates/) you can add a ```date``` key to your post's Front Matter.
 
 ```json
 title: "My cool post on using the time element with Eleventy"
@@ -48,7 +48,7 @@ I use [Luxon](https://moment.github.io/luxon/#/?id=luxon) to handle date formatt
 npm install luxon
 ```
 
-I originally picked up the filter approach from the excellent [Learn Eleventy from Scratch course](https://learneleventyfromscratch.com/lesson/12.html#filters), but have since switched to Luxon given that [Moment is now maintenance mode](https://momentjs.com/docs/#/-project-status/). The general approach is still the same. Create two filters, one to display the date and one to use in the ```datetime``` attribute.
+I picked up the filter approach from the excellent [Learn Eleventy from Scratch course](https://learneleventyfromscratch.com/lesson/12.html#filters), but have since switched to Luxon given that [Moment is now maintenance mode](https://momentjs.com/docs/#/-project-status/). The general approach is still the same. Create two filters, one to display the date and one to use in the ```datetime``` attribute.
 
 In your `.eleventy.js` file add the following
 
@@ -68,7 +68,7 @@ And then in the module.exports section of ```eleventy.js```...
   });
   ```
 
-The ```longDate``` filter formats the date to be displayed as "November 16, 2021" and the ```w3date``` filter formats the date to be displayed in the machine readable format.
+The ```longDate``` filter displays the date as “November 16, 2021” and the ```w3date``` filter displays the date in a machine readable format.
 
 Post listing pages use...
 
@@ -99,7 +99,7 @@ The Eleventy documentation explains...
 ### Formats
 There are plenty of ways to format your dates with Luxon. For displaying dates on the site I've gone with ```LLLL dd, yyyy``` as a token which outputs November 16, 2021. You can peruse the lengthy [table of tokens](https://moment.github.io/luxon/#/formatting?id=table-of-tokens) as well as [presets](https://github.com/moment/luxon/blob/master/docs/formatting.md#presets) to find your preferred format.
 
-For ```datetime``` I've used ```.toISO()```, which will output ISO standard date and time. If you just wanted to use date without time you could use ```.toISODate```. [Week or time only](https://moment.github.io/luxon/#/formatting?id=iso-8601) are other options that aren't a great a choice for a post's publish date, but could be handy for other scenarios.
+For ```datetime``` I've used ```.toISO()```, which will output ISO standard date and time. If you wanted to use date without time you could use ```.toISODate```. [Week or time only](https://moment.github.io/luxon/#/formatting?id=iso-8601) are other options that aren't a good a choice for a post's publish date, but could be handy for other scenarios.
 
 Can you use ```<time>``` without including ```datetime```? Absolutely. You can wrap any date or time and get the benefit as long as you're using [valid values](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#valid_datetime_values).
 
@@ -110,7 +110,7 @@ Can you use ```<time>``` without including ```datetime```? Absolutely. You can w
 
 
 ## Why use &lt;time&gt;
-The ```<time>``` tag makes a crucial bit of information about your post easily understandable to both humans and machines. You know, [bilingual cyborg stuff](https://twitter.com/xdesro/status/1450954260321951746).
+The ```<time>``` tag makes a crucial bit of information about your post understandable to both humans and machines. You know, [bilingual cyborg stuff](https://twitter.com/xdesro/status/1450954260321951746).
 
 ### Search engines
 Search engines are the most ubiquitous use case. You want people to be able to find your posts, and ```<time>``` can help ensure that.
@@ -122,13 +122,13 @@ From the Bing Webmaster tools help & how-to...
 
 
 ### IndieWeb
-[IndieWeb](https://indieweb.org/) participation is another benefit of using ```<time>```. The basic premise of IndieWeb is that you should own and control your content rather than solely relying on third party services.
+[IndieWeb](https://indieweb.org/) participation is another benefit of using ```<time>```. The basic premise of IndieWeb is that you should own and control your content rather than relying only on third party services.
 
 For example, instead of posting only on a platform like Medium or Dev.to, you would post on your own site and syndicate out to third parties (or not!).
 
 > When you post something on the web, it should belong to you, not a corporation. Too many companies have gone out of business and [lost all of their users’ data](https://indieweb.org/site-deaths "site-deaths"). By joining the IndieWeb, your content stays yours and in your control. {% nowrap %}&mdash; [IndieWeb.org](https://indieweb.org/){% endnowrap %}
 
-Owning your own site is just one element of IndieWeb. There are plenty of [other aspects and ways to participate](https://spec.indieweb.org/). [Webmentions](https://indieweb.org/Webmention) are the most well known, but you can also sign-in to sites using your own domain with [IndyAuth](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain) and participate in the [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club), an active worldwide community with many chapters.
+Owning your own site is one element of IndieWeb. There are plenty of [other aspects and ways to participate](https://spec.indieweb.org/). [Webmentions](https://indieweb.org/Webmention) are the most well known, but you can also sign-in to sites using your own domain with [IndyAuth](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain) and take part in the [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club), an active worldwide community with many chapters.
 
 An easy way to get started is to use [microformats to markup your posts](https://microformats.org/wiki/h-entry), which makes them easier to syndicate to other sites.
 
@@ -161,6 +161,8 @@ Time-based events are another way that ```<time>``` can be useful. Having machin
 
 ## Summary
 The ```<time>``` tag is a great addition to your site even if you don't participate in IndieWeb. It [handily won round one](https://twitter.com/seldo/status/1459987462030127105) in Laurie Voss' impromptu HTML madness bracket game, although it [didn't fare as well in round two](https://twitter.com/seldo/status/1460394844887535626) and did not move on to [round three](https://twitter.com/seldo/status/1460708012482465792). You've still to time to go vote for your favorites!
+
+**Update**: It's down to two in the HTML element championship. I was hoping it would end up being ```<button>``` vs. ```<a>``` (go ```<button>```!), but no luck. [Go vote](https://twitter.com/seldo/status/1462149025633746951)!
 
 
 ## Useful resources
