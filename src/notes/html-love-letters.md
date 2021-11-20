@@ -1,5 +1,5 @@
 ---
-title: 'Dear HTML Element'
+title: 'Dear HTML element'
 summary: 'A collection of love letters to HTML tags.'
 date: 2021-11-20T15:00:00.00Z
 category: 'Notes'
@@ -24,4 +24,4 @@ There's also a [150 days of HTML Substack](https://150daysofhtml.substack.com/ar
 
 I found many of these in the [Webdev newsletter](https://www.d.umn.edu/itss/training/online/webdesign/webdev_listserv.html). If you're not familiar I wrote a bit of a love letter to it [in a previous post](/notes/quick-fix-and-a-test/).
 
-Am I missing a good post on an HTML element? [Let me know]({{ author.twitterUrl }})!
+Am I missing a good post on a HTML element? [Let me know]({{ author.twitterUrl }})!
