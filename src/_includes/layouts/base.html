@@ -14,6 +14,7 @@
   <style>{{ css | cssmin | safe }}</style>
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
   <script defer data-domain="danabyerly.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 <body id="top">
   {% include "partials/site-navigation.html" %}
@@ -25,5 +26,8 @@
       {% include "partials/footer.html" %}
     </div>
   </footer>
+  {% if page.url === '/404.html' %}
+  <script>plausible("404",{ props: { path: document.location.pathname } });</script>
+  {% endif %}
 </body>
 </html>

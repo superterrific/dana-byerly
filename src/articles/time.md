@@ -160,9 +160,10 @@ Here's an example of my previous post at [h-entry validator](https://indiewebify
 Time-based events are another way that ```<time>``` can be useful. Having machine-readable time elements makes things like adding an event to your calendar or viewing an event's schedule in your local time zone possible. You can see examples of both such features at [THE Eleventy Meetup site](https://11tymeetup.dev/events/)!
 
 ## Summary
-The ```<time>``` tag is a great addition to your site even if you don't participate in IndieWeb. It [handily won round one](https://twitter.com/seldo/status/1459987462030127105) in Laurie Voss' impromptu HTML madness bracket game, although it [didn't fare as well in round two](https://twitter.com/seldo/status/1460394844887535626) and did not move on to [round three](https://twitter.com/seldo/status/1460708012482465792). You've still to time to go vote for your favorites!
+The ```<time>``` tag is a great addition to your site even if you don't participate in IndieWeb. It [handily won round one](https://twitter.com/seldo/status/1459987462030127105) in Laurie Voss' impromptu HTML madness bracket game, although it [didn't fare as well in round two](https://twitter.com/seldo/status/1460394844887535626) and did not move on to [round three](https://twitter.com/seldo/status/1460708012482465792).
 
-**Update**: It's down to two in the HTML element championship. I was hoping it would end up being ```<button>``` vs. ```<a>``` (go ```<button>```!), but no luck. [Go vote](https://twitter.com/seldo/status/1462149025633746951)!
+**Update**: The [results are in](https://twitter.com/seldo/status/1462149025633746951)! ```<a>```, the humble workhorse [in use since Web 1.0](https://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html), cruised to an easy victory over the [deprecated](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) ```<marquee>```.
+
 
 
 ## Useful resources
