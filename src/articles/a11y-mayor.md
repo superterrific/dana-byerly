@@ -27,7 +27,7 @@ First and foremost, I am **not an accessibility expert** and this is **not a pro
 	* Page structure and semantics beyond heading levels.
 	* Contrast on hover states.
 	* Text links visually indicated by something other than color (e.g., underline, with an icon).
-	* Meaningful text in ```alt``` tags, although it is mentioned in a few places.
+	* Meaningful ```alt``` text, although it is mentioned in a few places.
 	* Whether sites using motion respect user settings.
 	* Whether a site had dark mode and respected user settings.
 
