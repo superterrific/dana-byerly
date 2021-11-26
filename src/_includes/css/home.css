@@ -99,6 +99,10 @@
   .home-flow:last-child {
     margin-bottom: 1rem;
   }
+
+  .wrapper-intro * img {
+    width: 170px;
+  }
 }
 
 /* Featured projects section */
