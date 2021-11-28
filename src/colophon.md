@@ -2,6 +2,7 @@
 title: 'Colophon'
 summary: 'Information about this site '
 layout: 'layouts/page.html'
+kofi: false
 eleventyExcludeFromCollections: true
 ---
 This site is made with [Eleventy]({{ tools.11ty }}) and hosted at [Netlify]({{ tools.netlify }}). This site would not have been possible without the [Learn Eleventy from Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/) course at [Piccalilli]({{ tools.piccalilli }}). This site also uses a slightly modified version of [Andy Bell's Modern Reset](https://github.com/hankchizljaw/modern-css-reset).

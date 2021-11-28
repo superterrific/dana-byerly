@@ -96,6 +96,10 @@ module.exports = config => {
     return [...collection.getFilteredByGlob('./src/changelog/*.md')].reverse();
   });
 
+  config.addCollection("devto", function (collection) {
+  return collection.getAll().filter((post) => post.data.devto);
+});
+
   // Open the browser on launch
   config.setBrowserSyncConfig({
     open: true,

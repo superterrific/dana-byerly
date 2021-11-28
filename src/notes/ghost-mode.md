@@ -3,6 +3,7 @@ title: "How to turn off Browsersync ghostMode in Eleventy"
 summary: 'A quick how-to.'
 date: 2021-07-04
 category: 'Notes'
+devto: true
 tags: ['Eleventy']
 ---
 
