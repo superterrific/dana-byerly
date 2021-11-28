@@ -2,6 +2,7 @@
 title: 'Accessibility Statement'
 layout: 'layouts/page.html'
 summary: "This site is committed to ensuring that it's accessible to all, regardless of technology or ability."
+kofi: false
 eleventyExcludeFromCollections: true
 ---
 This site is committed to ensuring that it's accessible to all, regardless of technology or ability.

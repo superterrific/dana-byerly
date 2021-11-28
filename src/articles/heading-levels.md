@@ -1,8 +1,9 @@
 ---
 title: 'Dynamic heading levels in Eleventy'
 summary: 'While looking around a repository at something else I discovered this clever approach.'
-category: 'Articles'
 date: '2020-12-26'
+category: 'Articles'
+devto: true
 tags: ['Accessibility', 'Eleventy', 'The Site']
 ---
 

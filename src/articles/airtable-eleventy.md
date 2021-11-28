@@ -3,6 +3,7 @@ title: 'Using Airtable with Eleventy'
 summary: 'A long-winded look at getting Airtable data into Eleventy.'
 category: 'Articles'
 date: '2020-12-11'
+devto: true
 tags: ['Airtable', 'Data', 'Eleventy', 'Side Projects']
 ---
 {% caption %}

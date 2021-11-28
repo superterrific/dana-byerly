@@ -34,6 +34,7 @@ code {
   padding: .15rem .25rem .125rem;
   font-size: 1.1rem;
   font-family: var(--body-meta);
+  font-weight: 500;
 }
 
 [class*='language'] code {
@@ -116,6 +117,10 @@ code {
 .post-nav-item a:hover {
   background-color: var(--color-primary-banding);
   color: var(--color-darkest);
+}
+
+.post-nav-item:last-of-type {
+  text-align: right;
 }
 
 /* Type -------------------------------------------------------- */
