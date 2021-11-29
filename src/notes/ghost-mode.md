@@ -15,7 +15,9 @@ In your ```eleventy.js``` file within the module.exports section add the followi
   });
 ```
 
-Eleventy uses [Browsersync](https://browsersync.io) to serve your site locally. ghostMode [is the option](https://browsersync.io/docs/options#option-ghostMode) that mirrors clicking, scrolling and other actions across devices. For example, if you have the same page open in Firefox and Chrome and click a link in Firefox, both browsers will load the linked page. Scroll the page on your laptop and it will also scroll your phone or tablet, etc.
+Eleventy uses [Browsersync](https://browsersync.io) to serve your site locally. ghostMode [is the option](https://browsersync.io/docs/options#option-ghostMode) that mirrors clicking, scrolling and other actions across devices.
+
+For example, if you have the same page open in Firefox and Chrome and click a link in Firefox, both browsers will load the linked page. Scroll the page on your laptop and it will also scroll your phone or tablet, etc.
 
 I've found this feature to be very handy but encountered a scenario where I needed to disable it. I was working on a project and fired up [Sizzy]({{ tools.sizzy }}) to view it across browsers and devices. It had been awhile since I used Sizzy and I was greeted with this message...
 
