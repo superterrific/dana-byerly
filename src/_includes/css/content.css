@@ -1,5 +1,5 @@
 blockquote {
-  background-color: var(--color-primary-banding);
+  background-color: var(--blockquote-bg);
   border-inline-start: .5rem solid var(--color-secondary);
   padding: 1.5rem 2rem;
   font-family: 'Bitter', sans-serif;
@@ -29,7 +29,8 @@ figcaption {
 }
 
 code {
-  background: var(--color-primary-banding);
+  background: var(--code-bg);
+  color: var(--code-text);
   border-radius: .25rem;
   padding: .15rem .25rem .125rem;
   font-size: 1.1rem;
@@ -43,7 +44,7 @@ code {
 
 .caption  {
   font-size: 1rem;
-  background: var(--color-primary-tint);
+  background: var(--caption-bg);
   border: 1px solid var(--color-primary);
   padding: 1rem;
 }
@@ -136,13 +137,13 @@ code {
 
 .heading-wrapper h2 {
   font-size: 1.45rem;
-  color: var(--color-secondary);
+  color: var(--heading-big);
   scroll-margin-top: 1ex;
 }
 
 .heading-wrapper h3 {
   font-size: 1.3rem;
-  color: var(--color-primary);
+  color: var(--heading-small);
   font-weight: 700;
 }
 

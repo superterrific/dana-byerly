@@ -9,8 +9,8 @@ table {
 }
 
 th {
-  background: var(--color-primary);
-  color: var(--color-lightest);
+  background: var(--table-header-bg);
+  color: var(--table-header-text);
   text-align: left;
   vertical-align: bottom;
   padding: .6rem;
@@ -19,7 +19,7 @@ th {
 }
 
 tbody {
-  background: var(--color-lightest);
+  background: var(--table-bg);
 }
 
 td {
@@ -29,7 +29,7 @@ td {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #efefef;
+  background: var(--table-alt);
 }
 
 th span {
