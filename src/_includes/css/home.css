@@ -70,7 +70,7 @@
 
 .promo-summary h2 {
   font-size: 2rem;
-  color: var(--color-secondary);
+  color: var(--heading-big);
 }
 
 .home-flow > * + * {
@@ -107,7 +107,7 @@
 
 /* Featured projects section */
 .projects-hp-card {
-  background: var(--color-primary-tint, #f6f9fc);
+  background: var(--project-card-bg, #f6f9fc);
   border: 1px solid var(--color-primary, #00365d);
   box-shadow: var(--shadow);
   position: relative;
@@ -124,8 +124,8 @@
 }
 
 .projects-hp-card:hover, .projects-hp-card:focus-within {
-  border-color: var(--color-secondary, #c07);
-  box-shadow: 0 0 .75rem #c07;
+  border-color: var(--project-card-focus, #c07);
+  box-shadow: 0 0 .75rem var(--project-card-focus);
 }
 
 .project-hp-content h3 a {
@@ -139,7 +139,7 @@
 
 .project-hp-content h3 a:hover {
   background: unset;
-  color: var(--color-secondary);
+  color: var(--project-card-focus);
 }
 
 .project-hp-content {

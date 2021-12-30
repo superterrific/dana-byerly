@@ -6,7 +6,7 @@
 }
 
 .project-card {
-  background: var(--color-primary-tint, #f6f9fc);
+  background: var(--project-card-bg, #f6f9fc);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;

@@ -1,11 +1,15 @@
 :root {
   --color-primary: #00365d;
   --color-secondary: #c07;
+  --color-primary-dark: #182335;
+  --color-primary-mid: #004a7f;
+  --color-secondary-mid: #ff22a3;
   --color-primary-highlight: #7cc7de;
   --color-secondary-highlight: #f2d1f5;
   --color-primary-banding: #dceaF9;
   --color-primary-tint: #f6f9fc;
   --color-secondary-tint: #f9e9fa;
+  --color-darker: #21262a;
   --color-dark: #374047;
   --color-dark-highlight: #7f8a93;
   --color-dark-tint: #efefef;
@@ -15,13 +19,59 @@
   --color-highlight-green: #31d428;
   --color-highlight-red: #d42832;
   --color-highlight-blue: #2877d4;
+  /* --color-primary-dark: #212936; or 1b2028 or 182335 */
   --flow-space: 1rem;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --body-font: "Bitter", sans-serif;
   --body-meta: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --body-color: var(--color-darkest);
+  /* Light mode */
   --body-background: var(--color-lightest);
+  --body-color: var(--color-darkest);
+  --heading-big: var(--color-secondary);
+  --heading-small: var(--color-primary);
+  --link-color: var(--color-primary);
+  --link-hover-bg: var(--color-secondary);
+  --link-hover-text: var(--color-white);
+  --link-focus: var(--color-secondary);
+  --code-bg: var(--color-primary-banding);
+  --code-text: inherit;
+  --caption-bg: var(--color-primary-tint);
+  --tag-bg: var(--color-dark-tint);
+  --focus-header: var(--color-primary);
+  --focus-main: var(--color-secondary);
+  --blockquote-bg: var(--color-primary-banding);
+  --table-header-bg: var(--color-primary);
+  --table-header-text: var(--color-lightest);
+  --table-bg: var(--color-lightest);
+  --table-alt: var(--color-dark-tint);
+  --project-card-bg: var(--color-primary-tint);
+  --project-card-focus: var(--color-secondary);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background: var(--color-primary-dark);
+    --body-color: var(--color-dark-tint);
+    --heading-big: var(--color-secondary-mid);
+    --heading-small: var(--color-primary-highlight);
+    --link-color: var(--color-primary-highlight);
+    --code-bg: var(--color-dark);
+    --code-text: inherit;
+    --caption-bg: var(--color-dark);
+    --tag-bg: var(--color-dark);
+    --focus-header: var(--color-primary-tint);
+    --focus-main: var(--color-secondary-mid);
+    --blockquote-bg: var(--color-dark);
+    --table-header-bg: var(--color-darkest);
+    --table-header-text: var(--color-lightest);
+    --table-bg: var(--color-dark);
+    --table-alt: var(--color-darker);
+    --project-card-bg: var(--color-darker);
+    --project-card-focus: var(--color-secondary-mid);
+  }
+}
+
+
 
 /* Resets based on Andy Bell's Modern Reset
 https://github.com/hankchizljaw/modern-css-reset/blob/master/dist/reset.css  */
@@ -105,7 +155,7 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--link-color);
   text-underline-offset: .2rem;
 }
 
@@ -116,11 +166,11 @@ a:hover {
 }
 
 header a:focus {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--focus-header);
 }
 
 main a:focus {
-  outline: 2px solid var(--color-secondary);
+  outline: 2px solid var(--focus-main);
   outline-offset: .1rem;
 }
 
@@ -273,7 +323,7 @@ header a {
 
 #nav-home [aria-current="page"] {
   background: inherit;
-  color: var(--color-primary);
+  color: var(--link-color);
   text-decoration: underline;
   font-weight: 400;
   padding: 0 .2rem;
@@ -341,7 +391,7 @@ ul.tag-list-summary {
 }
 
 .tag-list-summary a {
-  background: var(--color-dark-tint);
+  background: var(--tag-bg);
   text-decoration: none;
   padding: .15rem .25rem;
 }
