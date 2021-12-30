@@ -19,7 +19,6 @@
   --color-highlight-green: #31d428;
   --color-highlight-red: #d42832;
   --color-highlight-blue: #2877d4;
-  /* --color-primary-dark: #212936; or 1b2028 or 182335 */
   --flow-space: 1rem;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --body-font: "Bitter", sans-serif;
@@ -70,8 +69,6 @@
     --project-card-focus: var(--color-secondary-mid);
   }
 }
-
-
 
 /* Resets based on Andy Bell's Modern Reset
 https://github.com/hankchizljaw/modern-css-reset/blob/master/dist/reset.css  */
