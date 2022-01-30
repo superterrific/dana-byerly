@@ -1,4 +1,4 @@
 {
   "layout": "layouts/note.html",
-  "permalink": "/notes/{{ title | slug }}/index.html"
+  "permalink": "/notes/{{ title | slugify }}/index.html"
 }

@@ -98,7 +98,7 @@ module.exports = config => {
 
   config.addCollection("devto", function (collection) {
   return collection.getAll().filter((post) => post.data.devto);
-});
+  });
 
   // Open the browser on launch
   config.setBrowserSyncConfig({
