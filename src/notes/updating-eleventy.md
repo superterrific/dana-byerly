@@ -112,9 +112,20 @@ Key: NODE_VERSION
 Value: 16.13.2
 ```
 
-For the value you should use the [recommended latest version](https://nodejs.org/), which might be different than my example.
-
 After adding the environment variable the site deployed!
+
+**Update**: Maël Brunet [offered a helpful tip via Twitter](https://twitter.com/MaelB/status/1488140840673452035), pointing out that using a `.nvmrc` file to store the Node version should have the same effect. I'm not using [Node Version Manager](https://heynode.com/tutorial/install-nodejs-locally-nvm/) (nvm), but you can create the file manually and Netlify, or presumably any host, will read the file.
+
+To test it out I deleted the environment variable at Netlify and created file named `.nvmrc` at the root of my project. In the file I added the version number like so...
+
+```text
+16.13.2
+```
+
+It worked as expected! Christopher Kirk-Nielsen [also suggests](https://twitter.com/ckirknielsen/status/1488159743097151491) checking to see if you already have a `.nvmrc` file that needs to be updated. Even if you didn't create a file you might be using a starter project that included one.
+
+Regardless of which approach you use, be sure to check the [recommended latest version](https://nodejs.org/), which might be different than my example.
+
 
 ## Happy upgrading!
 You may encounter issues I didn't depending on your set-up. If that's the case I wish you luck and hope your debugging skills are better than mine! Either way, happy upgrading.
