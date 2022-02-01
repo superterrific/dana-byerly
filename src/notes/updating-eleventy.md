@@ -35,7 +35,7 @@ module.exports = function(eleventyConfig) {
 };
 ```
 
-I started up the first few sites after installing the plugin to make sure the plugin didn't cause and issues, and it didn't.
+I started up the first few sites after installing the plugin to make sure the plugin didn't cause any issues, and it didn't.
 
 ### Install the update
 Initially when I tried `npm update @11ty/eleventy` the update didn't happen. I solved this by manually updating the version number in package.json but there's also probably a way to do it via the command line (adding @latest? maybe?).
