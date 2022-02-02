@@ -19,7 +19,7 @@ I'm not very good at JavaScript. There will no doubt be some choices I made that
 
 But for now, this represents a vast improvement on the current implementation of the project I'm updating. And I'm actually a bit proud of myself for getting this far! Hopefully in the near future I'll be able to make further improvements.
 
-This article assumes some familiarity with Airtable. Zapier has a [good overview of Airtable](https://zapier.com/blog/what-is-airtable/) if you're not familar.
+This article assumes some familiarity with Airtable. Zapier has a [good overview of Airtable](https://zapier.com/blog/what-is-airtable/) if you're not familiar.
 
 You can jump right to any of the sections below if you're not interested in context of the project.
 
@@ -57,7 +57,7 @@ First you'll need to install [Airtable.js](https://github.com/airtable/airtable.
 ```html
 npm install airtable
 ```
-And I'm using [dotenv](link) here to hide my key. If you're not familiar with how to use it the first two minutes [of this video](https://www.youtube.com/watch?v=zwcvXd3kGbw) gave me all the information I needed to install, create the .env file and call it in the script.
+And I'm using [dotenv](https://github.com/motdotla/dotenv) here to hide my key. If you're not familiar with how to use it the first two minutes [of this video](https://www.youtube.com/watch?v=zwcvXd3kGbw) gave me all the information I needed to install, create the .env file and call it in the script.
 
 ```html
 npm install dotenv
