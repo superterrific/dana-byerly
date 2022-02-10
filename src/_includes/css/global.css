@@ -68,6 +68,10 @@
     --project-card-bg: var(--color-darker);
     --project-card-focus: var(--color-secondary-mid);
   }
+
+  img {
+  filter: brightness(.85) saturate(1.15);
+}
 }
 
 /* Resets based on Andy Bell's Modern Reset
@@ -307,6 +311,7 @@ footer p::selection {
 
 header a {
   padding: .4rem .2rem;
+  text-decoration: none;
 }
 
 [aria-current="page"],
@@ -321,7 +326,6 @@ header a {
 #nav-home [aria-current="page"] {
   background: inherit;
   color: var(--link-color);
-  text-decoration: underline;
   font-weight: 400;
   padding: 0 .2rem;
 }
