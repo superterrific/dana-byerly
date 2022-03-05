@@ -40,7 +40,7 @@
                     <ul class="tag-list" role="list">
                       {% for tag in tags %}
                         <li>
-                          <a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a>
+                          <a href="/tag/{{ tag | slug }}/"><span role="presentation">#</span>{{ tag | replace(' ', '-') | lower }}</a>
                         </li>
                       {% endfor %}
                     </ul>
@@ -110,7 +110,7 @@
           <div class="text-center">
             <span class="visually-hidden">Link opens in a new tab or window</span>
             <a href="{{ projectUrl }}" rel="noopener" target="_blank" class="button button-dark">View Project
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
                 <path stroke="none" d="M0 0h24v24H0z"/>
                 <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
                 <line x1="10" y1="14" x2="20" y2="4" />
@@ -121,7 +121,7 @@
 
           <nav class="wrapper-content splitter" aria-label="Pagination links">
             <div class="post-nav-item">{% if previousPost %}
-              <a href="{{ previousPost.url }}"><svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" >
+              <a href="{{ previousPost.url }}"><svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
                 <path stroke="none" d="M0 0h24v24H0z"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <line x1="5" y1="12" x2="9" y2="16" />
@@ -132,7 +132,7 @@
             {% if nextPost %}
             <div class="post-nav-item">
               <a href="{{ nextPost.url }}">{{ nextPost.data.title }}
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
                 <path stroke="none" d="M0 0h24v24H0z"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <line x1="15" y1="16" x2="19" y2="12" />

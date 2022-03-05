@@ -20,7 +20,7 @@
       <span class="visually-hidden">A list of tags for this post.</span>
       <ul class="tag-list tag-list-summary" role="list">
         {% for tag in item.data.tags %}
-         <li><a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span>{{ tag | replace(' ', '-') | lower }}</a></li>
+         <li><a href="/tag/{{ tag | slug }}/"><span role="presentation">#</span>{{ tag | replace(' ', '-') | lower }}</a></li>
         {% endfor %}
       </ul>
     </article>

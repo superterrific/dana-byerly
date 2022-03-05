@@ -2,7 +2,7 @@
   <ul class="tag-list tag-list-summary" role="list">
     {% for tag in tags %}
       <li>
-        <a href="/tag/{{ tag | slug }}/"><span aria-hidden="true">#</span><span class="p-category">{{ tag | replace(' ', '-') | lower }}</span></a>
+        <a href="/tag/{{ tag | slug }}/"><span role="presentation">#</span><span class="p-category">{{ tag | replace(' ', '-') | lower }}</span></a>
       </li>
     {% endfor %}
   </ul>
