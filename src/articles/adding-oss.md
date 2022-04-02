@@ -112,7 +112,7 @@ Let's start with the table itself...
 </div>{% endraw %}
 ```
 
-Structurally this is a pretty straightforward table. The classes set the column header color and the ```span``` responsively sets line breaks [using this approach](https://twitter.com/a_sandrina_p/status/1318217958955601922). The ```caption``` provides extra context for screen readers. I've applied a [visually hidden class](https://piccalil.li/quick-tip/visually-hide-an-element-with-css/), otherwise the caption text would display. In this case with the paragraph text above the table the caption felt unnecessary for sited visitors.
+Structurally this is a pretty straightforward table. The classes set the column header color and the ```span``` responsively sets line breaks [using this approach](https://twitter.com/a_sandrina_p/status/1318217958955601922). The ```caption``` provides extra context for screen readers. I've applied a [visually hidden class selector](https://piccalil.li/quick-tip/visually-hidden/), otherwise the caption text would display. In this case with the paragraph text above the table the caption felt unnecessary for sited visitors.
 
 Adrian Roselli's [A Responsive Accessible Table](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html) is full of useful information and examples, such as adding ```role```, ```aria-labelledby``` and ```tabindex``` to the scrolling container to ensure that the table is navigable by keyboard. Check the [Keyboard-Friendly Scroll](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html#ResponsiveScrollingKeyboard) section for more details.
 

@@ -21,7 +21,7 @@ The update was mostly punching up the colors and a few other refinements. My des
   {% endfigcaption %}
 {% endfigure %}
 
-A few other updates include adding some [visually hidden text](https://piccalil.li/quick-tip/visually-hide-an-element-with-css/) for screen reader users. Visually it's relatively easy to understand who the winner is based on the text treatments and spacing, and the the name of the track might be in the video still, but that context is lost when it's announced.
+A few other updates include adding some [visually hidden text](https://piccalil.li/quick-tip/visually-hidden/) for screen reader users. Visually it's relatively easy to understand who the winner is based on the text treatments and spacing, and the the name of the track might be in the video still, but that context is lost when it's announced.
 
 I added "Track:" and "Winner:" for extra clarification, and to match the label/value paring of the other data. There are a couple of instances of dead heat finishes, meaning the race officially has two winners. Visually the "winner" section is just repeated to display each winner plus their jockey and trainer. It could be confusing to hear the second winner announced, so I also added "This race was a dead heat and has two winners" before the first winner.
 
