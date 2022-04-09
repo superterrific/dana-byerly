@@ -2,7 +2,7 @@
 title: 'Dana Byerly'
 layout: 'layouts/home.html'
 summary: 'Personal site of Dana Byerly, an Interaction Designer who codes'
-titleHP: 'Hi there'
+titleHP: 'Hi there, happy CSS Naked Day!'
 featuredProjects:
  title: 'Featured Projects'
  summary: 'A few of my recent projects that I probably already want to rework, but will start other new projects instead.'
@@ -11,3 +11,4 @@ recentArticles:
  summary: 'The latest in blather.'
 eleventyExcludeFromCollections: true
 ---
+[Learn more about CSS Naked Day](https://laurakalbag.com/css-naked-day-2020/). 
