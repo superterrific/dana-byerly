@@ -8,7 +8,7 @@ tags: ['Clients', 'Eleventy']
 
 Hello, it's a been awhile. Burnout got the best of me earlier in the year, but not before I could launch two new sites.
 
-In February I launched a personal site for my dear friend writer extraordinaire [Rhonda Lieberman](https://rhondalieberman.com/). She is extremely not online, and it took several years to talk her into it. Persistence paid off and now she has a nice little "calling card" site, as she refers to it. I'm going to do a separate post about the site in the near(ish) future, But it should be no surprise that it's built with [Eleventy]({{ tools.11ty }})!
+In February I launched a personal site for my dear friend, writer extraordinaire [Rhonda Lieberman](https://rhondalieberman.com/). She is extremely not online, and it took several years to talk her into it. Persistence paid off and now she has a nice little "calling card" site, as she refers to it. I'm going to do a separate post about the site in the near(ish) future, But it should be no surprise that it's built with [Eleventy]({{ tools.11ty }})!
 
 Also in February, and also related, I redid the site for one of Rhonda's projects, [The Cats-in-Residence Program](https://cats-in-residence.org/). The project ran from 2013 to 2016, but [started in the late 90's](https://www.artforum.com/interviews/rhonda-lieberman-talks-about-the-cat-show-41537) in an empty lot in Long Island City, Queens.
 
@@ -21,6 +21,6 @@ I [previously mentioned](/notes/year-one-in-the-books/#whats-next) that I was wo
 
 With that in mind I'm not adding either of these sites to the [Projects section](/projects/) of this site. I define "projects" as sites I do for myself. This brings me to a somewhat existential question... do I add a "Work" section here or start a separate site for freelance/client work?
 
-I'm leaning heavily towards a new separate site as "Work" would imply my "Portfolio", which would include work from my vast collection of jobs over the last twenty some years. And honestly I just don't want to do that. Trying to figure out how to represent that feels too much like work itself.
+I'm leaning heavily towards a new separate site, as "Work" would imply my "Portfolio", which would include work from my vast collection of jobs over the last twenty some years. And honestly I just don't want to do that. Trying to figure out how to represent that feels too much like work itself.
 
 I don't have a timeline for any of this, which perhaps is the best part (see previously mentioned burnout). In the meantime, I've been doing a lot of digital housekeeping, and have found many an odd and hilarious item. I may start a Twitter thread of some of the better ones as I slowly emerge from burnout.
