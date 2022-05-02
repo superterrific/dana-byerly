@@ -17,25 +17,25 @@
           <div class="full-bleed project-hero">
             <div class="wrapper-content flow-100">
               <h1>{{ pageHeaderTitle | safe }}</h1>
-              <div class="grid-container-project-hero">
+              <div class="grid-project-hero">
                 <div class="flow-100">
                   {% if launched %}
                   <section>
-                    <h2 class="project-hero-label">Launched</h2>
+                    <h2>Launched</h2>
                     <span class="project-meta">{{ launched | safe }}</span>
                   </section>
                   {% endif %}
 
                   {% if acquired %}
                   <section>
-                    <h2 class="project-hero-label">Acquired</h2>
+                    <h2>Acquired</h2>
                     <span class="project-meta">{{ acquired | safe }}</span>
                   </section>
                   {% endif %}
 
                   {% if tags %}
                   <section>
-                    <h2 class="project-hero-label">Filed Under</h2>
+                    <h2>Filed Under</h2>
                     <span class="visually-hidden">A list of tags for this post.</span>
                     <ul class="tag-list" role="list">
                       {% for tag in tags %}
@@ -51,7 +51,7 @@
                 <div class="project-meta-list flow-100">
                   <section>
                     {% if role %}
-                    <h2 class="project-hero-label">Role</h2>
+                    <h2>Role</h2>
                     <ul class="project-meta" role="list">
                       {% for role in role %}
                       <li>{{ role }}</li>
@@ -61,7 +61,7 @@
                   </section>
                   <section>
                     {% if platform %}
-                    <h2 class="project-hero-label">Platform</h2>
+                    <h2>Platform</h2>
                     <ul class="project-meta" role="list">
                       {% for platform in platform %}
                       <li>{{ platform }}</li>
@@ -71,7 +71,7 @@
                   </section>
                   <section>
                     {% if stack %}
-                    <h2 class="project-hero-label">Stack</h2>
+                    <h2>Stack</h2>
                     <ul class="project-meta" role="list">
                       {% for stack in stack %}
                       <li>{{ stack }}</li>

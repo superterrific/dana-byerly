@@ -219,7 +219,6 @@ footer p::selection {
 
 .pad-hero {
   padding: 1rem .5rem 4rem;
-  min-height: 36rem;
 }
 
 .pad-content {
@@ -296,6 +295,7 @@ footer p::selection {
   list-style: none;
   padding-inline-end: 1rem;
   font-size: 1.25rem;
+  font-size: clamp(1.1rem, 3vw, 1.25rem);
 }
 
 .site-nav li:last-child {
@@ -471,6 +471,12 @@ ul.tag-list-summary {
   width: 100%;
 }
 
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 /* A11y -------------------------------------------------------- */
 a.skip-link {
     left: -999px;
@@ -509,6 +515,10 @@ a.skip-link:active {
 
 /* Media Queries ---------------------------------------------- */
 @media screen and (max-width: 800px) {
+  header {
+    padding-bottom: 0;
+  }
+
   .title-wrap {
     margin-bottom: 1rem;
   }

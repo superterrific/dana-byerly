@@ -1,9 +1,3 @@
-.grid-container-project-hero {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: var(--flow-space);
-}
-
 .project-hero {
   background: var(--color-primary, #00365d);
   color: var(--color-primary-tint, #f6f9fc);
@@ -11,8 +5,13 @@
   box-shadow: var(--shadow);
 }
 
+.grid-project-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: var(--flow-space);
+}
 
-h2.project-hero-label {
+.grid-project-hero * h2 {
   color: var(--color-primary-highlight);
   font-weight: 600;
   font-size: 1rem;
@@ -49,7 +48,6 @@ h2.project-hero-label {
 .text-center {
   text-align: center;
 }
-
 
 @media screen and (max-width: 800px) {
   .project-hero {

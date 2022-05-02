@@ -1,3 +1,5 @@
+{% set tagLocation = tags %}
+
         <div class="wrapper-content pad-content flow-300">
           <article class="flow-150 h-entry">
             {% include "partials/page-header-post.html" %}
@@ -14,7 +16,9 @@
           </article>
 
           {% if tags %}
-          <div>{% include "partials/tags.html" %}</div>
+          <section>
+            {% include "partials/tags.html" %}
+          </section>
           {% endif %}
 
           {% if nextPost or previousPost %}

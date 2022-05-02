@@ -1,54 +1,32 @@
+/* Hero ------------------------------------------------------------- */
 .hp-hero {
-  display: grid;
+  display: flex;
   justify-content: center;
   background-color: var(--color-secondary);
-  padding: 4rem 1rem;
   color: var(--color-primary-tint);
   font-size: 1.4rem;
+  font-size: clamp(1.15rem, 2.25vw, 1.4rem);
   line-height: 1.65;
+  padding: 4rem 1rem;
+  padding: clamp(2rem, 5.5vw, 4rem) 2rem;
+  margin-top: 1rem;
   box-shadow: var(--shadow);
-  margin: 0 -.5rem 3rem;
 }
 
 .wrapper-intro {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-/* used for flex wrapper to center image */
-.intro-image {
-  margin-right: auto;
-  margin-left: auto;
+.intro-text {
+  max-width: 47rem;
 }
 
-.intro {
-  margin-left: 2rem;
-}
-
-@supports (display: grid) {
-	.wrapper-intro {
-		display: grid;
-		grid-template-columns: repeat(1, 270px) 1fr;
-		gap: 2rem;
-		place-items: center;
-	}
-
-  .intro-image,
-  .intro {
-    margin: 0;
-  }
-
-	@media screen and (max-width: 900px) {
-		.wrapper-intro {
-			display: grid;
-			grid-template-columns: auto;
-			justify-content: center;
-      gap: 1rem;
-		}
-  }
-}
-
-.wrapper-intro * img {
+/* Color border woggle ------------------------------------ */
+.intro-image * img {
   border-radius: 44% 56% 70% 30% / 52% 42% 58% 48%;
   border: 10px solid var(--color-primary, #00365d);
 }
@@ -64,48 +42,25 @@
   border: 2px solid var(--color-highlight-green);
 }
 
-.intro p {
-  margin-top: 1rem;
+/* Ugh wanted to figure a different way to handle these --- */
+@media screen and (max-width: 900px) {
+  .wrapper-intro * img {
+    width: 180px;
+  }
+
+  :is(h1, .intro-text > p) {
+    text-align: center;
+  }
 }
 
+/* Content ---------------------------------------------------------- */
 .promo-summary h2 {
   font-size: 2rem;
+  font-size: clamp(1.9rem, 2.5vw, 2rem);
   color: var(--heading-big);
 }
 
-.home-flow > * + * {
-  margin-top: 6rem;
-}
-
-.home-flow:last-child {
-  margin-bottom: 2rem;
-}
-
-@media screen and (max-width: 900px) {
-  .hp-hero {
-    padding: 2.5rem 1.5rem;
-    font-size: 1.15rem;
-    margin-bottom: 2rem;
-  }
-
-  .promo-summary h2 {
-    font-size: 1.9rem;
-  }
-
-  .home-flow > * + * {
-    margin-top: 5rem;
-  }
-
-  .home-flow:last-child {
-    margin-bottom: 1rem;
-  }
-
-  .wrapper-intro * img {
-    width: 170px;
-  }
-}
-
-/* Featured projects section */
+/* Project cards ------------------------------------------ */
 .projects-hp-card {
   background: var(--project-card-bg, #f6f9fc);
   border: 1px solid var(--color-primary, #00365d);
@@ -145,4 +100,17 @@
 .project-hp-content {
   padding: 1rem 1rem 2rem;
   border-top: 1px solid var(--color-primary, #00365d);
+  display: grid;
+  gap: .5rem;
+}
+
+/* Utility - flow --------------------------------------------------- */
+.home-flow > * + * {
+  margin-top: 6rem;
+  margin-top: clamp(5rem, 3vw, 6rem);
+}
+
+.home-flow:last-child {
+  margin-bottom: 2rem;
+  margin-bottom: clamp(.5rem, 3vw, 2rem);
 }
