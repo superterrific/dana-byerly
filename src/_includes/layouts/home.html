@@ -10,7 +10,7 @@
 
   {% block content %}
     <div class="pad-hero home-flow">
-      <div class="hp-hero">
+      <div class="hp-hero full-bleed">
         <div class="wrapper-intro">
           <div class="intro-image">
             <div class="intro-image-inner">
@@ -23,17 +23,17 @@
               </div>
             </div>
           </div>
-          <div class="wrapper-content intro">
+          <div class="intro-text flow-100">
             <h1>{{ pageHeaderTitle | safe }}</h1>
             <p>{{ author.intro | safe }}</p>
           </div>
         </div>
       </div>
       <div class="wrapper home-flow">
-        <div>
+        <section>
           {% include "partials/articles-recent.html" %}
-        </div>
-        <div>
+        </section>
+        <section>
           <div class="promo-summary">
             <h2>{{ featuredProjects.title | safe }}</h2>
           </div>
@@ -42,7 +42,7 @@
             {% include "partials/project-summary-home.html" %}
             {% endfor %}
           </div>
-        </div>
+        </section>
       </div>
     </div>
   {% endblock %}

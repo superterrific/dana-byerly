@@ -54,8 +54,7 @@ code {
   line-height: 1.5;
 }
 
-.reading ul,
-.reading ol  {
+.reading :is(ol, ul)  {
   margin-top: 1rem;
   font-size: 1.1rem;
   font-size: clamp(1rem, 2.5vw, 1.1rem);
@@ -154,7 +153,7 @@ code {
 
 .heading-wrapper + p,
 .heading-wrapper h3 + p,
-.heading-wrapper h4 + ul {
+.heading-wrapper h4 + ul  {
   margin-top: .5rem;
 }
 
@@ -230,13 +229,6 @@ a.anchor-link:hover svg {
 .caveat-wrapper h2 + p {
   margin-top: 0;
 }
-
-.full-bleed {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
 
 /* Video player ------------------------------------------------ */
 .video-player {
