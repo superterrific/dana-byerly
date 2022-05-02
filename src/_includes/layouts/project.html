@@ -1,5 +1,6 @@
 {% extends "layouts/base.html" %}
 
+{% set tagLocation = tags %}
 {% set pageHeaderTitle = title %}
 {% set previousPost = collections.projects | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.projects | getNextCollectionItem(page) %}
@@ -36,14 +37,7 @@
                   {% if tags %}
                   <section>
                     <h2>Filed Under</h2>
-                    <span class="visually-hidden">A list of tags for this post.</span>
-                    <ul class="tag-list" role="list">
-                      {% for tag in tags %}
-                        <li>
-                          <a href="/tag/{{ tag | slug }}/"><span role="presentation">#</span>{{ tag | replace(' ', '-') | lower }}</a>
-                        </li>
-                      {% endfor %}
-                    </ul>
+                    {% include "partials/tags.html" %}
                   </section>
                   {% endif %}
                 </div>

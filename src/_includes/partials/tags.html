@@ -1,6 +1,6 @@
 
 <span class="visually-hidden">A list of tags for this post.</span>
-<ul class="tag-list tag-list-summary" role="list">
+<ul class="{% if '/projects/' in page.url %}tag-list{% else %}tag-list tag-list-summary{% endif %}" role="list">
   {% for tag in tagLocation %}
     <li>
       <a href="/tag/{{ tag | slug }}/"><span role="presentation">#</span>{{ tag | replace(' ', '-') | lower }}</a>
