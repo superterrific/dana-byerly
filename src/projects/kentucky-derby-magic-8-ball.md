@@ -1,12 +1,13 @@
 ---
 title: 'Kentucky Derby Magic 8 Ball'
 summary: 'Fun with randomization.'
-projectUrl: 'https://2021-derby-8ball.glitch.me/'
+projectUrl: 'https://2022-derby-8ball.netlify.app/'
 allUrls:
   in2018: 'https://2018-derby-8ball.glitch.me/'
   in2019: 'https://2019-derby-8ball.glitch.me/'
   in2020: 'https://2020-derby-8ball.glitch.me/'
   in2021: 'https://2021-derby-8ball.glitch.me/'
+  in2022: 'https://2022-derby-8ball.netlify.app/'
 category: 'Projects'
 date: 2020-09-07
 launched: '2018'
@@ -87,10 +88,52 @@ document.getElementById('answer-button').onclick = function () {
 
 The first two lines within the function are the existing swap of the placeholder "8" and styling for the randomized answer. The container is set to <code>aria-hidden="true"</code> by default to keep screen readers from announcing the placeholder "8". When the answer is added aria-hidden is changed "false", allowing the answer to announced. This worked in VoiceOver, and I'm hoping it works in other screen readers. The next two additions apply the animations.
 
-I also made a bit of an effort to make it look more like an 8 ball. I [wrote a detailed account of this year's changes](/notes/annual-kentucky-derby-8-ball/), including more about the accessibility of the animations and some details about the design if you're interested.
+I also made a bit of an effort to make it look more like an 8 ball. I [wrote a detailed account of the 2021 changes](/notes/annual-kentucky-derby-8-ball/), including more about the accessibility of the animations and some details about the design if you're interested.
+
+## 2022 version
+[This version]({{ allUrls.in2022 }}) moved from [Glitch](https://glitch.com) to [Netlify]({{ tools.netlify }}), mostly to improve my workflow. I also added a dark theme and dropped the media queries.
+
+The media queries were mainly used to control the size of the eight ball. I changed that to use `clamp()` with a fallback, which gives the eight ball a better size and screen usage across devices.
+
+Original sizing
+```css
+.eight-ball {
+  background-color: black;
+  border-radius: 50%;
+  width: 22rem;
+  height: 22rem;
+  font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .eight-ball {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+```
+
+Updated sizing
+```css
+.eight-ball {
+  background-color: var(--color-darkest);
+  border-radius: 50%;
+  border: 1px solid var(--color-grey-mid);
+  width: 18rem;
+  width: clamp(18rem, 30vw, 36rem);
+  height: 18rem;
+  height: clamp(18rem, 30vw, 36rem);
+  font-size: 2.2rem;
+}
+```
+
+I updated the answer background to a blue gradient to give it a bit more of an [original 8 ball vibe](https://futureofworking.com/wp-content/uploads/2016/12/20-Funny-Magic-8-Ball-Sayings.jpg) without trying to figure out how to put the potentially long answers in a triangle.
+
+I'd like to think I could the animation, but overall I'm happy with the current state.
 
 
 View all versions...
+* [2022]({{ allUrls.in2022 }})
 * [2021]({{ allUrls.in2021 }})
 * [2020]({{ allUrls.in2020 }})
 * [2019]({{ allUrls.in2019 }})
