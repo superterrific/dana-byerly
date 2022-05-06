@@ -129,7 +129,7 @@ Updated sizing
 
 I updated the answer background to a blue gradient to give it a bit more of an [original 8 ball vibe](https://futureofworking.com/wp-content/uploads/2016/12/20-Funny-Magic-8-Ball-Sayings.jpg) without trying to figure out how to put the potentially long answers in a triangle.
 
-I'd like to think I could the animation, but overall I'm happy with the current state.
+I'd like to think I could improve the animation, but overall I'm happy with the current state.
 
 
 View all versions...
