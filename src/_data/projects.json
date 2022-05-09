@@ -50,12 +50,12 @@
     },
     {
       "title": "Kentucky Derby Magic 8 Ball",
-      "projectUrl": "https://2021-derby-8ball.glitch.me/",
+      "projectUrl": "https://2022-derby-8ball.netlify.app/",
       "summary": "Fun with randomization.",
       "launched": "2018",
       "projectPage": "/projects/kentucky-derby-magic-8-ball",
       "img": "derby-magic",
-      "alt": "Kentucky Derby Magic 8 Ball at Glitch",
+      "alt": "Kentucky Derby Magic 8 Ball",
       "imgWidth": "700",
       "imgHeight": "582"
     },
