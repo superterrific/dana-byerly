@@ -70,8 +70,8 @@
   }
 
   img {
-  filter: brightness(.85) saturate(1.15);
-}
+    filter: brightness(.85) saturate(1.15);
+  }
 }
 
 /* Resets based on Andy Bell's Modern Reset
@@ -168,16 +168,19 @@ a:hover {
 
 header a:focus {
   outline: 2px solid var(--focus-header);
+  overflow: auto;
 }
 
 main a:focus {
   outline: 2px solid var(--focus-main);
   outline-offset: .1rem;
+  overflow: auto;
 }
 
 footer a:focus {
   outline: 2px solid var(--color-lightest);
   outline-offset: .1rem;
+  overflow: auto;
 }
 
 .footer-links a {
