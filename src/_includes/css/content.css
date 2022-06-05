@@ -19,6 +19,7 @@ cite {
 .fig-container img {
   padding: 1rem;
   padding: clamp(1rem, 2.5vw, 1.5rem);
+  margin-inline: auto;
 }
 
 figcaption {

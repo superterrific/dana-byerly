@@ -48,7 +48,7 @@ Here's some example text with ```h4```.
 > Here's an example of a blockquote. &mdash; Dana Byerly
 
 ### Images
-All images use [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) and [picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) elements.
+All images within content use [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) and [picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) elements.
 
 #### Image with text
 {% figure %}
