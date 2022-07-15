@@ -9,9 +9,9 @@ eleventyExcludeFromCollections: true
   <title>{{ title }}</title>
 	<subtitle>{{ summary }}</subtitle>
 	<link href="{{ site.url }}{{ permalink }}" rel="self"/>
-	<link href="{{ site.url }}/"/>
+	<link href="{{ site.url }}/">
 	<updated>{{ collections.writing | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-	<id>{{ site.url }}/</id>
+	<id>{{ site.url }}</id>
 	<author>
     <name>{{ author.name }}</name>
     <email>{{ author.email }}</email>
