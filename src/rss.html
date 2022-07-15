@@ -11,20 +11,20 @@ eleventyExcludeFromCollections: true
 	<link href="{{ site.url }}{{ permalink }}" rel="self"/>
 	<link href="{{ site.url }}/"/>
 	<updated>{{ collections.writing | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-	<id>{{ site.url }}</id>
+	<id>{{ site.url }}/</id>
 	<author>
     <name>{{ author.name }}</name>
     <email>{{ author.email }}</email>
 	</author>
 	{% for post in collections.writing %}
-    {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
+    {% set absolutePostUrl %}{{ site.url | url | absoluteUrl(post.url) }}{% endset %}
     <entry>
       <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
       <updated>{{ post.date | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
       <content type="html"><![CDATA[
-        {{ post.templateContent | safe }}
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}
       ]]></content>
     </entry>
 	{% endfor %}

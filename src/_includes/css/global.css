@@ -481,31 +481,30 @@ ul.tag-list-summary {
 }
 
 /* A11y -------------------------------------------------------- */
-a.skip-link {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
+
+[href="#main-content"]:not(:focus) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;	overflow:
+  hidden;	position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-a.skip-link:focus,
-a.skip-link:active {
-    color: var(--color-lightest);
-    background-color: var(--color-secondary);
-    left: auto;
-    top: auto;
-    width: 30%;
-    height: auto;
-    overflow: auto;
-    margin: 1rem 35%;
-    padding: 1rem;
-    border: 4px solid var(--color-darkest);
-    text-align: center;
-    font-size: 1.2rem;
-    z-index: 999;
+[href="#main-content"] {
+  display: inline-block;
+  position: fixed;
+  left: calc(50% - 10rem);
+  overflow: auto;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  color: var(--color-lightest);
+  background-color: var(--color-secondary);
+  border: 4px solid var(--color-darkest);
+  text-align: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  z-index: 999;
 }
 
 .visually-hidden {
