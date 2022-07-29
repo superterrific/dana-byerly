@@ -1,0 +1,37 @@
+{% extends "layouts/base.html" %}
+
+{% set css %}
+  {% include "css/global.css" %}
+  {% include "css/contact.css" %}
+{% endset %}
+
+{% block content %}
+
+  <article class="wrapper-content pad-content card-contact flow-100 ">
+    <h1>{{ title }}</h1>
+    {% if page.url === '/contact/' %}
+    <form name="Contact" method="post" data-netlify="true" action="/thank-you/" class="flow-200">
+      <div class="field-wrap">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" pattern="[A-Za-z ]{1,100}" autocomplete="on" required />
+      </div>
+      <div class="field-wrap">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" autocapitalize="none" pattern="[^@]+@[^\.]+\..+" autocomplete="on" required />
+      </div>
+      <div class="field-wrap">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="8" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+    {% else %}
+
+    {{ content | safe }}
+
+    <p>
+      <a href="/">Back to the site</a>
+    </p>
+    {% endif %}
+  </article>
+{% endblock %}

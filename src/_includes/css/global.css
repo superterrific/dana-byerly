@@ -45,6 +45,10 @@
   --table-alt: var(--color-dark-tint);
   --project-card-bg: var(--color-primary-tint);
   --project-card-focus: var(--color-secondary);
+  --form-border: var(--color-secondary);
+  --form-button-bg: var(--color-primary);
+  --form-button-color: var(--color-lightest);
+  --form-button-focus: var(--color-secondary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,6 +71,8 @@
     --table-alt: var(--color-darker);
     --project-card-bg: var(--color-darker);
     --project-card-focus: var(--color-secondary-mid);
+    --form-button-bg: var(--color-secondary);
+    --form-button-focus: var(--color-secondary-mid);
   }
 
   img {

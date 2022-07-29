@@ -1,0 +1,67 @@
+
+.card-contact {
+  --flow-space: 1.25rem;
+  margin-bottom: 4rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-contact form {
+  margin-bottom: .25rem;
+}
+
+/* Form ------------------------------------------------------------- */
+input,
+textarea,
+select,
+button {
+  font-size: inherit;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.field-wrap > input, textarea {
+  width: 100%;
+  border: 2px solid var(--form-border);
+  padding: .5rem;
+}
+
+.field-wrap > input:focus, textarea:focus {
+  outline: 3px solid var(--link-focus);
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background: var(--form-button-bg);
+  border: 1px solid var(--color-primary);
+  color: var(--form-button-color);
+  padding: .5rem 1.25rem;
+}
+
+button:hover {
+  background: var(--form-button-focus);
+  /* color: var(--color-secondary-dark); */
+  cursor: pointer;
+}
+
+button:focus {
+  background: var(--form-button-focus);
+  color: var(--color-lightest);
+  outline: 3px solid var(--color-secondary-dark);
+}
+
+:is(button, input, textarea):disabled  {
+  background-color: var(--disabled-bg);
+  color: var(--disabled-text);
+  cursor: unset;
+}
+
+img {
+  border: 1px solid var(--color-darkest);
+}
