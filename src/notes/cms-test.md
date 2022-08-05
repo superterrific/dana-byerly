@@ -3,7 +3,7 @@ title: 'Testing Forestry CMS with Eleventy'
 summary: 'I created a test site to learn about using Forestry CMS with Eleventy.'
 date: 2021-05-19
 category: 'Notes'
-tags: ['Eleventy', 'Side Projects']
+tags: ['CMS', 'Eleventy', 'Side Projects']
 ---
 
 One of the things on my to do list has been to take a closer look at CMS options for [Eleventy]({{ tools.11ty }}). Aside from being curious about how easy it would be to set up, I might have a couple of projects coming up where the content would be created and maintained by someone who wouldn't want to use an editor to GitHub flow.
