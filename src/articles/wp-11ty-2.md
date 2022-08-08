@@ -174,7 +174,7 @@ My image prep...
 * Optimize with [Squoosh](https://squoosh.app/).
 * Add to WordPress Media Library (including alt text!).
 * Download additional image sizes.
-* Add to Eleventy.
+* Add all images to Eleventy.
 * Deploy before publishing WordPress post to make the images live.
 
 Yes, that's a lot of steps. It's fine for me but not recommended unless you don't mind doing that sort of thing. If it ends up being too annoying I can always switch to Cloudinary.
