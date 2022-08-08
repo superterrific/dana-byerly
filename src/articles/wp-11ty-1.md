@@ -10,7 +10,7 @@ After a quick proof of concept using [WordPress](https://wordpress.com) as conte
 
 This article assumes you already know how to use Eleventy and WordPress, and that you have a high-level understanding of headless content management as well as accessing data via API.
 
-Part one (this article) covers WordPress set-up and concepts, The Eleventy article will be published soon.
+Part one (this article) covers WordPress set-up and concepts, [part two covers Eleventy](/articles/wordpress-and-eleventy-part-two-eleventy/).
 
 ## Table of contents
 * [Intro](#intro)
@@ -53,7 +53,7 @@ You're setting up two sites...
 
 You can use two different domains or a domain and sub-domain. I went the sub-domain route. For hosting I have a [Dreamhost account](https://www.dreamhost.com/) and decided to host my WordPress site there, my Eleventy site is hosted at [Netlify]({{ tools.netlify }}).  If you wanted to run WordPress locally [this article should be helpful](https://www.sitepoint.com/wordpress-headless-cms-eleventy/).
 
-The content at the WordPress site is accessed via the [WordPress REST API](https://developer.wordpress.org/rest-api/) to use as [global data](https://www.11ty.dev/docs/data-js/) in your Eleventy site. If you're wondering how to handle having the same content at two different site (as I was before I started this process), I'll cover that in the [Plugins section](#useful-resources-and-wrap-up) and in the Hosting section of upcoming Eleventy article.
+The content at the WordPress site is accessed via the [WordPress REST API](https://developer.wordpress.org/rest-api/) to use as [global data](https://www.11ty.dev/docs/data-js/) in your Eleventy site. If you're wondering how to handle having the same content at two different site (as I was before I started this process), I'll cover that in the [Plugins section](#useful-resources-and-wrap-up) and in the [Hosting section of part two](/articles/wordpress-and-eleventy-part-two-eleventy/#hosting).
 
 
 ## Setting up WordPress
@@ -67,11 +67,11 @@ There are a few considerations when setting up Wordpress.
 * A few potentially useful settings
 
 ### Permalink and default category
-We'll get into more details about accessing the API in the upcoming Eleventy article, but an important thing to note is any link to other posts or pages within your site will be fully qualified, or the full address of the url of your WordPress site.
+There's more details about accessing the API in the [Select your endpoints section](#select-your-endpoints), but an important thing to note is any link to other posts or pages within your site will be fully qualified, or the full address of the url of your WordPress site.
 
 Let's say your WordPress site is uses the domain `editor.mysite.com` and your public site uses `mysite.com`. Any link to your other posts or pages within the content of a post will point to `editor.mysite.com`.
 
-There are a couple of options for handling this covered in the upcoming Eleventy article, but you can make things easier on yourself by setting up the permalink structure in WordPress to match the permalink structure in your Eleventy site.
+There are a couple of options for handling this in the [Change fully qualified URLs](/articles/wordpress-and-eleventy-part-two-eleventy/#change-fully-qualified-urls) section of part two, but you can make things easier on yourself by setting up the permalink structure in WordPress to match the permalink structure in your Eleventy site.
 
 In my Eleventy site I'm using the permalink structure of `/blog/post-name`. For example, I have a post at this address: https://danabyerly-junkdrawer.website/blog/welcome-to-the-junk-drawer/. If I linked to it from within another post, the link would point to `https://wpsite.danabyerly-junkdrawer.website/blog/welcome-to-the-junk-drawer/` (not the actual domain!). Because the permalink structure is the same the only thing I have to worry about changing in Eleventy is the domain.
 
@@ -185,11 +185,13 @@ There is a [global parameter for embedding](https://developer.wordpress.org/rest
 
 https://11ty.foxnet.fi/wp-json/wp/v2/posts?_embed=true&_fields=id,title,slug,date,content,tags,_links&per_page=100
 
-Now you'll see a field named `_embedded` that includes authors and wp:term. The field wp:term includes categories (0) and tags (1). I was able to update my Posts endpoint to include the embedded content, but couldn't figure out how to render it. Perhaps you'll have more luck than I did! If not, it's straightforward to include the Tags endpoint and reference the additional information, and I'll go over that in part two on Eleventy.
+Now you'll see a field named `_embedded` that includes authors and wp:term. The field wp:term includes categories (0) and tags (1). I was able to update my Posts endpoint to include the embedded content, but couldn't figure out how to render it. Perhaps you'll have more luck than I did! If not, it's straightforward to include the Tags endpoint and [reference the additional information](/articles/wordpress-and-eleventy-part-two-eleventy/#tags).
 
 
 ## Useful resources and wrap-up
-Depending on your set-up you could encounter additional issues and things to consider, but hopefully part one answered some of your basic questions. Part two on Eleventy will be published shortly. Below is a list of resouces mention in this article.
+Depending on your set-up you could encounter additional issues and things to consider, but hopefully part one answered some of your basic questions around WordPress set-up. [Part two on Eleventy set-up](/articles/wordpress-and-eleventy-part-two-eleventy/) covers the things I encountered as I integrated my working proof of concept into my Eleventy starter.
+
+A list of resources mentioned in this article...
 
 ### How-tos and repositories
 * [How to use 11ty with Headless WordPress and deploy to Netlify](https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/) and [corresponding repository](https://github.com/thedavedavies/Headless-WordPress-11ty) by Dave Davies
