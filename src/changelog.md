@@ -4,7 +4,7 @@ layout: 'layouts/feed.html'
 summary: 'Details about updates...'
 pagination:
   data: collections.changelog
-  size: 10
+  size: 20
 permalink: 'changelog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
 paginationPrevText: 'Newer posts'
 paginationNextText: 'Older posts'

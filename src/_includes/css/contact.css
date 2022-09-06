@@ -30,7 +30,7 @@ label {
 }
 
 .field-wrap > input:focus, textarea:focus {
-  outline: 3px solid var(--link-focus);
+  outline: 4px solid var(--form-focus);
 }
 
 textarea {
