@@ -49,6 +49,7 @@
   --form-button-bg: var(--color-primary);
   --form-button-color: var(--color-lightest);
   --form-button-focus: var(--color-secondary);
+  --form-focus: var(--link-focus);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,6 +74,7 @@
     --project-card-focus: var(--color-secondary-mid);
     --form-button-bg: var(--color-secondary);
     --form-button-focus: var(--color-secondary-mid);
+    --form-focus: var(--color-primary-highlight);
   }
 
   img {

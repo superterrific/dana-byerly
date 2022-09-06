@@ -3,7 +3,7 @@
 <ul class="tag-list{% if not '/projects/' in page.url %} tag-list-summary{% endif %}" role="list">
   {% for tag in tagLocation %}
     <li>
-      <a href="/tag/{{ tag | slug }}/"><span role="presentation">#</span>{{ tag | replace(' ', '-') | lower }}</a>
+      <a href="/tag/{{ tag | slug }}/">{{ tag }}</a>
     </li>
   {% endfor %}
 </ul>

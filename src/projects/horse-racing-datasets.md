@@ -1,6 +1,6 @@
 ---
-title: 'Horse Racing Datasets'
-summary: 'Shared datasets for Thoroughbred horse racing.'
+title: "Horse Racing Datasets"
+summary: "Shared datasets for Thoroughbred horse racing."
 projectUrl: 'https://horseracingdatasets.com'
 category: 'Projects'
 date: 2020-09-07
