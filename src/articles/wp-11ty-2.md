@@ -402,7 +402,7 @@ After some frantic research I found a [How to set up a custom domain for Netlify
 * danabyerly-junkdrawer.website
 * www.danabyerly-junkdrawer.website
 
-And then point my WordPress sub-domain back to the Dreamhost nameservers. Regardless of where you host your sites, if you use a sub-domain of public site for your WordPress site this is something to keep in mind.
+And then point my WordPress sub-domain back to the Dreamhost nameservers. Regardless of where you host your sites, if you use a sub-domain of your public site for your WordPress site, this is something to keep in mind.
 
 ### Netlify build hook
 I like to have a [build hook](https://docs.netlify.com/configure-builds/build-hooks/) for all my sites that use remote data. It's helpful to be able to trigger a build without doing a deploy. In the [Deployments section of part one](/articles/wordpress-and-eleventy-part-one-wordpress/#deployments) I cover some plugins that help by triggering builds from within WordPress, and to use them you need build hook.
