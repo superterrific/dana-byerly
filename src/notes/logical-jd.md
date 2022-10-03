@@ -10,7 +10,7 @@ A couple of weeks ago Jeremy Keith had a [post on refactoring an existing site](
 
 > Logical, flow relative properties and values are linked to the flow of text, rather than the physical shape of the screen.
 
-Instead of using `margin-top: 1rem` it would be `margin-block-start: 1rem;`, using a relative "start" instead of physical "top" to indicate direction. Using relative direction better supports language translation and multi-lingual sites. The post at web.dev has a [good overview that includes examples](https://web.dev/learn/css/logical-properties/). MDN also has a [good overview](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties) that includes links to all the properties.
+Instead of using `margin-top: 1rem;` it would be `margin-block-start: 1rem;`, using a relative "start" instead of physical "top" to indicate direction. Using relative direction better supports language translation and multi-lingual sites. The post at web.dev has a [good overview that includes examples](https://web.dev/learn/css/logical-properties/). MDN also has a [good overview](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties) that includes links to all the properties.
 
 Jeremy's refactor seemed to go well, including some interesting observations. He had a nice follow-up post on [browser support and progressive enhancement using feature queries](https://adactio.com/journal/19487) that should be noted, especially for the how-to on using `@supports`.
 
