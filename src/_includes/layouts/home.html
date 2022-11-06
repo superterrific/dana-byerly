@@ -36,10 +36,11 @@
         <section>
           <div class="promo-summary">
             <h2>{{ featuredProjects.title | safe }}</h2>
+            <p>{{ featuredProjects.summary | safe }}</p>
           </div>
           <div class="grid-container-sm">
-            {% for item in projects.featured %}
-            {% include "partials/project-summary-home.html" %}
+            {% for item in studio.project %}
+            {% include "partials/studio-summary-home.html" %}
             {% endfor %}
           </div>
         </section>

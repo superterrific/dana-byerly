@@ -2,7 +2,7 @@
 title: 'WordPress & Eleventy part two: Eleventy'
 summary: 'Some considerations for using WordPress as a headless content management system for Eleventy.'
 date: 2022-08-08
-category: 'Article'
+category: 'Articles'
 tags: ['CMS', 'Eleventy', 'Side Projects', 'WordPress']
 ---
 

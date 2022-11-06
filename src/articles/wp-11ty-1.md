@@ -2,7 +2,7 @@
 title: 'WordPress & Eleventy part one: WordPress'
 summary: 'Some considerations for setting up WordPress to use with Eleventy.'
 date: 2022-08-05
-category: 'Article'
+category: 'Articles'
 tags: ['CMS', 'Eleventy', 'Side Projects', 'WordPress']
 ---
 
