@@ -1,13 +1,15 @@
 :root {
   --color-primary: #00365d;
-  --color-secondary: #c07;
+  --color-primary-darkest: #080c12;
+  --color-primary-darker: #111a28;
   --color-primary-dark: #182335;
   --color-primary-mid: #004a7f;
-  --color-secondary-mid: #ff22a3;
   --color-primary-highlight: #7cc7de;
-  --color-secondary-highlight: #f2d1f5;
   --color-primary-banding: #dceaF9;
   --color-primary-tint: #f6f9fc;
+  --color-secondary: #c07;
+  --color-secondary-mid: #ff22a3;
+  --color-secondary-highlight: #f2d1f5;
   --color-secondary-tint: #f9e9fa;
   --color-darker: #21262a;
   --color-dark: #374047;
@@ -62,7 +64,7 @@
     --code-bg: var(--color-dark);
     --code-text: inherit;
     --caption-bg: var(--color-dark);
-    --tag-bg: var(--color-dark);
+    --tag-bg: var(--color-primary-darkest);
     --focus-header: var(--color-primary-tint);
     --focus-main: var(--color-secondary-mid);
     --blockquote-bg: var(--color-dark);
@@ -70,7 +72,7 @@
     --table-header-text: var(--color-lightest);
     --table-bg: var(--color-dark);
     --table-alt: var(--color-darker);
-    --project-card-bg: var(--color-darker);
+    --project-card-bg: var(--color-primary-darker);
     --project-card-focus: var(--color-secondary-mid);
     --form-button-bg: var(--color-secondary);
     --form-button-focus: var(--color-secondary-mid);

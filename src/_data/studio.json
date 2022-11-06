@@ -1,0 +1,18 @@
+{
+  "project": [
+    {
+      "title": "Rhonda Lieberman",
+      "url": "https://rhondalieberman.com",
+      "summary": "Personal site of Rhonda Lieberman. Reader, writer, friend of animals.",
+      "img": "RL-600",
+      "alt": "Homepage of Rhonda Lieberman's site. There is a picture of her holding a white Chihuahua mix on a chair in front of a restaurant with the text: Rhonda Lieberman. Reader, Writer, Friend of Animals."
+    },
+    {
+      "title": "The Cats-in-Residence Program",
+      "url": "https://cats-in-residence.org",
+      "summary": "Part purr-formance piece, part social sculpture, part design solution.",
+      "img": "CIR-600",
+      "alt": "The Cats-in-Residence Program homepage. The hero area has a picture of a cat sitting on a sculture, the the text: Meow, would you like more rescue cats with your Art?"
+    }
+  ]
+}

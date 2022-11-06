@@ -1,0 +1,12 @@
+
+    <article class="projects-hp-card">
+        <picture>
+          <source srcset="/img/studio/{{ item.img }}.avif" type="image/avif">
+          <source srcset="/img/projects/{{ item.img }}.webp" type="image/webp">
+          <img src="/img/projects/{{ item.img }}.jpg" width="600" height="389" class="img-fill" alt="{{ item.alt }}" loading="lazy">
+        </picture>
+        <div class="project-hp-content">
+          <h3 class="promo-article-title"><a href="{{ item.url }}">{{ item.title | safe }}</a></h3>
+          <p>{{ item.summary | safe }}</p>
+        </div>
+      </article>
