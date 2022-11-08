@@ -9,7 +9,7 @@ This site is made with [Eleventy]({{ tools.11ty }}) and hosted at [Netlify]({{ t
 
 Fonts used [Shrikhand](https://fonts.google.com/specimen/Shrikhand) for the site title and [Bitter](https://fonts.google.com/specimen/Bitter) for the body.
 
-Icons are [Tabler Icons](https://tablericons.com/).
+Icons are [Tabler Icons](https://tabler-icons.io/).
 
 Handwritten CSS.
 
