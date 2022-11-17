@@ -66,6 +66,7 @@
   border: 1px solid var(--color-primary, #00365d);
   box-shadow: var(--shadow);
   position: relative;
+  /* outline: 1px solid transparent; */
 }
 
 .projects-hp-card  a[href]::after {
@@ -81,6 +82,7 @@
 .projects-hp-card:hover, .projects-hp-card:focus-within {
   border-color: var(--project-card-focus, #c07);
   box-shadow: 0 0 .75rem var(--project-card-focus);
+  outline: 5px solid transparent;
 }
 
 .project-hp-content h3 a {

@@ -278,20 +278,6 @@ footer p::selection {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.site-title a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.site-title a:hover {
-  background-color: var(--color-secondary);
-  background-image: linear-gradient(0deg, rgba(0,54,93,1) 0%, rgba(255,70,178,1) 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .site-nav {
   align-self: center;
   margin-left: -.5rem;

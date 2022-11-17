@@ -2,6 +2,8 @@
 title: 'Accessibility Statement'
 layout: 'layouts/page.html'
 summary: "This site is committed to ensuring that it's accessible to all, regardless of technology or ability."
+date: Last Modified
+updated: true
 kofi: false
 eleventyExcludeFromCollections: true
 ---
@@ -18,6 +20,6 @@ This site has been built using [W3C standards](https://www.w3.org/standards/) fo
 * Navigate all of this site if CSS fails to load.
 * Navigate all of this site if JavaScript is disabled or fails to load.
 
-In addition to being tested on modern browsers, this site has been checked for screen reader ease of use using Voice Over. It has also been audited using [WAVE](https://wave.webaim.org/) and [Arc Toolkit](https://www.tpgi.com/arc-platform/arc-toolkit/) as well as manually checked by myself and [A11y Websites](https://twitter.com/superterrific/status/1345403075935277057).
+In addition to being tested on modern browsers, this site has been checked for screen reader ease of use using VoiceOver and NVDA. It has also been audited using [WAVE](https://wave.webaim.org/),  [ARC Toolkit](https://www.tpgi.com/arc-platform/arc-toolkit/), [axe DevTools](https://deque.com/axe/devtools/) as well as manually checked by myself and [A11y Websites](https://twitter.com/superterrific/status/1345403075935277057).
 
 I am continually working on improving the usability and accessibility of this site. Issues with this site's accessibility can be submitted as a [GitHub issue](https://github.com/superterrific/dana-byerly/issues) or you can [contact me directly](mailto:hello@danabyerly.com). I take these issues very seriously and will try to address them as quickly as possible.
