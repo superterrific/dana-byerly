@@ -181,13 +181,13 @@ header a:focus-visible {
   overflow: auto;
 }
 
-main a:focus {
+main a:focus-visible {
   outline: 2px solid var(--focus-main);
   outline-offset: .1rem;
   overflow: auto;
 }
 
-footer a:focus {
+footer a:focus-visible {
   outline: 2px solid var(--color-lightest);
   outline-offset: .1rem;
   overflow: auto;
