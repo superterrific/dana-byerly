@@ -1,5 +1,5 @@
 ---
-title: "Shifthing things around"
+title: "Shifting things around"
 summary: "Figuring a few things out around here, and maybe elsewhere."
 date: 2022-11-27
 category: 'Notes'

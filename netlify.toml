@@ -17,3 +17,7 @@
   for = "/fonts/*"
     [headers.values]
     Cache-Control = "public, max-age=15768000"
+
+[[redirects]]
+  from = "/notes/shifthing-things-around/"
+  to = "/notes/shifting-things-around/"
