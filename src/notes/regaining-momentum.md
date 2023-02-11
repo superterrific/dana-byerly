@@ -87,3 +87,14 @@ I've (hopefully!) hooked up this site to post to [my Mastodon account](https://m
 If you're feeling adventurous Jeremy Keith has a post on [using Mastodon's API and Bridgy](https://adactio.com/journal/19645) and Nicolas Hoizey has one on [using a feed and GitHub action](https://nicolas-hoizey.com/articles/2023/01/07/let-s-posse-to-mastodon-with-a-feed-and-a-github-action/). 
 
 Originally I was going to use Zapier as it's my go to automation tool, but webhooks are a premium feature and I'm not ready to upgrade there at the moment. Webhooks are available on the free tier at IFTTT. If it works out I'll also set up posts from [Junk Drawer](https://danabyerly-junkdrawer.website/) to post at Mastodon as well. Or even it doesn't go well I'll try to improve it at the Junk Drawer as I'm more likely post there next than posting here. Wish me luck!
+
+
+**Update Feburary 11, 2023**: After fiddling around with several test posts, I finally got posting to work correctly. However, only using the post title and URL. I couldn't get content to display without it including the wrapping HTML. 
+
+I found conflicting examples for how to add your access token in the webhook settings. Adding it in the URL field (?access_token=XXXXX) is what worked for me. And this is how I set-up the Body field:
+
+```html
+status=📝 New post: <<<{% raw %}{{EntryTitle}}{% endraw %}>>>
+
+<<<{% raw %}{{EntryUrl}}{% endraw %}>>>
+```
