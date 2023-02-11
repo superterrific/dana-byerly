@@ -1,11 +1,11 @@
 ---
-title: 'Another test post that will be deleted'
-summary: 'Sorry about that, again!'
+title: 'Hopefully the last test post that will be deleted'
+summary: 'Keep your fingers crossed!'
 date: 2023-02-11
 category: 'Notes'
 ---
 
-Good news, the other post worked. Not good news, the formatting included HTML and annoying spacing. Hoping to fix that up this time around.
+The third attempt failed. I'm going to try one more time.
 
 Adding another paragraph to see if/how formatting works.
 
