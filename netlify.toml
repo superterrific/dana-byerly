@@ -2,6 +2,9 @@
   command = "npm run production"
   publish = "public"
 
+[build.environment]
+  NODE_VERSION = "lts/*"
+
 [[headers]]
   for = "*.avif"
   [headers.values]
