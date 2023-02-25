@@ -100,12 +100,6 @@ module.exports = config => {
   return collection.getAll().filter((post) => post.data.devto);
   });
 
-  // Open the browser on launch
-  config.setBrowserSyncConfig({
-    open: true,
-    ghostMode: false
-  });
-
 // Markdown and anchor options
   const markdownOptions = {
     html: true,

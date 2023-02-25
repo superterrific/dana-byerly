@@ -5,16 +5,16 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx eleventy --serve",
+    "build": "npx eleventy",
     "production": "NODE_ENV=production eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "browser-sync": "^2.27.6",
     "clean-css": "^4.2.3",
     "html-minifier": "^4.0.0",
     "luxon": "^1.26.0",
