@@ -5,7 +5,6 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx eleventy --serve",
-    "build": "npx eleventy",
     "production": "NODE_ENV=production eleventy"
   },
   "keywords": [],
