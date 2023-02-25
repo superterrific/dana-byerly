@@ -1,7 +1,7 @@
 {
   "name": "v-2-11ty",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal site of Dana Byerly",
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx eleventy --serve",
