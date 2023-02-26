@@ -6,6 +6,10 @@ category: 'Notes'
 tags: ['Eleventy', 'The Site']
 ---
 
+{% caption %}
+<strong>Update</strong>: I've written a similar step-by-step for <a href="/notes/upgrading-to-eleventy-2-0-0/">upgrading to Eleventy v2.0.0</a>.
+{% endcaption %}
+
 I spent an easy, breezy few hours updating 10 projects to the [latest version of Eleventy](https://www.11ty.dev/blog/eleventy-one-point-oh/#install-or-upgrade). As a hobbyist dev with limited debugging skills I live in fear of these sorts of things. I'm happy to report the process was easy and I only encountered one issue for 10 sites.
 
 It’s not surprising that I couldn’t find any step-by-step posts on upgrading given how easy it was. I put the steps together for myself (to do 10 times!) so I thought I’d share them.
