@@ -33,7 +33,7 @@ The Junk Drawer is already using WordPress so my first thought was to create a n
     <img src="/img/wp-app-store.jpg" alt="The data linked to you section of the WordPress iOS application. Contact info, search history, identifiers, diagnostics, user content, browsing history and usage data are listed as data linked to your identity and sent to WordPress." loading="lazy" />
   </picture>
   {% figcaption %}
-    Does WordPress really need all to collect all that data and link it to your identity to let you post to your own site? No, it doesn't.
+    Does WordPress really need to collect all that data and link it to your identity to let you post to your own site? No, it doesn't.
   {% endfigcaption %}
 {% endfigure %}
 
@@ -50,7 +50,7 @@ Yeah. No. Automatic does not need that much of my data. Since I already know how
   {% endfigcaption %}
 {% endfigure %}
 
-But with Airtable I can  [create a form](https://support.airtable.com/docs/how-to-create-a-form-in-airtable) and fire off TV blurbs from the comfort of a browser without having to use a data hungry app. And I can trigger a deploy at Netlify when a new record is added to the Airtable base using Zapier. 
+But with Airtable I can [create a form](https://support.airtable.com/docs/how-to-create-a-form-in-airtable) and fire off TV blurbs from the comfort of a browser without having to use a data hungry app. And I can trigger a deploy at Netlify when a new record is added to the Airtable base using Zapier. 
 
 Once I settled on Airtable for the TV blurbs I decided I could also pull the wake up songs in too since they were already in Airtable. My plan is to rework the Junk Drawer homepage. The blog list will be the primary focus with TV Blurbs and the Wake Up Song as secondary lists, each with their own listing page. I don't have a timeline for this at the moment, but it's nice to have a plan.
 
