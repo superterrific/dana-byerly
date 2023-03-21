@@ -9,6 +9,7 @@ displayOrder: 9
 platform: ['Wordpress']
 role: ['Content', 'Curation', 'Design', 'Editorial']
 tags: ['Curation']
+eleventyExcludeFromCollections: true
 ---
 Not long after launching [Hello Race Fans](/projects/hello-race-fans/) we purchased this site from talented friend and collaborator [Jessica Chapel](http://jessicachapel.com). Chapel launched it as an aggregator and original content site in 2007. I've managed to not screw it up, and have built on the success of [The Wire](http://www.raceday360.com/the-wire/) by adding [Tout Wire](http://www.raceday360.com/tout-wire/) for aggregated racing picks and tips.
 

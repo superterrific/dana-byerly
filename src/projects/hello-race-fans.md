@@ -8,6 +8,7 @@ launched: 'March 2010'
 displayOrder: 8
 platform: ['Wordpress']
 role: ['Co-founder', 'Content', 'Design', 'Editorial']
+eleventyExcludeFromCollections: true
 ---
 
 When friend and fellow horseplayer [Adam Wiener](http://twitter.com/AdamWiener) and I started this project in 2008 there was not an easy way to learn about Thoroughbred horse racing online. Most people learn how to play the ponies from a family member, and while there's no shortage of books, most of them assume your goal is to become a professional horseplayer.
