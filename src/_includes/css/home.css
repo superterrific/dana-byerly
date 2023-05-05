@@ -85,6 +85,10 @@
   outline: 5px solid transparent;
 }
 
+.project-hp-content h3 {
+  margin-block-end: .5rem;
+}
+
 .project-hp-content h3 a {
   text-decoration: none;
 }
@@ -102,8 +106,6 @@
 .project-hp-content {
   padding: 1rem 1rem 2rem;
   border-top: 1px solid var(--color-primary, #00365d);
-  display: grid;
-  gap: .5rem;
 }
 
 /* Utility - flow --------------------------------------------------- */
