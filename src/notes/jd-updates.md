@@ -1,5 +1,5 @@
 ---
-title: 'Junk Drawer Updates'
+title: 'Junk Drawer updates'
 summary: 'New content and a homepage update.'
 date: 2023-05-05
 category: 'Notes'
