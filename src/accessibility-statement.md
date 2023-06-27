@@ -2,7 +2,7 @@
 title: 'Accessibility Statement'
 layout: 'layouts/page.html'
 summary: "This site is committed to ensuring that it's accessible to all, regardless of technology or ability."
-date: Last Modified
+date: 2022-11-16
 updated: true
 kofi: false
 eleventyExcludeFromCollections: true
