@@ -39,6 +39,10 @@ code {
   font-weight: 500;
 }
 
+a:hover code {
+  background: unset;
+}
+
 [class*='language'] code {
   border: 0;
 }
