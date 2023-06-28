@@ -43,6 +43,13 @@ a:hover code {
   background: unset;
 }
 
+:is(h2,h3,h4) code {
+  background: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 [class*='language'] code {
   border: 0;
 }
