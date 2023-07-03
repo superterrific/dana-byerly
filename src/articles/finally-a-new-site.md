@@ -48,9 +48,6 @@ Here's what I used, which [resulted in this](/tags-all/).
 {% endfor %}{% endraw %}
 </ul>
 ```
-{% caption %}
-<strong>Note:</strong> <a href="/changelog/">I updated this example</a> to remove the ```aria-labeledby``` as it was overly verbose given that there is similar text on the page.
-{% endcaption %}
 
 I also [noticed this article](http://dirtystylus.com/2020/09/01/eleventy-tag-list-sorting-and-post-count/) earlier in the week with a similar approach to the Base Blog.
 
