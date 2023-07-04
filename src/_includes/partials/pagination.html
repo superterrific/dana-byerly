@@ -9,14 +9,14 @@
         <line x1="5" y1="12" x2="9" y2="16" />
         <line x1="5" y1="12" x2="9" y2="8" />
       </svg>
-        <a href="{{ pagination.href.previous }}" data-direction="backwards">
+        <a href="{{ pagination.href.previous }}" data-direction="backwards" rel="prev">
           <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
         </a>
       {% endif %}
       </p>
       <p class="post-nav-item">
       {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}" data-direction="forwards">
+        <a href="{{ pagination.href.next }}" data-direction="forwards" rel="next">
           <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
         </a>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">

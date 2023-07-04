@@ -33,7 +33,7 @@
               </svg>
               Newer
               <p>
-                <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+                <a href="{{ previousPost.url }}" rel="prev">{{ previousPost.data.title }}</a>
               </p>
               {% endif %}
             </div>
@@ -48,7 +48,7 @@
                   <line x1="15" y1="8" x2="19" y2="12" />
               </p>
               <p>
-                <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+                <a href="{{ nextPost.url }}" rel="next">{{ nextPost.data.title }}</a>
               </p>
             </div>
             {% endif %}
