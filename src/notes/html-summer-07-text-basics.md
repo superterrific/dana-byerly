@@ -17,7 +17,7 @@ Go to this [section at Learn HTML](https://web.dev/learn/html/text-basics/#headi
 
 > There are six section heading elements, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`, with `<h1>` being most important and `<h6>` the least. For many years, developers were told that headings were used by browsers to outline documents. That was originally a goal, but browsers haven't implemented outlining features.
 
-More tea spilling. And indeed still a point of consternation. Just today Manual Matuzović [posted an example](https://mastodon.social/@matuzo@front-end.social/110660416471629911) of "how to prove that there is no document outline algorithm even though user agent styles are telling a different story". The resulting discussion illustrates the frustation.
+More tea spilling, and indeed still a point of consternation. Just today Manual Matuzović [posted an example](https://mastodon.social/@matuzo@front-end.social/110660416471629911) of "how to prove that there is no document outline algorithm even though user agent styles are telling a different story". The resulting discussion illustrates the frustation.
 
 > However, screen reader users do use headings as an exploration strategy to learn about the content of the page, navigating through headings with the `h` key. So ensuring that heading levels are implemented as you would outline a document makes your content accessible and is still very much encouraged.
 
