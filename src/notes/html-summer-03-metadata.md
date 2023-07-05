@@ -27,7 +27,7 @@ Go to this [section at Learn HTML](https://web.dev/learn/html/metadata/#pragma-d
 
 What interests me about this is the flexibility. 
 
-> The specification defines seven [pragma directives](https://html.spec.whatwg.org/multipage/semantics.html#pragma-directives), most of which have other methods of being set. For example, while you can include a language directive with <meta http-equiv="content-language" content="en-us" />, we have already discussed using the lang attribute on the HTML element, which is what should be used instead.
+> The specification defines seven [pragma directives](https://html.spec.whatwg.org/multipage/semantics.html#pragma-directives), most of which have other methods of being set. For example, while you can include a language directive with `<meta http-equiv="content-language" content="en-us" />`, we have already discussed using the lang attribute on the HTML element, which is what should be used instead.
 
 For example, if you don't have access to `<html>` to set the language at the site level (using the [language attribute](https://web.dev/learn/html/document-structure/#content-language), e.g., `<html lang="en">`), but you had the ability to add a `meta` tag, you could use `<meta http-equiv="content-language" content="en" />`.
 
