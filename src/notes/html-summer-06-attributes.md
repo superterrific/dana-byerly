@@ -73,6 +73,8 @@ Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#conten
 
 I knew that you could make an element editable, but never had the occasion to do it, so I never looked it up. There's a fun style editor example that might give you some clever ideas for next all your upcoming how-to posts.
 
+**Update**: Manuel Matuzović has a nice `contenteditable` [example CodePen](https://codepen.io/matuzo/pen/YzaoRLJ) that includes custom data attributes discussed below. There's also a [post with more details](https://www.matuzo.at/blog/2022/counting-children/).
+
 ## Custom attributes
 
 Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#custom-attributes).
