@@ -3,7 +3,7 @@ title: "Hot HTML Summer: Links"
 summary: "Sharing is caring."
 date: 2023-07-06T13:30:00Z
 htmlSection: "Links"
-htmlLink: "https://web.dev/learn/html/attributes/"
+htmlLink: "https://web.dev/learn/html/links/"
 category: "Notes"
 tags: ['Hot HTML Summer', 'HTML']
 ---

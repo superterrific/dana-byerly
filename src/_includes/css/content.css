@@ -7,6 +7,10 @@ blockquote {
   font-weight: 400;
 }
 
+blockquote > * + * {
+  margin-block-start: 1rem;
+}
+
 cite {
   font-style: normal;
 }
