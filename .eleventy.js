@@ -34,7 +34,7 @@ module.exports = config => {
 
   // Shortcodes
   config.addPairedShortcode('caption', function(content) {
-    return `<div class="caption">${content}</div>`
+    return `<p class="caption">${content}</p>`
   });
 
   config.addPairedShortcode('figure', function(content) {
