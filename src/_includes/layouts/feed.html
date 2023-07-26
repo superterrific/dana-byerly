@@ -15,6 +15,12 @@
   {% set pageHeaderTitle = 'Filed under "'+ tag + '"' %}
 {% endif %}
 
+{# Order posts tagged Hot HTML Summer to appear in chronilogical order #}
+{% if '/tag/hot-html-summer' in page.url %}
+  {% set postListItems = collections[tag] %}
+  {% set pageHeaderTitle = 'Filed under "'+ tag + '"' %}
+{% endif %}
+
 {# Temporary workaround to set the proper order to the Writing tag page #}
 {% if '/tag/writing/' in page.url %}
   {% set postListItems = collections[tag]  %}

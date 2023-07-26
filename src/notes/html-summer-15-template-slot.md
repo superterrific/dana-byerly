@@ -7,9 +7,9 @@ htmlLink: "https://web.dev/learn/html/template/"
 category: "Notes"
 tags: ['Hot HTML Summer', 'HTML']
 ---
-{% caption %}{{ blurbs.htmlSummer | safe }}{% endcaption %}
+{% caption %}{% include "text/html-summer-series.html" %}{% endcaption %}
 
-{% include "text/html-summer-blurb.html" %}
+{% include "text/html-summer-module.html" %}
 
 ## Intro section
 

@@ -7,9 +7,9 @@ htmlLink: "https://web.dev/learn/html/navigation/"
 category: "Notes"
 tags: ['Hot HTML Summer', 'HTML']
 ---
-{% caption %}{{ blurbs.htmlSummer | safe }}{% endcaption %}
+{% caption %}{% include "text/html-summer-series.html" %}{% endcaption %}
 
-{% include "text/html-summer-blurb.html" %}
+{% include "text/html-summer-module.html" %}
 
 ## "Skip to content" link
 
