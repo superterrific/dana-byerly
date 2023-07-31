@@ -118,6 +118,7 @@ dd {
 html {
   overflow-x: hidden;
   scroll-padding-top: 1rem;
+  scrollbar-gutter: stable;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

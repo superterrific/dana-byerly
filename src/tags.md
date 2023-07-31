@@ -1,5 +1,4 @@
 ---
-title: 'Tag Archive'
 layout: 'layouts/feed.html'
 pagination:
   data: collections
@@ -9,4 +8,6 @@ permalink: '/tag/{{ tag | slug }}/'
 paginationPrevText: 'Newer posts'
 paginationNextText: 'Older posts'
 eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: 'Filed under "{{ tag | safe }}"'
 ---
