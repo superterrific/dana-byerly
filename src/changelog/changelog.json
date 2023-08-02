@@ -1,6 +1,6 @@
 {
   "layout": "layouts/changelog.html",
-  "permalink": "/changelog/{{ title | slug }}/index.html",
+  "permalink": "/changelog/{{ date | slug }}/index.html",
   "kofi": false,
   "top": false
 }
