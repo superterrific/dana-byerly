@@ -22,7 +22,7 @@ In no particular order...
 * Check for instances of using different languages within the body of text and [apply the language attribute](/notes/hot-html-summer-document-structure/#content-language).
 * Add `<nav>` to the [footer links on this site](/notes/hot-html-summer-navigation/#table-of-contents).
 * Check for calling [SVGs with image element](/notes/hot-html-summer-images/#intro-section), if so add `role="img"` (pretty sure I haven't done this anywhere but will check anyway).
-* Test [markdown-it-table-captions]() to see if it's a good way to add captions to tables in my [Eleventy]({{ tools.11ty }}) sites.
+* Test [markdown-it-table-captions](https://github.com/martinring/markdown-it-table-captions) to see if it's a good way to add captions to tables in my [Eleventy]({{ tools.11ty }}) sites.
 * Add `rel="next"` and `rel="prev"` [attributes to pagination links](/notes/hot-html-summer-links/#browsing-context) (already added on this site).
 * Fix all the incorrect instances of `<cite>` that the [WordPress quote block incorrectly applies](/notes/hot-html-summer-text-basics/#quotes-and-citations) to `<blockquote>` at the Junk Drawer.
 * Find a reason [to use `<data>`](/notes/hot-html-summer-other-inline-text-elements/#code-examples-and-technical-writing).

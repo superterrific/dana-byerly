@@ -30,10 +30,10 @@
         </div>
       </div>
       <div class="wrapper home-flow">
-        <section>
+        <div>
           {% include "partials/articles-recent.html" %}
-        </section>
-        <section>
+        </div>
+        <div>
           <div class="promo-summary">
             <h2>{{ featuredProjects.title | safe }}</h2>
             <p>{{ featuredProjects.summary | safe }}</p>
@@ -43,7 +43,7 @@
             {% include "partials/studio-summary-home.html" %}
             {% endfor %}
           </div>
-        </section>
+        </div>
       </div>
     </div>
   {% endblock %}

@@ -74,6 +74,7 @@ module.exports = config => {
   config.addPassthroughCopy('./src/img/');
   config.addPassthroughCopy('./src/manifest.json');
   config.addPassthroughCopy('./src/fonts/');
+  config.addPassthroughCopy('./src/robots.txt');
 
  // Collections
   config.addCollection('projects', collection => {
