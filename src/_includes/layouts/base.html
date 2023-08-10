@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  {% include "partials/meta.html" %}
-  <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
+  {% include "partials/title.html" %}
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <style>{{ css | cssmin | safe }}</style>
   <link rel="preload" href="/fonts/Shrikhand-400-latin18.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/Bitter-400-latin5.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/Bitter-600-latin10.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/Bitter-700-latin15.woff2" as="font" type="font/woff2" crossorigin>
-  <style>{{ css | cssmin | safe }}</style>
-  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
   <script defer data-domain="danabyerly.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
-  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% include "partials/meta.html" %}
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
 </head>
 <body id="top">
   {% include "partials/header.html" %}

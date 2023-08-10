@@ -1,25 +1,10 @@
-  {%- set pageTitle = title + ' - ' + site.name -%}
-  {%- set metaTitle = title -%}
 
-  {# We don't want any duplication. This is likely for the home page. #}
-  {%- if site.name === title -%}
-  {%- set pageTitle = site.homepageTitle -%}
-  {%- endif -%}
-
-  {%- if '/tag/' in page.url -%}
-  {% set pageTitle = 'Filed under "'+ tag + '"' + ' - ' + site.name %}
-  {%- endif -%}
-
-  {%- if '/changelog/2' in page.url -%}
-  {% set pageTitle = 'Changelog '+ title + ' - ' + site.name %}
-  {%- endif -%}
 
   {%- set siteTitle = site.name -%}
   {%- set siteDescription = summary -%}
   {%- set currentUrl = site.url + page.url -%}
   {%- set socialImage = site.url + site.socialImage -%}
 
-  <title>{{ pageTitle }}</title>
   <link rel="canonical" href="{{ currentUrl }}" />
   <meta property="og:site_name" content="{{ siteTitle }}" />
   <meta property="og:title" content="{{ metaTitle }}" />
