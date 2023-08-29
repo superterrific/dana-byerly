@@ -5,7 +5,6 @@ projectUrl: 'https://replaygenerator.com'
 category: 'Projects'
 date: 2020-09-07
 launched: 'December 2018'
-displayOrder: 1
 img: 'RRG-hero'
 projectImg:
  img: 'RRG-hero'
@@ -14,6 +13,7 @@ projectImg:
 stack: ['Airtable', 'Vue']
 role: ['Code', 'Curation', 'Design']
 tags: ['Airtable', 'Curation', 'Randomization']
+eleventyExcludeFromCollections: true
 ---
 I came up with this idea about four years before I had the chops to build it. Enter [Airtable]({{ tools.airtable }}) and enough [Vue]({{ tools.vue }}) skills cobbled together via search engine and the Random Replay Generator was finally born. If you're looking for an easy way to binge-watch Thoroughbred racing replays, you might like this site!
 

@@ -6,7 +6,9 @@ category: 'Projects'
 date: 2020-09-07
 launched: 'February 2016'
 displayOrder: 4
-platform: ['Wordpress']
+landingImg: "paths"
+landingAlt: "Part of sankey diagram showing several overlapping stakes races leading to the Kentucky Derby."
+platform: ['WordPress']
 stack: ['Google Charts']
 role: ['Code', 'Content', 'Dataviz', 'Design']
 tags: ['Dataviz']

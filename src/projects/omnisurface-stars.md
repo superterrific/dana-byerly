@@ -13,6 +13,7 @@ projectImg:
 stack: ['Eleventy']
 role: ['code', 'design']
 tags: ['Data', 'Eleventy']
+eleventyExcludeFromCollections: true
 ---
 
 This project is a redesign of an old project. Omnisurface Stars was a Wordpress blog active from 2009-2010. It was a labor of love for a small group of horse racing enthusiasts and friends aimed at tracking horses that had won on all three racing surfaces: dirt, synthetic and turf.

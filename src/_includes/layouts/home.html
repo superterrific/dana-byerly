@@ -31,13 +31,15 @@
       </div>
       <div class="wrapper home-flow">
         <div>
-          {% include "partials/articles-recent.html" %}
+          <h2 class="promo-summary">{{ recentArticles.title }}</h2>
+          <div class="grid-container-sm">
+            {% for item in collections.writing  | limit(2) %}
+            {% include "partials/article-summary.html" %}
+            {% endfor %}
+          </div>
         </div>
         <div>
-          <div class="promo-summary">
-            <h2>{{ featuredProjects.title | safe }}</h2>
-            <p>{{ featuredProjects.summary | safe }}</p>
-          </div>
+          <h2 class="promo-summary">{{ featuredStudio.title | safe }}</h2>
           <div class="grid-container-sm">
             {% for item in studio.project %}
             {% include "partials/studio-summary-home.html" %}

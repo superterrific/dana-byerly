@@ -1,9 +1,0 @@
-
-      <div class="promo-summary">
-        <h2>{{ recentArticles.title }}</h2>
-      </div>
-      <div class="grid-container-sm">
-        {% for item in collections.writing  | limit(2) %}
-        {% include "partials/article-summary.html" %}
-        {% endfor %}
-      </div>
