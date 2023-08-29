@@ -45,8 +45,11 @@
   --table-header-text: var(--color-lightest);
   --table-bg: var(--color-lightest);
   --table-alt: var(--color-dark-tint);
-  --project-card-bg: var(--color-primary-tint);
+  --project-card-bg: var(--color-primary-banding);
+  --project-card-border: var(--color-primary);
   --project-card-focus: var(--color-secondary);
+  --studio-card-focus: var(--color-secondary);
+  --studio-card-bg: var(--project-card-bg);
   --form-border: var(--color-secondary);
   --form-button-bg: var(--color-primary);
   --form-button-color: var(--color-lightest);
@@ -72,8 +75,11 @@
     --table-header-text: var(--color-lightest);
     --table-bg: var(--color-dark);
     --table-alt: var(--color-darker);
-    --project-card-bg: var(--color-primary-darker);
-    --project-card-focus: var(--color-secondary-mid);
+    --project-card-bg: var(--color-primary-mid);
+    --project-card-border: var(--color-primary-darkest);
+    --project-card-focus: var(--color-secondary-tint);
+    --studio-card-focus: var(--color-secondary-mid);
+    --studio-card-bg: var(--color-primary-darker);
     --form-button-bg: var(--color-secondary);
     --form-button-focus: var(--color-secondary-mid);
     --form-focus: var(--color-primary-highlight);
@@ -251,7 +257,7 @@ footer p::selection {
 
 /* Wrappers ---------------------------------------------------- */
 .wrapper {
-  max-width: 65rem;
+  max-width: var(--wrapper, 65rem);
   margin: 0 auto;
 }
 

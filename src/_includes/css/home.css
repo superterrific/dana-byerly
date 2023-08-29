@@ -54,7 +54,7 @@
 }
 
 /* Content ---------------------------------------------------------- */
-.promo-summary h2 {
+.promo-summary {
   font-size: 2rem;
   font-size: clamp(1.9rem, 2.5vw, 2rem);
   color: var(--heading-big);
@@ -62,7 +62,7 @@
 
 /* Project cards ------------------------------------------ */
 .projects-hp-card {
-  background: var(--project-card-bg, #f6f9fc);
+  background: var(--studio-card-bg, #f6f9fc);
   border: 1px solid var(--color-primary, #00365d);
   box-shadow: var(--shadow);
   position: relative;
@@ -80,8 +80,8 @@
 }
 
 .projects-hp-card:hover, .projects-hp-card:focus-within {
-  border-color: var(--project-card-focus, #c07);
-  box-shadow: 0 0 .75rem var(--project-card-focus);
+  border-color: var(--studio-card-focus, #c07);
+  box-shadow: 0 0 .75rem var(--studio-card-focus);
   outline: 5px solid transparent;
 }
 
@@ -100,7 +100,7 @@
 
 .project-hp-content h3 a:hover {
   background: unset;
-  color: var(--project-card-focus);
+  color: var(--studio-card-focus);
 }
 
 .project-hp-content {

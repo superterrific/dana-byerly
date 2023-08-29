@@ -1,16 +1,18 @@
 ---
 title: 'Pile of hrefs'
 projectUrl: 'https://pile-of-hrefs.com'
-summary: 'A hastily thrown together project, prompted by a moment of thinking "Maybe I would use Pinboard more if it was responsive?"'
+summary: 'A hastily thrown together personal bookmarking site.'
 category: 'Projects'
 date: 2020-09-07
 launched: 'April 2020'
 displayOrder: 3
+landingImg: "pile"
+landingAlt: "The CSS page listing several links to articles about CSS that include the title, an excerpt, the souce of the link, the data the post was published and the date the post was added to the Pile."
 projectImg:
  img: 'pile'
  alt: 'Pile of hrefs CSS section'
 stack: ['Airtable', 'Eleventy', 'Pocket']
-role: ['code', 'curation', 'design']
+role: ['Code', 'Curation', 'Design']
 tags: ['Airtable', 'Eleventy']
 ---
 

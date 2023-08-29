@@ -1,33 +1,31 @@
 {% extends "layouts/base.html" %}
 
-{% set pageHeaderTitle = title %}
-{% set headingLevel = 'h2' %}
 {% set css %}
   {% include "css/global.css" %}
   {% include "css/projects.css" %}
   {% include "css/projects-landing.css" %}
   {% include "css/fonts.css" %}
-
 {% endset %}
 
     {% block content %}
-    <div class="wrapper pad-content flow-150">
-      {% include "partials/page-header-landing.html" %}
-        {{ content | safe }}
-
+    <div class="wrapper flow-150 project-landing">
+      <h1>{{ title | safe }}</h1>
       <div class="flow-500">
         <div class="flow-300">
-          {% for item in projects.featured %}
-           {% include "partials/project-summary.html"%}
-          {% endfor %}
-
-          {% for item in projects.primary %}
-           {% include "partials/project-summary.html"%}
-          {% endfor %}
+          <ul class="project-grid">
+            {% for item in collections.projects %}
+            <li class="project-card">
+              <picture>
+                <source srcset="/img/projects/landing-{{ item.data.landingImg }}.avif" type="image/avif">
+                <source srcset="/img/projects/landing-{{ item.data.landingImg }}.webp" type="image/webp">
+                <img src="/img/projects/projects/landing-{{ item.data.landingImg }}.jpg" width="1280" height="auto" alt="{{ item.data.landingAlt }}" loading="lazy">
+              </picture>
+              <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+              <p>{{ item.data.summary }}</p>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
-        <p>
-          <a href="#top">Back to top</a>
-        </p>
       </div>
     </div>
     {% endblock %}

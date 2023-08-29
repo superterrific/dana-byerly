@@ -12,6 +12,8 @@ category: 'Projects'
 date: 2020-09-07
 launched: '2018'
 displayOrder: 5
+landingImg: "8ball"
+landingAlt: "A large black circle with a smaller white circle and black 8 are centered on the landing page with a button labeled Who Will Win?."
 platform: ['Glitch']
 role: ['Code', 'Design']
 tags: ['Randomization']

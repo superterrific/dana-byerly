@@ -6,8 +6,8 @@ titleHP: 'Hi there'
 recentArticles:
  title: 'Recent Writing'
  summary: 'The latest in blather.'
-featuredProjects:
+featuredStudio:
  title: 'From the Studio'
- summary: "Recent freelance projects, new Studio site is in the works."
+ summary: "Recent freelance projects."
 eleventyExcludeFromCollections: true
 ---

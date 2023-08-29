@@ -1,11 +1,13 @@
 ---
 title: 'Stakes Profiles'
-summary: 'Data visualizations of trends for specific Thoroughbred stakes races since 1991'
+summary: 'Data visualizations of trends for specific Thoroughbred stakes races since 1991.'
 projectUrl: 'https://stakes-profiles.com/'
 category: 'Projects'
 date: 2020-09-07
 launched: 'Feburary 2018'
 displayOrder: 6
+landingImg: "stakes-profile"
+landingAlt: "An example of charts with a bar chart showing the field size and the how the winner ranked with bettors. There are two stacked horizontal bar charts. One shows how often favorites won and one shows how often favorites finished in the money, or no worse than third."
 stack: ['Eleventy', 'Google Charts']
 role: ['Code', 'Content', 'Dataviz', 'Design']
 tags: ['Dataviz', 'Eleventy']

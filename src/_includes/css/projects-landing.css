@@ -1,52 +1,51 @@
-.grid-container-project {
+.project-landing {
+  margin-block-start: 2rem;
+  margin-block-end: 4rem;
+  padding-inline: .5rem;
+}
+
+.project-grid {
+  --min: 30ch;
+  --gap: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  box-shadow: var(--shadow);
-  border: 1px solid var(--color-primary);
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
 .project-card {
-  background: var(--project-card-bg, #f6f9fc);
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  gap: 1rem;
+  background: var(--project-card-bg);
+  border: 1px solid var(--project-card-border);
 }
 
-.project-summary {
-  font-size: 1.1rem;
-  font-size: clamp(1.1rem, 2vw, 1.25rem);
+.project-card > picture {
+  aspect-ratio: 3/2;
+  border-bottom: 1px solid var(--project-card-border);
+  object-fit: cover;
+  width: 100%;
 }
 
-.landing-card img {
-  border-right: 1px solid var(--color-primary);
+.project-card > :last-of-type:not(picture, h2) {
+  margin-block-end: 1.5rem;
 }
 
-.project-external a {
-  background: var(--color-dark);
-  color: var(--color-primary-tint);
+.project-card > :not(picture) {
+  margin-inline: 1rem;
+}
+
+.project-card > h2 {
+  font-size: 1.25rem;
+}
+
+.project-card > :not(img, h2) {
+  font-size: 1rem;
+}
+
+.project-card a:focus-visible {
+  outline: 2px solid var(--project-card-focus);
+  outline-offset: .1rem;
+  overflow: auto;
   text-decoration: none;
-  padding: .5rem 1rem;
-}
-
-.project-external a:hover {
-  background: var(--color-secondary);
-  color: var(--color-primary-tint);
-}
-
-@media screen and (max-width: 745px) {
-  .project-summary {
-    margin-bottom: 2rem;
-  }
-
-  .landing-card img {
-    border-right: unset;
-    border-bottom: 1px solid var(--color-primary);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .grid-container-project {
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  }
 }

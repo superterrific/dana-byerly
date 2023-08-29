@@ -6,6 +6,8 @@ category: 'Projects'
 date: 2020-09-07
 launched: 'January 2015'
 displayOrder: 2
+landingImg: "hrds"
+landingAlt: "Homepage featuring a hero value proposition, a random dataset of the day and a tag cloud of available categories."
 projectImg:
  img: 'hrds-v4'
  alt: 'Datasets available at Horse Racing Datasets'
