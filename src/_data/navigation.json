@@ -24,6 +24,11 @@
       "text": "Projects",
       "url": "/projects/",
       "id": "nav-projects"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact/",
+      "id": "nav-contact"
     }
   ]
 }

@@ -3,7 +3,7 @@ title: 'Year one in the books'
 summary: 'A year-in-review of sorts.'
 date: 2021-09-07
 category: 'Notes'
-tags: ['The Site']
+tags: ["The Site", "Year in Review"]
 ---
 I'm happy to report that it's been a year [with this version of the site](https://twitter.com/superterrific/status/1303032995784339458) 🎉.
 

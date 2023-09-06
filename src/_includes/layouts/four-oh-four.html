@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+
+{% set css %}
+  {% include "css/global.css" %}
+  {% include "css/content.css" %}
+  {% include "css/fonts.css" %}
+{% endset %}
+
+{% block content %}
+<div class="wrapper-content pad-content flow-300">
+  <article class="flow-150">
+    <h1>{{ title | safe }}</h1>
+    <div class="reading">
+      {{ content | safe }}
+    </div>
+  </article>
+</div>
+{% endblock%}

@@ -13,6 +13,11 @@
     [headers.values]
     Cache-Control = "public, max-age=15768000"
 
+[[headers]]
+  for = "/img/*"
+    [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 [[redirects]]
   from = "/notes/shifthing-things-around/"
   to = "/notes/shifting-things-around/"

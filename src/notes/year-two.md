@@ -3,7 +3,7 @@ title: "Year two in the books"
 summary: "Year-in-review, part two."
 date: 2022-09-06
 category: 'Notes'
-tags: ['The Site']
+tags: ["The Site", "Year in Review"]
 ---
 
 It's been [two years](/articles/finally-a-new-site/) since I created this site! Things have slowed down a bit around here, mostly because some of the goals I created last year turned out to warrant [a new site](https://danabyerly-junkdrawer.website/) (with another on the way!).

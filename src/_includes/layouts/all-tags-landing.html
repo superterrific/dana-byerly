@@ -14,7 +14,9 @@
         <ul class="flow-0">
         {% for tag, posts in collections | dictsort %}
         {% set tagUrl %}/tag/{{ tag | replace(' ', '-') }}/{% endset %}
+        {% if tag != "all" and tag != "devto" and tag != "writing" %}
           <li><a href="/tag/{{ tag | slug }}" class="tag-cap">{{ tag }}</a> ({{ posts | length }})</li>
+        {% endif %}
         {% endfor %}
         </ul>
       </div>
