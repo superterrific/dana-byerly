@@ -24,6 +24,7 @@ If you like reading about tinkering, you may enjoy my [changelog](/changelog/). 
 * Added robots.txt in hopes of  [blocking ChatGPT](https://ruby.social/@olivierlacan/110846882340835196).
 * Removed a few organizational tags like "all" and "writing" from listing on the [All Tags](/all-tags/) page.
 * Lots of little streamlining, like removing "Published on" in front of post dates and on listing screens.
+* Added print styles to remove the navigation, footer, tag list, previous/next links, Kofi link and "back to top" link on posts (a late addition, forgot to include this before publishing!)
 
 ## Revamping the Project section
 This was the biggest effort of the year, and it happened in two parts. 
