@@ -484,7 +484,6 @@ ul.tag-list-summary {
 }
 
 /* A11y -------------------------------------------------------- */
-
 [href="#main-content"]:not(:focus) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -519,7 +518,6 @@ ul.tag-list-summary {
 }
 
 /* Media Queries ---------------------------------------------- */
-
 @media print {
   nav,
   .tag-list,

@@ -119,7 +119,6 @@ a:hover code {
   background: unset;
 }
 
-
 /* Pagination -------------------------------------------------- */
 [dir="rtl"] .pagination-arrow {
   display: none;

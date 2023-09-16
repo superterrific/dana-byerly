@@ -7,7 +7,7 @@
 
   <link rel="canonical" href="{{ currentUrl }}" />
   <meta property="og:site_name" content="{{ siteTitle }}" />
-  <meta property="og:title" content="{{ metaTitle }}" />
+  <meta property="og:title" content="{% if page.url == '/'%}{{ site.homepageTitle }}{% else %}{{ title }}{% endif %}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ currentUrl }}" />
   <meta property="og:image" content="{{ socialImage }}" />
