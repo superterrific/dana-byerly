@@ -56,7 +56,7 @@
   --form-button-focus: var(--color-secondary);
   --form-focus: var(--link-focus);
   --snow-fall-color: var(--color-primary-highlight);
-  --snow-fall-size: 16px;
+  --snow-fall-size: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
