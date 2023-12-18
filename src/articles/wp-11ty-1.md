@@ -197,6 +197,7 @@ A list of resources mentioned in this article...
 * [How to use 11ty with Headless WordPress and deploy to Netlify](https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/) and [corresponding repository](https://github.com/thedavedavies/Headless-WordPress-11ty) by Dave Davies
 * [How to Use WordPress as a Headless CMS for Eleventy](https://www.sitepoint.com/wordpress-headless-cms-eleventy/) by Craig Buckler
 * [Site - Testing WordPress as a backend and Eleventy as a frontend](https://11ty-wp.netlify.app/) and [corresponding repository](https://github.com/samikeijonen/11ty-wp) by Sami Keijonen
+* [Using Wordpress as a headless CMS for Eleventy](https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/) by Mike Aparicio
 
 ### WordPress documentation
 * [Rest API documentation site](https://developer.wordpress.org/rest-api/)

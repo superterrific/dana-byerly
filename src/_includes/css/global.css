@@ -55,6 +55,8 @@
   --form-button-color: var(--color-lightest);
   --form-button-focus: var(--color-secondary);
   --form-focus: var(--link-focus);
+  --snow-fall-color: var(--color-primary-highlight);
+  --snow-fall-size: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,6 +85,7 @@
     --form-button-bg: var(--color-secondary);
     --form-button-focus: var(--color-secondary-mid);
     --form-focus: var(--color-primary-highlight);
+    --snow-fall-color: unset;
   }
 
   img {
@@ -487,8 +490,9 @@ ul.tag-list-summary {
 [href="#main-content"]:not(:focus) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  height: 1px;	overflow:
-  hidden;	position: absolute;
+  height: 1px;	
+  overflow: hidden;	
+  position: absolute;
   white-space: nowrap;
   width: 1px;
 }

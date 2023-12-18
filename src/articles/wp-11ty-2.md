@@ -49,6 +49,10 @@ As a reference for upcoming code examples here are the names of my data files th
 * Posts endpoint = posts.js
 * Tags endpoint = taglist.js
 
+{% caption %}
+<strong>Update</strong>: <a href="https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/">Mike Aparicio wrote a nice article</a> on setting up a headless WordPress CMS with Eleventy. His implementation used WordPress-hosted instead of self-hosted, which apparently has a different API. If you're using a set-up managed by WordPress, be sure to check the Pulling in the Content section of his post.
+{% endcaption %}
+
 ## Dates
 The first thing I noticed once I put the blog post template together was that instead of displaying the date, I was getting a `Invalid DateTime` error.
 
@@ -419,6 +423,7 @@ A list of resources mentioned in this article...
 * [How to use 11ty with Headless WordPress and deploy to Netlify](https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/) and [corresponding repository](https://github.com/thedavedavies/Headless-WordPress-11ty) by Dave Davies
 * [How to Use WordPress as a Headless CMS for Eleventy](https://www.sitepoint.com/wordpress-headless-cms-eleventy/) by Craig Buckler
 * [Repository for my WordPress & Eleventy site](https://github.com/superterrific/danabyerly-junkdrawer)
+* [Using Wordpress as a headless CMS for Eleventy](https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/) by Mike Aparicio
 
 ### WordPress documentation and plugins
 * [Rest API documentation site](https://developer.wordpress.org/rest-api/)
