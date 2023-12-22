@@ -1,7 +1,7 @@
 ---
 title: "Defaults 2023"
 summary: "Things I currently use. And things I'd like to use."
-date: 2023-12-22T13:00:00Z
+date: 2023-12-22T21:20:00Z
 category: "Notes"
 tags: ["Tools"]
 ---
