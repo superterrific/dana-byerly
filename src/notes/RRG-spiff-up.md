@@ -5,10 +5,9 @@ category: 'Notes'
 date: '2020-12-31'
 tags: ['Side Projects', 'The Site']
 ---
-In keeping with my [end of the year to-do list](https://danabyerly.com/notes/end-of-the-year-to-do-list/#random-replay-generator) I was able to give the [Random Replay Generator](https://replaygenerator.com) a little spiffing up.
+In keeping with my [end of the year to-do list](https://danabyerly.com/notes/end-of-the-year-to-do-list/#random-replay-generator) I was able to give the Random Replay Generator a little spiffing up.
 
-The update was mostly punching up the colors and a few other refinements. My design style is [one step above a wireframe](https://twitter.com/superterrific/status/1343664499069485056
-), or "jazzing things down" as I like to call it, so I'm happy to have pushed beyond [a neutral color](https://replaygenerator.com/archive/01/) on a [grey background](https://replaygenerator.com/archive/02/).
+The update was mostly punching up the colors and a few other refinements. My design style is [one step above a wireframe](https://tweets.danabyerly.com/1343664499069485056/), or "jazzing things down" as I like to call it, so I'm happy to have pushed beyond a neutral color on a grey background.
 
 {% figure %}
   <picture>
@@ -38,7 +37,7 @@ I added "Track:" and "Winner:" for extra clarification, and to match the label/v
 
 I've also updated the [project page]({{ projectPages.rrg }}) at this site and moved The Generator to the top of the list on the [Projects listings](/projects/) and Featured Projects section of [the homepage](/).
 
-I added a dark mode [in the last spiff up](https://twitter.com/superterrific/status/1226247966924660747) and had hoped to add a toggle this time around, but decided not to because I wanted to keep the effort limited to a weekend. Maybe next year for the toggle!
+I added a dark mode [in the last spiff up](https://tweets.danabyerly.com/1226247966924660747/) and had hoped to add a toggle this time around, but decided not to because I wanted to keep the effort limited to a weekend. Maybe next year for the toggle!
 
 The next item on the list is to start the design of the [Horse Racing Datasets overhaul](/notes/update-on-the-end-of-the-year-to-do-list/). I've already got the [data hooked up and working with Eleventy](/articles/using-airtable-with-eleventy/). I've already started on some research and will probably do a few little updates along the way.
 

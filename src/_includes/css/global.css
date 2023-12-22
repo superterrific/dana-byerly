@@ -379,6 +379,10 @@ footer p {
   line-height: 1.8;
 }
 
+:is(h1,h2,h3,h4) {
+  text-wrap: balance;
+}
+
 /* Tags -----------------------------------------*/
 .tag-list {
   display: flex;

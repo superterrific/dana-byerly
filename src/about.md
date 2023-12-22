@@ -23,7 +23,7 @@ I've been employed doing some form of web-based design since 1996, and for the l
 
 I design in the browser and think prototyping is best way to elicit feedback, answer questions and make design decisions. I write modern vanilla CSS and follow the [principles of CUBE CSS](https://cube.fyi/principles.html). I also love making websites, especially with [Eleventy]({{ tools.11ty }})!
 
-This site is focused on my [side projects](/projects) and whatever I'm learning at the moment. I'm in the process of planning a new site for freelancing, hopefully by the end of of 2023. I also  [have a blog](https://danabyerly-junkdrawer.website/) that's relatively new.
+This site is focused on my [side projects](/projects) and whatever I'm learning at the moment. I also  [have a blog](https://danabyerly-junkdrawer.website/).
 
 I don't currently have a portfolio, but if you're interested you can view my [LinkedIn profile](https://www.linkedin.com/in/danabyerly/), which admittedly could use an update.
 

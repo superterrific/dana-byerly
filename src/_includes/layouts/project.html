@@ -101,6 +101,7 @@
         </article>
 
         <div class="flow-300">
+          {% if projectUrl %}
           <div class="text-center">
             <span class="visually-hidden">Link opens in a new tab or window</span>
             <a href="{{ projectUrl }}" rel="noopener" target="_blank" class="button button-dark">View Project
@@ -112,6 +113,7 @@
               </svg>
             </a>
           </div>
+          {% endif %}
 
           <nav class="wrapper-content splitter" aria-label="Pagination links">
             <div class="post-nav-item">{% if previousPost %}
