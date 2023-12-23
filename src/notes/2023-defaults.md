@@ -71,8 +71,8 @@ For now I don't have Dropbox on [my new phone](https://danabyerly-junkdrawer.web
 {% figure %}
   <picture>
     <source srcset="/img/app-store-proton.avif" type="image/avif">
-    <source srcset="/img/app-store-proton.avif.webp" type="image/web">
-    <img src="/img/app-store-proton.avif.jpg" alt="The iOS app store listing for Proton Drive showing only diagnostics are collected and not linked to your identity." loading="lazy" />
+    <source srcset="/img/app-store-proton.webp" type="image/web">
+    <img src="/img/app-store-proton.jpg" alt="The iOS app store listing for Proton Drive showing only diagnostics are collected and not linked to your identity." loading="lazy" />
   </picture>
   {% figcaption %}
     That's more like it.
