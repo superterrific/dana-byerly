@@ -106,15 +106,15 @@ This is really more find-it-later than read-it-later for me. I have saved links 
 A few weeks ago I discovered [Omnivore](https://omnivore.app), an open source read-it-later app. So far I'm really loving it. It's easy to add and label links in a variety of ways. It can even consume RSS feed, so theoretically it could be used as an RSS reader as well. It's relatively new and doesn't have many of my RSS must-haves, but if you're looking for a nice lightweight RSS reader, Omnivore could be right for you.
 
 ## Notes and to-dos
-On my list of potential articles (in Obsidian), I have an item for " Note taking approach (Standard Notes / Obsidian)". I used to use a combination of Apple Notes and Notion, and prior to that a combination of sticky notes (physical and digital) and TextEdit.app.
+On my list of potential articles (in Obsidian), I have an item for "Note taking approach (Standard Notes / Obsidian)". I used to use a combination of Apple Notes and Notion, and prior to that a combination of sticky notes (physical and digital) and TextEdit.app.
 
 My note taking needs range from quick little things I don't want to forget to post drafts and longer thoughts. For many years I handled the first type with [physical Post It notes](https://tweets.danabyerly.com/1426615706691461128/). I still have some handy for notes on the fridge and the like. I also used to make good use [Apple Stickies](https://support.apple.com/guide/stickies/welcome/mac) before I moved away from using my desktop as de facto junk drawer.
 
 Eventually Apple Notes took up the job of stickies, and it was mostly fine as a user experience. Eventually I wanted notes to be actual files that could be used with any other application. I was also increasingly interested in privacy/security. 
 
-For the stickies category I settled on  the privacy focused [Standard Notes](https://standardnotes.com/). It's perfect for tossing lists of all kinds and random things I don't want to forget. I've use it for research notes, recipes, my very long series watch list, tracking deliveries and a bunch of other things.  
+For the stickies category I settled on  the privacy focused [Standard Notes](https://standardnotes.com/). It's perfect for tossing together lists of all kinds and random things I don't want to forget. I've use it for research notes, recipes, my very long series watch list, tracking deliveries and a bunch of other things.  
 
-After becoming a [markdown](https://en.wikipedia.org/wiki/Markdown) devotee in recent years I want to find a tool that allowed me to author in markdown for the longer notes and writing category. At first I tried iA Writer, and mostly liked it. The deal breaker for me was the lack paired brackets via keystrokes. Then I discovered [Obsidian](https://obsidian.md/) and have not looked back.
+After becoming a [markdown](https://en.wikipedia.org/wiki/Markdown) devotee in recent years I wanted to find a tool that allowed me to author in markdown for the longer notes and writing category. At first I tried iA Writer, and mostly liked it. The deal breaker for me was the lack paired brackets via keystrokes. Then I discovered [Obsidian](https://obsidian.md/) and have not looked back.
 
 Much like my brain, I only use a small fraction of Obsidian's capabilities. I'll never be a personal knowledge management overachiever or a digital garden tender, but Obsidian knocks it out of the park for my meager and disorganized note taking!
 
