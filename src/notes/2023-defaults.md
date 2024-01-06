@@ -46,7 +46,7 @@ Here are mine as of December 2023. I'm on MacOS and iOS, ** indicate more detail
 * **FTP**: [Transmit](https://panic.com/transmit/), yes I still use FTP for a few things and Transmit is awesome
 * **Batch image processing**: [Retrobatch](https://flyingmeat.com/retrobatch/)
 * **Screenshots**: Mostly built in OS screenshots with some [CleanShot X](https://cleanshot.com/) when I need to annotate, use backgrounds, etc.
-* **Search**: DuckDuckGo, with occasional follow-up Google for code questions, want to try [Kagi](https://kagi.com/)
+* **Search**: DuckDuckGo, with occasional follow-up Google for code questions, want to try ~~Kagi~~ ([not any more](https://mastodon.social/@nileane@nileane.fr/111705532493513259)).
 
 ## Cloud storage and backups
 I've been back and forth between Dropbox and iCloud multiple times, and ultimately find Dropbox a bit less annoying than iCloud. Oddly the files in Dropbox feel more integrated into my system than iCloud. I currently use iCloud to share OS-y generated things between devices, like photos and messages. For everything else I use Dropbox. 
