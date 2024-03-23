@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## Submitting forms
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/forms/#submitting-forms).
+Go to this [section at Learn HTML](https://web.dev/learn/html/forms/#submitting_forms).
 
 > The attributes of the `<form>` element set the [HTTP method](https://web.dev/learn/forms/form-element/#how-is-the-data-transferred) by which the form is submitted and the URL that processes the form submission. Yes, forms can be submitted, processed, and a new page can be loaded without any JavaScript. The [`<form>` element](https://web.dev/learn/forms/form/) is that powerful.
 
@@ -23,13 +23,13 @@ My work with forms has been focused on styling, layout, and accessibility. Handi
 
 The `name` attribute I knew, but not the `form` attribute. Very helpful to know that a form element could be anywhere in the document and be included in the form submission.
 
-> Form buttons can have more than the attributes described at the start of this section. If the button includes a `formaction`, `formenctype`, `formmethod`, `formnovalidate`, or `formtarget` attribute, the values set on the button activating the form submission take precedence over the `action`, [`enctype`](https://web.dev/learn/forms/form/#enable-users-to-submit-files), `method`, and [`target`](https://web.dev/learn/html/attributes/) set on the `<form>`. Constraint validation occurs prior to form submission, but only if there is neither a `formnovalidate` on the activated submit button nor a `novalidate` on the `<form>`.
+> Form buttons can have more than the attributes described at the start of this section. If the button includes a `formaction`, `formenctype`, `formmethod`, `formnovalidate`, or `formtarget` attribute, the values set on the button activating the form submission take precedence over the `action`, [`enctype`](https://web.dev/learn/forms/form/#enable_users_to_submit_files), `method`, and [`target`](https://web.dev/learn/html/attributes/) set on the `<form>`. Constraint validation occurs prior to form submission, but only if there is neither a `formnovalidate` on the activated submit button nor a `novalidate` on the `<form>`.
 
 I knew none of this and have not heard of any of those attributes. If I ever strike out on my own and need to actually submit forms I will head directly to the[ Learn Forms course](https://web.dev/learn/forms/).
 
 ## After submitting the form
 
-Go to this [section of Learn HTML](https://web.dev/learn/html/forms/#after-submitting-the-form).
+Go to this [section of Learn HTML](https://web.dev/learn/html/forms/#after_submitting_the_form).
 
 > The value of a `<textarea>` is its inner text. The value of a `<select>` is the selected `<option>`'s `value` or, if the `<option>` doesn't include a `value` attribute, the value is the selected option's inner text.
 
@@ -41,7 +41,7 @@ More useful information.
 
 ## Radio buttons
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/forms/#radio-buttons).
+Go to this [section at Learn HTML](https://web.dev/learn/html/forms/#radio_buttons).
 
 > If the user is required to pick a radio control from a group of radio buttons, add the [`required`](https://developer.mozilla.org/docs/Web/HTML/Attributes/required) attribute to at least one of the controls. Including `required` on a radio button in a group makes a selection required for form submission, but it doesn't have to be the radio with the attribute that gets selected to be valid.
 
@@ -57,7 +57,7 @@ Agree.
 
 ## Labels and fieldsets
 
-Go to this [section of Learn HTML](https://web.dev/learn/html/forms/#labels-and-fieldsets).
+Go to this [section of Learn HTML](https://web.dev/learn/html/forms/#labels_and_fieldsets).
 
 > Associating labels with form controls has several benefits. Labels make form controls accessible to screen reader users by providing the control with an accessible name. Labels are also "hit areas"; they make the site more usable for users with dexterity issues by increasing the area.
 
@@ -65,7 +65,7 @@ Happy to report I didn't find anything I didn't already know in this section. I 
 
 ## Built-in validation
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/forms/#built-in-validation).
+Go to this [section at Learn HTML](https://web.dev/learn/html/forms/#built_in_validation).
 
 > Using the `maxlength` attribute can lead to a poor user experience. It's generally a better experience to allow the user to enter more than the allowed character length providing a counter, optionally in the form of an [`<output>`](https://developer.mozilla.org/docs/Web/HTML/Element/output) element, which is not submitted with the form, enabling them to edit down the text until the output shows the maximum allowed length has not been exceeded.
 

@@ -25,15 +25,15 @@ I didn't know this! I haven't included SVG images as foreground images using the
 
 ## `<img> srcset` attribute
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/images/#lessimggreater-srcset-attribute).
+Go to this [section at Learn HTML](https://web.dev/learn/html/images/#img_srcset_attribute).
 
-> The [`srcset`](https://web.dev/learn/design/responsive-images/#responsive-images-with-srcset) attribute enables suggesting multiple image files, with the browser selecting which image to request based on multiple media queries including viewport size and screen resolution.
+> The [`srcset`](https://web.dev/learn/design/responsive-images/#responsive_images_with_srcset) attribute enables suggesting multiple image files, with the browser selecting which image to request based on multiple media queries including viewport size and screen resolution.
 
 No matter how many tutorials or step-by-step how-to articles I read on this approach I'm not confident in my ability to create the correct images sizes, so I feel like I never quite get the full benefit of this approach. Just like JavaScript, some day I will figure this out!
 
 ## `<picture>` and `<source>`
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/images/#lesspicturegreater-and-lesssourcegreater).
+Go to this [section at Learn HTML](https://web.dev/learn/html/images/#picture_and_source).
 
 > The [`<source>`](https://developer.mozilla.org/docs/Web/HTML/Element/source) attributes include `srcset`, `sizes`, `media`, `width`, and `height`. The `srcset` attribute is common to `img`, `source`, and `link`, but is generally implemented slightly differently on source as media queries can be listed in the `<srcset>`'s media attribute instead. `<source>` also supports image formats defined in the `type` attribute.
 
@@ -41,9 +41,9 @@ This is my go-to approach. Instead going the head-scratcher math route of provid
 
 ## Additional performance features
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/images/#additional-performance-features).
+Go to this [section at Learn HTML](https://web.dev/learn/html/images/#additional_performance_features).
 
-> The [`loading` attribute](https://web.dev/learn/design/responsive-images/#loading-hints/) tells the JS-enabled browser how to load the image. The default `eager` value means the image is loaded immediately as the HTML is parsed, even if the image is outside the visible viewport.
+> The [`loading` attribute](https://web.dev/learn/design/responsive-images/#loading_hints/) tells the JS-enabled browser how to load the image. The default `eager` value means the image is loaded immediately as the HTML is parsed, even if the image is outside the visible viewport.
 
 I had no idea the default value was called that, and will probably chuckle every time I remember it.
 

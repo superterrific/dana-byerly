@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## HTML Element APIs
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/apis/#html-element-apis).
+Go to this [section at Learn HTML](https://web.dev/learn/html/apis/#html_element_apis).
 
 > The browser provides numerous APIs providing natively supported methods, events, and property querying and updating. Element nodes contain information about all the attributes set on the element. You can use HTML interfaces to access information about an element's attributes. For example, we can use [`HTMLImageElement.alt`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/alt) get the `alt` attributes of all the images.
 
@@ -21,7 +21,7 @@ If I ever get around to properly learning JavaScript all of this going to be rea
 
 ## Available element interfaces
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/apis/#available-element-interfaces).
+Go to this [section at Learn HTML](https://web.dev/learn/html/apis/#available_element_interfaces).
 
 > The base interface for all elements is aptly named [Element](https://developer.mozilla.org/docs/Web/API/Element). The [`HTMLElement`](https://developer.mozilla.org/docs/Web/API/HTMLElement) inherits from Element and all HTML element-specific interfaces inherit from it. Some element-specific interfaces are implemented by multiple, similar elements.
 
@@ -29,7 +29,7 @@ There's a list of all the interfaces with links to their respective pages at MDN
 
 ## The `Window` interface
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/apis/#the-window-interface).
+Go to this [section at Learn HTML](https://web.dev/learn/html/apis/#the_window_interface).
 
 > Every browser tab contains its own Window object. The Window interface can query the contents of the tab as well as the overall window and device.
 

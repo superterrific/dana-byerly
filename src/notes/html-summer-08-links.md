@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## The `href` attribute
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/links/#the-href-attribute).
+Go to this [section at Learn HTML](https://web.dev/learn/html/links/#the_href_attribute).
 
 > Absolute URLs include a protocol, in this case `https://`, and a domain name. When the protocol is written simply as `//`, it is an implicit protocol and means "use the same protocol as is currently being used."
 
@@ -25,7 +25,7 @@ I knew this one, but wanted to share it because it can be handy.
 
 ## Browsing context
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/links/#browsing-context).
+Go to this [section at Learn HTML](https://web.dev/learn/html/links/#browsing_context).
 
 > Every browsing context—basically, every browser tab—has a browsing context name. Links can open links in the current tab, a new unnamed tab, or a new or existing named tab. By default, the name is the empty string.
 
@@ -39,7 +39,7 @@ This is a nice way to reduce potential annoyance if you find yourself with a sce
 
 I've added these to my pagination links!
 
-> Similar to [`<link rel="alternative">`](https://web.dev/learn/html/document-structure/#alternate-versions-of-the-site), the meaning of `<a rel="alternative">` depends on other attributes. RSS feed alternatives will also include `type="application/rss+xml"` or `type="application/atom+xml`, alternative formats will include the `type` attribute, and translations will include the `hreflang` attribute. If the content between the opening and closing tags is in a language other than the main document language, include the `lang` attribute. If the language of the hyperlinked document is in a different language, include the `hreflang` attribute.
+> Similar to [`<link rel="alternative">`](https://web.dev/learn/html/document-structure/#alternate_versions_of_the_site), the meaning of `<a rel="alternative">` depends on other attributes. RSS feed alternatives will also include `type="application/rss+xml"` or `type="application/atom+xml`, alternative formats will include the `type` attribute, and translations will include the `hreflang` attribute. If the content between the opening and closing tags is in a language other than the main document language, include the `lang` attribute. If the language of the hyperlinked document is in a different language, include the `hreflang` attribute.
 
 There's a good example that combines `rel="alternative"`, `lang`, and `hreflang`. There's also a list of list of [user experience considerations and tips for links](https://web.dev/learn/html/links/#user-experience-tips) in general that's worth reviewing.
 

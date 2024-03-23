@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## Headings, revisited
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/text-basics/#headings,-revisited).
+Go to this [section at Learn HTML](https://web.dev/learn/html/text-basics/#headings_revisited).
 
 > There are six section heading elements, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`, with `<h1>` being most important and `<h6>` the least. For many years, developers were told that headings were used by browsers to outline documents. That was originally a goal, but browsers haven't implemented outlining features.
 
@@ -32,7 +32,7 @@ This I didn't know! There's an image example that's worth checking out. I also d
 Optional? I didn't know that one either. [I tried it](https://codepen.io/superterrific/pen/XWyRddp), but I didn't like it, although nothing horrible happened.
 
 ## Quotes and citations
-Go to this [section at Learn HTML](https://web.dev/learn/html/text-basics/#quotes-and-citations).
+Go to this [section at Learn HTML](https://web.dev/learn/html/text-basics/#quotes_and_citations).
 
 > The information about the quote author, or citation, is not part of the quote and therefore not in the `<blockquote>`, but comes after the quote.
 

@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## Boolean attributes
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#boolean-attributes).
+Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#boolean_attributes).
 
 > If a boolean attribute is present, it is always true. Boolean attributes include `autofocus`, `inert`, `checked`, `disabled`, `required`, `reversed`, `allowfullscreen`, `default`, `loop`, `autoplay`, `controls`, `muted`, `readonly`, `multiple,` and `selected`. [...] If the attribute value is false, omit the attribute. If the attribute is true, include the attribute but don't provide a value.
 
@@ -25,7 +25,7 @@ The [`multiple` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Att
 
 ## Enumerated attributes
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#enumerated-attributes).
+Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#enumerated_attributes).
 
 > Enumerated attributes are sometimes confused with boolean attributes. They are HTML attributes that have a limited set of predefined valid values.
 
@@ -33,7 +33,7 @@ Another name I didn't know. I feel like I'm getting a low-key Basics of Computer
 
 ## Global attributes
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#global-attributes).
+Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#global_attributes).
 
 > Global attributes are attributes that can be set on any HTML element, including elements in the `<head>`. There are more than [30 global attributes](https://developer.mozilla.org/docs/Web/HTML/Global_attributes#list_of_global_attributes).
 
@@ -47,7 +47,7 @@ In a post from 2020 Scott Vinkle shows some [examples where microdata can help w
 
 ## Link fragment identifier
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#link-fragment-identifier).
+Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#link_fragment_identifier).
 
 > When a URL includes a hash mark (`#`) followed by a string of characters, that string is a fragment identifier. If that string matches an `id` of an element in the web page, the fragment is an anchor, or bookmark, to that element. The browser will scroll to the point where the anchor is defined.
 
@@ -57,7 +57,7 @@ I use anchors here and find them handy when referencing something from a previou
 
 ## `<label>`
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#lesslabelgreater).
+Go to this [section at Learn HTML](https://web.dev/learn/html/attributes/#label).
 
 > While each label can be associated with exactly one form control, a form control may have more than one associated label.
 

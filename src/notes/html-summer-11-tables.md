@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## Table elements, in order
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#table-elements,-in-order).
+Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#table_elements_in_order).
 
 > If the table maintains a selection state, has two-dimensional navigation, or allows the user to rearrange cell order, set [`role="grid"`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles/grid_role). If the rows of the `grid` can be expanded and collapsed, use [`role="treegrid"`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles/treegrid_role) instead.
 
@@ -25,7 +25,7 @@ I always wondered about `<colgroup>`, there's more information later in the less
 
 ### Table caption
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#table-caption).
+Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#table_caption).
 
 > The `<caption>` element should be the first element nested in the `<table>` element. Including it lets all users know the purpose of the table immediately without having to read the surrounding text. Alternatively, you can use `aria-label` or `aria-labelledby` on the `<table>` to provide an accessible name as the caption. The `<caption>` element has no element-specific attributes.
 
@@ -37,7 +37,7 @@ Note to my fellow Eleventy users, [markdown-it,](https://www.11ty.dev/docs/langu
 
 ### Table content
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#table-content).
+Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#table_content).
 
 > There were attributes to add padding between cells and within cells, for borders, and for text alignment. Cellpadding and cellspacing, which define the space between the content of a cell and its border, and between the borders of adjacent cells, should be set with the CSS [border-collapse](https://developer.mozilla.org/docs/Web/CSS/border-collapse) and [border-spacing](https://developer.mozilla.org/docs/Web/CSS/border-spacing) properties, respectively.
 
@@ -53,7 +53,7 @@ I always forget that rows can have headers too. There's an example CodePen in th
 
 ### Merging cells
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#merging-cells).
+Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#merging_cells).
 
 > In cases where a cell is defined by multiple header cells with associations that cannot be set by the `scope` attributes alone, include the `headers` attribute with a space-separated list of the associated headers. As this example is a more complex table, we explicitly define the scope of the headers with the `scope` attribute. To be even clearer, we added the `headers` attribute to each cell. [...] In such complex tables, explicitly associate each data cell with each corresponding header cell with a list of space-separated `id` values of all the associated headers as the value of the `headers` attribute.
 
@@ -61,7 +61,7 @@ There are aspects of tables that I've heard of and don't know much about, but I'
 
 ## Styling tables
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#styling-tables).
+Go to this [section at Learn HTML](https://web.dev/learn/html/tables/#styling_tables).
 
 > There are two relatively obscure elements that were briefly mentioned: the column group, [`<colgroup>`](https://developer.mozilla.org/docs/Web/HTML/Element/colgroup), element and its only descendant, the empty [`<col>`](https://developer.mozilla.org/docs/Web/HTML/Element/col) column element. The `<colgroup>` element is used to define groups of columns, or `<col>` elements, within a table.
 
@@ -89,7 +89,7 @@ But there you have it, the `colgroup` is a mystery no more. One thing to keep in
 
 ## Presenting data
 
-Go to [section at Learn HTML](https://web.dev/learn/html/tables/#presenting-data).
+Go to [section at Learn HTML](https://web.dev/learn/html/tables/#presenting_data).
 
 > If you want to lay out content in many columns, use [multi-column layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Columns).
 

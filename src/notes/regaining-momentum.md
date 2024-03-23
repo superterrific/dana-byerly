@@ -88,6 +88,8 @@ If you're feeling adventurous Jeremy Keith has a post on [using Mastodon's API a
 
 Originally I was going to use Zapier as it's my go to automation tool, but webhooks are a premium feature and I'm not ready to upgrade there at the moment. Webhooks are available on the free tier at IFTTT. If it works out I'll also set up posts from [Junk Drawer](https://danabyerly-junkdrawer.website/) to post at Mastodon as well. Or even it doesn't go well I'll try to improve it at the Junk Drawer as I'm more likely post there next than posting here. Wish me luck!
 
+**Update February 17, 2024**: Webhooks are [no longer available](https://www.reddit.com/r/ifttt/comments/1as8emd/no_more_free_webhook_applets/) on the free tier at IFTTT. The Pro plan is relatively affordable. Pipedream currently offers webhooks [on the free tier](https://pipedream.com/pricing).
+
 
 **Update Feburary 11, 2023**: After fiddling around with several test posts, I finally got posting to work correctly. However, only using the post title and URL. I couldn't get content to display without it including the wrapping HTML. 
 

@@ -25,7 +25,7 @@ Heart emoji.
 
 ## Toggling visibility: the `open` attribute
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/details/#toggling-visibility-the-open-attribute).
+Go to this [section at Learn HTML](https://web.dev/learn/html/details/#toggling_visibility_the_open_attribute).
 
 > The hidden content in the collapsed state is searchable in some browsers but not others, even though the collapsed content is not part of the DOM. If you search in Edge or Chrome, the details containing a search term will expand to display the occurrence. This behavior is not replicated in Firefox or Safari.
 
@@ -33,7 +33,7 @@ I knew this one because Manuel Matuzović [posted about this earlier](https://ww
 
 ## How errors are handled
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/details/#how-errors-are-handled). 
+Go to this [section at Learn HTML](https://web.dev/learn/html/details/#how_errors_are_handled). 
 
 > If you don't include a `<summary>`, the browser will create one for you: with a marker and the word "details". This summary is part of a [shadow root](https://web.dev/learn/html/template/#shadow-dom), and therefore will not have author CSS summary styles applied. Unfortunately, Safari does not include the details in the [keyboard focus order](https://bugs.webkit.org/show_bug.cgi?id=249904).
 

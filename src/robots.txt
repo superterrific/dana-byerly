@@ -27,6 +27,12 @@ Disallow: /
 # AI Data Scraper
 # https://darkvisitors.com/agents/facebookbot
 
+# AI Data Scraper
+# https://darkvisitors.com/agents/diffbot
+
+User-agent: Diffbot
+Disallow: /
+
 User-agent: FacebookBot
 Disallow: /
 

@@ -21,7 +21,7 @@ I'm going to pretend I didn't read that.
 
 ## Code examples and technical writing
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/inline-text/#code-examples-and-technical-writing).
+Go to this [section at Learn HTML](https://web.dev/learn/html/inline-text/#code_examples_and_technical_writing).
 
 > The [`<data>`](https://developer.mozilla.org/docs/Web/HTML/Element/data) element links a given piece of content with a machine-readable translation; the element's `value` attribute provides the machine-readable translation of the content of the element.
 
@@ -33,7 +33,7 @@ This one I know! And love, and use, I even wrote it [a love letter](https://dana
 
 ## Definitions and language support 
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/inline-text/#definitions-and-language-support).
+Go to this [section at Learn HTML](https://web.dev/learn/html/inline-text/#definitions_and_language_support).
 
 > When including abbreviations or acronyms, always provide the full expanded version of the term in plain text on first use, as you introduce the shortened representation of the term between opening and closing [`<abbr>`](https://developer.mozilla.org/docs/Web/HTML/Element/abbr) tags; unless the term is well-known to the reader, such as "HTML" and "CSS" in this series. Only on this first occurrence, when the abbreviation or acronym is being defined, is `<abbr>` needed. The `title` attribute is not necessary nor helpful.
 
@@ -57,7 +57,7 @@ Ha, I thought this was related to Ruby on Rails, wrong again. Hopping over to [M
 
 ## Emphasizing text
 
-Go to [section at Learn HTML](https://web.dev/learn/html/inline-text/#emphasizing-text).
+Go to [section at Learn HTML](https://web.dev/learn/html/inline-text/#emphasizing_text).
 
 > Use the [`<em>`](https://developer.mozilla.org/docs/Web/HTML/Element/em) element to emphasize or stress a span of content. The `<em>` element can be nested, with each level of nesting indicating a greater degree of emphasis. This element has semantic meaning and can be used to inform auditory user agents like screen readers, Alexa, and Siri, to provide emphasis.
 

@@ -29,7 +29,7 @@ It's great to know the backstory of how things came about. The particulars of th
 
 ## Content language
 
-Go to  this [section at Learn HTML](https://web.dev/learn/html/document-structure/#content-language).
+Go to  this [section at Learn HTML](https://web.dev/learn/html/document-structure/#content_language).
 
 > The `lang` attribute is not limited to the `<html>`tag. If there is text within the page that is in a language different from the main document language, the `lang` attribute should be used to identify exceptions to the main language within the document.
 
@@ -37,7 +37,7 @@ I only recently learned this because some smart person somewhere included it in 
 
 ## Other uses of the `<link>` element
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/document-structure/#other-uses-of-the-lesslinkgreater-element).
+Go to this [section at Learn HTML](https://web.dev/learn/html/document-structure/#other_uses_of_the_link_element).
 
 > There are currently [25 available values for the `rel` attribute](https://html.spec.whatwg.org/multipage/links.html#linkTypes) that can be used with `<link>`, `<a>` and `<area>`, or `<form>`, with a few that can be used with all.
 

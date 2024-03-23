@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## Ordered lists
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/lists/#ordered-lists).
+Go to this [section at Learn HTML](https://web.dev/learn/html/lists/#ordered_lists).
 
 > The `<ol>` has three element-specific attributes: `type`, `reversed`, and `start`.
 >
@@ -25,7 +25,7 @@ I don't use ordered lists very often, when I do use them it's straightforward an
 
 ## List items
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/lists/#list-items).
+Go to this [section at Learn HTML](https://web.dev/learn/html/lists/#list_items).
 
 > There is only one element-specific `<li>` attribute: `value`, an integer. The `value` is only useful on an `<li>` when the `<li>` is nested within an ordered list and has no meaning for unordered lists or menus. It overrides the value of the `<ol>`'s start if there is a conflict.
 
@@ -37,7 +37,7 @@ There's an [example CodePen](https://codepen.io/web-dot-dev/pen/WNyPmrv) worth c
 
 ## Description lists
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/lists/#description-lists).
+Go to this [section at Learn HTML](https://web.dev/learn/html/lists/#description_lists).
 
 > A description list is a [description list](https://developer.mozilla.org/docs/Web/HTML/Element/dl) (`<dl>`) element containing a series of (zero or more) [description terms](https://developer.mozilla.org/docs/Web/HTML/Element/dt) (`<dt>`) and their [description details](https://developer.mozilla.org/docs/Web/HTML/Element/dd) (`<dd>`). The original names for these three elements were "definition list," "definition term," and "definition definition." The [name changed](https://www.w3.org/TR/html4/struct/lists.html#h-10.3) in the living standard.
 

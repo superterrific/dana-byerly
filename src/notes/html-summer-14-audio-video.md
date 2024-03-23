@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## `<audio>` and `<video>`
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/audio-video/#lessaudiogreater-and-lessvideogreater).
+Go to this [section at Learn HTML](https://web.dev/learn/html/audio-video/#audio_and_video).
 
 > The [`<video>`](https://developer.mozilla.org/docs/Web/HTML/Element/video) and [`<audio>`](https://developer.mozilla.org/docs/Web/HTML/Element/audio) elements can be used to embed media players directly with the `src` attribute or can be used as the container element for a series of [`<source>`](https://developer.mozilla.org/docs/Web/HTML/Element/source) elements, each providing a `src` file suggestion. While `<video>` can be used to embed an audio file, the `<audio>` element is preferable for embedding sound files.
 

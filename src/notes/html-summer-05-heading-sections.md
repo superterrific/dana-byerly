@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## Site `<footer>`
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#site-lessfootergreater).
+Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#site_header).
 
 > The implicit `role` for the site footer is `contentinfo`.
 
@@ -23,7 +23,7 @@ Ha, answering a question I had in the [previous section](/notes/hot-html-summer-
 
 ## Document structure 
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#document-structure).
+Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#document_structure).
 
 > A layout with a header, two sidebars, and a footer, is known as the [holy grail layout](https://web.dev/patterns/layout/holy-grail/). 
 
@@ -31,7 +31,7 @@ I did not know this had a name, although that layout was prominent during my tim
 
 ## `<section>`
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#lesssectiongreater).
+Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#section).
 
 > The `<section>` element is used to encompass generic standalone sections of a document when there is no more specific semantic element to use. Sections should have a heading, with very few exceptions.
 
@@ -39,7 +39,7 @@ Using the "should have a heading" guideline is a very easy and useful way to fra
 
 ## Headings: `<h1>`-`<h6>`
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#headings-lessh1greater-lessh6greater).
+Go to this [section at Learn HTML](https://web.dev/learn/html/headings-and-sections/#headings_h1-h6).
 
 > When a heading is nested in a document banner `<header>`, it is the heading for the application or site. When nested in `<main>`, whether or not it is nested within a `<header>` in `<main>`, it is the header for that page, not the whole site.
 

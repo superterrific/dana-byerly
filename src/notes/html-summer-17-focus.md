@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## The `tabindex` attribute
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/focus/#the-tabindex-attribute).
+Go to this [section at Learn HTML](https://web.dev/learn/html/focus/#the_tabindex_attribute).
 
 > The `tabindex` attribute takes as its value an integer. A negative value makes an element focusable but not tabbable. A `tabindex` value of `0` makes the element focusable and tabbable, adding the element on which it is applied to the sequential focus navigation order in source code order. A value of 1 or greater makes the element focusable and tabbable, but adds it to a prioritized tabbing sequence, and, as we saw above, should be avoided.
 
@@ -23,7 +23,7 @@ For reasons I can't even guess, the inert table headers were set to `tabindex="0
 
 ## The `autofocus` attribute
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/focus/#the-autofocus-attribute).
+Go to this [section at Learn HTML](https://web.dev/learn/html/focus/#the_autofocus_attribute).
 
 > The `autofocus` attribute doesn't alter the document's sequential focus navigation order. The elements in the sequence coming before the autofocused element are simply skipped. For these reasons, it is not advised to include the `autofocus` attribute.
 

@@ -21,7 +21,7 @@ Building web components is something I've been wanting to learn for some time. I
 
 ## The `<template>` element
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/template/#the-lesstemplategreater-element).
+Go to this [section at Learn HTML](https://web.dev/learn/html/template/#the_template_element).
 
 > The `<template>` element is used to declare fragments of HTML to be cloned and inserted into the DOM with JavaScript. The contents of the element are not rendered by default. Rather, they are instantiated using JavaScript.
 

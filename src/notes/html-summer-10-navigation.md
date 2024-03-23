@@ -13,7 +13,7 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## "Skip to content" link
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/navigation/#skip-to-content-link).
+Go to this [section at Learn HTML](https://web.dev/learn/html/navigation/#skip_to_content_link).
 
 > The link text reads "skip to main." This is the link's accessible name. This is a technical site, and users probably know what "main" means. Like all link text, the accessible name should clearly indicate where the link takes the user.
 
@@ -25,7 +25,7 @@ I wonder if using "Skip to article" on content pages and "Skip to main content" 
 
 ## Table of contents
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/navigation/#table-of-contents).
+Go to this [section at Learn HTML](https://web.dev/learn/html/navigation/#table_of_contents).
 
 > When providing an accessible name on an element, don't include the name of the element. Screen readers provide that information to the user. For example, when using the `<nav>` element, don't include "navigation"; that information is included when using semantic elements.
 

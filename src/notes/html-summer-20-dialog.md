@@ -21,7 +21,7 @@ Learning new things right out of the gate.
 
 ## Modal dialogs
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/dialog/#modal-dialogs).
+Go to this [section at Learn HTML](https://web.dev/learn/html/dialog/#modal_dialogs).
 
 > Once opened, there are three ways to close the dialog: the escape key, submitting a form with a button that has the [`formmethod="dialog"`](https://developer.mozilla.org/docs/Web/HTML/Element/button#attr-formmethod) set (or if the form itself has `method="dialog"` set), and the [`HTMLDialogElement.close()`](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close) method.
 
@@ -33,7 +33,7 @@ I [learned about this](/notes/hot-html-summer-focus/#the-autofocus-attribute) a 
 
 ## Non-modal dialogs
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/dialog/#non-modal-dialogs).
+Go to this [section at Learn HTML](https://web.dev/learn/html/dialog/#non_modal_dialogs).
 
 > The `HTMLDialogElement.show()` similarly opens a dialog, but without adding a backdrop or causing anything to become inert. The escape key does not close non-modal dialogs. Because of this, it is even more important to ensure you include a method of closing the non-modal dialog. In doing so, if the closer is outside the dialog, realize the focus will go to the element that opened the dialog, which may not be the best user experience.
 
@@ -41,7 +41,7 @@ Woof, yeah. The heading in the non-modal dialog [in this example](https://codepe
 
 ## Closing a dialog
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/dialog/#closing-a-dialog).
+Go to this [section at Learn HTML](https://web.dev/learn/html/dialog/#closing_a_dialog).
 
 > You don’t need the `HTMLDialogElement.close()` method to close a dialog. You don’t need JavaScript at all. To close the `<dialog>` without JavaScript, include a form with a dialog method by either setting `method="dialog"` on the `<form>` or `formmethod="dialog"` on the button.
 

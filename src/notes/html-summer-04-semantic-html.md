@@ -13,9 +13,9 @@ tags: ['Hot HTML Summer', 'HTML']
 
 ## Accessibility object model (AOM)
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/semantic-html/#accessibility-object-model-aom).
+Go to this [section at Learn HTML](https://web.dev/learn/html/semantic-html/#accessibility_object_model_aom).
 
-The thing I learned here is how detailed Chrome's version of the accessibility tree is DevTools. By default you can only view one expanded node at a time, but there's an explainer with video of the two-step process to enable the full tree view [in this Chrome Blog post](https://developer.chrome.com/blog/full-accessibility-tree/#full-accessibility-tree-in-devtools).
+The thing I learned here is how detailed Chrome's version of the accessibility tree is DevTools. By default you can only view one expanded node at a time, but there's an explainer with video of the two-step process to enable the full tree view [in this Chrome Blog post](https://developer.chrome.com/blog/full-accessibility-tree/#full_accessibility_tree_in_devtools).
 
 Also, after poking around with the accessibility tree in both Chrome and Firefox (my primary browser), I was wondering why the `<footer>` was displaying as `contentinfo` rather than `footer` when `<main>` displays as `main`. 
 
