@@ -39,7 +39,7 @@ Since the screen reader will announce that it's navigation based on the element,
 
 ## Page breadcrumbs
 
-Go to this [section at Learn HTML](https://web.dev/learn/html/navigation/#page-breadcrumbs).
+Go to this [section at Learn HTML](https://web.dev/learn/html/navigation/#page_breadcrumbs).
 
 > Between links there are CSS-generated content separators. The separators come before each list item starting with the second `<li>`.
 > 

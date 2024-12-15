@@ -41,6 +41,6 @@ I've added these to my pagination links!
 
 > Similar to [`<link rel="alternative">`](https://web.dev/learn/html/document-structure/#alternate_versions_of_the_site), the meaning of `<a rel="alternative">` depends on other attributes. RSS feed alternatives will also include `type="application/rss+xml"` or `type="application/atom+xml`, alternative formats will include the `type` attribute, and translations will include the `hreflang` attribute. If the content between the opening and closing tags is in a language other than the main document language, include the `lang` attribute. If the language of the hyperlinked document is in a different language, include the `hreflang` attribute.
 
-There's a good example that combines `rel="alternative"`, `lang`, and `hreflang`. There's also a list of list of [user experience considerations and tips for links](https://web.dev/learn/html/links/#user-experience-tips) in general that's worth reviewing.
+There's a good example that combines `rel="alternative"`, `lang`, and `hreflang`. There's also a list of list of [user experience considerations and tips for links](https://web.dev/learn/html/links/#user_experience_tips) in general that's worth reviewing.
 
 

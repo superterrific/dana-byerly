@@ -75,7 +75,7 @@ Another good usability tip. Similarly in regard to `minlength` [in the Other con
 
 In some cases you might be constrained by a minimum character requirement in a database that's not immediately in your control, but if that's not a constraint it's important to keep in mind how you could impact users by setting arbitrary minimums or constraining characters with `pattern`. If you're willing to traverse Twitter, the [Your Name Is Invalid! account ](https://twitter.com/yournameisvalid) is worth a look as an example of the many ways arbitrary constraint validations can make forms unusable.
 
-I could easily share many more useful insights from the [Built-in validation](https://web.dev/learn/html/forms/#built-in-validation), [Example](https://web.dev/learn/html/forms/#example), and [Other considerations](https://web.dev/learn/html/forms/#other-considerations) sections. But you should just go read it for yourself.
+I could easily share many more useful insights from the [Built-in validation](https://web.dev/learn/html/forms/#built-in-validation), [Example](https://web.dev/learn/html/forms/#example), and [Other considerations](https://web.dev/learn/html/forms/#other_considerations) sections. But you should just go read it for yourself.
 
 
 
