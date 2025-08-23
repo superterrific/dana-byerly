@@ -5,7 +5,7 @@ summary: 'Here is a bit about me...'
 eleventyExcludeFromCollections: true
 kofi: false
 ---
-I'm an interaction designer and [front of the front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/) developer. I'm keenly interested in modular design, accessibility, usability, performance and the open web.
+I'm an interaction designer and [front of the front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/) developer. I do UX Things by day I'm keenly interested in modular design, accessibility, usability, performance and the open web.
 
 I've been employed doing some form of web-based design since 1996, and for the last two decades have been working in the enterprise space.
 
