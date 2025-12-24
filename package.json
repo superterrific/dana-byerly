@@ -5,17 +5,17 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "production": "NODE_ENV=production eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "clean-css": "^4.2.3",
-    "html-minifier": "^4.0.0",
     "luxon": "^3.3.0",
     "markdown-it-anchor": "^6.0.1"
   }

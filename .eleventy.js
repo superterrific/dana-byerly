@@ -6,8 +6,6 @@ const CleanCSS = require('clean-css');
 const markdownIt = require('markdown-it');
 const markdownAnchor = require('./src/utils/markdown-anchor');
 
-// Transforms
-const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 
 // Create production flag
 const isProduction = process.env.NODE_ENV === 'production';
@@ -61,10 +59,6 @@ module.exports = config => {
   config.addFilter('cssmin', function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
-
-  if (isProduction) {
-    config.addTransform('htmlmin', htmlMinTransform);
-  }
 
   // Plugins
   config.addPlugin(syntaxHighlight);
