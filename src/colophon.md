@@ -16,3 +16,5 @@ Handwritten CSS.
 Other resources that helped me figure out something used on this site can be found in the inaugural and unimaginatively named [Finally, a new site](/articles/finally-a-new-site/#thank-you-one-and-all) article.
 
 This sites uses no cookies and is not tracking you.
+
+This site was built without the use of AI, including code, writing, editing and all imagery.
